@@ -77,7 +77,7 @@ window.renderQuizzes = function() {
         // --- CẤU HÌNH MÀU SẮC DỰA TRÊN CHUYÊN ĐỀ (Đã đồng bộ CSS) ---
         let borderTopColor = 'var(--primary)'; // Màu mặc định
         if (isMistakeTab) {
-            borderTopColor = '#ef4444'; // Đỏ rực cho tab lỗi sai
+borderTopColor = '#ff003c'; // Đỏ Neon rực rỡ và cảnh báo mạnh hơn
         } else if (currentTopic === 'nhiet') {
             borderTopColor = 'var(--color-nhiet)'; // Cam đỏ (Nhiệt học)
         } else if (currentTopic === 'khili-tuong') {

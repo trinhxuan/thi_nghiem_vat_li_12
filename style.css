@@ -19,6 +19,11 @@
     --correct-bg: rgba(16, 185, 129, 0.15);
     --wrong: #ef4444;
     --wrong-bg: rgba(239, 68, 68, 0.15);
+	/* HỆ MÀU PHYSICS NEON SIÊU RỰC RỠ */
+    --color-nhiet: #ff3e00;      /* Nhiệt học: Đỏ Cam Lửa (Tượng trưng cho sự bùng nổ, nhiệt huyết) */
+    --color-khi: #00e5ff;        /* Khí lý tưởng: Cyan Dạ Quang (Tượng trưng cho sự linh hoạt, bay bổng) */
+    --color-tu: #d946ef;         /* Từ trường: Tím Fuchsia (Tượng trưng cho sự bí ẩn, lực hút vô hình) */
+    --color-hatnhan: #39ff14;    /* Hạt nhân: Xanh Lục Neon (Tượng trưng cho năng lượng nguyên tử mạnh mẽ) */
 }
 
 * {
@@ -102,10 +107,11 @@ body {
 .question-card {
     background: var(--bg-container);
     border: 1px solid var(--border-card);
+    border-top-width: 4px; /* THÊM DÒNG NÀY: Làm viền trên dày hơn để màu chuyên đề phát sáng */
     border-radius: 20px;
     padding: 24px;
     margin-bottom: 24px;
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4); /* Tăng nhẹ độ đậm của bóng đổ */
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
