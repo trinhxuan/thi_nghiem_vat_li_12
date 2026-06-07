@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Thí Nghiệm Số - T-Physics Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* CSS căn chỉnh cho checkbox Nhớ mật khẩu */
+        .remember-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            margin: 10px 0 15px 0;
+            font-size: 0.9rem;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-overlay">
+        <div class="login-box">
+            <h3>HỆ THỐNG BẢO MẬT</h3>
+            <input type="text" id="userInput" placeholder="Nhập Họ và Tên của bạn..." style="margin-bottom: 10px;">
+            <input type="password" id="passInput" placeholder="Nhập mật khẩu truy cập...">
+            
+            <label class="remember-container">
+                <input type="checkbox" id="chkRememberMe"> Ghi nhớ đăng nhập
+            </label>
+
+            <button class="login-btn" onclick="handleLogin()">Đăng nhập</button>
+            <p id="login-error" style="color: #c0392b; font-size: 0.9rem; margin-top: 12px; display: none; font-weight: 600;"></p>
+        </div>
+    </div>
+
+    <header class="app-header">
+        <div class="container">
+            <h1>Phòng Thí Nghiệm Số - T-Physics Pro</h1>
+            <div class="main-tabs">
+    <button class="tab-btn active" onclick="switchTopic('nhiet', this)">Thực Hành Nhiệt Học</button>
+    <button class="tab-btn" onclick="switchTopic('khili-tuong', this)">Khí Lý Tưởng</button>
+    <button class="tab-btn" onclick="switchTopic('tu-truong', this)">Từ Trường</button>
+    <button class="tab-btn" onclick="switchTopic('hat-nhan', this)">Vật Lý Hạt Nhân</button>
+    <button class="tab-btn" style="color: #dc2626;" onclick="switchTopic('khac-phuc-loi', this)">🚨 Khắc phục lỗi sai</button>
+</div>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 2rem;">
+        <div id="contentArea"></div>
+    </main>
+
+    <script src="app_logic.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+Chào thầy Trinh! Thật tuyệt vời khi toàn bộ khung sườn của 4 chuyên đề đã hoạt động ổn định. Để chèn hình ảnh vào các câu hỏi (ví dụ: hình ảnh minh họa cho Cân từ, đồ thị chất khí, hay sơ đồ lò phản ứng) một cách chuyên nghiệp và đẹp mắt, chúng ta sẽ tận dụng việc `app.js` đang đọc `innerHTML` để nhúng trực tiếp thẻ HTML `<img>` vào trường `context` trong `data.js`.
+
+Dưới đây là hướng dẫn từng bước chi tiết và chuẩn xác để thầy thực hiện:
+
+---
+
+### Bước 1: Chuẩn bị thư mục chứa ảnh
+
+Trong thư mục dự án của thầy trên máy tính (nơi chứa file `index.html`, `app.js`, `data.js`), thầy hãy tạo một thư mục mới đặt tên là **`images`**.
+
+Thầy copy tất cả các hình ảnh minh họa vào thư mục này và đặt tên tiếng Việt không dấu, không khoảng cách để tránh lỗi đường dẫn (Ví dụ: `can_tu.png`, `do_thi_booyle.png`, `pet_scan.jpg`).
+
+---
+
+### Bước 2: Chèn thẻ ảnh vào file `data.js`
+
+Tại file `data.js`, ở câu hỏi nào muốn xuất hiện hình ảnh, thầy chỉ cần chèn thêm đoạn mã HTML này vào cuối chuỗi của mục `context`:
+
+```html
+<br><img src="images/tên_ảnh.png" class="quiz-img">
+
+```
+
+**Ví dụ thực tế với Câu 1 (Thí nghiệm Cân từ) trong `data.js` của thầy:**
+
+```javascript
+{
+    id: 'q31',
+    context: '<strong>Câu 1. Thí nghiệm Cân từ (Xác định cảm ứng từ $B$)</strong><br>Một khung dây dẫn hình chữ nhật được treo thẳng đứng và gắn vào đĩa của một cân điện tử nhạy. Cạnh dưới của khung dây có chiều dài $\\ell = 5,0\\text{ cm}$ được đặt ngập trong một từ trường đều $\\vec{B}$ có phương nằm ngang và vuông góc với mặt phẳng khung dây. Ban đầu cân chỉ $150,00\\text{ g}$. Khi cho dòng điện $I = 2,0\\text{ A}$ chạy qua khung dây, số chỉ của cân giảm xuống còn $148,50\\text{ g}$. Lấy $g = 9,8\\text{ m/s}^2$.' +
+             '<br><img src="images/can_tu.png" class="quiz-img">', // <-- Chèn ảnh ở đây
+    statements: [
+        // ... giữ nguyên các ý a, b, c, d
+    ]
+}
+
+```
+
+---
+
+### Bước 3: Làm đẹp hình ảnh bằng `style.css`
+
+Để đảm bảo hình ảnh hiển thị vừa vặn, tự động căn giữa và không bị quá to làm vỡ giao diện khi học sinh xem trên điện thoại, thầy hãy mở file **`style.css`** và chèn thêm đoạn mã này vào cuối file:
+
+```css
+/* Style cho hình ảnh minh họa trong câu hỏi */
+.quiz-img {
+    display: block;
+    max-width: 100%;       /* Không vượt quá chiều rộng của thẻ câu hỏi */
+    max-height: 250px;     /* Giới hạn chiều cao vừa vặn tầm mắt */
+    height: auto;          /* Tự động tính tỷ lệ để ảnh không bị méo */
+    margin: 15px auto;     /* Căn giữa hình ảnh và tạo khoảng cách trên dưới */
+    border-radius: 8px;    /* Bo góc nhẹ cho bức ảnh trông tinh tế hơn */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Tạo bóng mờ đổ xuống cho ảnh nổi bật */
+}
+
+```
+
+---
+
+### Bước 4: Đồng bộ lên GitHub
+
+1. Thầy lưu lại cả 3 file (`data.js`, `style.css` và ảnh trong thư mục `images`).
+2. Tiến hành commit và đẩy (push) cả thư mục `images` cùng các file đã sửa lên Repository trên GitHub.
+3. Mở trình duyệt và nhấn **Ctrl + F5** để xóa bộ nhớ đệm cũ. Hình ảnh sẽ lập tức hiển thị ngay dưới phần bối cảnh câu hỏi một cách cực kỳ chuyên nghiệp!
+
+Thầy cứ triển khai thử cho một câu bất kỳ trước nhé. Nếu hình ảnh hiển thị có kích thước chưa vừa ý hoặc bị lệch, thầy cứ nhắn tôi để tôi căn chỉnh lại đoạn code CSS cho phù hợp nhất với mong muốn của thầy!
