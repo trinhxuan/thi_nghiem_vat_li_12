@@ -34,19 +34,23 @@ window.renderQuizzes = function() {
             return;
         }
 
-        let uniqueQuizIds = [...new Set(mistakesReport.map(m => m.questionId.split('_')[0]))];
+        // VÁ LỖI: Sử dụng '---' làm dải phân cách thay vì '_'
+        let uniqueQuizIds = [...new Set(mistakesReport.map(m => m.questionId.split('---')[0]))];
         
         uniqueQuizIds.forEach(qId => {
             for (let topic in practiceData) {
                 let foundQuiz = practiceData[topic].find(q => q.id === qId);
                 if (foundQuiz) {
                     let quizCopy = JSON.parse(JSON.stringify(foundQuiz));
-                    let failedStmtIds = mistakesReport.filter(m => m.questionId.startsWith(qId)).map(m => m.questionId.split('_')[1]);
+                    
+                    // VÁ LỖI: Sử dụng '---' làm dải phân cách
+                    let failedStmtIds = mistakesReport.filter(m => m.questionId.startsWith(qId)).map(m => m.questionId.split('---')[1]);
                     
                     quizCopy.statements = quizCopy.statements.filter(s => failedStmtIds.includes(s.id));
                     
                     quizCopy.statements.forEach(s => {
-                        let log = mistakesReport.find(m => m.questionId === `${qId}_${s.id}`);
+                        // VÁ LỖI: Sử dụng '---' làm dải phân cách
+                        let log = mistakesReport.find(m => m.questionId === `${qId}---${s.id}`);
                         s.failCount = log ? log.failCount : 1;
                     });
 
@@ -66,7 +70,7 @@ window.renderQuizzes = function() {
 
     let headerTitle = isMistakeTab ? `<h2 style="color: #dc2626; margin-bottom: 20px; font-size: 1.3rem; font-weight:700;">🎯 ĐỀ ÔN TẬP CÁ NHÂN HÓA (${currentQuizzes.length} câu hỏi có ý làm sai)</h2>` : '';
     
-  contentArea.innerHTML = headerTitle + currentQuizzes.map((quiz, index) => {
+    contentArea.innerHTML = headerTitle + currentQuizzes.map((quiz, index) => {
         let contextText = quiz.context;
         contextText = contextText.replace(/(<strong[^>]*>)\s*Câu\s*\d+\s*[:\-\.]*\s*/i, '$1');
         contextText = contextText.replace(/^Câu\s*\d+\s*[:\-\.]*\s*/i, '');
@@ -74,18 +78,18 @@ window.renderQuizzes = function() {
 
         let imageHtml = quiz.image ? `<img src="${quiz.image}" class="question-img" alt="Sơ đồ minh họa">` : '';
 
-        // --- CẤU HÌNH MÀU SẮC DỰA TRÊN CHUYÊN ĐỀ (Đã đồng bộ CSS) ---
-        let borderTopColor = 'var(--primary)'; // Màu mặc định
+        // CẤU HÌNH MÀU SẮC DỰA TRÊN CHUYÊN ĐỀ
+        let borderTopColor = 'var(--primary)'; 
         if (isMistakeTab) {
-borderTopColor = '#ff003c'; // Đỏ Neon rực rỡ và cảnh báo mạnh hơn
+            borderTopColor = '#ff003c'; 
         } else if (currentTopic === 'nhiet') {
-            borderTopColor = 'var(--color-nhiet)'; // Cam đỏ (Nhiệt học)
+            borderTopColor = 'var(--color-nhiet)'; 
         } else if (currentTopic === 'khili-tuong') {
-            borderTopColor = 'var(--color-khi)'; // Cyan ngọc (Khí lý tưởng)
+            borderTopColor = 'var(--color-khi)'; 
         } else if (currentTopic === 'tu-truong') {
-            borderTopColor = 'var(--color-tu)'; // Tím neon (Từ trường)
+            borderTopColor = 'var(--color-tu)'; 
         } else if (currentTopic === 'hat-nhan') {
-            borderTopColor = 'var(--color-hatnhan)'; // Xanh lục (Hạt nhân)
+            borderTopColor = 'var(--color-hatnhan)'; 
         }
 
         return `
@@ -210,12 +214,14 @@ window.checkAnswers = function(quizId) {
 
                 if (isCorrect) {
                     stmtDiv.classList.add('correct');
-                    try { if (typeof TPhysicsPro !== 'undefined') TPhysicsPro.MistakeLog.resolveMistake(`${quizId}_${stmt.id}`); } catch(e){}
+                    // VÁ LỖI: Đổi '_' thành '---'
+                    try { if (typeof TPhysicsPro !== 'undefined') TPhysicsPro.MistakeLog.resolveMistake(`${quizId}---${stmt.id}`); } catch(e){}
                 } else {
                     stmtDiv.classList.add('wrong');
                     try {
                         if (typeof TPhysicsPro !== 'undefined') {
-                            TPhysicsPro.MistakeLog.logMistake(`${quizId}_${stmt.id}`, {
+                            // VÁ LỖI: Đổi '_' thành '---'
+                            TPhysicsPro.MistakeLog.logMistake(`${quizId}---${stmt.id}`, {
                                 topic: currentTopic,
                                 userChoice: isUserTrue,
                                 correctInterpretation: stmt.isTrue

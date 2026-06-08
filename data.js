@@ -1,7 +1,7 @@
 const practiceData = {
     nhiet: [
         {
-            id: 'q1',
+            id: 'nhiet_q1',
             image: 'bai1_nhiet.jpg',
             context: '<strong>Câu 1. Đo nhiệt dung riêng của nước bằng phương pháp điện</strong><br>Một nhóm học sinh tiến hành thí nghiệm đo nhiệt dung riêng của nước. Các dụng cụ được kết nối đúng quy tắc: dây nung nhúng trong nhiệt lượng kế, nguồn điện một chiều, ampe kế mắc nối tiếp và vôn kế mắc song song với dây nung. Trình tự đo được thực hiện như sau: Cân nhiệt lượng kế rỗng; rót nước vào và cân lại để xác định khối lượng nước là 200,0 g; đợi hệ ổn định rồi đo nhiệt độ ban đầu 25,0°C; đóng mạch điện và bấm giờ. Số chỉ trên vôn kế và ampe kế luôn ổn định ở mức 12,0 V và 2,50 A. Sau 300 s, ngắt mạch và tiếp tục khuấy nhẹ, nhiệt độ cực đại đạt được là 35,0°C. Bỏ qua nhiệt lượng do vỏ nhiệt lượng kế và môi trường hấp thụ.',
             statements: [
@@ -32,7 +32,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q2',
+            id: 'nhiet_q2',
             image: 'bai2_nhiet.jpg',
             context: '<strong>Câu 2. Khảo sát đồ thị nhiệt độ - thời gian</strong><br>Trong một bài thực hành nâng cao, học sinh dùng một bếp điện có công suất hữu ích không đổi $P$ để đun nóng lần lượt 3 khối vật rắn $A, B, C$ có cùng khối lượng $m$. Cả 3 vật đều được bọc cách nhiệt hoàn hảo với môi trường. Phần mềm Data Logger ghi nhận nhiệt độ ban đầu của cả 3 vật rắn đều xuất phát tại giá trị $5T_0$. Đồ thị biểu diễn sự phụ thuộc của nhiệt độ $T$ theo thời gian $t$ của 3 vật trong giai đoạn chưa xảy ra sự chuyển thể là các đường thẳng có hệ số góc lần lượt là $k_A, k_B, k_C$ với $k_A > k_B > k_C$.',
             statements: [
@@ -63,7 +63,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q3',
+            id: 'nhiet_q3',
             image: 'bai3_nhiet.jpg',
             context: '<strong>Câu 3. Đo nhiệt nóng chảy riêng của nước đá (Phương pháp triệt tiêu hao phí)</strong><br>Học sinh bố trí một phễu chứa nước đá đang tan, bên trong phễu có vùi một dây điện trở. Nước đá tan ra nhỏ giọt xuống một cốc thủy tinh đặt trên cân điện tử có độ chia nhỏ nhất 0,01 g.<br>Giai đoạn 1 (Chưa cấp điện): Bấm đồng hồ trong thời gian 300 s, khối lượng nước chảy xuống cốc là 4,00 g.<br>Giai đoạn 2 (Cấp điện công suất 15,0 W): Tiếp tục bấm giờ trong thời gian 300 s tiếp theo, khối lượng nước chảy xuống cốc thêm được 18,00 g.',
             statements: [
@@ -94,7 +94,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q4',
+            id: 'nhiet_q4',
             image: 'bai4_nhiet.jpg',
             context: '<strong>Câu 4. Đo nhiệt nóng chảy riêng (Phương pháp hỗn hợp)</strong><br>Để xác định nhiệt nóng chảy riêng $\\lambda$ của nước đá, học sinh dùng một nhiệt lượng kế lí tưởng (cách nhiệt hoàn toàn). Đổ vào nhiệt lượng kế 200,0 g nước ở 30,0°C. Dùng khăn giấy thấm khô bề mặt một viên nước đá đang tan ở 0°C có khối lượng 30,0 g rồi thả vào nhiệt lượng kế. Khuấy nhẹ cho đến khi đá tan hoàn toàn, hệ thống đạt nhiệt độ cân bằng ở 15,0°C. Cho nhiệt dung riêng của nước lỏng là 4200 J/(kg.K).',
             statements: [
@@ -125,7 +125,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q5',
+            id: 'nhiet_q5',
             image: 'bai5_nhiet.jpg',
             context: '<strong>Câu 5. Đo nhiệt hóa hơi riêng bằng số liệu bảng</strong><br>Học sinh dùng một bình đun nước có công suất 1500 W đặt trên cân điện tử để đo nhiệt hóa hơi riêng của nước. Học sinh trừ bì vỏ ấm, rót nước vào đun. Khi nước bắt đầu sôi mạnh (nhiệt độ giữ ổn định ở 100°C), học sinh lấy mốc $t = 0$ và ghi nhận khối lượng nước ban đầu là 400 g. Cứ sau mỗi phút, học sinh đọc số liệu một lần và ghi vào bảng sau:<div class="table-responsive"><table class="styled-table"><thead><tr><th>Thời gian t (s)</th><th>0</th><th>60</th><th>120</th><th>180</th></tr></thead><tbody><tr><td><strong>Khối lượng m (g)</strong></td><td>400</td><td>360</td><td>320</td><td>280</td></tr></tbody></table></div>',
             statements: [
@@ -156,7 +156,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q6',
+            id: 'nhiet_q6',
             image: 'bai6_nhiet.jpg',
             context: '<strong>Câu 6. Phương trình đồ thị nhiệt hóa hơi</strong><br>Sử dụng cảm biến lực và Data Logger, máy tính xuất ra phương trình đường xu hướng (Trendline) biểu diễn sự phụ thuộc của khối lượng nước còn lại $m$ (tính bằng kg) trong một ấm siêu tốc theo thời gian $t$ (tính bằng s) tính từ lúc nước bắt đầu sôi là: $m = 0,850 - 0,001t$. Biết ấm siêu tốc được gắn qua một Oát-kế chỉ giá trị công suất thực không đổi là 2260 W.',
             statements: [
@@ -187,7 +187,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q7',
+            id: 'nhiet_q7',
             image: 'bai7_nhiet.jpg',
             context: '<strong>Câu 7. Phân tích hao phí nhiệt trong thí nghiệm vật rắn</strong><br>Để đo nhiệt dung riêng của đồng, học sinh treo thỏi đồng khối lượng 100 g vào nồi nước đang sôi (100°C) cho đủ thời gian. Sau đó, nhấc nhanh thỏi đồng sang nhiệt lượng kế chứa 200 g nước ở 20,0°C. Khuấy đều đến khi cân bằng, nhiệt kế chỉ 24,0°C. Biết nhiệt dung riêng của nước là 4200 J/(kg.K). Coi nhiệt lượng kế hoàn toàn không hấp thụ nhiệt.',
             statements: [
@@ -218,7 +218,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q8',
+            id: 'nhiet_q8',
             context: '<strong>Câu 8. Kỹ thuật hiệu chuẩn thiết bị (Bước đệm đo công suất thực)</strong><br>Để loại bỏ sai số hệ thống do điện lưới sụt giảm làm công suất của ấm đun không đúng nhãn, học sinh phải đo công suất thực $P$ của ấm trước khi đo nhiệt hóa hơi. Cho 500 g nước ở 25,0°C vào ấm, bật công tắc và đồng thời bấm giờ. Sau đúng 120 s, ngắt điện, khuấy đều và đo được nhiệt độ đạt 65,0°C. (Cho $c_{\\text{nước}} = 4200$ J/(kg.K)). Bỏ qua nhiệt dung của vỏ ấm điện.',
             statements: [
                 { 
@@ -248,7 +248,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q9',
+            id: 'nhiet_q9',
             context: '<strong>Câu 9. Phân tích truyền sai số tỉ đối trong thực hành đo nhiệt hóa hơi</strong><br>Kết thúc một thí nghiệm, học sinh lập bảng tổng hợp số liệu của các đại lượng đo trực tiếp cùng với sai số tuyệt đối tương ứng như sau:<br>Công suất đo qua Oát-kế: $P = 1000 \\pm 20$ (W).<br>Thời gian đun sôi: $t = 100 \\pm 1$ (s).<br>Khối lượng nước hóa hơi: $\\Delta m = 40,0 \\pm 0,8$ (g).',
             statements: [
                 { 
@@ -278,7 +278,7 @@ const practiceData = {
             ]
         },
         {
-            id: 'q10',
+            id: 'nhiet_q10',
             image: 'bai10_nhiet.png',
             context: '<strong>Câu 10. Vai trò dụng cụ & Cải tiến thiết kế thiết bị</strong><br>Tại phòng thực hành, nhóm học sinh được trang bị cảm biến nhiệt độ nối với máy tính, hộp xốp cách nhiệt (Styrofoam) và bộ trộn chất lỏng. Nhóm dùng các thiết bị này để đánh giá và tìm cách nâng cao độ chính xác của các bài thí nghiệm nhiệt học.',
             statements: [
@@ -310,314 +310,114 @@ const practiceData = {
         }
     ],
     'khili-tuong': [
-        {
-            id: 'q11',
-            image: 'bai1_khi.png',
-            context: '<strong>Câu 1. Quy trình đo đạc Định luật Boyle bằng cảm biến áp suất</strong><br>Một nhóm học sinh sử dụng xilanh nhựa trong suốt có vạch chia thể tích (đơn vị mL), đầu xilanh nối kín với cảm biến áp suất Vernier. Đặt xilanh nằm ngang trên bàn. Ban đầu, kéo pittông để khối khí có thể tích $V_1 = 50,0$ mL, áp suất đo được là $p_1 = 100$ kPa. Nhóm tiến hành đẩy pittông để giảm dần thể tích, ghi nhận áp suất tương ứng. Nhiệt độ phòng duy trì ở 25°C.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Để đảm bảo quá trình thực nghiệm đúng với điều kiện của định luật Boyle, học sinh cần ấn pittông thật nhanh và đọc số liệu trên cảm biến ngay lập tức.',
-                    isTrue: false,
-                    exp: 'Sai. Ấn nhanh sẽ thực hiện một quá trình nén đoạn nhiệt. Công cơ học sẽ chuyển hóa làm tăng nội năng, khiến khối khí nóng lên (nhiệt độ tăng). Định luật Boyle yêu cầu quá trình phải đẳng nhiệt, do đó phải nén thật chậm hoặc nén xong phải chờ vài phút để khí tỏa nhiệt ra môi trường, cân bằng lại ở 25°C rồi mới đọc số liệu.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cảm biến sử dụng trong thí nghiệm này phải được cài đặt ở chế độ đo áp suất tuyệt đối (Absolute Pressure) chứ không phải áp suất dư (Gauge Pressure).',
-                    isTrue: true,
-                    exp: 'Đúng. Phương trình trạng thái $pV = nRT$ yêu cầu $p$ là áp suất tuyệt đối. Nếu dùng áp suất dư (chỉ đo phần chênh lệch so với khí quyển), tích số $pV$ sẽ không ra hằng số.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu ở bước tiếp theo, thể tích khí được nén đến $V_2 = 25,0$ mL (giảm một nửa) trong điều kiện đẳng nhiệt lí tưởng, cảm biến sẽ chỉ mức $p_2 = 200$ kPa.',
-                    isTrue: true,
-                    exp: 'Đúng. Theo định luật Boyle, $p$ tỉ lệ nghịch với $V$. Khi $V$ giảm 2 lần thì $p$ tăng 2 lần: $p_2 = p_1 \\cdot \\frac{V_1}{V_2} = 100 \\cdot \\frac{50}{25} = 200$ kPa.'
-                },
-                {
-                    id: 'd',
-                    text: 'Việc xoa một lớp mỏng dầu bôi trơn dọc theo vành cao su của pittông trước khi làm thí nghiệm là thao tác nhằm giảm sai số hệ thống do rò rỉ khí.',
-                    isTrue: true,
-                    exp: 'Đúng. Dầu bôi trơn vừa làm giảm ma sát (giúp đẩy nhẹ tay hơn, ít sinh nhiệt bề mặt), vừa đóng vai trò như một lớp gioăng kín khí, ngăn chặn các phân tử khí thoát ra ngoài làm thay đổi số mol $n$ của hệ.'
-                }
-            ]
-        },
-        {
-            id: 'q12',
-            image: 'bai2_khi.png',
-            context: '<strong>Câu 2. Khảo sát Định luật Charles bằng ống mao dẫn</strong><br>Để khảo sát dãn nở đẳng áp, học sinh dùng một ống mao dẫn thủy tinh dài, tiết diện đều, một đầu bịt kín, đầu kia hở hướng lên trên. Một giọt thủy ngân dài $h = 15$ mm được nhỏ vào ống để nhốt một cột không khí. Nhúng ngập phần chứa không khí của ống vào một bình đun nước (Water bath) có gắn nhiệt kế kỹ thuật số. Áp suất khí quyển là $p_0 = 760$ mmHg. Bỏ qua sự dãn nở của thủy tinh.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Khối lượng không khí bị nhốt bên trong ống luôn chịu một áp suất không đổi là 775 mmHg trong suốt quá trình đun nóng nước.',
-                    isTrue: true,
-                    exp: 'Đúng. Áp suất khí nhốt $p = p_0 + p_{Hg} = 760 + 15 = 775$ mmHg. Vì miệng ống luôn hở lên trên và khối lượng giọt thủy ngân không đổi nên áp suất này cố định (quá trình đẳng áp).'
-                },
-                {
-                    id: 'b',
-                    text: 'Trong quá trình gia nhiệt, chiều dài của cột không khí tỉ lệ thuận với nhiệt độ bách phân $t$ (đo bằng °C).',
-                    isTrue: false,
-                    exp: 'Sai. Theo định luật Charles, thể tích $V$ (và chiều dài $L$) tỉ lệ thuận với nhiệt độ tuyệt đối $T$ (thang Kelvin). Mối liên hệ với nhiệt độ $t$ là hàm bậc nhất dạng $L = a \\cdot t + b$, không phải đồ thị tỉ lệ thuận đi qua gốc tọa độ.'
-                },
-                {
-                    id: 'c',
-                    text: 'Để kết quả đo chính xác, học sinh phải đảm bảo toàn bộ chiều dài của cột không khí bị nhốt phải nằm chìm hoàn toàn dưới mặt nước trong bình đun.',
-                    isTrue: true,
-                    exp: 'Đúng. Điều này đảm bảo toàn bộ khối khí có nhiệt độ đồng đều và bằng đúng với nhiệt độ của nước mà nhiệt kế đang đo.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu đun nước đến nhiệt độ quá cao khiến một phần nhỏ thủy ngân bị bay hơi, kết quả nghiệm đúng định luật Charles vẫn không bị ảnh hưởng vì áp suất khí quyển $p_0$ không đổi.',
-                    isTrue: false,
-                    exp: 'Sai. Nếu thủy ngân bay hơi, khối lượng giọt chất lỏng giảm dẫn đến cột áp $p_{Hg}$ giảm. Áp suất tổng cộng $p = p_0 + p_{Hg}$ sẽ bị thay đổi. Quá trình mất đi tính đẳng áp, gây sai số nghiêm trọng.'
-                }
-            ]
-        },
-        {
-            id: 'q13',
-            context: '<strong>Câu 3. Phát hiện lỗi thực nghiệm qua bảng số liệu Định luật Boyle</strong><br>Học sinh thực hiện nén đẳng nhiệt khối khí trong xilanh và thu được bảng số liệu sau:<br>(Lần 1) $V = 20,0$ mL ; $p = 100$ kPa<br>(Lần 2) $V = 16,0$ mL ; $p = 126$ kPa<br>(Lần 3) $V = 12,0$ mL ; $p = 170$ kPa<br>(Lần 4) $V = 10,0$ mL ; $p = 208$ kPa',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Tích số $p \\cdot V$ của lần đo thứ 4 lớn hơn tích số $p \\cdot V$ của lần đo thứ 1.',
-                    isTrue: true,
-                    exp: 'Đúng. Lần 1: $100 \\cdot 20,0 = 2000$. Lần 4: $208 \\cdot 10,0 = 2080$. Tích số đã tăng lên ($2080 > 2000$).'
-                },
-                {
-                    id: 'b',
-                    text: 'Sự gia tăng liên tục của tích số $p \\cdot V$ qua các lần đo chứng tỏ đã có một lượng không khí rò rỉ từ ngoài vào trong xilanh.',
-                    isTrue: false,
-                    exp: 'Sai. Áp suất trong xilanh ($100$ - $208$ kPa) luôn lớn hơn hoặc bằng áp suất khí quyển (~$100$ kPa). Nếu có rò rỉ, khí chỉ có thể xì từ trong ra ngoài (làm số mol $n$ giảm). Tích $p \\cdot V$ tăng chứng tỏ lỗi không phải do rò rỉ.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nguyên nhân chính của hiện tượng tích $p \\cdot V$ tăng dần này là do học sinh đã nén pittông liên tục mà không chờ hệ tỏa nhiệt để cân bằng lại nhiệt độ phòng.',
-                    isTrue: true,
-                    exp: 'Đúng. Việc nén nhanh khiến khí sinh nhiệt, nhiệt độ $T$ tăng lên. Theo phương trình $p \\cdot V = nRT$, khi $T$ tăng thì tích $p \\cdot V$ sẽ tăng theo, lớn hơn giá trị hằng số ở nhiệt độ phòng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu dùng số liệu của Lần 1 và Lần 4 để tính sai số tương đối (so với giá trị ở Lần 1), thì sai số của tích $p \\cdot V$ do hiệu ứng tăng nhiệt này gây ra là 4,0%.',
-                    isTrue: true,
-                    exp: 'Đúng. Độ chênh lệch: $\\Delta (pV) = 2080 - 2000 = 80$. Sai số tương đối: $\\delta = \\frac{80}{2000} \\cdot 100\\% = 4,0\\%$.'
-                }
-            ]
-        },
-        {
-            id: 'q14',
-            context: '<strong>Câu 4. Đo nhiệt độ không tuyệt đối bằng phương pháp ngoại suy đồ thị</strong><br>Từ thí nghiệm ống mao dẫn (Định luật Charles), học sinh thu được hai điểm dữ liệu về nhiệt độ $t$ (theo thang bách phân) và chiều dài cột khí $L$: Điểm A ($t_1 = 20°C$, $L_1 = 10,0$ cm) và Điểm B ($t_2 = 80°C$, $L_2 = 12,0$ cm). Giả sử hàm phụ thuộc là tuyến tính $L = a \\cdot t + b$.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Hệ số góc $a$ của đường thẳng đi qua 2 điểm dữ liệu này có giá trị là 1/30 cm/°C.',
-                    isTrue: true,
-                    exp: 'Đúng. $a = \\frac{L_2 - L_1}{t_2 - t_1} = \\frac{12,0 - 10,0}{80 - 20} = \\frac{2,0}{60} = \\frac{1}{30}$ cm/°C.'
-                },
-                {
-                    id: 'b',
-                    text: 'Tại nhiệt độ 0°C, chiều dài lí thuyết của cột khí là $b = 9,33$ cm.',
-                    isTrue: true,
-                    exp: 'Đúng. Thay điểm A vào phương trình: $10,0 = \\frac{1}{30} \\cdot 20 + b \\Rightarrow b = 10,0 - \\frac{20}{30} = \\frac{28}{3} \\approx 9,33$ cm.'
-                },
-                {
-                    id: 'c',
-                    text: 'Theo kết quả đo đạc này, nhiệt độ không tuyệt đối (khi thể tích khí triệt tiêu $L = 0$) được ngoại suy xấp xỉ bằng -280°C.',
-                    isTrue: true,
-                    exp: 'Đúng. Giải phương trình khi $L = 0$: $0 = \\frac{1}{30} \\cdot t + \\frac{28}{3} \\Rightarrow t = -280$ °C.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nguyên nhân chính làm cho giá trị ngoại suy (-280°C) sai lệch so với giá trị chuẩn (-273,15°C) là do học sinh đã không tính đến sự dãn nở vì nhiệt của vỏ ống thủy tinh.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi nhiệt độ tăng, ống thủy tinh cũng dãn nở làm tiết diện $S$ của ống to ra. Cùng một thể tích nhưng tiết diện to hơn nên chiều cao $L$ đo được sẽ thấp hơn thực tế. Điều này làm độ dốc $a$ bị nhỏ đi, khiến giao điểm cắt trục hoành bị lùi xa hơn về phía âm.'
-                }
-            ]
-        },
-        {
-            id: 'q15',
-            image: 'bai5_khi.png',
-            context: '<strong>Câu 5. Kỹ thuật "Tuyến tính hóa" đồ thị Định luật Boyle</strong><br>Khi biểu diễn dữ liệu của Định luật Boyle, đồ thị $p$ theo $V$ là một đường Hypebol cong, rất khó để kẻ đường xu hướng trung bình (Trendline) bằng mắt hay thước thẳng. Để khắc phục, sinh viên thực hành lập một cột dữ liệu mới $x = \\frac{1}{V}$ và vẽ đồ thị $p$ theo đại lượng $x$ này.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Phương trình lý thuyết của đồ thị mới có dạng $p = (nRT) \\cdot x$.',
-                    isTrue: true,
-                    exp: 'Đúng. Xuất phát từ $pV = nRT \\Rightarrow p = nRT \\cdot \\left(\\frac{1}{V}\\right) = (nRT) \\cdot x$.'
-                },
-                {
-                    id: 'b',
-                    text: 'Đồ thị của $p$ theo $x$ là một đường thẳng đi qua gốc tọa độ O, điều này giúp việc nhận diện các điểm dữ liệu bị lỗi trở nên trực quan và dễ dàng hơn.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây chính là mục đích cốt lõi của phương pháp hóa tuyến tính đồ thị trong phòng Lab. Các điểm sai số sẽ bị chệch ra khỏi đường thẳng rất rõ ràng.'
-                },
-                {
-                    id: 'c',
-                    text: 'Hệ số góc của đường đồ thị $p$ theo $x$ có đơn vị vật lí tương đương với đơn vị của Công (Joule).',
-                    isTrue: true,
-                    exp: 'Đúng. Hệ số góc $k = \\frac{p}{x} = p \\cdot V$. Áp suất $p$ ($\\text{N/m}^2$) nhân với thể tích $V$ ($\\text{m}^3$) sẽ ra $\\text{N}\\cdot\\text{m}$, chính là đơn vị Joule (J).'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu thực hiện lại thí nghiệm ở một nhiệt độ phòng lạnh hơn, đường đồ thị $p$ theo $x$ mới sẽ dốc hơn (hệ số góc lớn hơn) so với đường ban đầu.',
-                    isTrue: false,
-                    exp: 'Sai. Hệ số góc của đồ thị là $k = nRT$. Khi nhiệt độ $T$ giảm (trời lạnh hơn), hệ số góc $k$ phải giảm xuống, đồ thị sẽ thoải hơn (ít dốc hơn).'
-                }
-            ]
-        },
-        {
-            id: 'q16',
-            image: 'bai6_khi.png',
-            context: '<strong>Câu 6. Phương pháp cột thủy ngân (Ống chữ U) khảo sát quá trình đẳng nhiệt</strong><br>Sử dụng ống thủy tinh hình chữ U tiết diện đều $S$, nhánh trái bịt kín, nhánh phải hở ra khí quyển. Ban đầu ở nhiệt độ $T_0$, đổ thủy ngân vào ống sao cho hai mực thủy ngân ngang nhau, cột khí bên nhánh trái dài $L_1 = 20,0$ cm. Áp suất khí quyển $p_0 = 760$ mmHg. Từ từ rót thêm thủy ngân vào nhánh phải để nén khí. Bỏ qua sự thay đổi nhiệt độ phòng.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Ở trạng thái ban đầu, áp suất của khối khí bị nhốt trong nhánh trái bằng đúng 760 mmHg.',
-                    isTrue: true,
-                    exp: 'Đúng. Hai nhánh có cùng mực chất lỏng thông nhau nên áp suất bằng nhau: $p_1 = p_0 = 760$ mmHg.'
-                },
-                {
-                    id: 'b',
-                    text: 'Sau khi rót thêm thủy ngân vào nhánh phải, mực thủy ngân ở nhánh hở (phải) sẽ luôn thấp hơn mực thủy ngân ở nhánh kín (trái).',
-                    isTrue: false,
-                    exp: 'Sai. Khi rót thêm, khí nhánh trái bị nén nên áp suất $p_2 > p_0$. Để cân bằng, mặt thoáng nhánh phải phải chịu thêm một cột áp thủy tĩnh, do đó mực thủy ngân nhánh phải phải cao hơn nhánh trái.'
-                },
-                {
-                    id: 'c',
-                    text: 'Rót đến khi chiều dài cột khí ở nhánh trái chỉ còn $L_2 = 16,0$ cm, áp suất khối khí lúc này là 950 mmHg.',
-                    isTrue: true,
-                    exp: 'Đúng. Quá trình đẳng nhiệt: $p_1 V_1 = p_2 V_2 \\Leftrightarrow 760 \\cdot (20,0 \\cdot S) = p_2 \\cdot (16,0 \\cdot S) \\Rightarrow p_2 = 760 \\cdot \\frac{20}{16} = 950$ mmHg.'
-                },
-                {
-                    id: 'd',
-                    text: 'Độ chênh lệch mặt thoáng thủy ngân giữa hai nhánh (nhánh phải cao hơn nhánh trái) ở trạng thái sau cùng là 19,0 cm.',
-                    isTrue: true,
-                    exp: 'Đúng. Chênh lệch áp suất $\\Delta p = p_2 - p_0 = 950 - 760 = 190$ mmHg. Tương ứng với cột thủy ngân cao $190\\text{ mm} = 19,0\\text{ cm}$.'
-                }
-            ]
-        },
-        {
-            id: 'q17',
-            image: 'bai7_khi.png',
-            context: '<strong>Câu 7. Thí nghiệm dãn nở đẳng áp với bình cầu và xilanh (Định luật Charles)</strong><br>Một bình cầu thủy tinh có thể tích ruột $V_0 = 250$ mL được nối kín bằng một ống nhựa nhỏ mềm vào một xilanh nằm ngang. Pittông của xilanh có thể di chuyển trơn tru không ma sát. Ban đầu, toàn bộ bình cầu và xilanh chứa không khí ở nhiệt độ $T_1 = 300$ K, số chỉ trên xilanh là $V_{\\text{xilanh } 1} = 10,0$ mL. (Bỏ qua thể tích ống nối). Ngâm bình cầu vào chậu nước nóng, chờ hệ cân bằng ở nhiệt độ $T_2 = 330$ K.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Thể tích ban đầu của khối khí trong hệ thống là 260,0 mL.',
-                    isTrue: true,
-                    exp: 'Đúng. $V_1 = V_{\\text{bình}} + V_{\\text{xilanh}} = 250 + 10,0 = 260,0$ mL.'
-                },
-                {
-                    id: 'b',
-                    text: 'Việc để pittông xilanh tự do di chuyển là điều kiện bắt buộc để khối khí thực hiện dãn nở trong một quá trình đẳng áp.',
-                    isTrue: true,
-                    exp: 'Đúng. Pittông tự do giúp áp suất khí bên trong luôn cân bằng với áp suất khí quyển (và ma sát, nếu có) ở bên ngoài. Khi thể tích dãn ra, áp suất không bị tăng lên.'
-                },
-                {
-                    id: 'c',
-                    text: 'Theo tính toán lí thuyết của Định luật Charles, thể tích toàn bộ khối khí ở trạng thái cân bằng mới là 286,0 mL.',
-                    isTrue: true,
-                    exp: 'Đúng. $\\frac{V_1}{T_1} = \\frac{V_2}{T_2} \\Rightarrow \\frac{260,0}{300} = \\frac{V_2}{330} \\Rightarrow V_2 = 260,0 \\cdot \\frac{330}{300} = 286,0$ mL.'
-                },
-                {
-                    id: 'd',
-                    text: 'Kết thúc thí nghiệm, số chỉ của pittông trên thân xilanh sẽ nằm ở vạch 26,0 mL.',
-                    isTrue: false,
-                    exp: 'Sai. Thể tích tổng là $286,0$ mL. Vì bình cầu thủy tinh không co dãn (thể tích vẫn chiếm $250$ mL), phần khí dãn nở sẽ bị dồn toàn bộ vào xilanh. Thể tích trong xilanh lúc này là $V_{\\text{xilanh } 2} = 286,0 - 250 = 36,0$ mL. Số chỉ sẽ là $36,0$ chứ không phải $26,0$.'
-                }
-            ]
-        },
-        {
-            id: 'q18',
-            context: '<strong>Câu 8. Xử lý sự cố rò rỉ khí trong thiết bị</strong><br>Học sinh thực hiện đo $p, V$ của một xilanh theo chiều nén dần. Mặc dù học sinh đã nén rất chậm để đảm bảo nhiệt độ $T$ không đổi, nhưng tích số $p \\cdot V$ vẫn giảm dần qua các lần đo như sau:<br>$V = 50$ mL, $p = 100$ kPa $\\Rightarrow pV = 5000$<br>$V = 40$ mL, $p = 120$ kPa $\\Rightarrow pV = 4800$<br>$V = 30$ mL, $p = 150$ kPa $\\Rightarrow pV = 4500$',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Hiện tượng giảm liên tục của tích $p \\cdot V$ là minh chứng rõ ràng cho việc hở gioăng khiến khí bị xì ra ngoài không khí.',
-                    isTrue: true,
-                    exp: 'Đúng. Phương trình $p \\cdot V = nRT$. Nếu $T$ đã giữ không đổi mà $pV$ vẫn giảm, điều đó bắt buộc số mol khí $n$ trong xilanh đã bị giảm (khí thoát ra ngoài).'
-                },
-                {
-                    id: 'b',
-                    text: 'Tại thời điểm thể tích nén đến mức 30 mL, đã có đúng 10% lượng phân tử khí ban đầu bị thoát ra ngoài.',
-                    isTrue: true,
-                    exp: 'Đúng. Tỉ lệ số mol còn lại: $\\frac{n_3}{n_1} = \\frac{p_3 V_3}{p_1 V_1} = \\frac{4500}{5000} = 0,90$. Số lượng khí còn lại là $90\\%$, suy ra đã bị hụt đi $10\\%$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Áp suất đo được tại mốc 30 mL là 150 kPa. Nếu xilanh hoàn toàn kín khí, áp suất lí thuyết lúc này phải đạt 166,7 kPa.',
-                    isTrue: true,
-                    exp: 'Đúng. Nếu kín khí ($pV = 5000 = \\text{const}$), áp suất lí thuyết khi $V = 30$ mL là $p_{\\text{lt}} = \\frac{5000}{30} = \\frac{500}{3} \\approx 166,7$ kPa.'
-                },
-                {
-                    id: 'd',
-                    text: 'Cách tốt nhất để khắc phục triệt để sai số này mà không cần thay xilanh là cứ đẩy pittông thật nhanh để khí không có đủ thời gian kịp xì qua khe hở.',
-                    isTrue: false,
-                    exp: 'Sai. Mặc dù nén nhanh làm giảm thời gian xì khí, nhưng nó lại vi phạm nghiêm trọng điều kiện "đẳng nhiệt" (làm nhiệt độ $T$ tăng mạnh). Cách khắc phục đúng là phải làm lại gioăng cao su hoặc bôi thêm mỡ bôi trơn.'
-                }
-            ]
-        },
-        {
-            id: 'q19',
-            image: 'bai7_khi.png',
-            context: '<strong>Câu 9. Phân tích đồ thị sự phụ thuộc của $V$ vào $T$</strong><br>Phần mềm phòng Lab xuất ra đồ thị biểu diễn sự phụ thuộc của thể tích $V$ vào nhiệt độ $T$ (thang Kelvin) của cùng một lượng khí xác định. Đồ thị gồm hai đường thẳng đi qua gốc tọa độ O, tương ứng với hai lần thực hiện thí nghiệm với hai vật nặng khác nhau (có khối lượng $m_A > m_B$) đè lên pittông xilanh. (Áp suất khí quyển xem như cố định).',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Trong mỗi lần thực hiện (ứng với một đường thẳng đồ thị), áp suất của khối khí bị nhốt trong xilanh là tăng dần theo nhiệt độ.',
-                    isTrue: false,
-                    exp: 'Sai. Pittông gắn vật nặng di chuyển tự do thì áp suất khối khí $p = p_{\\text{kq}} + \\frac{mg}{S} = \\text{const}$. Đây là quá trình đẳng áp, áp suất không tăng.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cả hai đường thẳng đồ thị dãn nở đẳng áp này đều cắt nhau tại điểm gốc tọa độ $(0, 0)$.',
-                    isTrue: true,
-                    exp: 'Đúng. Định luật Charles $V = k \\cdot T$. Cả hai quá trình dãn nở đẳng áp của khí lí tưởng khi ngoại suy đều hội tụ về thể tích $0$ tại nhiệt độ $0$ K.'
-                },
-                {
-                    id: 'c',
-                    text: 'Đường đồ thị tương ứng với vật nặng $m_A$ sẽ có độ dốc (hệ số góc) nhỏ hơn đường đồ thị của vật nặng $m_B$.',
-                    isTrue: true,
-                    exp: 'Đúng. Từ phương trình $V = \\left(\\frac{nR}{p}\\right) \\cdot T$. Vì $m_A > m_B$ nên áp suất do pittông A nén lên khí lớn hơn ($p_A > p_B$). Áp suất nằm ở mẫu số, do đó $p_A$ lớn hơn sẽ làm cho hệ số góc $\\left(\\frac{nR}{p_A}\\right)$ nhỏ hơn. Đường đồ thị A nằm dưới đường đồ thị B.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu thay khí thực đang đo bằng khí lí tưởng, đường đồ thị $V-T$ sẽ bị bẻ cong thành dạng parabol.',
-                    isTrue: false,
-                    exp: 'Sai. Khí lí tưởng hoàn toàn tuân theo tuyến tính $V \\sim T$ (đường thẳng). Khí thực mới là tác nhân có thể gây ra những sai lệch phi tuyến ở điều kiện nhiệt độ rất thấp hoặc áp suất rất cao.'
-                }
-            ]
-        },
-        {
-            id: 'q20',
-            image: 'bai10_khi.png',
-            context: '<strong>Câu 10. Nguyên tắc thiết kế và ảnh hưởng của thiết bị đo</strong><br>Một thiết bị khảo sát các định luật chất khí đa năng được thiết kế gồm: Xilanh kim loại thành mỏng, pittông nhẹ có gioăng cao su tốt, cảm biến áp suất tuyệt đối và cảm biến nhiệt độ nhúng sâu vào lòng xilanh.',
-            statements: [
-                {
-                    id: 'a',
-                    text: 'Xilanh được làm bằng kim loại thành mỏng giúp khả năng trao đổi nhiệt với môi trường tốt hơn, thuận lợi cho việc giữ khối khí ở trạng thái đẳng nhiệt (Định luật Boyle).',
-                    isTrue: true,
-                    exp: 'Đúng. Kim loại thành mỏng dẫn nhiệt rất tốt. Khi khí bị nén sinh nhiệt, nhiệt lượng sẽ nhanh chóng tản ra môi trường, giúp nhiệt độ $T$ bên trong nhanh chóng quay về bằng nhiệt độ phòng.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cảm biến áp suất tuyệt đối giúp học sinh có thể dùng trực tiếp số liệu hiển thị trên màn hình để đưa vào phương trình tính toán mà không cần cộng thêm áp suất khí quyển.',
-                    isTrue: true,
-                    exp: 'Đúng. Phương trình trạng thái khí lí tưởng yêu cầu dùng áp suất tuyệt đối (Absolute pressure).'
-                },
-                {
-                    id: 'c',
-                    text: 'Trong thí nghiệm đo dãn nở đẳng áp, nếu học sinh vô tình tì mạnh tay lên pittông trong lúc ghi nhận thể tích, kết quả đo sẽ không bị ảnh hưởng vì số mol khí không đổi.',
-                    isTrue: false,
-                    exp: 'Sai. Tì tay lên pittông làm tăng áp lực, dẫn đến áp suất $p$ tăng vọt, phá vỡ môi trường áp suất không đổi (đẳng áp) đang được giả định trong định luật Charles.'
-                },
-                {
-                    id: 'd',
-                    text: 'Việc lựa chọn khối khí ban đầu có thể tích càng nhỏ (càng gần số 0) sẽ càng làm giảm sai số tương đối khi đọc vạch chia thể tích trên xilanh.',
-                    isTrue: false,
-                    exp: 'Sai. Nếu lấy $V$ quá nhỏ, độ biến thiên thể tích $\\Delta V$ sẽ rất bé. Sai số cực đại do mắt đọc (ví dụ $\\pm 0,5$ mL) sẽ chiếm tỉ trọng rất lớn so với giá trị đo được, làm cho sai số tương đối ($\\frac{\\Delta V}{V} \\cdot 100\\%$) tăng vọt. Cần chọn thể tích đủ lớn để độ phân giải của thang chia mang lại sai số nhỏ.'
-                }
-            ]
-        }
-    ],
+    {
+        id: 'khi_q11',
+        image: 'bai1_khi.png',
+        context: '<strong>Câu 1. Quy trình đo đạc Định luật Boyle bằng cảm biến áp suất</strong><br>Một nhóm học sinh sử dụng xilanh nhựa trong suốt có vạch chia thể tích (đơn vị mL), đầu xilanh nối kín với cảm biến áp suất Vernier. Đặt xilanh nằm ngang trên bàn. Ban đầu, kéo pittông để khối khí có thể tích $V_1 = 50,0$ mL, áp suất đo được là $p_1 = 100$ kPa. Nhóm tiến hành đẩy pittông để giảm dần thể tích, ghi nhận áp suất tương ứng. Nhiệt độ phòng duy trì ở 25°C.',
+        statements: [
+            { id: 'a', text: 'Để đảm bảo quá trình thực nghiệm đúng với điều kiện của định luật Boyle, học sinh cần ấn pittông thật nhanh và đọc số liệu trên cảm biến ngay lập tức.', isTrue: false, exp: 'Sai. Ấn nhanh sẽ thực hiện một quá trình nén đoạn nhiệt. Công cơ học sẽ chuyển hóa làm tăng nội năng, khiến khối khí nóng lên (nhiệt độ tăng). Định luật Boyle yêu cầu quá trình phải đẳng nhiệt, do đó phải nén thật chậm hoặc nén xong phải chờ vài phút để khí tỏa nhiệt ra môi trường, cân bằng lại ở 25°C rồi mới đọc số liệu.' },
+            { id: 'b', text: 'Cảm biến sử dụng trong thí nghiệm này phải được cài đặt ở chế độ đo áp suất tuyệt đối (Absolute Pressure) chứ không phải áp suất dư (Gauge Pressure).', isTrue: true, exp: 'Đúng. Phương trình trạng thái $pV = nRT$ yêu cầu $p$ là áp suất tuyệt đối. Nếu dùng áp suất dư (chỉ đo phần chênh lệch so với khí quyển), tích số $pV$ sẽ không ra hằng số.' },
+            { id: 'c', text: 'Nếu ở bước tiếp theo, thể tích khí được nén đến $V_2 = 25,0$ mL (giảm một nửa) trong điều kiện đẳng nhiệt lí tưởng, cảm biến sẽ chỉ mức $p_2 = 200$ kPa.', isTrue: true, exp: 'Đúng. Theo định luật Boyle, $p$ tỉ lệ nghịch với $V$. Khi $V$ giảm 2 lần thì $p$ tăng 2 lần: $p_2 = p_1 \\cdot \\frac{V_1}{V_2} = 100 \\cdot \\frac{50}{25} = 200$ kPa.' },
+            { id: 'd', text: 'Việc xoa một lớp mỏng dầu bôi trơn dọc theo vành cao su của pittông trước khi làm thí nghiệm là thao tác nhằm giảm sai số hệ thống do rò rỉ khí.', isTrue: true, exp: 'Đúng. Dầu bôi trơn vừa làm giảm ma sát (giúp đẩy nhẹ tay hơn, ít sinh nhiệt bề mặt), vừa đóng vai trò như một lớp gioăng kín khí, ngăn chặn các phân tử khí thoát ra ngoài làm thay đổi số mol $n$ của hệ.' }
+        ]
+    },
+    {
+        id: 'khi_q12',
+        image: 'bai2_khi.png',
+        context: '<strong>Câu 2. Khảo sát Định luật Charles bằng ống mao dẫn</strong><br>Để khảo sát dãn nở đẳng áp, học sinh dùng một ống mao dẫn thủy tinh dài, tiết diện đều, một đầu bịt kín, đầu kia hở hướng lên trên. Một giọt thủy ngân dài $h = 15$ mm được nhỏ vào ống để nhốt một cột không khí. Nhúng ngập phần chứa không khí của ống vào một bình đun nước (Water bath) có gắn nhiệt kế kỹ thuật số. Áp suất khí quyển là $p_0 = 760$ mmHg. Bỏ qua sự dãn nở của thủy tinh.',
+        statements: [
+            { id: 'a', text: 'Khối lượng không khí bị nhốt bên trong ống luôn chịu một áp suất không đổi là 775 mmHg trong suốt quá trình đun nóng nước.', isTrue: true, exp: 'Đúng. Áp suất khí nhốt $p = p_0 + p_{Hg} = 760 + 15 = 775$ mmHg. Vì miệng ống luôn hở lên trên và khối lượng giọt thủy ngân không đổi nên áp suất này cố định (quá trình đẳng áp).' },
+            { id: 'b', text: 'Trong quá trình gia nhiệt, chiều dài của cột không khí tỉ lệ thuận với nhiệt độ bách phân $t$ (đo bằng °C).', isTrue: false, exp: 'Sai. Theo định luật Charles, thể tích $V$ (và chiều dài $L$) tỉ lệ thuận với nhiệt độ tuyệt đối $T$ (thang Kelvin). Mối liên hệ với nhiệt độ $t$ là hàm bậc nhất dạng $L = a \\cdot t + b$, không phải đồ thị tỉ lệ thuận đi qua gốc tọa độ.' },
+            { id: 'c', text: 'Để kết quả đo chính xác, học sinh phải đảm bảo toàn bộ chiều dài của cột không khí bị nhốt phải nằm chìm hoàn toàn dưới mặt nước trong bình đun.', isTrue: true, exp: 'Đúng. Điều này đảm bảo toàn bộ khối khí có nhiệt độ đồng đều và bằng đúng với nhiệt độ của nước mà nhiệt kế đang đo.' },
+            { id: 'd', text: 'Nếu đun nước đến nhiệt độ quá cao khiến một phần nhỏ thủy ngân bị bay hơi, kết quả nghiệm đúng định luật Charles vẫn không bị ảnh hưởng vì áp suất khí quyển $p_0$ không đổi.', isTrue: false, exp: 'Sai. Nếu thủy ngân bay hơi, khối lượng giọt chất lỏng giảm dẫn đến cột áp $p_{Hg}$ giảm. Áp suất tổng cộng $p = p_0 + p_{Hg}$ sẽ bị thay đổi. Quá trình mất đi tính đẳng áp, gây sai số nghiêm trọng.' }
+        ]
+    },
+    {
+        id: 'khi_q13',
+        context: '<strong>Câu 3. Phát hiện lỗi thực nghiệm qua bảng số liệu Định luật Boyle</strong><br>Học sinh thực hiện nén đẳng nhiệt khối khí trong xilanh và thu được bảng số liệu sau:<br>(Lần 1) $V = 20,0$ mL ; $p = 100$ kPa<br>(Lần 2) $V = 16,0$ mL ; $p = 126$ kPa<br>(Lần 3) $V = 12,0$ mL ; $p = 170$ kPa<br>(Lần 4) $V = 10,0$ mL ; $p = 208$ kPa',
+        statements: [
+            { id: 'a', text: 'Tích số $p \\cdot V$ của lần đo thứ 4 lớn hơn tích số $p \\cdot V$ của lần đo thứ 1.', isTrue: true, exp: 'Đúng. Lần 1: $100 \\cdot 20,0 = 2000$. Lần 4: $208 \\cdot 10,0 = 2080$. Tích số đã tăng lên ($2080 > 2000$).' },
+            { id: 'b', text: 'Sự gia tăng liên tục của tích số $p \\cdot V$ qua các lần đo chứng tỏ đã có một lượng không khí rò rỉ từ ngoài vào trong xilanh.', isTrue: false, exp: 'Sai. Áp suất trong xilanh ($100$ - $208$ kPa) luôn lớn hơn hoặc bằng áp suất khí quyển (~$100$ kPa). Nếu có rò rỉ, khí chỉ có thể xì từ trong ra ngoài (làm số mol $n$ giảm). Tích $p \\cdot V$ tăng chứng tỏ lỗi không phải do rò rỉ.' },
+            { id: 'c', text: 'Nguyên nhân chính của hiện tượng tích $p \\cdot V$ tăng dần này là do học sinh đã nén pittông liên tục mà không chờ hệ tỏa nhiệt để cân bằng lại nhiệt độ phòng.', isTrue: true, exp: 'Đúng. Việc nén nhanh khiến khí sinh nhiệt, nhiệt độ $T$ tăng lên. Theo phương trình $p \\cdot V = nRT$, khi $T$ tăng thì tích $p \\cdot V$ sẽ tăng theo, lớn hơn giá trị hằng số ở nhiệt độ phòng.' },
+            { id: 'd', text: 'Nếu dùng số liệu của Lần 1 và Lần 4 để tính sai số tương đối (so với giá trị ở Lần 1), thì sai số của tích $p \\cdot V$ do hiệu ứng tăng nhiệt này gây ra là 4,0%.', isTrue: true, exp: 'Đúng. Độ chênh lệch: $\\Delta (pV) = 2080 - 2000 = 80$. Sai số tương đối: $\\delta = \\frac{80}{2000} \\cdot 100\\% = 4,0\\%$.' }
+        ]
+    },
+    {
+        id: 'khi_q14',
+        context: '<strong>Câu 4. Đo nhiệt độ không tuyệt đối bằng phương pháp ngoại suy đồ thị</strong><br>Từ thí nghiệm ống mao dẫn (Định luật Charles), học sinh thu được hai điểm dữ liệu về nhiệt độ $t$ (theo thang bách phân) và chiều dài cột khí $L$: Điểm A ($t_1 = 20°C$, $L_1 = 10,0$ cm) và Điểm B ($t_2 = 80°C$, $L_2 = 12,0$ cm). Giả sử hàm phụ thuộc là tuyến tính $L = a \\cdot t + b$.',
+        statements: [
+            { id: 'a', text: 'Hệ số góc $a$ của đường thẳng đi qua 2 điểm dữ liệu này có giá trị là 1/30 cm/°C.', isTrue: true, exp: 'Đúng. $a = \\frac{L_2 - L_1}{t_2 - t_1} = \\frac{12,0 - 10,0}{80 - 20} = \\frac{2,0}{60} = \\frac{1}{30}$ cm/°C.' },
+            { id: 'b', text: 'Tại nhiệt độ 0°C, chiều dài lí thuyết của cột khí là $b = 9,33$ cm.', isTrue: true, exp: 'Đúng. Thay điểm A vào phương trình: $10,0 = \\frac{1}{30} \\cdot 20 + b \\Rightarrow b = 10,0 - \\frac{20}{30} = \\frac{28}{3} \\approx 9,33$ cm.' },
+            { id: 'c', text: 'Theo kết quả đo đạc này, nhiệt độ không tuyệt đối (khi thể tích khí triệt tiêu $L = 0$) được ngoại suy xấp xỉ bằng -280°C.', isTrue: true, exp: 'Đúng. Giải phương trình khi $L = 0$: $0 = \\frac{1}{30} \\cdot t + \\frac{28}{3} \\Rightarrow t = -280$ °C.' },
+            { id: 'd', text: 'Nguyên nhân chính làm cho giá trị ngoại suy (-280°C) sai lệch so với giá trị chuẩn (-273,15°C) là do học sinh đã không tính đến sự dãn nở vì nhiệt của vỏ ống thủy tinh.', isTrue: true, exp: 'Đúng. Khi nhiệt độ tăng, ống thủy tinh cũng dãn nở làm tiết diện $S$ của ống to ra. Cùng một thể tích nhưng tiết diện to hơn nên chiều cao $L$ đo được sẽ thấp hơn thực tế. Điều này làm độ dốc $a$ bị nhỏ đi, khiến giao điểm cắt trục hoành bị lùi xa hơn về phía âm.' }
+        ]
+    },
+    {
+        id: 'khi_q15',
+        image: 'bai5_khi.png',
+        context: '<strong>Câu 5. Kỹ thuật "Tuyến tính hóa" đồ thị Định luật Boyle</strong><br>Khi biểu diễn dữ liệu của Định luật Boyle, đồ thị $p$ theo $V$ là một đường Hypebol cong, rất khó để kẻ đường xu hướng trung bình (Trendline) bằng mắt hay thước thẳng. Để khắc phục, sinh viên thực hành lập một cột dữ liệu mới $x = \\frac{1}{V}$ và vẽ đồ thị $p$ theo đại lượng $x$ này.',
+        statements: [
+            { id: 'a', text: 'Phương trình lý thuyết của đồ thị mới có dạng $p = (nRT) \\cdot x$.', isTrue: true, exp: 'Đúng. Xuất phát từ $pV = nRT \\Rightarrow p = nRT \\cdot \\left(\\frac{1}{V}\\right) = (nRT) \\cdot x$.' },
+            { id: 'b', text: 'Đồ thị của $p$ theo $x$ là một đường thẳng đi qua gốc tọa độ O, điều này giúp việc nhận diện các điểm dữ liệu bị lỗi trở nên trực quan và dễ dàng hơn.', isTrue: true, exp: 'Đúng. Đây chính là mục đích cốt lõi của phương pháp hóa tuyến tính đồ thị trong phòng Lab. Các điểm sai số sẽ bị chệch ra khỏi đường thẳng rất rõ ràng.' },
+            { id: 'c', text: 'Hệ số góc của đường đồ thị $p$ theo $x$ có đơn vị vật lí tương đương với đơn vị của Công (Joule).', isTrue: true, exp: 'Đúng. Hệ số góc $k = \\frac{p}{x} = p \\cdot V$. Áp suất $p$ ($\\text{N/m}^2$) nhân với thể tích $V$ ($\\text{m}^3$) sẽ ra $\\text{N}\\cdot\\text{m}$, chính là đơn vị Joule (J).' },
+            { id: 'd', text: 'Nếu thực hiện lại thí nghiệm ở một nhiệt độ phòng lạnh hơn, đường đồ thị $p$ theo $x$ mới sẽ dốc hơn (hệ số góc lớn hơn) so với đường ban đầu.', isTrue: false, exp: 'Sai. Hệ số góc của đồ thị là $k = nRT$. Khi nhiệt độ $T$ giảm (trời lạnh hơn), hệ số góc $k$ phải giảm xuống, đồ thị sẽ thoải hơn (ít dốc hơn).' }
+        ]
+    },
+    {
+        id: 'khi_q16',
+        image: 'bai6_khi.png',
+        context: '<strong>Câu 6. Phương pháp cột thủy ngân (Ống chữ U) khảo sát quá trình đẳng nhiệt</strong><br>Sử dụng ống thủy tinh hình chữ U tiết diện đều $S$, nhánh trái bịt kín, nhánh phải hở ra khí quyển. Ban đầu ở nhiệt độ $T_0$, đổ thủy ngân vào ống sao cho hai mực thủy ngân ngang nhau, cột khí bên nhánh trái dài $L_1 = 20,0$ cm. Áp suất khí quyển $p_0 = 760$ mmHg. Từ từ rót thêm thủy ngân vào nhánh phải để nén khí. Bỏ qua sự thay đổi nhiệt độ phòng.',
+        statements: [
+            { id: 'a', text: 'Ở trạng thái ban đầu, áp suất của khối khí bị nhốt trong nhánh trái bằng đúng 760 mmHg.', isTrue: true, exp: 'Đúng. Hai nhánh có cùng mực chất lỏng thông nhau nên áp suất bằng nhau: $p_1 = p_0 = 760$ mmHg.' },
+            { id: 'b', text: 'Sau khi rót thêm thủy ngân vào nhánh phải, mực thủy ngân ở nhánh hở (phải) sẽ luôn thấp hơn mực thủy ngân ở nhánh kín (trái).', isTrue: false, exp: 'Sai. Khi rót thêm, khí nhánh trái bị nén nên áp suất $p_2 > p_0$. Để cân bằng, mặt thoáng nhánh phải phải chịu thêm một cột áp thủy tĩnh, do đó mực thủy ngân nhánh phải phải cao hơn nhánh trái.' },
+            { id: 'c', text: 'Rót đến khi chiều dài cột khí ở nhánh trái chỉ còn $L_2 = 16,0$ cm, áp suất khối khí lúc này là 950 mmHg.', isTrue: true, exp: 'Đúng. Quá trình đẳng nhiệt: $p_1 V_1 = p_2 V_2 \\Leftrightarrow 760 \\cdot (20,0 \\cdot S) = p_2 \\cdot (16,0 \\cdot S) \\Rightarrow p_2 = 760 \\cdot \\frac{20}{16} = 950$ mmHg.' },
+            { id: 'd', text: 'Độ chênh lệch mặt thoáng thủy ngân giữa hai nhánh (nhánh phải cao hơn nhánh trái) ở trạng thái sau cùng là 19,0 cm.', isTrue: true, exp: 'Đúng. Chênh lệch áp suất $\\Delta p = p_2 - p_0 = 950 - 760 = 190$ mmHg. Tương ứng với cột thủy ngân cao $190\\text{ mm} = 19,0\\text{ cm}$.' }
+        ]
+    },
+    {
+        id: 'khi_q17',
+        image: 'bai7_khi.png',
+        context: '<strong>Câu 7. Thí nghiệm dãn nở đẳng áp với bình cầu và xilanh (Định luật Charles)</strong><br>Một bình cầu thủy tinh có thể tích ruột $V_0 = 250$ mL được nối kín bằng một ống nhựa nhỏ mềm vào một xilanh nằm ngang. Pittông của xilanh có thể di chuyển trơn tru không ma sát. Ban đầu, toàn bộ bình cầu và xilanh chứa không khí ở nhiệt độ $T_1 = 300$ K, số chỉ trên xilanh là $V_{\\text{xilanh } 1} = 10,0$ mL. (Bỏ qua thể tích ống nối). Ngâm bình cầu vào chậu nước nóng, chờ hệ cân bằng ở nhiệt độ $T_2 = 330$ K.',
+        statements: [
+            { id: 'a', text: 'Thể tích ban đầu của khối khí trong hệ thống là 260,0 mL.', isTrue: true, exp: 'Đúng. $V_1 = V_{\\text{bình}} + V_{\\text{xilanh}} = 250 + 10,0 = 260,0$ mL.' },
+            { id: 'b', text: 'Việc để pittông xilanh tự do di chuyển là điều kiện bắt buộc để khối khí thực hiện dãn nở trong một quá trình đẳng áp.', isTrue: true, exp: 'Đúng. Pittông tự do giúp áp suất khí bên trong luôn cân bằng với áp suất khí quyển (và ma sát, nếu có) ở bên ngoài. Khi thể tích dãn ra, áp suất không bị tăng lên.' },
+            { id: 'c', text: 'Theo tính toán lí thuyết của Định luật Charles, thể tích toàn bộ khối khí ở trạng thái cân bằng mới là 286,0 mL.', isTrue: true, exp: 'Đúng. $\\frac{V_1}{T_1} = \\frac{V_2}{T_2} \\Rightarrow \\frac{260,0}{300} = \\frac{V_2}{330} \\Rightarrow V_2 = 260,0 \\cdot \\frac{330}{300} = 286,0$ mL.' },
+            { id: 'd', text: 'Kết thúc thí nghiệm, số chỉ của pittông trên thân xilanh sẽ nằm ở vạch 26,0 mL.', isTrue: false, exp: 'Sai. Thể tích tổng là $286,0$ mL. Vì bình cầu thủy tinh không co dãn (thể tích vẫn chiếm $250$ mL), phần khí dãn nở sẽ bị dồn toàn bộ vào xilanh. Thể tích trong xilanh lúc này là $V_{\\text{xilanh } 2} = 286,0 - 250 = 36,0$ mL. Số chỉ sẽ là $36,0$ chứ không phải $26,0$.' }
+        ]
+    },
+    {
+        id: 'khi_q18',
+        context: '<strong>Câu 8. Xử lý sự cố rò rỉ khí trong thiết bị</strong><br>Học sinh thực hiện đo $p, V$ của một xilanh theo chiều nén dần. Mặc dù học sinh đã nén rất chậm để đảm bảo nhiệt độ $T$ không đổi, nhưng tích số $p \\cdot V$ vẫn giảm dần qua các lần đo như sau:<br>$V = 50$ mL, $p = 100$ kPa $\\Rightarrow pV = 5000$<br>$V = 40$ mL, $p = 120$ kPa $\\Rightarrow pV = 4800$<br>$V = 30$ mL, $p = 150$ kPa $\\Rightarrow pV = 4500$',
+        statements: [
+            { id: 'a', text: 'Hiện tượng giảm liên tục của tích $p \\cdot V$ là minh chứng rõ ràng cho việc hở gioăng khiến khí bị xì ra ngoài không khí.', isTrue: true, exp: 'Đúng. Phương trình $p \\cdot V = nRT$. Nếu $T$ đã giữ không đổi mà $pV$ vẫn giảm, điều đó bắt buộc số mol khí $n$ trong xilanh đã bị giảm (khí thoát ra ngoài).' },
+            { id: 'b', text: 'Tại thời điểm thể tích nén đến mức 30 mL, đã có đúng 10% lượng phân tử khí ban đầu bị thoát ra ngoài.', isTrue: true, exp: 'Đúng. Tỉ lệ số mol còn lại: $\\frac{n_3}{n_1} = \\frac{p_3 V_3}{p_1 V_1} = \\frac{4500}{5000} = 0,90$. Số lượng khí còn lại là $90\\%$, suy ra đã bị hụt đi $10\\%$.' },
+            { id: 'c', text: 'Áp suất đo được tại mốc 30 mL là 150 kPa. Nếu xilanh hoàn toàn kín khí, áp suất lí thuyết lúc này phải đạt 166,7 kPa.', isTrue: true, exp: 'Đúng. Nếu kín khí ($pV = 5000 = \\text{const}$), áp suất lí thuyết khi $V = 30$ mL là $p_{\\text{lt}} = \\frac{5000}{30} = \\frac{500}{3} \\approx 166,7$ kPa.' },
+            { id: 'd', text: 'Cách tốt nhất để khắc phục triệt để sai số này mà không cần thay xilanh là cứ đẩy pittông thật nhanh để khí không có đủ thời gian kịp xì qua khe hở.', isTrue: false, exp: 'Sai. Mặc dù nén nhanh làm giảm thời gian xì khí, nhưng nó lại vi phạm nghiêm trọng điều kiện "đẳng nhiệt" (làm nhiệt độ $T$ tăng mạnh). Cách khắc phục đúng là phải làm lại gioăng cao su hoặc bôi thêm mỡ bôi trơn.' }
+        ]
+    },
+    {
+        id: 'khi_q19',
+        image: 'bai7_khi.png',
+        context: '<strong>Câu 9. Phân tích đồ thị sự phụ thuộc của $V$ vào $T$</strong><br>Phần mềm phòng Lab xuất ra đồ thị biểu diễn sự phụ thuộc của thể tích $V$ vào nhiệt độ $T$ (thang Kelvin) của cùng một lượng khí xác định. Đồ thị gồm hai đường thẳng đi qua gốc tọa độ O, tương ứng với hai lần thực hiện thí nghiệm với hai vật nặng khác nhau (có khối lượng $m_A > m_B$) đè lên pittông xilanh. (Áp suất khí quyển xem như cố định).',
+        statements: [
+            { id: 'a', text: 'Trong mỗi lần thực hiện (ứng với một đường thẳng đồ thị), áp suất của khối khí bị nhốt trong xilanh là tăng dần theo nhiệt độ.', isTrue: false, exp: 'Sai. Pittông gắn vật nặng di chuyển tự do thì áp suất khối khí $p = p_{\\text{kq}} + \\frac{mg}{S} = \\text{const}$. Đây là quá trình đẳng áp, áp suất không tăng.' },
+            { id: 'b', text: 'Cả hai đường thẳng đồ thị dãn nở đẳng áp này đều cắt nhau tại điểm gốc tọa độ $(0, 0)$.', isTrue: true, exp: 'Đúng. Định luật Charles $V = k \\cdot T$. Cả hai quá trình dãn nở đẳng áp của khí lí tưởng khi ngoại suy đều hội tụ về thể tích $0$ tại nhiệt độ $0$ K.' },
+            { id: 'c', text: 'Đường đồ thị tương ứng với vật nặng $m_A$ sẽ có độ dốc (hệ số góc) nhỏ hơn đường đồ thị của vật nặng $m_B$.', isTrue: true, exp: 'Đúng. Từ phương trình $V = \\left(\\frac{nR}{p}\\right) \\cdot T$. Vì $m_A > m_B$ nên áp suất do pittông A nén lên khí lớn hơn ($p_A > p_B$). Áp suất nằm ở mẫu số, do đó $p_A$ lớn hơn sẽ làm cho hệ số góc $\\left(\\frac{nR}{p_A}\\right)$ nhỏ hơn. Đường đồ thị A nằm dưới đường đồ thị B.' },
+            { id: 'd', text: 'Nếu thay khí thực đang đo bằng khí lí tưởng, đường đồ thị $V-T$ sẽ bị bẻ cong thành dạng parabol.', isTrue: false, exp: 'Sai. Khí lí tưởng hoàn toàn tuân theo tuyến tính $V \\sim T$ (đường thẳng). Khí thực mới là tác nhân có thể gây ra những sai lệch phi tuyến ở điều kiện nhiệt độ rất thấp hoặc áp suất rất cao.' }
+        ]
+    },
+    {
+        id: 'khi_q20',
+        image: 'bai10_khi.png',
+        context: '<strong>Câu 10. Nguyên tắc thiết kế và ảnh hưởng của thiết bị đo</strong><br>Một thiết bị khảo sát các định luật chất khí đa năng được thiết kế gồm: Xilanh kim loại thành mỏng, pittông nhẹ có gioăng cao su tốt, cảm biến áp suất tuyệt đối và cảm biến nhiệt độ nhúng sâu vào lòng xilanh.',
+        statements: [
+            { id: 'a', text: 'Xilanh được làm bằng kim loại thành mỏng giúp khả năng trao đổi nhiệt với môi trường tốt hơn, thuận lợi cho việc giữ khối khí ở trạng thái đẳng nhiệt (Định luật Boyle).', isTrue: true, exp: 'Đúng. Kim loại thành mỏng dẫn nhiệt rất tốt. Khi khí bị nén sinh nhiệt, nhiệt lượng sẽ nhanh chóng tản ra môi trường, giúp nhiệt độ $T$ bên trong nhanh chóng quay về bằng nhiệt độ phòng.' },
+            { id: 'b', text: 'Cảm biến áp suất tuyệt đối giúp học sinh có thể dùng trực tiếp số liệu hiển thị trên màn hình để đưa vào phương trình tính toán mà không cần cộng thêm áp suất khí quyển.', isTrue: true, exp: 'Đúng. Phương trình trạng thái khí lí tưởng yêu cầu dùng áp suất tuyệt đối (Absolute pressure).' },
+            { id: 'c', text: 'Trong thí nghiệm đo dãn nở đẳng áp, nếu học sinh vô tình tì mạnh tay lên pittông trong lúc ghi nhận thể tích, kết quả đo sẽ không bị ảnh hưởng vì số mol khí không đổi.', isTrue: false, exp: 'Sai. Tì tay lên pittông làm tăng áp lực, dẫn đến áp suất $p$ tăng vọt, phá vỡ môi trường áp suất không đổi (đẳng áp) đang được giả định trong định luật Charles.' },
+            { id: 'd', text: 'Việc lựa chọn khối khí ban đầu có thể tích càng nhỏ (càng gần số 0) sẽ càng làm giảm sai số tương đối khi đọc vạch chia thể tích trên xilanh.', isTrue: false, exp: 'Sai. Nếu lấy $V$ quá nhỏ, độ biến thiên thể tích $\\Delta V$ sẽ rất bé. Sai số cực đại do mắt đọc (ví dụ $\\pm 0,5$ mL) sẽ chiếm tỉ trọng rất lớn so với giá trị đo được, làm cho sai số tương đối ($\\frac{\\Delta V}{V} \\cdot 100\\%$) tăng vọt. Cần chọn thể tích đủ lớn để độ phân giải của thang chia mang lại sai số nhỏ.' }
+        ]
+    }
+],
     'tu-truong': [
         {
             id: 'q31_1',
