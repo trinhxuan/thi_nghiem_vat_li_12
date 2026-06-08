@@ -420,1749 +420,583 @@ const practiceData = {
 ],
     'tu-truong': [
         {
-            id: 'q31_1',
-            image: 'bai1_tu.png',
+            id: 'tu_1', image: 'bai1_tu.png',
             context: '<strong>Câu 1. Thí nghiệm Cân từ (Xác định cảm ứng từ $B$)</strong><br>Một khung dây dẫn hình chữ nhật được treo thẳng đứng và gắn vào đĩa của một cân điện tử nhạy. Cạnh dưới của khung dây có chiều dài $\\ell = 5,0$ cm được đặt ngập trong một từ trường đều $\\vec{B}$ có phương nằm ngang và vuông góc với mặt phẳng khung dây. Ban đầu cân chỉ 150,00 g. Khi cho dòng điện $I = 2,0$ A chạy qua khung dây, số chỉ của cân giảm xuống còn 148,50 g. Lấy $g = 9,8$ m/s$^2$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Lực từ do từ trường tác dụng lên cạnh dưới của khung dây có hướng thẳng đứng từ trên xuống dưới.',
-                    isTrue: false,
-                    exp: 'Sai. Số chỉ của cân giảm đi chứng tỏ khung dây bị một lực nâng lên trên. Do đó, lực từ (lực Ampere) tác dụng lên cạnh dưới phải có hướng thẳng đứng từ dưới lên trên.'
-                },
-                {
-                    id: 'b',
-                    text: 'Độ lớn của lực từ tác dụng lên đoạn dây dẫn bằng 0,0147 N.',
-                    isTrue: true,
-                    exp: 'Đúng. Độ giảm số chỉ của cân chính là do lực từ nâng lên: $F_t = \\Delta m \\cdot g = (150,00 - 148,50) \\cdot 10^{-3} \\cdot 9,8 = 1,5 \\cdot 10^{-3} \\cdot 9,8 = 0,0147$ N.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu đảo chiều dòng điện chạy qua khung dây, số chỉ của cân điện tử lúc này sẽ là 151,50 g.',
-                    isTrue: true,
-                    exp: 'Đúng. Đảo chiều dòng điện làm lực từ đổi chiều (hướng xuống dưới), tạo thêm áp lực lên cân bằng đúng 1,5 g. Số chỉ sẽ là $150,00 + 1,50 = 151,50$ g.'
-                },
-                {
-                    id: 'd',
-                    text: 'Độ lớn cảm ứng từ $B$ của từ trường này xấp xỉ bằng 0,147 T.',
-                    isTrue: true,
-                    exp: 'Đúng. Áp dụng công thức lực từ $F_t = BI\\ell \\sin(90^\\circ) \\Rightarrow B = \\frac{F_t}{I\\ell} = \\frac{0,0147}{2,0 \\cdot 0,05} = 0,147$ T.'
-                }
+                { id: 'a', text: 'Lực từ do từ trường tác dụng lên cạnh dưới của khung dây có hướng thẳng đứng từ trên xuống dưới.', isTrue: false, exp: 'Sai. Số chỉ của cân giảm đi chứng tỏ khung dây bị một lực nâng lên trên. Do đó, lực từ (lực Ampere) tác dụng lên cạnh dưới phải có hướng thẳng đứng từ dưới lên trên.' },
+                { id: 'b', text: 'Độ lớn của lực từ tác dụng lên đoạn dây dẫn bằng 0,0147 N.', isTrue: true, exp: 'Đúng. Độ giảm số chỉ của cân chính là do lực từ nâng lên: $F_t = \\Delta m \\cdot g = (150,00 - 148,50) \\cdot 10^{-3} \\cdot 9,8 = 1,5 \\cdot 10^{-3} \\cdot 9,8 = 0,0147$ N.' },
+                { id: 'c', text: 'Nếu đảo chiều dòng điện chạy qua khung dây, số chỉ của cân điện tử lúc này sẽ là 151,50 g.', isTrue: true, exp: 'Đúng. Đảo chiều dòng điện làm lực từ đổi chiều (hướng xuống dưới), tạo thêm áp lực lên cân bằng đúng 1,5 g. Số chỉ sẽ là $150,00 + 1,50 = 151,50$ g.' },
+                { id: 'd', text: 'Độ lớn cảm ứng từ $B$ của từ trường này xấp xỉ bằng 0,147 T.', isTrue: true, exp: 'Đúng. Áp dụng công thức lực từ $F_t = BI\\ell \\sin(90^\\circ) \\Rightarrow B = \\frac{F_t}{I\\ell} = \\frac{0,0147}{2,0 \\cdot 0,05} = 0,147$ T.' }
             ]
         },
         {
-            id: 'q32_1',
-            image: 'bai2_tu.png',
+            id: 'tu_2', image: 'bai2_tu.png',
             context: '<strong>Câu 2. Khối phổ kế (Phân tách đồng vị Uranium)</strong><br>Trong công nghệ làm giàu Uranium, người ta dùng khối phổ kế để tách các đồng vị ${}^{235}\\text{U}^+$ và ${}^{238}\\text{U}^+$. Các ion này được tăng tốc bởi cùng một hiệu điện thế $U$ rồi cho bay vào một buồng chân không có từ trường đều $\\vec{B}$ vuông góc với véc-tơ vận tốc. Quỹ đạo của các ion trong từ trường là các nửa đường tròn có bán kính khác nhau và đập vào kính ảnh.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Lực Lorentz đóng vai trò là lực hướng tâm giữ cho các ion chuyển động theo quỹ đạo tròn.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực Lorentz ($f = qvB$) luôn vuông góc với vận tốc $\\vec{v}$, gây ra gia tốc hướng tâm làm hạt chuyển động tròn đều.'
-                },
-                {
-                    id: 'b',
-                    text: 'Trong suốt quá trình chuyển động bên trong buồng từ trường, động năng của các ion liên tục tăng lên.',
-                    isTrue: false,
-                    exp: 'Sai. Lực Lorentz luôn vuông góc với véc-tơ vận tốc nên công của lực này bằng 0 ($A = 0$). Vận tốc chỉ đổi hướng, độ lớn vận tốc và động năng của hạt được bảo toàn (không đổi).'
-                },
-                {
-                    id: 'c',
-                    text: 'Do nặng hơn, ion ${}^{238}\\text{U}^+$ sẽ bay vào buồng từ trường với vận tốc ban đầu $v$ nhỏ hơn so với ion ${}^{235}\\text{U}^+$.',
-                    isTrue: true,
-                    exp: 'Đúng. Hai hạt có cùng điện tích $q$, được gia tốc bởi cùng hiệu điện thế $U$ nên động năng nhận được là như nhau ($\\frac{1}{2}mv^2 = qU$). Hạt ${}^{238}\\text{U}$ có khối lượng $m$ lớn hơn nên vận tốc $v$ phải nhỏ hơn.'
-                },
-                {
-                    id: 'd',
-                    text: 'Trên kính ảnh, vết đập của chùm ion ${}^{235}\\text{U}^+$ sẽ nằm ở vị trí có bán kính quỹ đạo lớn hơn so với chùm ion ${}^{238}\\text{U}^+$.',
-                    isTrue: false,
-                    exp: 'Sai. Bán kính quỹ đạo $R = \\frac{mv}{qB} = \\frac{\\sqrt{2m \\cdot qU}}{qB} = \\frac{\\sqrt{2mU}}{B\\sqrt{q}}$. Suy ra $R$ tỉ lệ thuận với căn bậc hai của khối lượng ($\\sqrt{m}$). Do đó, hạt nhẹ hơn (${}^{235}\\text{U}^+$) sẽ có bán kính quỹ đạo $R$ nhỏ hơn.'
-                }
+                { id: 'a', text: 'Lực Lorentz đóng vai trò là lực hướng tâm giữ cho các ion chuyển động theo quỹ đạo tròn.', isTrue: true, exp: 'Đúng. Lực Lorentz ($f = qvB$) luôn vuông góc với vận tốc $\\vec{v}$, gây ra gia tốc hướng tâm làm hạt chuyển động tròn đều.' },
+                { id: 'b', text: 'Trong suốt quá trình chuyển động bên trong buồng từ trường, động năng của các ion liên tục tăng lên.', isTrue: false, exp: 'Sai. Lực Lorentz luôn vuông góc với véc-tơ vận tốc nên công của lực này bằng 0 ($A = 0$). Vận tốc chỉ đổi hướng, độ lớn vận tốc và động năng của hạt được bảo toàn (không đổi).' },
+                { id: 'c', text: 'Do nặng hơn, ion ${}^{238}\\text{U}^+$ sẽ bay vào buồng từ trường với vận tốc ban đầu $v$ nhỏ hơn so với ion ${}^{235}\\text{U}^+$.', isTrue: true, exp: 'Đúng. Hai hạt có cùng điện tích $q$, được gia tốc bởi cùng hiệu điện thế $U$ nên động năng nhận được là như nhau ($\\frac{1}{2}mv^2 = qU$). Hạt ${}^{238}\\text{U}$ có khối lượng $m$ lớn hơn nên vận tốc $v$ phải nhỏ hơn.' },
+                { id: 'd', text: 'Trên kính ảnh, vết đập của chùm ion ${}^{235}\\text{U}^+$ sẽ nằm ở vị trí có bán kính quỹ đạo lớn hơn so với chùm ion ${}^{238}\\text{U}^+$.', isTrue: false, exp: 'Sai. Bán kính quỹ đạo $R = \\frac{mv}{qB} = \\frac{\\sqrt{2m \\cdot qU}}{qB} = \\frac{\\sqrt{2mU}}{B\\sqrt{q}}$. Suy ra $R$ tỉ lệ thuận với căn bậc hai của khối lượng ($\\sqrt{m}$). Do đó, hạt nhẹ hơn (${}^{235}\\text{U}^+$) sẽ có bán kính quỹ đạo $R$ nhỏ hơn.' }
             ]
         },
         {
-            id: 'q34_1',
-            image: 'bai4_tu.png',
+            id: 'tu_3', image: 'bai4_tu.png',
             context: '<strong>Câu 4. Loa điện động (Ứng dụng lực Ampere)</strong><br>Cấu tạo của một loa điện động gồm một nam châm chữ E có cực từ Bắc (N) ở giữa hình trụ, cực Nam (S) ở vòng ngoài. Ở khe hẹp giữa cực N và cực S có từ trường đều dạng hình tia bán kính. Một cuộn dây âm (Voice coil) hình trụ được quấn và đặt lơ lửng trong khe hẹp này, nối với màng loa. Cho một dòng điện xoay chiều hình sin chạy qua cuộn âm.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Các đường sức từ trong khe hẹp của nam châm luôn có phương vuông góc với các đoạn dây dẫn quấn trên cuộn âm.',
-                    isTrue: true,
-                    exp: 'Đúng. Cực N ở tâm, cực S ở ngoài nên đường sức từ tỏa ra như hình nan hoa (phương bán kính). Cuộn dây quấn thành vòng tròn nên tại mọi điểm, đoạn dây luôn vuông góc với đường sức từ ($\\alpha = 90^\\circ$).'
-                },
-                {
-                    id: 'b',
-                    text: 'Khi dòng điện xoay chiều chạy qua, cuộn âm sẽ chịu tác dụng của một lực từ xoay chiều làm nó dao động dọc theo trục của cuộn dây.',
-                    isTrue: true,
-                    exp: 'Đúng. Theo quy tắc bàn tay trái, lực từ sinh ra luôn đẩy cuộn dây trượt ra trước hoặc kéo thụt vào sau (dọc theo trục). Vì dòng điện là xoay chiều, lực từ đổi chiều liên tục khiến cuộn dây và màng loa dao động.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tần số dao động của màng loa chỉ phụ thuộc vào độ cứng của gân loa chứ không phụ thuộc vào tần số của dòng điện xoay chiều cấp vào.',
-                    isTrue: false,
-                    exp: 'Sai. Loa hoạt động cưỡng bức theo tín hiệu điện. Tần số dao động của màng loa (và tần số âm thanh phát ra) bằng đúng tần số của dòng điện xoay chiều do amply cấp vào.'
-                },
-                {
-                    id: 'd',
-                    text: 'Để tăng âm lượng (độ lớn của âm thanh) phát ra, người ta có thể sử dụng nam châm có từ trường mạnh hơn để tăng biên độ dao động của màng loa.',
-                    isTrue: true,
-                    exp: 'Đúng. Biên độ dao động phụ thuộc vào lực từ $F = BIl$. Việc dùng nam châm từ tính mạnh (Neodymium) làm tăng $B$, kéo theo lực $F$ đẩy kéo màng loa lớn hơn $\\rightarrow$ màng loa văng xa hơn $\\rightarrow$ tạo ra sóng âm có biên độ lớn hơn (âm lượng to hơn).'
-                }
+                { id: 'a', text: 'Các đường sức từ trong khe hẹp của nam châm luôn có phương vuông góc với các đoạn dây dẫn quấn trên cuộn âm.', isTrue: true, exp: 'Đúng. Cực N ở tâm, cực S ở ngoài nên đường sức từ tỏa ra như hình nan hoa (phương bán kính). Cuộn dây quấn thành vòng tròn nên tại mọi điểm, đoạn dây luôn vuông góc với đường sức từ ($\\alpha = 90^\\circ$).' },
+                { id: 'b', text: 'Khi dòng điện xoay chiều chạy qua, cuộn âm sẽ chịu tác dụng của một lực từ xoay chiều làm nó dao động dọc theo trục của cuộn dây.', isTrue: true, exp: 'Đúng. Theo quy tắc bàn tay trái, lực từ sinh ra luôn đẩy cuộn dây trượt ra trước hoặc kéo thụt vào sau (dọc theo trục). Vì dòng điện là xoay chiều, lực từ đổi chiều liên tục khiến cuộn dây và màng loa dao động.' },
+                { id: 'c', text: 'Tần số dao động của màng loa chỉ phụ thuộc vào độ cứng của gân loa chứ không phụ thuộc vào tần số của dòng điện xoay chiều cấp vào.', isTrue: false, exp: 'Sai. Loa hoạt động cưỡng bức theo tín hiệu điện. Tần số dao động của màng loa (và tần số âm thanh phát ra) bằng đúng tần số của dòng điện xoay chiều do amply cấp vào.' },
+                { id: 'd', text: 'Để tăng âm lượng (độ lớn của âm thanh) phát ra, người ta có thể sử dụng nam châm có từ trường mạnh hơn để tăng biên độ dao động của màng loa.', isTrue: true, exp: 'Đúng. Biên độ dao động phụ thuộc vào lực từ $F = BIl$. Việc dùng nam châm từ tính mạnh (Neodymium) làm tăng $B$, kéo theo lực $F$ đẩy kéo màng loa lớn hơn $\\rightarrow$ màng loa văng xa hơn $\\rightarrow$ tạo ra sóng âm có biên độ lớn hơn (âm lượng to hơn).' }
             ]
         },
         {
-            id: 'q35_1',
-            image: 'bai5_tu.png',
+            id: 'tu_4', image: 'bai5_tu.png',
             context: '<strong>Câu 5. Máy gia tốc hạt Cyclotron</strong><br>Cyclotron là máy gia tốc hạt vòng tròn gồm hai hộp kim loại hình chữ D rỗng, đặt trong buồng chân không và nằm trong một từ trường đều $\\vec{B}$ vuông góc với mặt phẳng hai hộp. Người ta đặt vào khe hở giữa hai chữ D một điện áp xoay chiều có tần số $f$. Một proton thoát ra từ nguồn đặt ở tâm hệ thống và bắt đầu chuyển động.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Điện trường xoay chiều trong khe hở giữa hai chữ D là tác nhân duy nhất làm tăng động năng của hạt proton.',
-                    isTrue: true,
-                    exp: 'Đúng. Trong nội bộ hộp chữ D không có điện trường (hiệu ứng lồng Faraday), chỉ có từ trường làm hạt quay đầu (không sinh công). Hạt chỉ được gia tốc và nhận thêm động năng nhờ công của lực điện $A = qU$ mỗi khi nó băng qua khe hở.'
-                },
-                {
-                    id: 'b',
-                    text: 'Sau mỗi lần vượt qua khe hở giữa hai chữ D, bán kính quỹ đạo của proton bên trong chữ D sẽ giảm đi.',
-                    isTrue: false,
-                    exp: 'Sai. Qua khe hở hạt được tăng tốc độ $v$. Bán kính $r = \\frac{mv}{qB}$. Vì $v$ tăng nên bán kính quỹ đạo $r$ phải tăng lên. Quỹ đạo tổng thể là một đường xoắn ốc nở rộng.'
-                },
-                {
-                    id: 'c',
-                    text: 'Chu kì quay của proton trong từ trường không phụ thuộc vào vận tốc của nó, đây là điều kiện tiên quyết để máy Cyclotron hoạt động đồng bộ.',
-                    isTrue: true,
-                    exp: 'Đúng. Chu kì quay $T = \\frac{2\\pi m}{qB}$ là một hằng số. Dù hạt chạy nhanh hơn thì quỹ đạo cũng lớn hơn, thời gian vẽ xong một nửa vòng luôn bằng $T/2$. Nhờ đó ta chỉ cần giữ tần số điện áp xoay chiều $f_{\\text{điện}} = \\frac{1}{T}$ cố định.'
-                },
-                {
-                    id: 'd',
-                    text: 'Động năng cực đại của chùm proton thoát ra khỏi máy không phụ thuộc vào bán kính $R$ của hai hộp chữ D.',
-                    isTrue: false,
-                    exp: 'Sai. Hạt thoát ra khi bán kính quỹ đạo chạm đến bán kính $R$ của hộp chữ D. Ta có $v_{\\text{max}} = \\frac{qBR}{m}$. Động năng cực đại $W_{d(\\text{max})} = \\frac{1}{2}mv_{\\text{max}}^2 = \\frac{q^2 B^2 R^2}{2m}$. Rõ ràng nó phụ thuộc rất lớn vào kích thước $R$ của máy.'
-                }
+                { id: 'a', text: 'Điện trường xoay chiều trong khe hở giữa hai chữ D là tác nhân duy nhất làm tăng động năng của hạt proton.', isTrue: true, exp: 'Đúng. Trong nội bộ hộp chữ D không có điện trường (hiệu ứng lồng Faraday), chỉ có từ trường làm hạt quay đầu (không sinh công). Hạt chỉ được gia tốc và nhận thêm động năng nhờ công của lực điện $A = qU$ mỗi khi nó băng qua khe hở.' },
+                { id: 'b', text: 'Sau mỗi lần vượt qua khe hở giữa hai chữ D, bán kính quỹ đạo của proton bên trong chữ D sẽ giảm đi.', isTrue: false, exp: 'Sai. Qua khe hở hạt được tăng tốc độ $v$. Bán kính $r = \\frac{mv}{qB}$. Vì $v$ tăng nên bán kính quỹ đạo $r$ phải tăng lên. Quỹ đạo tổng thể là một đường xoắn ốc nở rộng.' },
+                { id: 'c', text: 'Chu kì quay của proton trong từ trường không phụ thuộc vào vận tốc của nó, đây là điều kiện tiên quyết để máy Cyclotron hoạt động đồng bộ.', isTrue: true, exp: 'Đúng. Chu kì quay $T = \\frac{2\\pi m}{qB}$ là một hằng số. Dù hạt chạy nhanh hơn thì quỹ đạo cũng lớn hơn, thời gian vẽ xong một nửa vòng luôn bằng $T/2$. Nhờ đó ta chỉ cần giữ tần số điện áp xoay chiều $f_{\\text{điện}} = \\frac{1}{T}$ cố định.' },
+                { id: 'd', text: 'Động năng cực đại của chùm proton thoát ra khỏi máy không phụ thuộc vào bán kính $R$ của hai hộp chữ D.', isTrue: false, exp: 'Sai. Hạt thoát ra khi bán kính quỹ đạo chạm đến bán kính $R$ của hộp chữ D. Ta có $v_{\\text{max}} = \\frac{qBR}{m}$. Động năng cực đại $W_{d(\\text{max})} = \\frac{1}{2}mv_{\\text{max}}^2 = \\frac{q^2 B^2 R^2}{2m}$. Rõ ràng nó phụ thuộc rất lớn vào kích thước $R$ của máy.' }
             ]
         },
         {
-            id: 'q36_1',
-            image: 'bai6_tu.png',
+            id: 'tu_5', image: 'bai6_tu.png',
             context: '<strong>Câu 6. Chuyển động của Electron trong từ trường</strong><br>Một chùm electron (mỗi hạt có khối lượng $m$, điện tích $e$) được bắn vào một vùng không gian có từ trường đều $\\vec{B}$. Nếu gọi $\\vec{v}$ là véc-tơ vận tốc ban đầu của hạt khi vừa lọt vào từ trường.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Nếu $\\vec{v}$ hợp với $\\vec{B}$ một góc $0^\\circ$ hoặc $180^\\circ$, quỹ đạo của electron là một đường thẳng và nó chuyển động thẳng đều.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi góc $\\alpha = 0^\\circ$ hoặc $180^\\circ$, lực Lorentz $f = |q|vB\\sin\\alpha = 0$. Theo định luật 1 Newton, hạt không chịu lực tác dụng nên sẽ tiếp tục chuyển động thẳng đều theo quán tính.'
-                },
-                {
-                    id: 'b',
-                    text: 'Nếu $\\vec{v}$ vuông góc với $\\vec{B}$, electron sẽ chuyển động tròn đều với gia tốc có độ lớn là $a = \\frac{eBv}{m}$.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi $\\alpha = 90^\\circ$, hạt chuyển động tròn đều. Lực Lorentz là lực hướng tâm: $ma = f \\Leftrightarrow m \\cdot a = |e|vB\\sin(90^\\circ) \\Rightarrow a = \\frac{|e|vB}{m}$. (Lưu ý $|e|$ là độ lớn điện tích electron).'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu $\\vec{v}$ hợp với $\\vec{B}$ một góc $\\alpha$ (với $0^\\circ < \\alpha < 90^\\circ$), electron sẽ chuyển động theo một quỹ đạo xoắn ốc (lò xo) có trục song song với $\\vec{B}$.',
-                    isTrue: true,
-                    exp: 'Đúng. Vận tốc $\\vec{v}$ được phân tích thành $\\vec{v}_{\\parallel}$ (song song với $\\vec{B}$) và $\\vec{v}_{\\perp}$ (vuông góc với $\\vec{B}$). Thành phần $\\vec{v}_{\\parallel}$ làm hạt đi thẳng đều về phía trước, thành phần $\\vec{v}_{\\perp}$ làm hạt quay tròn $\\rightarrow$ Quỹ đạo tổng hợp là hình lò xo trụ (Helix).'
-                },
-                {
-                    id: 'd',
-                    text: 'Lực Lorentz đóng vai trò sinh công dương làm cho electron tăng tốc khi nó di chuyển theo quỹ đạo xoắn ốc.',
-                    isTrue: false,
-                    exp: 'Sai. Dù quỹ đạo phức tạp đến đâu, tại mọi thời điểm lực Lorentz luôn vuông góc với véc-tơ vận tốc $\\vec{v}$ thực tế của hạt. Do đó nó không bao giờ sinh công ($A = 0$), động năng và tốc độ của hạt không hề thay đổi.'
-                }
+                { id: 'a', text: 'Nếu $\\vec{v}$ hợp với $\\vec{B}$ một góc $0^\\circ$ hoặc $180^\\circ$, quỹ đạo của electron là một đường thẳng và nó chuyển động thẳng đều.', isTrue: true, exp: 'Đúng. Khi góc $\\alpha = 0^\\circ$ hoặc $180^\\circ$, lực Lorentz $f = |q|vB\\sin\\alpha = 0$. Theo định luật 1 Newton, hạt không chịu lực tác dụng nên sẽ tiếp tục chuyển động thẳng đều theo quán tính.' },
+                { id: 'b', text: 'Nếu $\\vec{v}$ vuông góc với $\\vec{B}$, electron sẽ chuyển động tròn đều với gia tốc có độ lớn là $a = \\frac{eBv}{m}$.', isTrue: true, exp: 'Đúng. Khi $\\alpha = 90^\\circ$, hạt chuyển động tròn đều. Lực Lorentz là lực hướng tâm: $ma = f \\Leftrightarrow m \\cdot a = |e|vB\\sin(90^\\circ) \\Rightarrow a = \\frac{|e|vB}{m}$. (Lưu ý $|e|$ là độ lớn điện tích electron).' },
+                { id: 'c', text: 'Nếu $\\vec{v}$ hợp với $\\vec{B}$ một góc $\\alpha$ (với $0^\\circ < \\alpha < 90^\\circ$), electron sẽ chuyển động theo một quỹ đạo xoắn ốc (lò xo) có trục song song với $\\vec{B}$.', isTrue: true, exp: 'Đúng. Vận tốc $\\vec{v}$ được phân tích thành $\\vec{v}_{\\parallel}$ (song song với $\\vec{B}$) và $\\vec{v}_{\\perp}$ (vuông góc với $\\vec{B}$). Thành phần $\\vec{v}_{\\parallel}$ làm hạt đi thẳng đều về phía trước, thành phần $\\vec{v}_{\\perp}$ làm hạt quay tròn $\\rightarrow$ Quỹ đạo tổng hợp là hình lò xo trụ (Helix).' },
+                { id: 'd', text: 'Lực Lorentz đóng vai trò sinh công dương làm cho electron tăng tốc khi nó di chuyển theo quỹ đạo xoắn ốc.', isTrue: false, exp: 'Sai. Dù quỹ đạo phức tạp đến đâu, tại mọi thời điểm lực Lorentz luôn vuông góc với véc-tơ vận tốc $\\vec{v}$ thực tế của hạt. Do đó nó không bao giờ sinh công ($A = 0$), động năng và tốc độ của hạt không hề thay đổi.' }
             ]
         },
         {
-            id: 'q37_1',
-            image: 'bai7_tu.png',
+            id: 'tu_6', image: 'bai7_tu.png',
             context: '<strong>Câu 7. Hiện tượng Đệm từ trường (Lực từ nâng)</strong><br>Một thanh nhôm hình trụ tròn nằm ngang có chiều dài $L = 20,0$ cm, khối lượng $m = 40,0$ g. Hai đầu thanh nhôm được đặt lỏng lẻo trên hai thanh ray dẫn điện. Hệ thống được đặt trong một từ trường đều $\\vec{B}$ nằm ngang và vuông góc với thanh nhôm. Lấy $g = 10$ m/s$^2$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Để thanh nhôm có thể lơ lửng (tách khỏi thanh ray) thì lực từ tác dụng lên nó phải hướng thẳng đứng lên trên để triệt tiêu trọng lực.',
-                    isTrue: true,
-                    exp: 'Đúng. Điều kiện cân bằng là tổng các lực tác dụng bằng 0. Lực từ sinh ra phải ngược chiều với trọng lượng $\\vec{P}$ (đang hướng xuống) $\\rightarrow$ lực từ phải hướng thẳng đứng lên trên.'
-                },
-                {
-                    id: 'b',
-                    text: 'Chiều của dòng điện chạy qua thanh nhôm không ảnh hưởng đến khả năng làm thanh nhôm lơ lửng.',
-                    isTrue: false,
-                    exp: 'Sai. Áp dụng quy tắc bàn tay trái, với $\\vec{B}$ cố định (nằm ngang), nếu đảo chiều dòng điện $I$ thì lực từ sẽ đảo chiều hướng xuống mặt đất. Khi đó nó ép chặt thanh nhôm xuống ray chứ không thể nâng lên lơ lửng được.'
-                },
-                {
-                    id: 'c',
-                    text: 'Độ lớn của lực từ cần thiết để giữ thanh nhôm lơ lửng nằm ngang là 0,4 N.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực từ phải cân bằng với trọng lượng: $F = P = mg = 0,040 \\cdot 10 = 0,4$ N.'
-                },
-                {
-                    id: 'd',
-                    text: 'Biết độ lớn cảm ứng từ là $B = 0,2$ T. Để thanh nhôm lơ lửng, dòng điện chạy qua nó phải có cường độ chính xác bằng 10,0 A.',
-                    isTrue: true,
-                    exp: 'Đúng. Từ phương trình cân bằng $mg = BIL\\sin(90^\\circ) \\Rightarrow I = \\frac{mg}{BL} = \\frac{0,4}{0,2 \\cdot 0,2} = \\frac{0,4}{0,04} = 10,0$ A.'
-                }
+                { id: 'a', text: 'Để thanh nhôm có thể lơ lửng (tách khỏi thanh ray) thì lực từ tác dụng lên nó phải hướng thẳng đứng lên trên để triệt tiêu trọng lực.', isTrue: true, exp: 'Đúng. Điều kiện cân bằng là tổng các lực tác dụng bằng 0. Lực từ sinh ra phải ngược chiều với trọng lượng $\\vec{P}$ (đang hướng xuống) $\\rightarrow$ lực từ phải hướng thẳng đứng lên trên.' },
+                { id: 'b', text: 'Chiều của dòng điện chạy qua thanh nhôm không ảnh hưởng đến khả năng làm thanh nhôm lơ lửng.', isTrue: false, exp: 'Sai. Áp dụng quy tắc bàn tay trái, với $\\vec{B}$ cố định (nằm ngang), nếu đảo chiều dòng điện $I$ thì lực từ sẽ đảo chiều hướng xuống mặt đất. Khi đó nó ép chặt thanh nhôm xuống ray chứ không thể nâng lên lơ lửng được.' },
+                { id: 'c', text: 'Độ lớn của lực từ cần thiết để giữ thanh nhôm lơ lửng nằm ngang là 0,4 N.', isTrue: true, exp: 'Đúng. Lực từ phải cân bằng với trọng lượng: $F = P = mg = 0,040 \\cdot 10 = 0,4$ N.' },
+                { id: 'd', text: 'Biết độ lớn cảm ứng từ là $B = 0,2$ T. Để thanh nhôm lơ lửng, dòng điện chạy qua nó phải có cường độ chính xác bằng 10,0 A.', isTrue: true, exp: 'Đúng. Từ phương trình cân bằng $mg = BIL\\sin(90^\\circ) \\Rightarrow I = \\frac{mg}{BL} = \\frac{0,4}{0,2 \\cdot 0,2} = \\frac{0,4}{0,04} = 10,0$ A.' }
             ]
         },
         {
-            id: 'q8',
+            id: 'tu_7',
             context: '<strong>Câu 1. (Bản chất từ trường và Đường sức từ)</strong><br>Một học sinh dùng mạt sắt rắc lên tấm kính đặt trên một nam châm chữ U để tạo ra từ phổ. Sau đó, dùng các kim nam châm nhỏ đặt tại các vị trí khác nhau để khảo sát.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Mạt sắt tại khu vực giữa hai cực của nam châm chữ U sắp xếp thành những đường thẳng song song và cách đều nhau, chứng tỏ đây là vùng từ trường đều.',
-                    isTrue: true,
-                    exp: 'Đúng. Hình ảnh các đường thẳng song song cách đều nhau là đặc trưng vật lí của từ trường đều.'
-                },
-                {
-                    id: 'b',
-                    text: 'Nếu học sinh thay nam châm chữ U bằng một dây dẫn thẳng mang dòng điện một chiều, mạt sắt xung quanh dây dẫn sẽ sắp xếp thành các đường tròn đồng tâm.',
-                    isTrue: true,
-                    exp: 'Đúng. Từ phổ của dòng điện thẳng dài là các đường tròn đồng tâm nằm trên mặt phẳng vuông góc với dây dẫn.'
-                },
-                {
-                    id: 'c',
-                    text: 'Việc mạt sắt sắp xếp dày đặc ở hai đầu cực của nam châm chứng tỏ độ lớn cảm ứng từ tại đó là nhỏ nhất do các đường sức bị ép sát vào nhau.',
-                    isTrue: false,
-                    exp: 'Sai. Mật độ đường sức (mạt sắt) càng dày đặc thì cảm ứng từ tại đó càng lớn (từ trường mạnh nhất ở hai cực).'
-                },
-                {
-                    id: 'd',
-                    text: 'Có thể sử dụng hình ảnh của mạt sắt để xác định được chính xác chiều của các đường sức từ.',
-                    isTrue: false,
-                    exp: 'Sai. Mạt sắt chỉ cho ta hình ảnh về phương và hình dạng (quỹ đạo) của đường sức từ. Để xác định chiều, bắt buộc phải dùng các kim nam châm nhỏ (quy ước ra Bắc vào Nam).'
-                }
+                { id: 'a', text: 'Mạt sắt tại khu vực giữa hai cực của nam châm chữ U sắp xếp thành những đường thẳng song song và cách đều nhau, chứng tỏ đây là vùng từ trường đều.', isTrue: true, exp: 'Đúng. Hình ảnh các đường thẳng song song cách đều nhau là đặc trưng vật lí của từ trường đều.' },
+                { id: 'b', text: 'Nếu học sinh thay nam châm chữ U bằng một dây dẫn thẳng mang dòng điện một chiều, mạt sắt xung quanh dây dẫn sẽ sắp xếp thành các đường tròn đồng tâm.', isTrue: true, exp: 'Đúng. Từ phổ của dòng điện thẳng dài là các đường tròn đồng tâm nằm trên mặt phẳng vuông góc với dây dẫn.' },
+                { id: 'c', text: 'Việc mạt sắt sắp xếp dày đặc ở hai đầu cực của nam châm chứng tỏ độ lớn cảm ứng từ tại đó là nhỏ nhất do các đường sức bị ép sát vào nhau.', isTrue: false, exp: 'Sai. Mật độ đường sức (mạt sắt) càng dày đặc thì cảm ứng từ tại đó càng lớn (từ trường mạnh nhất ở hai cực).' },
+                { id: 'd', text: 'Có thể sử dụng hình ảnh của mạt sắt để xác định được chính xác chiều của các đường sức từ.', isTrue: false, exp: 'Sai. Mạt sắt chỉ cho ta hình ảnh về phương và hình dạng (quỹ đạo) của đường sức từ. Để xác định chiều, bắt buộc phải dùng các kim nam châm nhỏ (quy ước ra Bắc vào Nam).' }
             ]
         },
         {
-            id: 'q9',
+            id: 'tu_8',
             context: '<strong>Câu 2. (Vận dụng Quy tắc bàn tay trái định hướng lực từ)</strong><br>Một đoạn dây dẫn thẳng nằm ngang trên một mặt bàn, mang dòng điện không đổi có chiều từ Đông sang Tây. Người ta đặt hệ thống này vào một vùng từ trường đều có các đường sức từ hướng thẳng đứng từ trên trần nhà xuống mặt bàn.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Lực từ (lực Ampere) tác dụng lên đoạn dây dẫn có phương song song với mặt bàn.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực từ luôn vuông góc với véc-tơ cảm ứng từ $\\vec{B}$. Vì $\\vec{B}$ thẳng đứng nên lực từ phải nằm ngang (song song với mặt bàn).'
-                },
-                {
-                    id: 'b',
-                    text: 'Theo quy tắc bàn tay trái, lực từ tác dụng lên đoạn dây có hướng từ Nam chỉ về Bắc.',
-                    isTrue: true,
-                    exp: 'Đúng. Đặt bàn tay trái: $\\vec{B}$ hướng xuống nên ngửa lòng bàn tay lên trên. Chiều từ cổ tay đến ngón tay hướng từ Đông sang Tây. Khi đó, ngón tay cái choãi ra $90^\\circ$ sẽ chỉ về hướng Bắc.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu xoay đoạn dây một góc $90^\\circ$ trên mặt bàn sao cho dòng điện có chiều từ Nam sang Bắc, độ lớn lực từ tác dụng lên đoạn dây sẽ giảm về 0.',
-                    isTrue: false,
-                    exp: 'Sai. Dù xoay dây trên mặt bàn thì dây vẫn luôn vuông góc với từ trường thẳng đứng ($\\alpha = 90^\\circ$). Do đó, độ lớn lực từ $F = BIL\\sin 90^\\circ$ không thay đổi.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu giữ nguyên dây dẫn, chỉ đảo ngược cực của nam châm tạo từ trường (để từ trường hướng từ dưới lên), lực từ sẽ đổi hướng sang phía Nam.',
-                    isTrue: true,
-                    exp: 'Đúng. Đảo chiều từ trường $\\vec{B}$ (giữ nguyên $I$) thì theo quy tắc bàn tay trái, lực từ $\\vec{F}$ sẽ đảo chiều ngược lại (từ hướng Bắc chuyển sang hướng Nam).'
-                }
+                { id: 'a', text: 'Lực từ (lực Ampere) tác dụng lên đoạn dây dẫn có phương song song với mặt bàn.', isTrue: true, exp: 'Đúng. Lực từ luôn vuông góc với véc-tơ cảm ứng từ $\\vec{B}$. Vì $\\vec{B}$ thẳng đứng nên lực từ phải nằm ngang (song song với mặt bàn).' },
+                { id: 'b', text: 'Theo quy tắc bàn tay trái, lực từ tác dụng lên đoạn dây có hướng từ Nam chỉ về Bắc.', isTrue: true, exp: 'Đúng. Đặt bàn tay trái: $\\vec{B}$ hướng xuống nên ngửa lòng bàn tay lên trên. Chiều từ cổ tay đến ngón tay hướng từ Đông sang Tây. Khi đó, ngón tay cái choãi ra $90^\\circ$ sẽ chỉ về hướng Bắc.' },
+                { id: 'c', text: 'Nếu xoay đoạn dây một góc $90^\\circ$ trên mặt bàn sao cho dòng điện có chiều từ Nam sang Bắc, độ lớn lực từ tác dụng lên đoạn dây sẽ giảm về 0.', isTrue: false, exp: 'Sai. Dù xoay dây trên mặt bàn thì dây vẫn luôn vuông góc với từ trường thẳng đứng ($\\alpha = 90^\\circ$). Do đó, độ lớn lực từ $F = BIL\\sin 90^\\circ$ không thay đổi.' },
+                { id: 'd', text: 'Nếu giữ nguyên dây dẫn, chỉ đảo ngược cực của nam châm tạo từ trường (để từ trường hướng từ dưới lên), lực từ sẽ đổi hướng sang phía Nam.', isTrue: true, exp: 'Đúng. Đảo chiều từ trường $\\vec{B}$ (giữ nguyên $I$) thì theo quy tắc bàn tay trái, lực từ $\\vec{F}$ sẽ đảo chiều ngược lại (từ hướng Bắc chuyển sang hướng Nam).' }
             ]
         },
         {
-            id: 'q10',
+            id: 'tu_9',
             context: '<strong>Câu 3. (Tính toán định lượng Lực từ - Cảm ứng từ)</strong><br>Một đoạn dây dẫn thẳng dài $L = 40$ cm mang dòng điện $I = 2,5$ A được đặt trong một từ trường đều có cảm ứng từ $B = 0,2$ T.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Nếu đoạn dây được đặt hợp với các đường sức từ một góc $30^\\circ$, độ lớn lực từ tác dụng lên đoạn dây là 0,1 N.',
-                    isTrue: true,
-                    exp: 'Đúng. Áp dụng công thức: $F = BIL\\sin\\alpha = 0,2 \\cdot 2,5 \\cdot 0,4 \\cdot \\sin 30^\\circ = 0,2 \\cdot 0,5 = 0,1$ N. (Chú ý đổi $40\\text{ cm} = 0,4\\text{ m}$).'
-                },
-                {
-                    id: 'b',
-                    text: 'Để lực từ tác dụng lên đoạn dây đạt giá trị cực đại bằng 0,2 N, học sinh phải đặt đoạn dây vuông góc hoàn toàn với các đường sức từ.',
-                    isTrue: true,
-                    exp: 'Đúng. $F_{\\text{max}} = BIL\\sin 90^\\circ = 0,2 \\cdot 2,5 \\cdot 0,4 \\cdot 1 = 0,2$ N.'
-                },
-                {
-                    id: 'c',
-                    text: 'Giả sử giữ nguyên từ trường và góc đặt $\\alpha = 90^\\circ$, nếu gập đôi sợi dây lại (tạo thành 2 đoạn song song dài 20 cm) và cho dòng điện 2,5 A chạy qua, tổng lực từ tác dụng lên toàn bộ hệ thống dây gập đôi này là 0,1 N.',
-                    isTrue: false,
-                    exp: 'Sai. Khi gập đôi dây, dòng điện ở hai nhánh sẽ chạy ngược chiều nhau. Chúng sinh ra hai lực từ cùng phương, ngược chiều và cùng độ lớn. Do đó, tổng lực từ (hợp lực) tác dụng lên hệ thống dây gập đôi sẽ bị triệt tiêu bằng 0 N.'
-                },
-                {
-                    id: 'd',
-                    text: 'Phương và chiều của lực từ hoàn toàn không phụ thuộc vào giá trị của góc đặt dây $\\alpha$ (với điều kiện $\\alpha \\neq 0^\\circ, 180^\\circ$).',
-                    isTrue: true,
-                    exp: 'Đúng. Góc $\\alpha$ chỉ ảnh hưởng đến độ lớn của lực từ. Phương của lực từ luôn vuông góc với mặt phẳng chứa đoạn dây và $\\vec{B}$, chiều tuân theo quy tắc bàn tay trái.'
-                }
+                { id: 'a', text: 'Nếu đoạn dây được đặt hợp với các đường sức từ một góc $30^\\circ$, độ lớn lực từ tác dụng lên đoạn dây là 0,1 N.', isTrue: true, exp: 'Đúng. Áp dụng công thức: $F = BIL\\sin\\alpha = 0,2 \\cdot 2,5 \\cdot 0,4 \\cdot \\sin 30^\\circ = 0,2 \\cdot 0,5 = 0,1$ N. (Chú ý đổi $40\\text{ cm} = 0,4\\text{ m}$).' },
+                { id: 'b', text: 'Để lực từ tác dụng lên đoạn dây đạt giá trị cực đại bằng 0,2 N, học sinh phải đặt đoạn dây vuông góc hoàn toàn với các đường sức từ.', isTrue: true, exp: 'Đúng. $F_{\\text{max}} = BIL\\sin 90^\\circ = 0,2 \\cdot 2,5 \\cdot 0,4 \\cdot 1 = 0,2$ N.' },
+                { id: 'c', text: 'Giả sử giữ nguyên từ trường và góc đặt $\\alpha = 90^\\circ$, nếu gập đôi sợi dây lại (tạo thành 2 đoạn song song dài 20 cm) và cho dòng điện 2,5 A chạy qua, tổng lực từ tác dụng lên toàn bộ hệ thống dây gập đôi này là 0,1 N.', isTrue: false, exp: 'Sai. Khi gập đôi dây, dòng điện ở hai nhánh sẽ chạy ngược chiều nhau. Chúng sinh ra hai lực từ cùng phương, ngược chiều và cùng độ lớn. Do đó, tổng lực từ (hợp lực) tác dụng lên hệ thống dây gập đôi sẽ bị triệt tiêu bằng 0 N.' },
+                { id: 'd', text: 'Phương và chiều của lực từ hoàn toàn không phụ thuộc vào giá trị của góc đặt dây $\\alpha$ (với điều kiện $\\alpha \\neq 0^\\circ, 180^\\circ$).', isTrue: true, exp: 'Đúng. Góc $\\alpha$ chỉ ảnh hưởng đến độ lớn của lực từ. Phương của lực từ luôn vuông góc với mặt phẳng chứa đoạn dây và $\\vec{B}$, chiều tuân theo quy tắc bàn tay trái.' }
             ]
         },
         {
-            id: 'q11',
+            id: 'tu_10',
             context: '<strong>Câu 4. (Hệ đơn vị của các đại lượng từ)</strong><br>Khi nghiên cứu các công thức vật lí liên quan đến từ trường, một học sinh lập bảng phân tích các hệ đơn vị đo lường cơ bản.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Tesla (T) - đơn vị của cảm ứng từ - là một trong 7 đơn vị cơ bản của Hệ đo lường quốc tế (SI).',
-                    isTrue: false,
-                    exp: 'Sai. Tesla là đơn vị dẫn xuất (được định nghĩa qua Newton, Ampe, mét). Đơn vị điện từ cơ bản duy nhất trong SI là Ampe (A).'
-                },
-                {
-                    id: 'b',
-                    text: 'Dựa vào biểu thức định nghĩa lực từ, ta có thể suy ra $1\\text{ T} = 1\\text{ N} / (\\text{A}\\cdot\\text{m})$.',
-                    isTrue: true,
-                    exp: 'Đúng. Từ $F = BIL\\sin\\alpha \\Rightarrow B = \\frac{F}{IL\\sin\\alpha}$. Đơn vị của $F$ là N, $I$ là A, $L$ là m $\\Rightarrow 1\\text{ T} = 1\\text{ N} / (\\text{A}\\cdot\\text{m})$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu phân tích hoàn toàn về các đơn vị cơ bản (kg, m, s, A), đơn vị Tesla được biểu diễn là $\\text{kg} / (\\text{A}\\cdot\\text{s}^2)$.',
-                    isTrue: true,
-                    exp: 'Đúng. Phân tích: $1\\text{ N} = 1\\text{ kg}\\cdot\\text{m/s}^2$. Do đó: $1\\text{ T} = \\frac{\\text{kg}\\cdot\\text{m/s}^2}{\\text{A}\\cdot\\text{m}} = \\frac{\\text{kg}}{\\text{A}\\cdot\\text{s}^2}$.'
-                },
-                {
-                    id: 'd',
-                    text: 'Cảm ứng từ $\\vec{B}$ là đại lượng véc-tơ, đặc trưng cho từ trường về phương diện tác dụng lực.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là định nghĩa và ý nghĩa vật lí chuẩn xác của véc-tơ cảm ứng từ.'
-                }
+                { id: 'a', text: 'Tesla (T) - đơn vị của cảm ứng từ - là một trong 7 đơn vị cơ bản của Hệ đo lường quốc tế (SI).', isTrue: false, exp: 'Sai. Tesla là đơn vị dẫn xuất (được định nghĩa qua Newton, Ampe, mét). Đơn vị điện từ cơ bản duy nhất trong SI là Ampe (A).' },
+                { id: 'b', text: 'Dựa vào biểu thức định nghĩa lực từ, ta có thể suy ra $1\\text{ T} = 1\\text{ N} / (\\text{A}\\cdot\\text{m})$.', isTrue: true, exp: 'Đúng. Từ $F = BIL\\sin\\alpha \\Rightarrow B = \\frac{F}{IL\\sin\\alpha}$. Đơn vị của $F$ là N, $I$ là A, $L$ là m $\\Rightarrow 1\\text{ T} = 1\\text{ N} / (\\text{A}\\cdot\\text{m})$.' },
+                { id: 'c', text: 'Nếu phân tích hoàn toàn về các đơn vị cơ bản (kg, m, s, A), đơn vị Tesla được biểu diễn là $\\text{kg} / (\\text{A}\\cdot\\text{s}^2)$.', isTrue: true, exp: 'Đúng. Phân tích: $1\\text{ N} = 1\\text{ kg}\\cdot\\text{m/s}^2$. Do đó: $1\\text{ T} = \\frac{\\text{kg}\\cdot\\text{m/s}^2}{\\text{A}\\cdot\\text{m}} = \\frac{\\text{kg}}{\\text{A}\\cdot\\text{s}^2}$.' },
+                { id: 'd', text: 'Cảm ứng từ $\\vec{B}$ là đại lượng véc-tơ, đặc trưng cho từ trường về phương diện tác dụng lực.', isTrue: true, exp: 'Đúng. Đây là định nghĩa và ý nghĩa vật lí chuẩn xác của véc-tơ cảm ứng từ.' }
             ]
         },
         {
-            id: 'q12_1',
+            id: 'tu_11',
             context: '<strong>Câu 5. (Thực hành: Đo cảm ứng từ bằng cân dòng điện - Phần 1)</strong><br>Học sinh thiết kế một "cân dòng điện" gồm một khung dây hình chữ nhật (có chiều dài đoạn đáy nằm ngang là $L = 5,0$ cm) được treo dưới đĩa của cân điện tử. Phần đáy khung được đặt lọt vào vùng từ trường đều có hướng nằm ngang và vuông góc với khung dây. Lấy $g = 9,8$ m/s$^2$. Bỏ qua từ trường Trái Đất.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Để phép đo khả thi, chiều của dòng điện chạy qua đoạn dây $L$ phải được chọn sao cho lực từ $\\vec{F}$ sinh ra có phương thẳng đứng.',
-                    isTrue: true,
-                    exp: 'Đúng. Cân điện tử chỉ đo được áp lực theo phương thẳng đứng. Nếu lực từ có thành phần nằm ngang sẽ làm khung dây bị đung đưa, không đo được. ($\\vec{B}$ nằm ngang, dây nằm ngang $\\rightarrow$ lực từ $\\vec{F}$ tự động thẳng đứng).'
-                },
-                {
-                    id: 'b',
-                    text: 'Trước khi cấp điện cho khung dây, học sinh bắt buộc phải ghi lại số chỉ khối lượng ban đầu của khung dây để tính toán.',
-                    isTrue: false,
-                    exp: 'Sai. Học sinh hoàn toàn có thể sử dụng nút TARE (trừ bì) trên cân điện tử để đưa số chỉ về 0 khi chưa có dòng điện. Khi cấp điện, số chỉ hiển thị chính là sự chênh lệch $\\Delta m$ do lực từ gây ra.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu khi cấp dòng điện $I = 2,0$ A, số chỉ của cân điện tử tăng thêm $\\Delta m = 1,5$ g, chứng tỏ lực từ tác dụng lên đoạn dây $L$ có chiều hướng thẳng đứng xuống dưới.',
-                    isTrue: true,
-                    exp: 'Đúng. Số chỉ cân tăng lên (tăng áp lực xuống đĩa cân) chứng tỏ có một lực kéo khung dây xuống cùng chiều với trọng lực.'
-                },
-                {
-                    id: 'd',
-                    text: 'Từ dữ liệu trên, độ lớn cảm ứng từ $B$ của nam châm được xác định là 0,147 T.',
-                    isTrue: true,
-                    exp: 'Đúng. Độ lớn lực từ $F = \\Delta m \\cdot g = 1,5 \\cdot 10^{-3} \\cdot 9,8 = 0,0147$ N. Áp dụng $F = BIL \\Rightarrow B = \\frac{F}{IL} = \\frac{0,0147}{2,0 \\cdot 0,05} = 0,147$ T.'
-                }
+                { id: 'a', text: 'Để phép đo khả thi, chiều của dòng điện chạy qua đoạn dây $L$ phải được chọn sao cho lực từ $\\vec{F}$ sinh ra có phương thẳng đứng.', isTrue: true, exp: 'Đúng. Cân điện tử chỉ đo được áp lực theo phương thẳng đứng. Nếu lực từ có thành phần nằm ngang sẽ làm khung dây bị đung đưa, không đo được. ($\\vec{B}$ nằm ngang, dây nằm ngang $\\rightarrow$ lực từ $\\vec{F}$ tự động thẳng đứng).' },
+                { id: 'b', text: 'Trước khi cấp điện cho khung dây, học sinh bắt buộc phải ghi lại số chỉ khối lượng ban đầu của khung dây để tính toán.', isTrue: false, exp: 'Sai. Học sinh hoàn toàn có thể sử dụng nút TARE (trừ bì) trên cân điện tử để đưa số chỉ về 0 khi chưa có dòng điện. Khi cấp điện, số chỉ hiển thị chính là sự chênh lệch $\\Delta m$ do lực từ gây ra.' },
+                { id: 'c', text: 'Nếu khi cấp dòng điện $I = 2,0$ A, số chỉ của cân điện tử tăng thêm $\\Delta m = 1,5$ g, chứng tỏ lực từ tác dụng lên đoạn dây $L$ có chiều hướng thẳng đứng xuống dưới.', isTrue: true, exp: 'Đúng. Số chỉ cân tăng lên (tăng áp lực xuống đĩa cân) chứng tỏ có một lực kéo khung dây xuống cùng chiều với trọng lực.' },
+                { id: 'd', text: 'Từ dữ liệu trên, độ lớn cảm ứng từ $B$ của nam châm được xác định là 0,147 T.', isTrue: true, exp: 'Đúng. Độ lớn lực từ $F = \\Delta m \\cdot g = 1,5 \\cdot 10^{-3} \\cdot 9,8 = 0,0147$ N. Áp dụng $F = BIL \\Rightarrow B = \\frac{F}{IL} = \\frac{0,0147}{2,0 \\cdot 0,05} = 0,147$ T.' }
             ]
         },
         {
-            id: 'q12_2',
+            id: 'tu_12',
             context: '<strong>Câu 6. (Thực hành: Phân tích sai số của cân dòng điện - Phần 2)</strong><br>Trong quá trình xử lí số liệu của thí nghiệm cân dòng điện ở Câu 5, nhóm thực hành thảo luận về các nguyên nhân có thể gây ra sai số cho kết quả đo được.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Nếu học sinh vô tình đặt khung dây bị lệch sao cho góc giữa đoạn dây $L$ và véc-tơ $\\vec{B}$ chỉ là $85^\\circ$ (thay vì $90^\\circ$), thì giá trị tính toán được của $B$ sẽ nhỏ hơn cảm ứng từ thực tế của nam châm.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi đặt lệch $\\alpha = 85^\\circ$, lực từ thực tế tác dụng là $F = BIL\\sin 85^\\circ < BIL$. Cân sẽ đo được lực $F$ nhỏ hơn. Tuy nhiên, khi tính toán, học sinh vẫn dùng công thức mặc định $B_{\\text{tính}} = \\frac{F}{IL\\sin 90^\\circ}$. Do tử số bị nhỏ đi, kết quả tính ra sẽ nhỏ hơn thực tế.'
-                },
-                {
-                    id: 'b',
-                    text: 'Nếu nguồn điện một chiều không ổn định, làm cường độ dòng điện $I$ dao động nhẹ trong lúc đọc số chỉ của cân, đây là một sai số hệ thống.',
-                    isTrue: false,
-                    exp: 'Sai. Sự dao động của dòng điện làm số liệu lúc to lúc nhỏ ngẫu nhiên xung quanh giá trị thực. Đây là sai số ngẫu nhiên, không phải sai số hệ thống (sai số có quy luật một chiều).'
-                },
-                {
-                    id: 'c',
-                    text: 'Hai đoạn dây thẳng đứng nối với đoạn đáy $L$ của khung dây không đóng góp bất kỳ lực từ nào theo phương thẳng đứng làm sai lệch số chỉ của cân.',
-                    isTrue: true,
-                    exp: 'Đúng. Hai đoạn dây thẳng đứng có dòng điện thẳng đứng, từ trường $\\vec{B}$ nằm ngang, theo quy tắc bàn tay trái, lực từ tác dụng lên 2 đoạn này có phương nằm ngang. Chúng có thể làm căng/ép khung chứ không ảnh hưởng đến áp lực thẳng đứng đặt lên mặt cân.'
-                },
-                {
-                    id: 'd',
-                    text: 'Phương pháp xử lí số liệu tốt nhất là đo $\\Delta m$ tại nhiều giá trị dòng điện $I$ khác nhau, vẽ đồ thị lực từ $F$ theo $I$ và tìm $B$ thông qua hệ số góc của đường thẳng thu được.',
-                    isTrue: true,
-                    exp: 'Đúng. Đồ thị $F$ theo $I$ có dạng $F = (BL) \\cdot I$, là đường thẳng qua gốc tọa độ. Hệ số góc $k = BL \\Rightarrow B = k/L$. Phương pháp bình phương tối thiểu bằng đồ thị giúp triệt tiêu sai số ngẫu nhiên rất hiệu quả.'
-                }
+                { id: 'a', text: 'Nếu học sinh vô tình đặt khung dây bị lệch sao cho góc giữa đoạn dây $L$ và véc-tơ $\\vec{B}$ chỉ là $85^\\circ$ (thay vì $90^\\circ$), thì giá trị tính toán được của $B$ sẽ nhỏ hơn cảm ứng từ thực tế của nam châm.', isTrue: true, exp: 'Đúng. Khi đặt lệch $\\alpha = 85^\\circ$, lực từ thực tế tác dụng là $F = BIL\\sin 85^\\circ < BIL$. Cân sẽ đo được lực $F$ nhỏ hơn. Tuy nhiên, khi tính toán, học sinh vẫn dùng công thức mặc định $B_{\\text{tính}} = \\frac{F}{IL\\sin 90^\\circ}$. Do tử số bị nhỏ đi, kết quả tính ra sẽ nhỏ hơn thực tế.' },
+                { id: 'b', text: 'Nếu nguồn điện một chiều không ổn định, làm cường độ dòng điện $I$ dao động nhẹ trong lúc đọc số chỉ của cân, đây là một sai số hệ thống.', isTrue: false, exp: 'Sai. Sự dao động của dòng điện làm số liệu lúc to lúc nhỏ ngẫu nhiên xung quanh giá trị thực. Đây là sai số ngẫu nhiên, không phải sai số hệ thống (sai số có quy luật một chiều).' },
+                { id: 'c', text: 'Hai đoạn dây thẳng đứng nối với đoạn đáy $L$ của khung dây không đóng góp bất kỳ lực từ nào theo phương thẳng đứng làm sai lệch số chỉ của cân.', isTrue: true, exp: 'Đúng. Hai đoạn dây thẳng đứng có dòng điện thẳng đứng, từ trường $\\vec{B}$ nằm ngang, theo quy tắc bàn tay trái, lực từ tác dụng lên 2 đoạn này có phương nằm ngang. Chúng có thể làm căng/ép khung chứ không ảnh hưởng đến áp lực thẳng đứng đặt lên mặt cân.' },
+                { id: 'd', text: 'Phương pháp xử lí số liệu tốt nhất là đo $\\Delta m$ tại nhiều giá trị dòng điện $I$ khác nhau, vẽ đồ thị lực từ $F$ theo $I$ và tìm $B$ thông qua hệ số góc của đường thẳng thu được.', isTrue: true, exp: 'Đúng. Đồ thị $F$ theo $I$ có dạng $F = (BL) \\cdot I$, là đường thẳng qua gốc tọa độ. Hệ số góc $k = BL \\Rightarrow B = k/L$. Phương pháp bình phương tối thiểu bằng đồ thị giúp triệt tiêu sai số ngẫu nhiên rất hiệu quả.' }
             ]
         },
         {
-            id: 'q13',
+            id: 'tu_13',
             context: '<strong>Câu 8. (Khung dây kín trong từ trường đều)</strong><br>Một khung dây dẫn hình chữ nhật MNPQ kín, mang dòng điện $I$, được đặt trong một từ trường đều $\\vec{B}$. Trục quay của khung đi qua trung điểm của hai cạnh đối diện MN và PQ.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Tổng hợp lực từ (hợp lực tịnh tiến) tác dụng lên toàn bộ khung dây luôn bằng 0 ở bất kì vị trí nào của khung.',
-                    isTrue: true,
-                    exp: 'Đúng. Trong từ trường đều, lực tác dụng lên các cạnh đối diện tạo thành các cặp lực trực đối $\\rightarrow$ tổng véc-tơ lực bằng 0. Khung không bị tịnh tiến.'
-                },
-                {
-                    id: 'b',
-                    text: 'Dù hợp lực bằng 0, từ trường vẫn có khả năng làm khung dây quay nếu mặt phẳng của khung dây không vuông góc với các đường sức từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Hợp lực bằng 0 nhưng hai lực có thể có giá song song và cách nhau một đoạn $d$, tạo thành ngẫu lực làm quay khung (Momen lực).'
-                },
-                {
-                    id: 'c',
-                    text: 'Lực từ tác dụng lên hai cạnh MQ và NP song song với trục quay luôn cùng chiều nhau để tạo thành một momen ngẫu lực làm quay khung.',
-                    isTrue: false,
-                    exp: 'Sai. Để tạo thành ngẫu lực làm quay khung, lực từ tác dụng lên hai cạnh đó phải ngược chiều nhau (ví dụ một lực kéo lên, một lực ấn xuống).'
-                },
-                {
-                    id: 'd',
-                    text: 'Trạng thái cân bằng bền của khung dây là khi mặt phẳng khung dây vuông góc với các đường sức từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi mặt phẳng vuông góc với đường sức từ, giá của các lực từ tác dụng lên các cặp cạnh cùng nằm trên một mặt phẳng chứa khung dây, momen lực bằng 0, khung nằm ở trạng thái cân bằng bền.'
-                }
+                { id: 'a', text: 'Tổng hợp lực từ (hợp lực tịnh tiến) tác dụng lên toàn bộ khung dây luôn bằng 0 ở bất kì vị trí nào của khung.', isTrue: true, exp: 'Đúng. Trong từ trường đều, lực tác dụng lên các cạnh đối diện tạo thành các cặp lực trực đối $\\rightarrow$ tổng véc-tơ lực bằng 0. Khung không bị tịnh tiến.' },
+                { id: 'b', text: 'Dù hợp lực bằng 0, từ trường vẫn có khả năng làm khung dây quay nếu mặt phẳng của khung dây không vuông góc với các đường sức từ.', isTrue: true, exp: 'Đúng. Hợp lực bằng 0 nhưng hai lực có thể có giá song song và cách nhau một đoạn $d$, tạo thành ngẫu lực làm quay khung (Momen lực).' },
+                { id: 'c', text: 'Lực từ tác dụng lên hai cạnh MQ và NP song song với trục quay luôn cùng chiều nhau để tạo thành một momen ngẫu lực làm quay khung.', isTrue: false, exp: 'Sai. Để tạo thành ngẫu lực làm quay khung, lực từ tác dụng lên hai cạnh đó phải ngược chiều nhau (ví dụ một lực kéo lên, một lực ấn xuống).' },
+                { id: 'd', text: 'Trạng thái cân bằng bền của khung dây là khi mặt phẳng khung dây vuông góc với các đường sức từ.', isTrue: true, exp: 'Đúng. Khi mặt phẳng vuông góc với đường sức từ, giá của các lực từ tác dụng lên các cặp cạnh cùng nằm trên một mặt phẳng chứa khung dây, momen lực bằng 0, khung nằm ở trạng thái cân bằng bền.' }
             ]
         },
         {
-            id: 'q14',
+            id: 'tu_14',
             context: '<strong>Câu 9. (Phân tích đồ thị Lực từ theo Dòng điện)</strong><br>Học sinh thực hiện thí nghiệm đo lực từ $F$ tác dụng lên một đoạn dây thẳng dài $L = 20$ cm đặt vuông góc với từ trường đều. Phần mềm vẽ được đồ thị biểu diễn sự phụ thuộc của lực từ $F$ vào cường độ dòng điện $I$ là một đường thẳng đi qua gốc tọa độ. Đồ thị đi qua điểm có tọa độ $I = 2,5$ A và $F = 0,15$ N.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Đồ thị đi qua gốc tọa độ minh chứng cho việc lực từ tỉ lệ thuận với bình phương cường độ dòng điện.',
-                    isTrue: false,
-                    exp: 'Sai. Đường thẳng qua gốc tọa độ dạng $y = ax$ chứng tỏ $F$ tỉ lệ thuận với bậc 1 của $I$ ($F \\sim I$), không phải bình phương.'
-                },
-                {
-                    id: 'b',
-                    text: 'Hệ số góc (độ dốc) của đường thẳng đồ thị này có giá trị bằng độ lớn của cảm ứng từ $B$.',
-                    isTrue: false,
-                    exp: 'Sai. Hàm số $F = (BL\\sin 90^\\circ) \\cdot I \\Leftrightarrow F = (BL) \\cdot I$. Hệ số góc của đồ thị là $k = BL$, chứ không phải chỉ là $B$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Từ dữ liệu của đồ thị, độ lớn cảm ứng từ $B$ được xác định là 0,3 T.',
-                    isTrue: true,
-                    exp: 'Đúng. Thay số vào phương trình: $0,15 = B \\cdot 0,2 \\cdot 2,5 \\Rightarrow 0,15 = 0,5 \\cdot B \\Rightarrow B = 0,3$ T.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu thí nghiệm trên được thực hiện với một đoạn dây có chiều dài gấp đôi ($L\' = 40$ cm), đường thẳng đồ thị thu được sẽ dốc hơn (hệ số góc lớn hơn).',
-                    isTrue: true,
-                    exp: 'Đúng. Hệ số góc $k = BL$. Nếu $L$ tăng gấp đôi, hệ số góc $k$ sẽ tăng gấp đôi, đồ thị sẽ dốc cao hơn.'
-                }
+                { id: 'a', text: 'Đồ thị đi qua gốc tọa độ minh chứng cho việc lực từ tỉ lệ thuận với bình phương cường độ dòng điện.', isTrue: false, exp: 'Sai. Đường thẳng qua gốc tọa độ dạng $y = ax$ chứng tỏ $F$ tỉ lệ thuận với bậc 1 của $I$ ($F \\sim I$), không phải bình phương.' },
+                { id: 'b', text: 'Hệ số góc (độ dốc) của đường thẳng đồ thị này có giá trị bằng độ lớn của cảm ứng từ $B$.', isTrue: false, exp: 'Sai. Hàm số $F = (BL\\sin 90^\\circ) \\cdot I \\Leftrightarrow F = (BL) \\cdot I$. Hệ số góc của đồ thị là $k = BL$, chứ không phải chỉ là $B$.' },
+                { id: 'c', text: 'Từ dữ liệu của đồ thị, độ lớn cảm ứng từ $B$ được xác định là 0,3 T.', isTrue: true, exp: 'Đúng. Thay số vào phương trình: $0,15 = B \\cdot 0,2 \\cdot 2,5 \\Rightarrow 0,15 = 0,5 \\cdot B \\Rightarrow B = 0,3$ T.' },
+                { id: 'd', text: 'Nếu thí nghiệm trên được thực hiện với một đoạn dây có chiều dài gấp đôi ($L\' = 40$ cm), đường thẳng đồ thị thu được sẽ dốc hơn (hệ số góc lớn hơn).', isTrue: true, exp: 'Đúng. Hệ số góc $k = BL$. Nếu $L$ tăng gấp đôi, hệ số góc $k$ sẽ tăng gấp đôi, đồ thị sẽ dốc cao hơn.' }
             ]
         },
         {
-            id: 'q15',
+            id: 'tu_15',
             context: '<strong>Câu 10. (Từ trường Trái Đất và Thực tiễn kĩ thuật)</strong><br>Tại đường xích đạo, thành phần nằm ngang của từ trường Trái Đất có cảm ứng từ $B_0 \\approx 3 \\cdot 10^{-5}$ T và hướng từ Nam sang Bắc. Giả sử có một đường dây tải điện một chiều điện áp cao (HVDC) nằm ngang chạy song song với mặt đất theo hướng từ Tây sang Đông, mang dòng điện $I = 4000$ A. (Lấy $g \\approx 10$ m/s$^2$).',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Lực từ do từ trường Trái Đất tác dụng lên đoạn dây dẫn này có độ lớn bằng 0 N do cường độ từ trường quá nhỏ.',
-                    isTrue: false,
-                    exp: 'Sai. Mặc dù $B$ nhỏ, nhưng dòng tải $I$ rất lớn, đoạn dây đặt vuông góc với $\\vec{B}$ nên lực từ vẫn có một độ lớn nhất định, không bằng 0.'
-                },
-                {
-                    id: 'b',
-                    text: 'Theo quy tắc bàn tay trái, lực từ của Trái Đất sẽ tác dụng đẩy đường dây điện này lệch về phía Bắc.',
-                    isTrue: false,
-                    exp: 'Sai. Đặt tay trái: Từ trường $\\vec{B}$ hướng ra Bắc nên ngửa lòng bàn tay hướng về phía Nam để hứng các đường sức từ cắm vào. Dòng điện $I$ hướng từ Tây sang Đông $\\rightarrow$ chiều từ cổ tay đến ngón tay hướng sang Đông. Khi đó, ngón tay cái choãi ra $90^\\circ$ sẽ chỉ hướng thẳng đứng lên trời. (Không phải bị đẩy về phương Bắc).'
-                },
-                {
-                    id: 'c',
-                    text: 'Lực từ này sẽ có phương thẳng đứng, hướng từ dưới mặt đất lên trên trời.',
-                    isTrue: true,
-                    exp: 'Đúng. (Theo chứng minh quy tắc bàn tay trái ở câu b).'
-                },
-                {
-                    id: 'd',
-                    text: 'Lực từ tác dụng lên 1 mét chiều dài của sợi cáp này là cực kì nhỏ (0,12 N), không đủ sức để nâng nổi cáp điện nhưng vẫn là một thông số kĩ thuật cần biết.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực trên 1 m là $F = B_0 \\cdot I \\cdot L \\cdot \\sin 90^\\circ = (3 \\cdot 10^{-5}) \\cdot 4000 \\cdot 1 = 0,12$ N/m. (Tương đương trọng lượng của 12 gam, quá bé so với trọng lượng cáp HVDC).'
-                }
+                { id: 'a', text: 'Lực từ do từ trường Trái Đất tác dụng lên đoạn dây dẫn này có độ lớn bằng 0 N do cường độ từ trường quá nhỏ.', isTrue: false, exp: 'Sai. Mặc dù $B$ nhỏ, nhưng dòng tải $I$ rất lớn, đoạn dây đặt vuông góc với $\\vec{B}$ nên lực từ vẫn có một độ lớn nhất định, không bằng 0.' },
+                { id: 'b', text: 'Theo quy tắc bàn tay trái, lực từ của Trái Đất sẽ tác dụng đẩy đường dây điện này lệch về phía Bắc.', isTrue: false, exp: 'Sai. Đặt tay trái: Từ trường $\\vec{B}$ hướng ra Bắc nên ngửa lòng bàn tay hướng về phía Nam để hứng các đường sức từ cắm vào. Dòng điện $I$ hướng từ Tây sang Đông $\\rightarrow$ chiều từ cổ tay đến ngón tay hướng sang Đông. Khi đó, ngón tay cái choãi ra $90^\\circ$ sẽ chỉ hướng thẳng đứng lên trời. (Không phải bị đẩy về phương Bắc).' },
+                { id: 'c', text: 'Lực từ này sẽ có phương thẳng đứng, hướng từ dưới mặt đất lên trên trời.', isTrue: true, exp: 'Đúng. (Theo chứng minh quy tắc bàn tay trái ở câu b).' },
+                { id: 'd', text: 'Lực từ tác dụng lên 1 mét chiều dài của sợi cáp này là cực kì nhỏ (0,12 N), không đủ sức để nâng nổi cáp điện nhưng vẫn là một thông số kĩ thuật cần biết.', isTrue: true, exp: 'Đúng. Lực trên 1 m là $F = B_0 \\cdot I \\cdot L \\cdot \\sin 90^\\circ = (3 \\cdot 10^{-5}) \\cdot 4000 \\cdot 1 = 0,12$ N/m. (Tương đương trọng lượng của 12 gam, quá bé so với trọng lượng cáp HVDC).' }
             ]
         },
         {
-            id: 'q16',
+            id: 'tu_16',
             context: '<strong>Câu 1. (Định nghĩa và tính toán Từ thông)</strong><br>Một khung dây dẫn phẳng hình vuông cạnh $a = 10$ cm được đặt trong một từ trường đều có độ lớn cảm ứng từ $B = 0,5$ T. Từ trường xuyên qua khung dây tạo thành một góc $30^\\circ$ so với mặt phẳng của khung dây.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Véc-tơ pháp tuyến $\\vec{n}$ của mặt phẳng khung dây hợp với véc-tơ cảm ứng từ $\\vec{B}$ một góc $\\alpha = 30^\\circ$.',
-                    isTrue: false,
-                    exp: 'Sai. Góc giữa $\\vec{B}$ và mặt phẳng khung là $30^\\circ$. Véc-tơ pháp tuyến $\\vec{n}$ luôn vuông góc với mặt phẳng khung. Do đó, góc $\\alpha$ (giữa $\\vec{B}$ và $\\vec{n}$) phải là $90^\\circ - 30^\\circ = 60^\\circ$.'
-                },
-                {
-                    id: 'b',
-                    text: 'Giá trị từ thông gửi qua khung dây dẫn này là $2,5 \\cdot 10^{-3}$ Wb.',
-                    isTrue: true,
-                    exp: 'Đúng. Áp dụng công thức $\\Phi = BS\\cos\\alpha$. Diện tích $S = a^2 = (0,1)^2 = 0,01$ m$^2$. Ta có $\\Phi = 0,5 \\cdot 0,01 \\cdot \\cos 60^\\circ = 0,005 \\cdot 0,5 = 0,0025$ Wb $= 2,5 \\cdot 10^{-3}$ Wb.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu giữ nguyên độ lớn $B$ và diện tích $S$, nhưng xoay khung dây sao cho mặt phẳng của nó vuông góc với các đường sức từ thì từ thông qua khung dây sẽ đạt giá trị cực đại.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi mặt phẳng vuông góc với $\\vec{B}$, góc $\\alpha = 0^\\circ \\Rightarrow \\cos 0^\\circ = 1$. Từ thông đạt cực đại $\\Phi_{\\text{max}} = BS$.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu từ thông qua mặt phẳng khung dây là đại lượng vô hướng có thể mang giá trị âm, điều đó chứng tỏ từ thông là một đại lượng không có ý nghĩa vật lí thực tế.',
-                    isTrue: false,
-                    exp: 'Sai. Từ thông là đại lượng vô hướng và dấu (âm hay dương) hoàn toàn có ý nghĩa vật lí. Nó phụ thuộc vào việc ta chọn chiều của véc-tơ pháp tuyến $\\vec{n}$. Dấu của từ thông giúp xác định chiều của dòng điện cảm ứng theo định luật Lenz.'
-                }
+                { id: 'a', text: 'Véc-tơ pháp tuyến $\\vec{n}$ của mặt phẳng khung dây hợp với véc-tơ cảm ứng từ $\\vec{B}$ một góc $\\alpha = 30^\\circ$.', isTrue: false, exp: 'Sai. Góc giữa $\\vec{B}$ và mặt phẳng khung là $30^\\circ$. Véc-tơ pháp tuyến $\\vec{n}$ luôn vuông góc với mặt phẳng khung. Do đó, góc $\\alpha$ (giữa $\\vec{B}$ và $\\vec{n}$) phải là $90^\\circ - 30^\\circ = 60^\\circ$.' },
+                { id: 'b', text: 'Giá trị từ thông gửi qua khung dây dẫn này là $2,5 \\cdot 10^{-3}$ Wb.', isTrue: true, exp: 'Đúng. Áp dụng công thức $\\Phi = BS\\cos\\alpha$. Diện tích $S = a^2 = (0,1)^2 = 0,01$ m$^2$. Ta có $\\Phi = 0,5 \\cdot 0,01 \\cdot \\cos 60^\\circ = 0,005 \\cdot 0,5 = 0,0025$ Wb $= 2,5 \\cdot 10^{-3}$ Wb.' },
+                { id: 'c', text: 'Nếu giữ nguyên độ lớn $B$ và diện tích $S$, nhưng xoay khung dây sao cho mặt phẳng của nó vuông góc với các đường sức từ thì từ thông qua khung dây sẽ đạt giá trị cực đại.', isTrue: true, exp: 'Đúng. Khi mặt phẳng vuông góc với $\\vec{B}$, góc $\\alpha = 0^\\circ \\Rightarrow \\cos 0^\\circ = 1$. Từ thông đạt cực đại $\\Phi_{\\text{max}} = BS$.' },
+                { id: 'd', text: 'Nếu từ thông qua mặt phẳng khung dây là đại lượng vô hướng có thể mang giá trị âm, điều đó chứng tỏ từ thông là một đại lượng không có ý nghĩa vật lí thực tế.', isTrue: false, exp: 'Sai. Từ thông là đại lượng vô hướng và dấu (âm hay dương) hoàn toàn có ý nghĩa vật lí. Nó phụ thuộc vào việc ta chọn chiều của véc-tơ pháp tuyến $\\vec{n}$. Dấu của từ thông giúp xác định chiều của dòng điện cảm ứng theo định luật Lenz.' }
             ]
         },
         {
-            id: 'q17',
+            id: 'tu_17',
             context: '<strong>Câu 2. (Thí nghiệm Faraday cơ bản)</strong><br>Mắc hai đầu một cuộn dây dẫn hình trụ vào một điện kế nhạy (điện kế có vạch số 0 ở chính giữa). Dùng một nam châm vĩnh cửu hình thẳng thực hiện các thao tác thí nghiệm sau.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Khi đưa cực Bắc (N) của nam châm tiến nhanh vào trong lòng cuộn dây, kim điện kế sẽ lệch về một phía, chứng tỏ có dòng điện chạy qua cuộn dây.',
-                    isTrue: true,
-                    exp: 'Đúng. Sự chuyển động tương đối làm từ thông qua cuộn dây biến thiên, sinh ra dòng điện cảm ứng.'
-                },
-                {
-                    id: 'b',
-                    text: 'Khi để nam châm đứng yên bên trong lòng cuộn dây một khoảng thời gian dài, kim điện kế vẫn sẽ tiếp tục duy trì độ lệch vì từ trường của nam châm rất mạnh.',
-                    isTrue: false,
-                    exp: 'Sai. Khi nam châm đứng yên, từ thông qua cuộn dây không biến thiên ($\\Delta\\Phi = 0$), suất điện động bằng 0, kim điện kế trở về vạch 0. (Hiện tượng cảm ứng chỉ tồn tại trong thời gian từ thông biến thiên).'
-                },
-                {
-                    id: 'c',
-                    text: 'Khi kéo cực Bắc (N) của nam châm ra khỏi cuộn dây, kim điện kế sẽ lệch về phía ngược lại so với lúc đưa nam châm vào.',
-                    isTrue: true,
-                    exp: 'Đúng. Lúc đưa vào (từ thông tăng) và kéo ra (từ thông giảm) là hai quá trình ngược nhau. Theo định luật Lenz, dòng điện cảm ứng phải đổi chiều để chống lại sự biến thiên, nên kim điện kế lệch ngược lại.'
-                },
-                {
-                    id: 'd',
-                    text: 'Hiện tượng cảm ứng điện từ trong thí nghiệm này chỉ xảy ra khi nam châm chuyển động, còn nếu giữ nam châm đứng yên và di chuyển cuộn dây thì sẽ không có hiện tượng gì xảy ra.',
-                    isTrue: false,
-                    exp: 'Sai. Hiện tượng cảm ứng xảy ra do sự biến thiên từ thông, không phân biệt cái nào chuyển động. Việc di chuyển cuộn dây lại gần nam châm đứng yên vẫn làm từ thông qua cuộn dây biến thiên, và dòng điện cảm ứng vẫn xuất hiện.'
-                }
+                { id: 'a', text: 'Khi đưa cực Bắc (N) của nam châm tiến nhanh vào trong lòng cuộn dây, kim điện kế sẽ lệch về một phía, chứng tỏ có dòng điện chạy qua cuộn dây.', isTrue: true, exp: 'Đúng. Sự chuyển động tương đối làm từ thông qua cuộn dây biến thiên, sinh ra dòng điện cảm ứng.' },
+                { id: 'b', text: 'Khi để nam châm đứng yên bên trong lòng cuộn dây một khoảng thời gian dài, kim điện kế vẫn sẽ tiếp tục duy trì độ lệch vì từ trường của nam châm rất mạnh.', isTrue: false, exp: 'Sai. Khi nam châm đứng yên, từ thông qua cuộn dây không biến thiên ($\\Delta\\Phi = 0$), suất điện động bằng 0, kim điện kế trở về vạch 0. (Hiện tượng cảm ứng chỉ tồn tại trong thời gian từ thông biến thiên).' },
+                { id: 'c', text: 'Khi kéo cực Bắc (N) của nam châm ra khỏi cuộn dây, kim điện kế sẽ lệch về phía ngược lại so với lúc đưa nam châm vào.', isTrue: true, exp: 'Đúng. Lúc đưa vào (từ thông tăng) và kéo ra (từ thông giảm) là hai quá trình ngược nhau. Theo định luật Lenz, dòng điện cảm ứng phải đổi chiều để chống lại sự biến thiên, nên kim điện kế lệch ngược lại.' },
+                { id: 'd', text: 'Hiện tượng cảm ứng điện từ trong thí nghiệm này chỉ xảy ra khi nam châm chuyển động, còn nếu giữ nam châm đứng yên và di chuyển cuộn dây thì sẽ không có hiện tượng gì xảy ra.', isTrue: false, exp: 'Sai. Hiện tượng cảm ứng xảy ra do sự biến thiên từ thông, không phân biệt cái nào chuyển động. Việc di chuyển cuộn dây lại gần nam châm đứng yên vẫn làm từ thông qua cuộn dây biến thiên, và dòng điện cảm ứng vẫn xuất hiện.' }
             ]
         },
         {
-            id: 'q18',
+            id: 'tu_18',
             context: '<strong>Câu 3. (Vận dụng Định luật Faraday)</strong><br>Một vòng dây dẫn kín bằng nhôm có diện tích $S = 0,04$ m$^2$, điện trở $R = 0,2\\text{ }\\Omega$ được đặt trong một từ trường đều. Véc-tơ cảm ứng từ $\\vec{B}$ vuông góc với mặt phẳng vòng dây. Cho cảm ứng từ $B$ giảm đều từ 0,5 T xuống 0,1 T trong khoảng thời gian $\\Delta t = 0,05$ s.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Độ biến thiên từ thông $\\Delta\\Phi$ qua vòng dây trong khoảng thời gian trên có độ lớn là 0,016 Wb.',
-                    isTrue: true,
-                    exp: 'Đúng. $\\vec{B} \\perp$ mặt phẳng vòng dây $\\Rightarrow \\alpha = 0^\\circ \\Rightarrow \\cos 0^\\circ = 1$. Độ biến thiên từ thông: $|\\Delta\\Phi| = |(B_2 - B_1) \\cdot S| = |(0,1 - 0,5) \\cdot 0,04| = |-0,4 \\cdot 0,04| = 0,016$ Wb.'
-                },
-                {
-                    id: 'b',
-                    text: 'Độ lớn suất điện động cảm ứng sinh ra trong vòng dây là 0,32 V.',
-                    isTrue: true,
-                    exp: 'Đúng. Độ lớn suất điện động cảm ứng (Định luật Faraday): $|e_c| = \\frac{|\\Delta\\Phi|}{\\Delta t} = \\frac{0,016}{0,05} = 0,32$ V.'
-                },
-                {
-                    id: 'c',
-                    text: 'Cường độ dòng điện cảm ứng chạy trong vòng dây là 1,6 A.',
-                    isTrue: true,
-                    exp: 'Đúng. Cường độ dòng điện: $I_c = \\frac{|e_c|}{R} = \\frac{0,32}{0,2} = 1,6$ A.'
-                },
-                {
-                    id: 'd',
-                    text: 'Theo biểu thức $e_c = - \\frac{\\Delta\\Phi}{\\Delta t}$, dấu trừ chỉ ra rằng suất điện động cảm ứng luôn có giá trị âm.',
-                    isTrue: false,
-                    exp: 'Sai. Dấu trừ trong định luật Faraday là biểu hiện toán học của định luật Lenz (chống lại nguyên nhân sinh ra nó). Giá trị của $e_c$ âm hay dương phụ thuộc vào việc từ thông đang tăng ($\\Delta\\Phi > 0 \\Rightarrow e_c < 0$) hay giảm ($\\Delta\\Phi < 0 \\Rightarrow e_c > 0$).'
-                }
+                { id: 'a', text: 'Độ biến thiên từ thông $\\Delta\\Phi$ qua vòng dây trong khoảng thời gian trên có độ lớn là 0,016 Wb.', isTrue: true, exp: 'Đúng. $\\vec{B} \\perp$ mặt phẳng vòng dây $\\Rightarrow \\alpha = 0^\\circ \\Rightarrow \\cos 0^\\circ = 1$. Độ biến thiên từ thông: $|\\Delta\\Phi| = |(B_2 - B_1) \\cdot S| = |(0,1 - 0,5) \\cdot 0,04| = |-0,4 \\cdot 0,04| = 0,016$ Wb.' },
+                { id: 'b', text: 'Độ lớn suất điện động cảm ứng sinh ra trong vòng dây là 0,32 V.', isTrue: true, exp: 'Đúng. Độ lớn suất điện động cảm ứng (Định luật Faraday): $|e_c| = \\frac{|\\Delta\\Phi|}{\\Delta t} = \\frac{0,016}{0,05} = 0,32$ V.' },
+                { id: 'c', text: 'Cường độ dòng điện cảm ứng chạy trong vòng dây là 1,6 A.', isTrue: true, exp: 'Đúng. Cường độ dòng điện: $I_c = \\frac{|e_c|}{R} = \\frac{0,32}{0,2} = 1,6$ A.' },
+                { id: 'd', text: 'Theo biểu thức $e_c = - \\frac{\\Delta\\Phi}{\\Delta t}$, dấu trừ chỉ ra rằng suất điện động cảm ứng luôn có giá trị âm.', isTrue: false, exp: 'Sai. Dấu trừ trong định luật Faraday là biểu hiện toán học của định luật Lenz (chống lại nguyên nhân sinh ra nó). Giá trị của $e_c$ âm hay dương phụ thuộc vào việc từ thông đang tăng ($\\Delta\\Phi > 0 \\Rightarrow e_c < 0$) hay giảm ($\\Delta\\Phi < 0 \\Rightarrow e_c > 0$).' }
             ]
         },
         {
-            id: 'q19',
+            id: 'tu_19',
             context: '<strong>Câu 4. (Vận dụng Định luật Lenz - Khung dây trượt)</strong><br>Một thanh kim loại MN dài $L$ trượt không ma sát với vận tốc không đổi $\\vec{v}$ dọc theo hai thanh ray dẫn điện song song (tạo thành một mạch kín hình chữ U). Hệ thống được đặt trong một từ trường đều $\\vec{B}$ có hướng thẳng đứng từ dưới lên trên.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Sự trượt của thanh MN làm diện tích mạch kín tăng lên, dẫn đến từ thông qua mạch biến thiên và sinh ra dòng điện cảm ứng.',
-                    isTrue: true,
-                    exp: 'Đúng. Diện tích hình chữ U (do thanh MN quét qua) tăng liên tục làm từ thông $\\Phi = BS$ tăng theo $\\rightarrow$ xuất hiện cảm ứng điện từ.'
-                },
-                {
-                    id: 'b',
-                    text: 'Theo Định luật Lenz, chiều của dòng điện cảm ứng trong thanh MN phải sinh ra một lực từ đẩy thanh MN tiếp tục trượt nhanh hơn.',
-                    isTrue: false,
-                    exp: 'Sai. Theo Định luật Lenz, dòng điện cảm ứng có tác dụng chống lại nguyên nhân sinh ra nó. Nguyên nhân là thanh MN trượt tới. Do đó, lực từ tác dụng lên MN phải là lực cản (ngược chiều $\\vec{v}$), kéo chậm thanh MN lại chứ không phải thúc đẩy nó trượt nhanh hơn.'
-                },
-                {
-                    id: 'c',
-                    text: 'Từ trường do dòng điện cảm ứng sinh ra sẽ có chiều ngược lại (hướng từ trên xuống dưới) so với từ trường ban đầu $\\vec{B}$.',
-                    isTrue: true,
-                    exp: 'Đúng. Vì từ thông đang tăng (do diện tích tăng), từ trường cảm ứng $\\vec{B_c}$ phải ngược chiều với từ trường gốc $\\vec{B}$ để triệt tiêu bớt sự tăng đó. $\\vec{B}$ gốc hướng lên, $\\vec{B_c}$ hướng xuống.'
-                },
-                {
-                    id: 'd',
-                    text: 'Công của lực kéo bên ngoài (để duy trì vận tốc $\\vec{v}$) chính là nguồn gốc năng lượng tạo ra điện năng của dòng điện cảm ứng trong mạch.',
-                    isTrue: true,
-                    exp: 'Đúng. Để thanh chuyển động đều (không bị lực từ cản lại làm dừng hẳn), người ta phải tác dụng một lực kéo cơ học. Công của lực cơ học này chính là năng lượng chuyển hóa thành điện năng (dòng điện cảm ứng tỏa nhiệt trên điện trở của mạch). Đây là nguyên lí chuyển hóa năng lượng cơ bản.'
-                }
+                { id: 'a', text: 'Sự trượt của thanh MN làm diện tích mạch kín tăng lên, dẫn đến từ thông qua mạch biến thiên và sinh ra dòng điện cảm ứng.', isTrue: true, exp: 'Đúng. Diện tích hình chữ U (do thanh MN quét qua) tăng liên tục làm từ thông $\\Phi = BS$ tăng theo $\\rightarrow$ xuất hiện cảm ứng điện từ.' },
+                { id: 'b', text: 'Theo Định luật Lenz, chiều của dòng điện cảm ứng trong thanh MN phải sinh ra một lực từ đẩy thanh MN tiếp tục trượt nhanh hơn.', isTrue: false, exp: 'Sai. Theo Định luật Lenz, dòng điện cảm ứng có tác dụng chống lại nguyên nhân sinh ra nó. Nguyên nhân là thanh MN trượt tới. Do đó, lực từ tác dụng lên MN phải là lực cản (ngược chiều $\\vec{v}$), kéo chậm thanh MN lại chứ không phải thúc đẩy nó trượt nhanh hơn.' },
+                { id: 'c', text: 'Từ trường do dòng điện cảm ứng sinh ra sẽ có chiều ngược lại (hướng từ trên xuống dưới) so với từ trường ban đầu $\\vec{B}$.', isTrue: true, exp: 'Đúng. Vì từ thông đang tăng (do diện tích tăng), từ trường cảm ứng $\\vec{B_c}$ phải ngược chiều với từ trường gốc $\\vec{B}$ để triệt tiêu bớt sự tăng đó. $\\vec{B}$ gốc hướng lên, $\\vec{B_c}$ hướng xuống.' },
+                { id: 'd', text: 'Công của lực kéo bên ngoài (để duy trì vận tốc $\\vec{v}$) chính là nguồn gốc năng lượng tạo ra điện năng của dòng điện cảm ứng trong mạch.', isTrue: true, exp: 'Đúng. Để thanh chuyển động đều (không bị lực từ cản lại làm dừng hẳn), người ta phải tác dụng một lực kéo cơ học. Công của lực cơ học này chính là năng lượng chuyển hóa thành điện năng (dòng điện cảm ứng tỏa nhiệt trên điện trở của mạch). Đây là nguyên lí chuyển hóa năng lượng cơ bản.' }
             ]
         },
         {
-            id: 'q20',
+            id: 'tu_20',
             context: '<strong>Câu 5. (Thí nghiệm thả nam châm qua vòng dây - Ứng dụng Định luật Lenz)</strong><br>Cố định một vòng dây đồng nằm ngang trên giá đỡ. Thả một thanh nam châm thẳng cho rơi tự do theo phương thẳng đứng xuyên qua tâm của vòng dây (cực Bắc N hướng xuống dưới). Bỏ qua sức cản không khí.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trong giai đoạn nam châm đang rơi từ trên cao tiến lại gần mặt vòng dây, dòng điện cảm ứng trong vòng dây có chiều sao cho mặt trên của vòng dây trở thành cực Nam (S).',
-                    isTrue: false,
-                    exp: 'Sai. Nam châm đưa cực Bắc (N) tiến lại gần làm từ thông tăng. Theo Định luật Lenz, vòng dây phải sinh ra cực cùng tên để đẩy nam châm lại. Mặt trên của vòng dây phải là cực Bắc (N).'
-                },
-                {
-                    id: 'b',
-                    text: 'Gia tốc rơi của thanh nam châm khi đang tiến lại gần vòng dây nhỏ hơn gia tốc rơi tự do $g$.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực từ do vòng dây sinh ra (lực đẩy lên trên) ngược chiều với trọng lực, làm giảm gia tốc rơi của nam châm so với rơi tự do.'
-                },
-                {
-                    id: 'c',
-                    text: 'Trong giai đoạn nam châm vừa lọt qua khỏi vòng dây và tiếp tục rơi xuống dưới, dòng điện cảm ứng trong vòng dây sẽ đổi chiều so với giai đoạn trước.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi đi ra xa, từ thông qua vòng dây đang giảm. Vòng dây phải sinh ra cực khác tên (hút lại) để chống lại sự rời đi của nam châm (mặt dưới vòng dây trở thành cực Bắc N). Điều này đòi hỏi dòng điện cảm ứng phải đổi chiều.'
-                },
-                {
-                    id: 'd',
-                    text: 'Khi nam châm đã đi xa khỏi vòng dây, từ thông qua vòng dây bằng không, dòng điện cảm ứng lập tức biến mất.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi ở đủ xa, từ trường của nam châm xuyên qua vòng dây không đáng kể, từ thông $\\approx 0$ và không còn biến thiên, do đó suất điện động và dòng điện cảm ứng bằng 0.'
-                }
+                { id: 'a', text: 'Trong giai đoạn nam châm đang rơi từ trên cao tiến lại gần mặt vòng dây, dòng điện cảm ứng trong vòng dây có chiều sao cho mặt trên của vòng dây trở thành cực Nam (S).', isTrue: false, exp: 'Sai. Nam châm đưa cực Bắc (N) tiến lại gần làm từ thông tăng. Theo Định luật Lenz, vòng dây phải sinh ra cực cùng tên để đẩy nam châm lại. Mặt trên của vòng dây phải là cực Bắc (N).' },
+                { id: 'b', text: 'Gia tốc rơi của thanh nam châm khi đang tiến lại gần vòng dây nhỏ hơn gia tốc rơi tự do $g$.', isTrue: true, exp: 'Đúng. Lực từ do vòng dây sinh ra (lực đẩy lên trên) ngược chiều với trọng lực, làm giảm gia tốc rơi của nam châm so với rơi tự do.' },
+                { id: 'c', text: 'Trong giai đoạn nam châm vừa lọt qua khỏi vòng dây và tiếp tục rơi xuống dưới, dòng điện cảm ứng trong vòng dây sẽ đổi chiều so với giai đoạn trước.', isTrue: true, exp: 'Đúng. Khi đi ra xa, từ thông qua vòng dây đang giảm. Vòng dây phải sinh ra cực khác tên (hút lại) để chống lại sự rời đi của nam châm (mặt dưới vòng dây trở thành cực Bắc N). Điều này đòi hỏi dòng điện cảm ứng phải đổi chiều.' },
+                { id: 'd', text: 'Khi nam châm đã đi xa khỏi vòng dây, từ thông qua vòng dây bằng không, dòng điện cảm ứng lập tức biến mất.', isTrue: true, exp: 'Đúng. Khi ở đủ xa, từ trường của nam châm xuyên qua vòng dây không đáng kể, từ thông $\\approx 0$ và không còn biến thiên, do đó suất điện động và dòng điện cảm ứng bằng 0.' }
             ]
         },
         {
-            id: 'q21',
+            id: 'tu_21',
             context: '<strong>Câu 6. (Dòng điện Foucault trong lõi thép)</strong><br>Một khối kim loại hình trụ đặc được thả quay tự do bên trong một vùng từ trường biến thiên cường độ mạnh.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Hiện tượng cảm ứng điện từ xảy ra ngay trong khối lượng của khối kim loại, sinh ra các dòng điện kín gọi là dòng điện Foucault.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là định nghĩa và bản chất của dòng điện Foucault.'
-                },
-                {
-                    id: 'b',
-                    text: 'Dòng điện Foucault chỉ mang tính chất gây hại do chúng làm tiêu hao năng lượng thành nhiệt năng theo hiệu ứng Joule-Lenz.',
-                    isTrue: false,
-                    exp: 'Sai. Dòng Foucault gây hại trong lõi máy biến áp (làm nóng máy), nhưng nó lại mang tính có ích trong nhiều ứng dụng kĩ thuật như: bếp từ, lò nướng kim loại, phanh điện từ, công tơ điện.'
-                },
-                {
-                    id: 'c',
-                    text: 'Để giảm tác hại của dòng Foucault trong các máy biến áp hoặc động cơ, người ta đúc lõi sắt thành một khối đặc và mạ lớp cách điện bên ngoài.',
-                    isTrue: false,
-                    exp: 'Sai. Đúc khối đặc sẽ làm dòng Foucault chạy thành những vòng lớn (điện trở nhỏ $\\rightarrow$ cường độ lớn $\\rightarrow$ cực nóng). Biện pháp đúng là ghép cách điện nhiều lá thép mỏng lại với nhau để cắt đứt các mạch vòng Foucault, giảm cường độ dòng Foucault đi đáng kể.'
-                },
-                {
-                    id: 'd',
-                    text: 'Dòng điện Foucault có tác dụng tạo ra một momen lực từ (lực hãm từ) chống lại sự quay của khối kim loại, làm nó dừng lại nhanh chóng.',
-                    isTrue: true,
-                    exp: 'Đúng. Theo hệ quả của định luật Lenz, dòng Foucault sinh ra luôn có tác dụng chống lại nguyên nhân sinh ra nó (chống lại chuyển động quay $\\rightarrow$ lực cản từ).'
-                }
+                { id: 'a', text: 'Hiện tượng cảm ứng điện từ xảy ra ngay trong khối lượng của khối kim loại, sinh ra các dòng điện kín gọi là dòng điện Foucault.', isTrue: true, exp: 'Đúng. Đây là định nghĩa và bản chất của dòng điện Foucault.' },
+                { id: 'b', text: 'Dòng điện Foucault chỉ mang tính chất gây hại do chúng làm tiêu hao năng lượng thành nhiệt năng theo hiệu ứng Joule-Lenz.', isTrue: false, exp: 'Sai. Dòng Foucault gây hại trong lõi máy biến áp (làm nóng máy), nhưng nó lại mang tính có ích trong nhiều ứng dụng kĩ thuật như: bếp từ, lò nướng kim loại, phanh điện từ, công tơ điện.' },
+                { id: 'c', text: 'Để giảm tác hại của dòng Foucault trong các máy biến áp hoặc động cơ, người ta đúc lõi sắt thành một khối đặc và mạ lớp cách điện bên ngoài.', isTrue: false, exp: 'Sai. Đúc khối đặc sẽ làm dòng Foucault chạy thành những vòng lớn (điện trở nhỏ $\\rightarrow$ cường độ lớn $\\rightarrow$ cực nóng). Biện pháp đúng là ghép cách điện nhiều lá thép mỏng lại với nhau để cắt đứt các mạch vòng Foucault, giảm cường độ dòng Foucault đi đáng kể.' },
+                { id: 'd', text: 'Dòng điện Foucault có tác dụng tạo ra một momen lực từ (lực hãm từ) chống lại sự quay của khối kim loại, làm nó dừng lại nhanh chóng.', isTrue: true, exp: 'Đúng. Theo hệ quả của định luật Lenz, dòng Foucault sinh ra luôn có tác dụng chống lại nguyên nhân sinh ra nó (chống lại chuyển động quay $\\rightarrow$ lực cản từ).' }
             ]
         },
         {
-            id: 'q22',
+            id: 'tu_22',
             context: '<strong>Câu 7. (Ứng dụng cảm ứng điện từ: Bếp từ)</strong><br>Bếp từ hiện đại sử dụng dòng điện xoay chiều tần số cao để đun nấu thức ăn. Một học sinh quan sát bếp từ nhà mình và đưa ra các nhận xét.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Bếp từ hoạt động bằng cách làm nóng trực tiếp mặt kính ceramic, sau đó mặt kính mới truyền nhiệt lên đáy nồi.',
-                    isTrue: false,
-                    exp: 'Sai. Mặt kính của bếp cách điện và không có tính từ nên không sinh ra dòng Foucault, nó không tự nóng lên. Nhiệt sinh ra từ đáy nồi kim loại, sau đó truyền ngược một phần làm ấm mặt kính.'
-                },
-                {
-                    id: 'b',
-                    text: 'Bên dưới mặt kính của bếp từ có một mâm từ (cuộn dây phẳng) được cấp dòng điện xoay chiều để tạo ra một từ trường biến thiên tần số cao.',
-                    isTrue: true,
-                    exp: 'Đúng. Dòng điện xoay chiều biến thiên $\\rightarrow$ sinh ra từ trường biến thiên xuyên qua mặt kính lên đáy nồi.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu người dùng đặt một chiếc nồi đất nung (chất liệu phi kim) lên bếp, bếp từ vẫn có thể đun sôi nước bên trong nồi.',
-                    isTrue: false,
-                    exp: 'Sai. Nồi đất nung (gốm, sứ) là chất cách điện. Dù từ trường biến thiên xuyên qua, nhưng do điện trở quá lớn nên không thể xuất hiện các dòng điện Foucault cảm ứng. Bếp không thể hoạt động (thường sẽ báo lỗi E0).'
-                },
-                {
-                    id: 'd',
-                    text: 'Để bếp từ hoạt động đạt hiệu suất cao, nồi được dùng phải làm bằng vật liệu dẫn điện tốt và có tính chất dẫn từ (sắt từ).',
-                    isTrue: true,
-                    exp: 'Đúng. Nồi phải dẫn điện (thường là hợp kim thép/inox nhiễm từ) để cho dòng Foucault chạy qua. Tính sắt từ giúp tập trung các đường sức từ vào đáy nồi, tránh phát tán ra xung quanh, tăng cường hiệu ứng Foucault.'
-                }
+                { id: 'a', text: 'Bếp từ hoạt động bằng cách làm nóng trực tiếp mặt kính ceramic, sau đó mặt kính mới truyền nhiệt lên đáy nồi.', isTrue: false, exp: 'Sai. Mặt kính của bếp cách điện và không có tính từ nên không sinh ra dòng Foucault, nó không tự nóng lên. Nhiệt sinh ra từ đáy nồi kim loại, sau đó truyền ngược một phần làm ấm mặt kính.' },
+                { id: 'b', text: 'Bên dưới mặt kính của bếp từ có một mâm từ (cuộn dây phẳng) được cấp dòng điện xoay chiều để tạo ra một từ trường biến thiên tần số cao.', isTrue: true, exp: 'Đúng. Dòng điện xoay chiều biến thiên $\\rightarrow$ sinh ra từ trường biến thiên xuyên qua mặt kính lên đáy nồi.' },
+                { id: 'c', text: 'Nếu người dùng đặt một chiếc nồi đất nung (chất liệu phi kim) lên bếp, bếp từ vẫn có thể đun sôi nước bên trong nồi.', isTrue: false, exp: 'Sai. Nồi đất nung (gốm, sứ) là chất cách điện. Dù từ trường biến thiên xuyên qua, nhưng do điện trở quá lớn nên không thể xuất hiện các dòng điện Foucault cảm ứng. Bếp không thể hoạt động (thường sẽ báo lỗi E0).' },
+                { id: 'd', text: 'Để bếp từ hoạt động đạt hiệu suất cao, nồi được dùng phải làm bằng vật liệu dẫn điện tốt và có tính chất dẫn từ (sắt từ).', isTrue: true, exp: 'Đúng. Nồi phải dẫn điện (thường là hợp kim thép/inox nhiễm từ) để cho dòng Foucault chạy qua. Tính sắt từ giúp tập trung các đường sức từ vào đáy nồi, tránh phát phát tán ra xung quanh, tăng cường hiệu ứng Foucault.' }
             ]
         },
         {
-            id: 'q23',
+            id: 'tu_23',
             context: '<strong>Câu 8. (Ứng dụng cảm ứng điện từ: Phanh điện từ)</strong><br>Phanh điện từ (hay còn gọi là Retarder) được trang bị phổ biến trên các xe khách và xe tải siêu trường siêu trọng để hỗ trợ phanh an toàn khi đổ đèo. Phanh gồm một đĩa kim loại gắn chặt trên trục các-đăng của xe, quay lọt giữa các cuộn nam châm điện cố định trên khung xe.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Khi tài xế kích hoạt phanh, nam châm điện tạo ra từ trường cực mạnh làm cho đĩa kim loại bị hút chặt vào má phanh, tạo ra ma sát lớn để dừng xe.',
-                    isTrue: false,
-                    exp: 'Sai. Phanh điện từ hoàn toàn không có tiếp xúc cơ học (không có ma sát vật lí giữa má phanh và đĩa). Lực hãm là lực từ do dòng Foucault tương tác với nam châm điện sinh ra.'
-                },
-                {
-                    id: 'b',
-                    text: 'Phanh điện từ hoạt động dựa trên nguyên tắc dòng điện Foucault sinh ra bên trong đĩa kim loại đang quay trong từ trường.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là ứng dụng kinh điển của hiện tượng cảm ứng điện từ và dòng điện Foucault.'
-                },
-                {
-                    id: 'c',
-                    text: 'Toàn bộ động năng của xe khi đổ đèo được phanh điện từ hấp thụ và chuyển hóa thành nhiệt năng làm nóng đỏ đĩa phanh.',
-                    isTrue: true,
-                    exp: 'Đúng. Công cản của lực từ được chuyển hóa thành điện năng (dòng Foucault), rồi chuyển thành nhiệt năng ($I^2R$) trên đĩa kim loại. Các đĩa phanh từ luôn có thiết kế quạt tản gió lớn vì nó rất nóng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Một nhược điểm vật lí của phanh điện từ là khi tốc độ xe càng chậm lại, lực hãm từ do nó sinh ra càng mạnh lên, dễ gây khóa cứng bánh xe.',
-                    isTrue: false,
-                    exp: 'Sai. Dòng Foucault tỉ lệ thuận với tốc độ biến thiên từ thông. Tốc độ quay của xe càng chậm $\\rightarrow$ biến thiên từ thông càng chậm $\\rightarrow$ dòng Foucault càng yếu $\\rightarrow$ lực hãm càng nhỏ. Phanh từ không bao giờ có thể làm xe dừng hẳn (tốc độ bằng 0 thì lực phanh cũng bằng 0), nó chỉ có tác dụng hãm tốc độ cao. Dừng hẳn vẫn phải dùng phanh cơ học.'
-                }
+                { id: 'a', text: 'Khi tài xế kích hoạt phanh, nam châm điện tạo ra từ trường cực mạnh làm cho đĩa kim loại bị hút chặt vào má phanh, tạo ra ma sát lớn để dừng xe.', isTrue: false, exp: 'Sai. Phanh điện từ hoàn toàn không có tiếp xúc cơ học (không có ma sát vật lí giữa má phanh và đĩa). Lực hãm là lực từ do dòng Foucault tương tác với nam châm điện sinh ra.' },
+                { id: 'b', text: 'Phanh điện từ hoạt động dựa trên nguyên tắc dòng điện Foucault sinh ra bên trong đĩa kim loại đang quay trong từ trường.', isTrue: true, exp: 'Đúng. Đây là ứng dụng kinh điển của hiện tượng cảm ứng điện từ và dòng điện Foucault.' },
+                { id: 'c', text: 'Toàn bộ động năng của xe khi đổ đèo được phanh điện từ hấp thụ và chuyển hóa thành nhiệt năng làm nóng đỏ đĩa phanh.', isTrue: true, exp: 'Đúng. Công cản của lực từ được chuyển hóa thành điện năng (dòng Foucault), rồi chuyển thành nhiệt năng ($I^2R$) trên đĩa kim loại. Các đĩa phanh từ luôn có thiết kế quạt tản gió lớn vì nó rất nóng.' },
+                { id: 'd', text: 'Một nhược điểm vật lí của phanh điện từ là khi tốc độ xe càng chậm lại, lực hãm từ do nó sinh ra càng mạnh lên, dễ gây khóa cứng bánh xe.', isTrue: false, exp: 'Sai. Dòng Foucault tỉ lệ thuận với tốc độ biến thiên từ thông. Tốc độ quay của xe càng chậm $\\rightarrow$ biến thiên từ thông càng chậm $\\rightarrow$ dòng Foucault càng yếu $\\rightarrow$ lực hãm càng nhỏ. Phanh từ không bao giờ có thể làm xe dừng hẳn, nó chỉ có tác dụng hãm tốc độ cao.' }
             ]
         },
         {
-            id: 'q24',
+            id: 'tu_24',
             context: '<strong>Câu 9. (Máy dò kim loại - Nguyên lí dòng Foucault)</strong><br>Nhân viên an ninh tại sân bay sử dụng một máy dò kim loại cầm tay quét dọc cơ thể hành khách.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Cuộn dây phát (Transmitter) trong máy dò phát ra sóng âm thanh tần số cao để dội lại khi gặp kim loại.',
-                    isTrue: false,
-                    exp: 'Sai. Máy dò kim loại hoạt động dựa trên sự tương tác của từ trường (sóng điện từ tần số vô tuyến), không phải sóng âm thanh (như siêu âm hay sonar).'
-                },
-                {
-                    id: 'b',
-                    text: 'Sóng điện từ dạng xung xoay chiều từ cuộn dây phát xuyên qua quần áo, tạo ra từ trường biến thiên trên bề mặt đồ vật kim loại (như chìa khóa, đồng xu).',
-                    isTrue: true,
-                    exp: 'Đúng. Từ trường biến thiên là điều kiện tiên quyết để tạo cảm ứng điện từ.'
-                },
-                {
-                    id: 'c',
-                    text: 'Từ trường biến thiên này sinh ra dòng điện Foucault trên bề mặt miếng kim loại. Chính các dòng Foucault này lại sinh ra một từ trường thứ cấp (từ trường cảm ứng) bức xạ ngược trở lại.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là chuỗi logic cốt lõi: Điện biến thiên $\\rightarrow$ Từ biến thiên $\\rightarrow$ Dòng cảm ứng Foucault $\\rightarrow$ Từ trường cảm ứng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Cuộn dây thu (Receiver) trên máy dò bắt được từ trường thứ cấp này, chuyển thành tín hiệu điện và kích hoạt còi báo động.',
-                    isTrue: true,
-                    exp: 'Đúng. Sự xuất hiện của từ trường thứ cấp là dấu hiệu khẳng định có vật liệu dẫn điện (kim loại) cản đường sóng phát ra ban đầu.'
-                }
+                { id: 'a', text: 'Cuộn dây phát (Transmitter) trong máy dò phát ra sóng âm thanh tần số cao để dội lại khi gặp kim loại.', isTrue: false, exp: 'Sai. Máy dò kim loại hoạt động dựa trên sự tương tác của từ trường (sóng điện từ tần số vô tuyến), không phải sóng âm thanh (như siêu âm hay sonar).' },
+                { id: 'b', text: 'Sóng điện từ dạng xung xoay chiều từ cuộn dây phát xuyên qua quần áo, tạo ra từ trường biến thiên trên bề mặt đồ vật kim loại (như chìa khóa, đồng xu).', isTrue: true, exp: 'Đúng. Từ trường biến thiên là điều kiện tiên quyết để tạo cảm ứng điện từ.' },
+                { id: 'c', text: 'Từ trường biến thiên này sinh ra dòng điện Foucault trên bề mặt miếng kim loại. Chính các dòng Foucault này lại sinh ra một từ trường thứ cấp (từ trường cảm ứng) bức xạ ngược trở lại.', isTrue: true, exp: 'Đúng. Đây là chuỗi logic cốt lõi: Điện biến thiên $\\rightarrow$ Từ biến thiên $\\rightarrow$ Dòng cảm ứng Foucault $\\rightarrow$ Từ trường cảm ứng.' },
+                { id: 'd', text: 'Cuộn dây thu (Receiver) trên máy dò bắt được từ trường thứ cấp này, chuyển thành tín hiệu điện và kích hoạt còi báo động.', isTrue: true, exp: 'Đúng. Sự xuất hiện của từ trường thứ cấp là dấu hiệu khẳng định có vật liệu dẫn điện (kim loại) cản đường sóng phát ra ban đầu.' }
             ]
         },
         {
-            id: 'q25',
+            id: 'tu_25',
             context: '<strong>Câu 10. (Cảm ứng điện từ sinh ra Điện trường xoáy)</strong><br>James Clerk Maxwell đã mở rộng định luật Faraday, chỉ ra bản chất sâu xa của hiện tượng cảm ứng điện từ.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Mọi sự biến thiên của từ trường theo thời gian đều sinh ra một điện trường. Điện trường này được gọi là điện trường tĩnh.',
-                    isTrue: false,
-                    exp: 'Sai. Từ trường biến thiên sinh ra điện trường xoáy, không phải điện trường tĩnh (do các điện tích đứng yên sinh ra).'
-                },
-                {
-                    id: 'b',
-                    text: 'Điện trường xoáy là một trường véc-tơ mà đường sức của nó là những đường cong khép kín.',
-                    isTrue: true,
-                    exp: 'Đúng. Khác với điện trường tĩnh có đường sức hở (xuất phát từ điện tích dương, kết thúc ở điện tích âm), điện trường xoáy có đường sức là các đường cong khép kín không có điểm khởi đầu hay kết thúc.'
-                },
-                {
-                    id: 'c',
-                    text: 'Dòng điện cảm ứng xuất hiện trong một vòng dây kim loại kín đặt trong từ trường biến thiên thực chất là do điện trường xoáy tác dụng lực điện lên các electron tự do trong dây.',
-                    isTrue: true,
-                    exp: 'Đúng. Điện trường xoáy là bản chất của suất điện động cảm ứng. Lực điện trường xoáy đẩy electron dịch chuyển thành dòng điện. Vòng dây chỉ là môi trường vật chất để ta "nhìn thấy" dòng điện đó.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu không có vòng dây kim loại, từ trường biến thiên trong chân không sẽ không thể sinh ra điện trường xoáy.',
-                    isTrue: false,
-                    exp: 'Sai. Theo Maxwell, sự tồn tại của điện trường xoáy là tuyệt đối. Dù có hay không có vòng dây dẫn, hễ có từ trường biến thiên là ở đó xuất hiện điện trường xoáy. (Đây là cơ sở sinh ra sóng điện từ trong chân không).'
-                }
+                { id: 'a', text: 'Mọi sự biến thiên của từ trường theo thời gian đều sinh ra một điện trường. Điện trường này được gọi là điện trường tĩnh.', isTrue: false, exp: 'Sai. Từ trường biến thiên sinh ra điện trường xoáy, không phải điện trường tĩnh (do các điện tích đứng yên sinh ra).' },
+                { id: 'b', text: 'Điện trường xoáy là một trường véc-tơ mà đường sức của nó là những đường cong khép kín.', isTrue: true, exp: 'Đúng. Khác với điện trường tĩnh có đường sức hở, điện trường xoáy có đường sức là các đường cong khép kín không có điểm khởi đầu hay kết thúc.' },
+                { id: 'c', text: 'Dòng điện cảm ứng xuất hiện trong một vòng dây kim loại kín đặt trong từ trường biến thiên thực chất là do điện trường xoáy tác dụng lực điện lên các electron tự do trong dây.', isTrue: true, exp: 'Đúng. Điện trường xoáy là bản chất của suất điện động cảm ứng. Lực điện trường xoáy đẩy electron dịch chuyển thành dòng điện. Vòng dây chỉ là môi trường vật chất để ta "nhìn thấy" dòng điện đó.' },
+                { id: 'd', text: 'Nếu không có vòng dây kim loại, từ trường biến thiên trong chân không sẽ không thể sinh ra điện trường xoáy.', isTrue: false, exp: 'Sai. Theo Maxwell, sự tồn tại của điện trường xoáy là tuyệt đối. Dù có hay không có vòng dây dẫn, hễ có từ trường biến thiên là ở đó xuất hiện điện trường xoáy. (Đây là cơ sở sinh ra sóng điện từ trong chân không).' }
             ]
         },
         {
-            id: 'q26_1',
+            id: 'tu_26',
             context: '<strong>Câu 1. (Mô hình và bản chất của sóng điện từ)</strong><br>Theo lí thuyết của Maxwell về điện từ trường, khi một điện tích dao động có gia tốc sẽ bức xạ ra không gian một sóng điện từ.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Sóng điện từ là sự lan truyền của điện từ trường biến thiên trong không gian theo thời gian.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là định nghĩa nền tảng về bản chất của sóng điện từ.'
-                },
-                {
-                    id: 'b',
-                    text: 'Sóng điện từ là sóng dọc do nó có khả năng truyền được trong cả môi trường vật chất và chân không.',
-                    isTrue: false,
-                    exp: 'Sai. Sóng điện từ luôn luôn là sóng ngang vì phương dao động của các véc-tơ $\\vec{E}$ và $\\vec{B}$ luôn vuông góc với phương truyền sóng $\\vec{v}$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tại mọi điểm trên phương truyền sóng, véc-tơ cường độ điện trường $\\vec{E}$ và véc-tơ cảm ứng từ $\\vec{B}$ luôn dao động vuông pha với nhau.',
-                    isTrue: false,
-                    exp: 'Sai. Tại một điểm bất kì trên phương truyền, điện trường và từ trường luôn dao động cùng pha (cùng đạt cực đại hoặc cùng triệt tiêu tại một thời điểm).'
-                },
-                {
-                    id: 'd',
-                    text: 'Tại một thời điểm, véc-tơ cường độ điện trường $\\vec{E}$, véc-tơ cảm ứng từ $\\vec{B}$ và véc-tơ vận tốc truyền sóng $\\vec{v}$ luôn tạo thành một tam diện thuận.',
-                    isTrue: true,
-                    exp: 'Đúng. Ba véc-tơ $\\vec{E}, \\vec{B}, \\vec{v}$ vuông góc với nhau từng đôi một và tuân theo quy tắc đinh ốc (hoặc quy tắc bàn tay phải), tạo thành tam diện thuận.'
-                }
+                { id: 'a', text: 'Sóng điện từ là sự lan truyền của điện từ trường biến thiên trong không gian theo thời gian.', isTrue: true, exp: 'Đúng. Đây là định nghĩa nền tảng về bản chất của sóng điện từ.' },
+                { id: 'b', text: 'Sóng điện từ là sóng dọc do nó có khả năng truyền được trong cả môi trường vật chất và chân không.', isTrue: false, exp: 'Sai. Sóng điện từ luôn luôn là sóng ngang vì phương dao động của các véc-tơ $\\vec{E}$ và $\\vec{B}$ luôn vuông góc với phương truyền sóng $\\vec{v}$.' },
+                { id: 'c', text: 'Tại mọi điểm trên phương truyền sóng, véc-tơ cường độ điện trường $\\vec{E}$ và véc-tơ cảm ứng từ $\\vec{B}$ luôn dao động vuông pha với nhau.', isTrue: false, exp: 'Sai. Tại một điểm bất kì trên phương truyền, điện trường và từ trường luôn dao động cùng pha (cùng đạt cực đại hoặc cùng triệt tiêu tại một thời điểm).' },
+                { id: 'd', text: 'Tại một thời điểm, véc-tơ cường độ điện trường $\\vec{E}$, véc-tơ cảm ứng từ $\\vec{B}$ và véc-tơ vận tốc truyền sóng $\\vec{v}$ luôn tạo thành một tam diện thuận.', isTrue: true, exp: 'Đúng. Ba véc-tơ $\\vec{E}, \\vec{B}, \\vec{v}$ vuông góc với nhau từng đôi một và tuân theo quy tắc đinh ốc (hoặc quy tắc bàn tay phải), tạo thành tam diện thuận.' }
             ]
         },
         {
-            id: 'q27_1',
+            id: 'tu_27',
             context: '<strong>Câu 2. (Sự truyền sóng điện từ trong các môi trường)</strong><br>Một chùm sóng điện từ (ví dụ như ánh sáng nhìn thấy) truyền từ không khí (chiết suất $n \\approx 1$) vào trong môi trường nước (chiết suất $n = 4/3$).',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Sóng điện từ mang theo năng lượng trong quá trình lan truyền.',
-                    isTrue: true,
-                    exp: 'Đúng. Quá trình truyền sóng là quá trình truyền năng lượng (năng lượng điện từ trường).'
-                },
-                {
-                    id: 'b',
-                    text: 'Tốc độ truyền của sóng điện từ trong mọi môi trường vật chất đều bằng với tốc độ của nó trong chân không ($c = 3 \\cdot 10^8$ m/s).',
-                    isTrue: false,
-                    exp: 'Sai. Tốc độ truyền sóng điện từ trong môi trường vật chất là $v = \\frac{c}{n}$. Vì chiết suất $n > 1$ nên tốc độ trong môi trường vật chất luôn nhỏ hơn trong chân không.'
-                },
-                {
-                    id: 'c',
-                    text: 'Khi truyền từ không khí vào nước, tần số của sóng điện từ không thay đổi nhưng bước sóng của nó bị giảm đi.',
-                    isTrue: true,
-                    exp: 'Đúng. Tần số $f$ là đặc trưng của nguồn phát nên không đổi. Vận tốc $v$ giảm đi $n$ lần, do $\\lambda = \\frac{v}{f}$ nên bước sóng $\\lambda$ cũng giảm đi $n$ lần.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu một chùm sóng điện từ đi ngang qua một điện trường tĩnh cực kì mạnh, nó sẽ bị bẻ cong lệch khỏi quỹ đạo ban đầu.',
-                    isTrue: false,
-                    exp: 'Sai. Sóng điện từ (bao gồm các photon) không mang điện tích, do đó nó không chịu tác dụng của lực điện (hoặc lực từ) ngoài. Sóng điện từ truyền thẳng qua điện/từ trường tĩnh mà không bị lệch.'
-                }
+                { id: 'a', text: 'Sóng điện từ mang theo năng lượng trong quá trình lan truyền.', isTrue: true, exp: 'Đúng. Quá trình truyền sóng là quá trình truyền năng lượng (năng lượng điện từ trường).' },
+                { id: 'b', text: 'Tốc độ truyền của sóng điện từ trong mọi môi trường vật chất đều bằng với tốc độ của nó trong chân không ($c = 3 \\cdot 10^8$ m/s).', isTrue: false, exp: 'Sai. Tốc độ truyền sóng điện từ trong môi trường vật chất là $v = \\frac{c}{n}$. Vì chiết suất $n > 1$ nên tốc độ trong môi trường vật chất luôn nhỏ hơn trong chân không.' },
+                { id: 'c', text: 'Khi truyền từ không khí vào nước, tần số của sóng điện từ không thay đổi nhưng bước sóng của nó bị giảm đi.', isTrue: true, exp: 'Đúng. Tần số $f$ là đặc trưng của nguồn phát nên không đổi. Vận tốc $v$ giảm đi $n$ lần, do $\\lambda = \\frac{v}{f}$ nên bước sóng $\\lambda$ cũng giảm đi $n$ lần.' },
+                { id: 'd', text: 'Nếu một chùm sóng điện từ đi ngang qua một điện trường tĩnh cực kì mạnh, nó sẽ bị bẻ cong lệch khỏi quỹ đạo ban đầu.', isTrue: false, exp: 'Sai. Sóng điện từ (bao gồm các photon) không mang điện tích, do đó nó không chịu tác dụng của lực điện (hoặc lực từ) ngoài. Sóng điện từ truyền thẳng qua điện/từ trường tĩnh mà không bị lệch.' }
             ]
         },
         {
-            id: 'q28_1',
+            id: 'tu_28',
             context: '<strong>Câu 3. (Tổng quan về Thang sóng điện từ)</strong><br>Thang sóng điện từ là sự sắp xếp các dải sóng điện từ theo thứ tự bước sóng (hoặc tần số) liên tục từ vô cùng ngắn đến vô cùng dài.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Mọi bức xạ trong thang sóng điện từ (từ sóng vô tuyến đến tia gamma) đều có chung bản chất là sóng điện từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Tất cả đều lan truyền điện từ trường trong không gian và tuân theo các hệ phương trình Maxwell.'
-                },
-                {
-                    id: 'b',
-                    text: 'Các dải sóng trong thang sóng điện từ có ranh giới phân định vật lí hoàn toàn rạch ròi và không bao giờ chồng lấn lên nhau.',
-                    isTrue: false,
-                    exp: 'Sai. Thực tế không có ranh giới rõ rệt. Các vùng thường chồng lấn lên nhau ở phần rìa (ví dụ: ranh giới giữa tia X và tia Gamma thường được phân biệt dựa trên nguồn gốc phát sinh chứ không chỉ dựa vào bước sóng).'
-                },
-                {
-                    id: 'c',
-                    text: 'Ánh sáng nhìn thấy (khả kiến) chỉ chiếm một vùng rất hẹp trong toàn bộ phổ của thang sóng điện từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Vùng khả kiến chỉ trải dài từ khoảng 380 nm đến 760 nm, rất bé so với cả dải vô tuyến hay dải tia X.'
-                },
-                {
-                    id: 'd',
-                    text: 'Sóng điện từ có tần số càng cao thì năng lượng mang theo (năng lượng photon) càng lớn và tính đâm xuyên càng mạnh.',
-                    isTrue: true,
-                    exp: 'Đúng. Năng lượng $E = hf$, tần số $f$ càng lớn thì năng lượng càng lớn $\\rightarrow$ tính đâm xuyên (tính hạt) càng thể hiện rõ (như tia X, tia Gamma).'
-                }
+                { id: 'a', text: 'Mọi bức xạ trong thang sóng điện từ (từ sóng vô tuyến đến tia gamma) đều có chung bản chất là sóng điện từ.', isTrue: true, exp: 'Đúng. Tất cả đều lan truyền điện từ trường trong không gian và tuân theo các hệ phương trình Maxwell.' },
+                { id: 'b', text: 'Các dải sóng trong thang sóng điện từ có ranh giới phân định vật lí hoàn toàn rạch ròi và không bao giờ chồng lấn lên nhau.', isTrue: false, exp: 'Sai. Thực tế không có ranh giới rõ rệt. Các vùng thường chồng lấn lên nhau ở phần rìa (ví dụ: ranh giới giữa tia X và tia Gamma thường được phân biệt dựa trên nguồn gốc phát sinh chứ không chỉ dựa vào bước sóng).' },
+                { id: 'c', text: 'Ánh sáng nhìn thấy (khả kiến) chỉ chiếm một vùng rất hẹp trong toàn bộ phổ của thang sóng điện từ.', isTrue: true, exp: 'Đúng. Vùng khả kiến chỉ trải dài từ khoảng 380 nm đến 760 nm, rất bé so với cả dải vô tuyến hay dải tia X.' },
+                { id: 'd', text: 'Sóng điện từ có tần số càng cao thì năng lượng mang theo (năng lượng photon) càng lớn và tính đâm xuyên càng mạnh.', isTrue: true, exp: 'Đúng. Năng lượng $E = hf$, tần số $f$ càng lớn thì năng lượng càng lớn $\\rightarrow$ tính đâm xuyên (tính hạt) càng thể hiện rõ (như tia X, tia Gamma).' }
             ]
         },
         {
-            id: 'q29_1',
+            id: 'tu_29',
             context: '<strong>Câu 4. (Sóng vô tuyến và Vi ba - Đặc điểm và Ứng dụng)</strong><br>Sóng vô tuyến và vi ba (Microwave) nằm ở dải tần số thấp nhất của thang sóng điện từ.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Sóng vô tuyến có bước sóng lớn nhất và do đó mang năng lượng nhỏ nhất trong thang sóng điện từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Bước sóng vô tuyến trải từ vài mm đến hàng chục km. Vì $\\lambda$ lớn nhất nên $f$ nhỏ nhất $\\rightarrow$ năng lượng nhỏ nhất.'
-                },
-                {
-                    id: 'b',
-                    text: 'Sóng vi ba có bản chất là sóng cơ học siêu âm tần số rất cao, được ứng dụng để làm xát động các phân tử nước trong lò vi sóng.',
-                    isTrue: false,
-                    exp: 'Sai. Sóng vi ba là sóng điện từ, không phải sóng cơ (sóng âm). Lò vi sóng dùng sóng điện từ (thường ở tần số 2,45 GHz) để làm quay cực các phân tử nước, sinh ra nhiệt ma sát.'
-                },
-                {
-                    id: 'c',
-                    text: 'Sóng vô tuyến tuân theo đầy đủ các hiện tượng của quang học sóng như: phản xạ, khúc xạ, giao thoa và nhiễu xạ.',
-                    isTrue: true,
-                    exp: 'Đúng. Sóng vô tuyến có bản chất như ánh sáng nên mang đầy đủ các tính chất của sóng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Để tín hiệu từ Trạm vũ trụ quốc tế (ISS) truyền được xuyên qua tầng điện li xuống mặt đất, người ta bắt buộc phải sử dụng các dải sóng cực ngắn (hoặc vi ba).',
-                    isTrue: true,
-                    exp: 'Đúng. Tầng điện li phản xạ các dải sóng dài, sóng trung và sóng ngắn. Chỉ có sóng cực ngắn (bước sóng từ 1 - 10 m trở xuống) mới có đủ năng lượng đâm xuyên qua tầng điện li để thông tin liên lạc vũ trụ.'
-                }
+                { id: 'a', text: 'Sóng vô tuyến có bước sóng lớn nhất và do đó mang năng lượng nhỏ nhất trong thang sóng điện từ.', isTrue: true, exp: 'Đúng. Bước sóng vô tuyến trải từ vài mm đến hàng chục km. Vì $\\lambda$ lớn nhất nên $f$ nhỏ nhất $\\rightarrow$ năng lượng nhỏ nhất.' },
+                { id: 'b', text: 'Sóng vi ba có bản chất là sóng cơ học siêu âm tần số rất cao, được ứng dụng để làm xát động các phân tử nước trong lò vi sóng.', isTrue: false, exp: 'Sai. Sóng vi ba là sóng điện từ, không phải sóng cơ (sóng âm). Lò vi sóng dùng sóng điện từ (thường ở tần số 2,45 GHz) để làm quay cực các phân tử nước, sinh ra nhiệt ma sát.' },
+                { id: 'c', text: 'Sóng vô tuyến tuân theo đầy đủ các hiện tượng của quang học sóng như: phản xạ, khúc xạ, giao thoa và nhiễu xạ.', isTrue: true, exp: 'Đúng. Sóng vô tuyến có bản chất như ánh sáng nên mang đầy đủ các tính chất của sóng.' },
+                { id: 'd', text: 'Để tín hiệu từ Trạm vũ trụ quốc tế (ISS) truyền được xuyên qua tầng điện li xuống mặt đất, người ta bắt buộc phải sử dụng các dải sóng cực ngắn (hoặc vi ba).', isTrue: true, exp: 'Đúng. Tầng điện li phản xạ các dải sóng dài, sóng trung và sóng ngắn. Chỉ có sóng cực ngắn (bước sóng từ 1 - 10 m trở xuống) mới có đủ năng lượng đâm xuyên qua tầng điện li để thông tin liên lạc vũ trụ.' }
             ]
         },
         {
-            id: 'q30_1',
+            id: 'tu_30',
             context: '<strong>Câu 5. (Tia hồng ngoại và Tia tử ngoại - Đặc tính phát xạ)</strong><br>Hai bức xạ không nhìn thấy nằm kề sát hai đầu của vùng ánh sáng khả kiến là tia hồng ngoại (IR) và tia tử ngoại (UV).',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trong tự nhiên, chỉ những vật bị nung nóng đến nhiệt độ rất cao (trên 500°C) mới bắt đầu phát ra tia hồng ngoại.',
-                    isTrue: false,
-                    exp: 'Sai. Mọi vật có nhiệt độ lớn hơn độ không tuyệt đối (0 K, tức -273°C) đều bức xạ tia hồng ngoại. Cơ thể người (37°C) phát tia hồng ngoại rất mạnh.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cả tia hồng ngoại và tia tử ngoại đều tuân theo định luật truyền thẳng, phản xạ và khúc xạ tương tự như ánh sáng thông thường.',
-                    isTrue: true,
-                    exp: 'Đúng. Chúng đều là sóng điện từ nên có chung các tính chất quang học cơ bản.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tia tử ngoại có bước sóng lớn hơn bước sóng của ánh sáng màu tím.',
-                    isTrue: false,
-                    exp: 'Sai. "Tử ngoại" nghĩa là ngoài vùng màu tím. Tần số của nó cao hơn ánh sáng tím, do đó bước sóng của tia tử ngoại phải nhỏ hơn bước sóng của ánh sáng tím ($< 380$ nm).'
-                },
-                {
-                    id: 'd',
-                    text: 'Mặt Trời là một nguồn phát bức xạ khổng lồ, phát ra cả tia hồng ngoại, ánh sáng nhìn thấy và tia tử ngoại.',
-                    isTrue: true,
-                    exp: 'Đúng. Bức xạ Mặt Trời là bức xạ nhiệt dải rộng, chứa từ bức xạ hồng ngoại (gây nóng), khả kiến (chiếu sáng) đến tử ngoại (làm đen da).'
-                }
+                { id: 'a', text: 'Trong tự nhiên, chỉ những vật bị nung nóng đến nhiệt độ rất cao (trên 500°C) mới bắt đầu phát ra tia hồng ngoại.', isTrue: false, exp: 'Sai. Mọi vật có nhiệt độ lớn hơn độ không tuyệt đối (0 K, tức -273°C) đều bức xạ tia hồng ngoại. Cơ thể người (37°C) phát tia hồng ngoại rất mạnh.' },
+                { id: 'b', text: 'Cả tia hồng ngoại và tia tử ngoại đều tuân theo định luật truyền thẳng, phản xạ và khúc xạ tương tự như ánh sáng thông thường.', isTrue: true, exp: 'Đúng. Chúng đều là sóng điện từ nên có chung các tính chất quang học cơ bản.' },
+                { id: 'c', text: 'Tia tử ngoại có bước sóng lớn hơn bước sóng của ánh sáng màu tím.', isTrue: false, exp: 'Sai. "Tử ngoại" nghĩa là ngoài vùng màu tím. Tần số của nó cao hơn ánh sáng tím, do đó bước sóng của tia tử ngoại phải nhỏ hơn bước sóng của ánh sáng tím ($< 380$ nm).' },
+                { id: 'd', text: 'Mặt Trời là một nguồn phát bức xạ khổng lồ, phát ra cả tia hồng ngoại, ánh sáng nhìn thấy và tia tử ngoại.', isTrue: true, exp: 'Đúng. Bức xạ Mặt Trời là bức xạ nhiệt dải rộng, chứa từ bức xạ hồng ngoại (gây nóng), khả kiến (chiếu sáng) đến tử ngoại (làm đen da).' }
             ]
         },
         {
-            id: 'q31_2',
+            id: 'tu_31',
             context: '<strong>Câu 6. (Tia hồng ngoại và Tia tử ngoại - Ứng dụng thực tiễn)</strong><br>Các ứng dụng công nghệ ngày nay tận dụng rất tốt các đặc trưng của bức xạ IR và UV.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Tác dụng nổi bật nhất của tia hồng ngoại là tác dụng nhiệt, do đó nó được dùng trong các lò sưởi và tủ sấy công nghiệp.',
-                    isTrue: true,
-                    exp: 'Đúng. Tia hồng ngoại làm vật hấp thụ nó nóng lên rất nhanh.'
-                },
-                {
-                    id: 'b',
-                    text: 'Bộ điều khiển từ xa (Remote) của tivi và máy lạnh trong gia đình hoạt động dựa trên việc phát và thu tia tử ngoại.',
-                    isTrue: false,
-                    exp: 'Sai. Remote gia dụng sử dụng tia hồng ngoại (IR), không dùng tia tử ngoại vì tia tử ngoại mang năng lượng cao, có hại cho mắt và da người.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tia tử ngoại (đặc biệt là dải UV-C) có khả năng phá hủy DNA của tế bào, nên được ứng dụng rộng rãi trong các đèn diệt khuẩn ở phòng mổ và máy lọc nước.',
-                    isTrue: true,
-                    exp: 'Đúng. Ứng dụng diệt khuẩn là tác dụng sinh lí đặc trưng của tia tử ngoại cường độ cao.'
-                },
-                {
-                    id: 'd',
-                    text: 'Tia hồng ngoại có thể gây ra hiện tượng quang điện ngoài ở nhiều kim loại tốt hơn so với tia tử ngoại.',
-                    isTrue: false,
-                    exp: 'Sai. Hiện tượng quang điện đòi hỏi năng lượng photon lớn để bứt electron. Tia tử ngoại có tần số lớn $\\rightarrow$ năng lượng lớn nên gây ra hiện tượng quang điện dễ dàng. Tia hồng ngoại mang năng lượng rất thấp, không thể gây ra quang điện ngoài ở kim loại.'
-                }
+                { id: 'a', text: 'Tác dụng nổi bật nhất của tia hồng ngoại là tác dụng nhiệt, do đó nó được dùng trong các lò sưởi và tủ sấy công nghiệp.', isTrue: true, exp: 'Đúng. Tia hồng ngoại làm vật hấp thụ nó nóng lên rất nhanh.' },
+                { id: 'b', text: 'Bộ điều khiển từ xa (Remote) của tivi và máy lạnh trong gia đình hoạt động dựa trên việc phát và thu tia tử ngoại.', isTrue: false, exp: 'Sai. Remote gia dụng sử dụng tia hồng ngoại (IR), không dùng tia tử ngoại vì tia tử ngoại mang năng lượng cao, có hại cho mắt và da người.' },
+                { id: 'c', text: 'Tia tử ngoại (đặc biệt là dải UV-C) có khả năng phá hủy DNA của tế bào, nên được ứng dụng rộng rãi trong các đèn diệt khuẩn ở phòng mổ và máy lọc nước.', isTrue: true, exp: 'Đúng. Ứng dụng diệt khuẩn là tác dụng sinh lí đặc trưng của tia tử ngoại cường độ cao.' },
+                { id: 'd', text: 'Tia hồng ngoại có thể gây ra hiện tượng quang điện ngoài ở nhiều kim loại tốt hơn so với tia tử ngoại.', isTrue: false, exp: 'Sai. Hiện tượng quang điện đòi hỏi năng lượng photon lớn để bứt electron. Tia tử ngoại có tần số lớn $\\rightarrow$ năng lượng lớn nên gây ra hiện tượng quang điện dễ dàng. Tia hồng ngoại mang năng lượng rất thấp, không thể gây ra quang điện ngoài ở kim loại.' }
             ]
         },
         {
-            id: 'q32_2',
+            id: 'tu_32',
             context: '<strong>Câu 7. (Tia Rơnghen / Tia X - Bản chất và Nguồn phát)</strong><br>Tia X được Wilhelm Röntgen phát hiện vào năm 1895, tạo ra bước ngoặt lớn cho y học và tinh thể học.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trong ống tia X (ống Coolidge), tia X được tạo ra bằng cách nung nóng cực catốt đến nhiệt độ hàng vạn độ C để bức xạ thẳng ra tia X.',
-                    isTrue: false,
-                    exp: 'Sai. Nung nóng catốt chỉ để bứt electron ra (phát xạ nhiệt electron). Chùm electron này phải được tăng tốc bằng điện áp cao (hàng chục kV) rồi đập vào anốt mới phát ra tia X. (Bức xạ hãm).'
-                },
-                {
-                    id: 'b',
-                    text: 'Cơ chế phát sinh tia X là do chùm electron có động năng rất lớn đập vào một mục tiêu (anốt) bằng kim loại có nguyên tử lượng lớn, làm phát sinh bức xạ điện từ.',
-                    isTrue: true,
-                    exp: 'Đúng. Sự hãm đột ngột các electron tốc độ cao khi đập vào lưới tinh thể kim loại nặng sẽ giải phóng năng lượng dưới dạng phôtôn tia X.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tia X có tần số thấp hơn tia tử ngoại nhưng cao hơn ánh sáng nhìn thấy.',
-                    isTrue: false,
-                    exp: 'Sai. Trong thang sóng điện từ, tia X có năng lượng cao hơn tia tử ngoại, do đó tần số của tia X phải cao hơn tia tử ngoại (bước sóng ngắn hơn).'
-                },
-                {
-                    id: 'd',
-                    text: 'Tia X có tính đâm xuyên rất mạnh, truyền dễ dàng qua vải, gỗ và các mô mềm nhưng bị cản lại đáng kể bởi chì và xương sống.',
-                    isTrue: true,
-                    exp: 'Đúng. Khả năng đâm xuyên phụ thuộc vào bước sóng và mật độ khối lượng nguyên tử của vật cản. Chì (hạt nhân nặng) và xương (chứa canxi) hấp thụ tia X rất mạnh, trong khi phần mềm (C, H, O) thì cho tia X xuyên qua.'
-                }
+                { id: 'a', text: 'Trong ống tia X (ống Coolidge), tia X được tạo ra bằng cách nung nóng cực catốt đến nhiệt độ hàng vạn độ C để bức xạ thẳng ra tia X.', isTrue: false, exp: 'Sai. Nung nóng catốt chỉ để bứt electron ra (phát xạ nhiệt electron). Chùm electron này phải được tăng tốc bằng điện áp cao (hàng chục kV) rồi đập vào anốt mới phát ra tia X. (Bức xạ hãm).' },
+                { id: 'b', text: 'Cơ chế phát sinh tia X là do chùm electron có động năng rất lớn đập vào một mục tiêu (anốt) bằng kim loại có nguyên tử lượng lớn, làm phát sinh bức xạ điện từ.', isTrue: true, exp: 'Đúng. Sự hãm đột ngột các electron tốc độ cao khi đập vào lưới tinh thể kim loại nặng sẽ giải phóng năng lượng dưới dạng phôtôn tia X.' },
+                { id: 'c', text: 'Tia X có tần số thấp hơn tia tử ngoại nhưng cao hơn ánh sáng nhìn thấy.', isTrue: false, exp: 'Sai. Trong thang sóng điện từ, tia X có năng lượng cao hơn tia tử ngoại, do đó tần số của tia X phải cao hơn tia tử ngoại (bước sóng ngắn hơn).' },
+                { id: 'd', text: 'Tia X có tính đâm xuyên rất mạnh, truyền dễ dàng qua vải, gỗ và các mô mềm nhưng bị cản lại đáng kể bởi chì và xương sống.', isTrue: true, exp: 'Đúng. Khả năng đâm xuyên phụ thuộc vào bước sóng và mật độ khối lượng nguyên tử của vật cản. Chì (hạt nhân nặng) và xương (chứa canxi) hấp thụ tia X rất mạnh, trong khi phần mềm (C, H, O) thì cho tia X xuyên qua.' }
             ]
         },
         {
-            id: 'q33',
+            id: 'tu_33',
             context: '<strong>Câu 8. (Tia X - Đặc tính và Ứng dụng)</strong><br>Ngoài khả năng đâm xuyên, tia X còn có nhiều đặc tính vật lí đáng chú ý khác.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Tia X có khả năng làm đen kính ảnh, đây là cơ sở để ứng dụng trong việc chụp X-quang y tế.',
-                    isTrue: true,
-                    exp: 'Đúng. Tia X tác dụng mạnh lên kính ảnh. Vùng tia X đi xuyên qua mô mềm đập vào phim làm phim đen đi, vùng bị xương cản lại thì phim giữ màu trắng.'
-                },
-                {
-                    id: 'b',
-                    text: 'Tia X là một dạng bức xạ ion hóa, có khả năng làm bật các electron ra khỏi nguyên tử và phân tử không khí, khiến không khí trở nên dẫn điện.',
-                    isTrue: true,
-                    exp: 'Đúng. Do năng lượng photon cao ($E = hf$), tia X dễ dàng ion hóa các chất khí.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tia X "cứng" là tia X có bước sóng càng dài, có tính đâm xuyên càng yếu.',
-                    isTrue: false,
-                    exp: 'Sai. Tia X "cứng" là thuật ngữ kĩ thuật dùng để chỉ tia X mang năng lượng cao, tức là có tần số lớn và bước sóng càng ngắn, sức đâm xuyên càng mạnh.'
-                },
-                {
-                    id: 'd',
-                    text: 'Trong công nghiệp luyện kim, tia X được sử dụng để kiểm tra, tìm các bọt khí hoặc vết nứt hở ẩn sâu bên trong các khối kim loại đúc.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là kĩ thuật chụp khuyết tật không phá hủy (NDT) cực kì quan trọng trong kĩ thuật cơ khí và đúc kim loại.'
-                }
+                { id: 'a', text: 'Tia X có khả năng làm đen kính ảnh, đây là cơ sở để ứng dụng trong việc chụp X-quang y tế.', isTrue: true, exp: 'Đúng. Tia X tác dụng mạnh lên kính ảnh. Vùng tia X đi xuyên qua mô mềm đập vào phim làm phim đen đi, vùng bị xương cản lại thì phim giữ màu trắng.' },
+                { id: 'b', text: 'Tia X là một dạng bức xạ ion hóa, có khả năng làm bật các electron ra khỏi nguyên tử và phân tử không khí, khiến không khí trở nên dẫn điện.', isTrue: true, exp: 'Đúng. Do năng lượng photon cao ($E = hf$), tia X dễ dàng ion hóa các chất khí.' },
+                { id: 'c', text: 'Tia X "cứng" là tia X có bước sóng càng dài, có tính đâm xuyên càng yếu.', isTrue: false, exp: 'Sai. Tia X "cứng" là thuật ngữ kĩ thuật dùng để chỉ tia X mang năng lượng cao, tức là có tần số lớn và bước sóng càng ngắn, sức đâm xuyên càng mạnh.' },
+                { id: 'd', text: 'Trong công nghiệp luyện kim, tia X được sử dụng để kiểm tra, tìm các bọt khí hoặc vết nứt hở ẩn sâu bên trong các khối kim loại đúc.', isTrue: true, exp: 'Đúng. Đây là kĩ thuật chụp khuyết tật không phá hủy (NDT) cực kì quan trọng trong kĩ thuật cơ khí và đúc kim loại.' }
             ]
         },
         {
-            id: 'q34_2',
+            id: 'tu_34',
             context: '<strong>Câu 9. (Tính toán định lượng đơn giản về Sóng điện từ)</strong><br>Cho một chùm bức xạ điện từ lan truyền trong chân không với tốc độ $c = 3 \\cdot 10^8$ m/s. Tần số của bức xạ đo được là $f = 6 \\cdot 10^{14}$ Hz.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Chu kì dao động của điện từ trường trong chùm bức xạ này là xấp xỉ $1,67 \\cdot 10^{-15}$ s.',
-                    isTrue: true,
-                    exp: 'Đúng. Chu kì $T = \\frac{1}{f} = \\frac{1}{6 \\cdot 10^{14}} \\approx 1,67 \\cdot 10^{-15}$ s.'
-                },
-                {
-                    id: 'b',
-                    text: 'Bước sóng của chùm bức xạ này lan truyền trong chân không là 500 nm.',
-                    isTrue: true,
-                    exp: 'Đúng. Áp dụng $\\lambda = \\frac{c}{f} = \\frac{3 \\cdot 10^8}{6 \\cdot 10^{14}} = 0,5 \\cdot 10^{-6}$ m = 500 nm.'
-                },
-                {
-                    id: 'c',
-                    text: 'Dựa vào thang sóng điện từ, bức xạ mang tần số trên thuộc dải tia tử ngoại vì không thể nhìn thấy bằng mắt thường.',
-                    isTrue: false,
-                    exp: 'Sai. Bước sóng 500 nm nằm gọn trong khoảng từ 380 nm đến 760 nm. Do đó, bức xạ này thuộc vùng ánh sáng nhìn thấy (cụ thể là màu xanh lục), không phải tia tử ngoại.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu chùm bức xạ này truyền từ chân không vào một khối thủy tinh (có chiết suất $n = 1,5$), bước sóng của nó bên trong khối thủy tinh sẽ giảm xuống còn 333 nm.',
-                    isTrue: true,
-                    exp: 'Đúng. Trong môi trường có chiết suất $n$, bước sóng giảm $n$ lần: $\\lambda\' = \\frac{\\lambda}{n} = \\frac{500}{1,5} \\approx 333,3$ nm.'
-                }
+                { id: 'a', text: 'Chu kì dao động của điện từ trường trong chùm bức xạ này là xấp xỉ $1,67 \\cdot 10^{-15}$ s.', isTrue: true, exp: 'Đúng. Chu kì $T = \\frac{1}{f} = \\frac{1}{6 \\cdot 10^{14}} \\approx 1,67 \\cdot 10^{-15}$ s.' },
+                { id: 'b', text: 'Bước sóng của chùm bức xạ này lan truyền trong chân không là 500 nm.', isTrue: true, exp: 'Đúng. Áp dụng $\\lambda = \\frac{c}{f} = \\frac{3 \\cdot 10^8}{6 \\cdot 10^{14}} = 0,5 \\cdot 10^{-6}$ m = 500 nm.' },
+                { id: 'c', text: 'Dựa vào thang sóng điện từ, bức xạ mang tần số trên thuộc dải tia tử ngoại vì không thể nhìn thấy bằng mắt thường.', isTrue: false, exp: 'Sai. Bước sóng 500 nm nằm gọn trong khoảng từ 380 nm đến 760 nm. Do đó, bức xạ này thuộc vùng ánh sáng nhìn thấy (cụ thể là màu xanh lục), không phải tia tử ngoại.' },
+                { id: 'd', text: 'Nếu chùm bức xạ này truyền từ chân không vào một khối thủy tinh (có chiết suất $n = 1,5$), bước sóng của nó bên trong khối thủy tinh sẽ giảm xuống còn 333 nm.', isTrue: true, exp: 'Đúng. Trong môi trường có chiết suất $n$, bước sóng giảm $n$ lần: $\\lambda\' = \\frac{\\lambda}{n} = \\frac{500}{1,5} \\approx 333,3$ nm.' }
             ]
         },
         {
-            id: 'q35_2',
+            id: 'tu_35',
             context: '<strong>Câu 10. (Môi trường vật chất và sự truyền Sóng điện từ)</strong><br>Sự tương tác của sóng điện từ với môi trường quyết định các ứng dụng che chắn và truyền thông.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Khí quyển Trái Đất (đặc biệt là tầng Ozon) hấp thụ rất mạnh tia tử ngoại có bước sóng ngắn từ Mặt Trời, bảo vệ sự sống trên mặt đất.',
-                    isTrue: true,
-                    exp: 'Đúng. Tầng Ozon ($O_3$) hấp thụ hầu hết bức xạ UV-B và UV-C chết người.'
-                },
-                {
-                    id: 'b',
-                    text: 'Nước tinh khiết và thủy tinh thông thường hoàn toàn trong suốt đối với ánh sáng nhìn thấy, đồng thời cũng trong suốt (cho truyền qua) đối với tia tử ngoại và tia hồng ngoại.',
-                    isTrue: false,
-                    exp: 'Sai. Nước và thủy tinh rất trong suốt với ánh sáng khả kiến, nhưng lại hấp thụ rất mạnh tia tử ngoại và tia hồng ngoại. (Đó là lí do ngồi trong xe hơi đóng kín cửa kính sẽ ít bị cháy nắng đen da do tia tử ngoại).'
-                },
-                {
-                    id: 'c',
-                    text: 'Cửa kính của lò vi sóng (Microwave oven) luôn được gắn một lớp lưới kim loại để phản xạ toàn bộ sóng vi ba, ngăn không cho sóng lọt ra ngoài gây nguy hiểm.',
-                    isTrue: true,
-                    exp: 'Đúng. Lưới kim loại hoạt động như một lồng Faraday. Mắt lưới nhỏ hơn bước sóng của vi ba (khoảng 12 cm) nên sóng vi ba bị phản xạ lại hoàn toàn, trong khi ánh sáng khả kiến (bước sóng nano mét) vẫn xuyên qua được để ta nhìn thấy thức ăn.'
-                },
-                {
-                    id: 'd',
-                    text: 'Để liên lạc với các tàu ngầm đang lặn sâu dưới đáy biển, người ta không thể dùng dải sóng cực ngắn mà bắt buộc phải dùng dải sóng cực dài vì chúng có khả năng đâm xuyên qua lớp nước biển tốt hơn.',
-                    isTrue: true,
-                    exp: 'Đúng. Nước biển (dẫn điện) hấp thụ sóng điện từ tần số cao rất mạnh. Chỉ có dải sóng cực dài (VLF/ELF, tần số từ 3 - 30 kHz) mới có khả năng đâm xuyên qua hàng chục mét nước biển để truyền tín hiệu quân sự cho tàu ngầm.'
-                }
+                { id: 'a', text: 'Khí quyển Trái Đất (đặc biệt là tầng Ozon) hấp thụ rất mạnh tia tử ngoại có bước sóng ngắn từ Mặt Trời, bảo vệ sự sống trên mặt đất.', isTrue: true, exp: 'Đúng. Tầng Ozon ($O_3$) hấp thụ hầu hết bức xạ UV-B và UV-C chết người.' },
+                { id: 'b', text: 'Nước tinh khiết và thủy tinh thông thường hoàn toàn trong suốt đối với ánh sáng nhìn thấy, đồng thời cũng trong suốt (cho truyền qua) đối với tia tử ngoại và tia hồng ngoại.', isTrue: false, exp: 'Sai. Nước và thủy tinh rất trong suốt với ánh sáng khả kiến, nhưng lại hấp thụ rất mạnh tia tử ngoại và tia hồng ngoại. (Đó là lí do ngồi trong xe hơi đóng kín cửa kính sẽ ít bị cháy nắng đen da do tia tử ngoại).' },
+                { id: 'c', text: 'Cửa kính của lò vi sóng (Microwave oven) luôn được gắn một lớp lưới kim loại để phản xạ toàn bộ sóng vi ba, ngăn không cho sóng lọt ra ngoài gây nguy hiểm.', isTrue: true, exp: 'Đúng. Lưới kim loại hoạt động như một lồng Faraday. Mắt lưới nhỏ hơn bước sóng của vi ba (khoảng 12 cm) nên sóng vi ba bị phản xạ lại hoàn toàn, trong khi ánh sáng khả kiến (bước sóng nano mét) vẫn xuyên qua được để ta nhìn thấy thức ăn.' },
+                { id: 'd', text: 'Để liên lạc với các tàu ngầm đang lặn sâu dưới đáy biển, người ta không thể dùng dải sóng cực ngắn mà bắt buộc phải dùng dải sóng cực dài vì chúng có khả năng đâm xuyên qua lớp nước biển tốt hơn.', isTrue: true, exp: 'Đúng. Nước biển (dẫn điện) hấp thụ sóng điện từ tần số cao rất mạnh. Chỉ có dải sóng cực dài (VLF/ELF, tần số từ 3 - 30 kHz) mới có khả năng đâm xuyên qua hàng chục mét nước biển để truyền tín hiệu quân sự cho tàu ngầm.' }
             ]
         },
         {
-            id: 'q36_2',
+            id: 'tu_36',
             context: '<strong>Câu 1. (Nguyên tắc tạo ra dòng điện xoay chiều)</strong><br>Một khung dây dẫn phẳng, dẹt, hình chữ nhật gồm $N$ vòng dây, diện tích mỗi vòng là $S$. Khung dây được quay đều với tốc độ góc $\\omega$ quanh một trục cố định nằm trong mặt phẳng khung, đặt trong một từ trường đều $\\vec{B}$ vuông góc với trục quay.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Từ thông qua khung dây biến thiên điều hòa theo thời gian, là nguyên nhân sinh ra suất điện động cảm ứng trong khung.',
-                    isTrue: true,
-                    exp: 'Đúng. Hiện tượng cảm ứng điện từ do từ thông biến thiên điều hòa là cơ sở vật lí để tạo ra dòng điện xoay chiều.'
-                },
-                {
-                    id: 'b',
-                    text: 'Khi mặt phẳng khung dây nằm song song với các đường sức từ thì từ thông qua khung dây đạt giá trị cực đại.',
-                    isTrue: false,
-                    exp: 'Sai. Khi mặt phẳng khung dây song song với đường sức từ, góc giữa pháp tuyến và $\\vec{B}$ là $90^\\circ \\Rightarrow \\cos 90^\\circ = 0$. Từ thông lúc này bằng 0. (Từ thông cực đại khi mặt phẳng vuông góc với $\\vec{B}$).'
-                },
-                {
-                    id: 'c',
-                    text: 'Suất điện động cảm ứng sinh ra trong khung dây luôn trễ pha $\\frac{\\pi}{2}$ so với từ thông qua khung dây.',
-                    isTrue: true,
-                    exp: 'Đúng. Giả sử $\\Phi = \\Phi_0 \\cos(\\omega t)$. Theo định luật Faraday $e = -\\Phi\' = \\omega \\Phi_0 \\sin(\\omega t) = E_0 \\cos(\\omega t - \\pi/2)$. Do đó, suất điện động $e$ luôn trễ pha $\\pi/2$ so với từ thông $\\Phi$.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu tăng diện tích $S$ của khung dây lên 10% và tăng tốc độ quay $\\omega$ lên 10%, biên độ của suất điện động cảm ứng sẽ tăng lên 21%.',
-                    isTrue: true,
-                    exp: 'Đúng. Công thức biên độ suất điện động $E_0 = \\omega NBS$. Gọi $S\' = 1,1S$ và $\\omega\' = 1,1\\omega$. Ta có $E_0\' = (1,1\\omega)NB(1,1S) = 1,21 \\cdot (\\omega NBS) = 1,21E_0$. Suất điện động tăng 21%.'
-                }
+                { id: 'a', text: 'Từ thông qua khung dây biến thiên điều hòa theo thời gian, là nguyên nhân sinh ra suất điện động cảm ứng trong khung.', isTrue: true, exp: 'Đúng. Hiện tượng cảm ứng điện từ do từ thông biến thiên điều hòa là cơ sở vật lí để tạo ra dòng điện xoay chiều.' },
+                { id: 'b', text: 'Khi mặt phẳng khung dây nằm song song với các đường sức từ thì từ thông qua khung dây đạt giá trị cực đại.', isTrue: false, exp: 'Sai. Khi mặt phẳng khung dây song song với đường sức từ, góc giữa pháp tuyến và $\\vec{B}$ là $90^\\circ \\Rightarrow \\cos 90^\\circ = 0$. Từ thông lúc này bằng 0. (Từ thông cực đại khi mặt phẳng vuông góc với $\\vec{B}$).' },
+                { id: 'c', text: 'Suất điện động cảm ứng sinh ra trong khung dây luôn trễ pha $\\frac{\\pi}{2}$ so với từ thông qua khung dây.', isTrue: true, exp: 'Đúng. Giả sử $\\Phi = \\Phi_0 \\cos(\\omega t)$. Theo định luật Faraday $e = -\\Phi\' = \\omega \\Phi_0 \\sin(\\omega t) = E_0 \\cos(\\omega t - \\pi/2)$. Do đó, suất điện động $e$ luôn trễ pha $\\pi/2$ so với từ thông $\\Phi$.' },
+                { id: 'd', text: 'Nếu tăng diện tích $S$ của khung dây lên 10% và tăng tốc độ quay $\\omega$ lên 10%, biên độ của suất điện động cảm ứng sẽ tăng lên 21%.', isTrue: true, exp: 'Đúng. Công thức biên độ suất điện động $E_0 = \\omega NBS$. Gọi $S\' = 1,1S$ và $\\omega\' = 1,1\\omega$. Ta có $E_0\' = (1,1\\omega)NB(1,1S) = 1,21 \\cdot (\\omega NBS) = 1,21E_0$. Suất điện động tăng 21%.' }
             ]
         },
         {
-            id: 'q37_2',
+            id: 'tu_37',
             context: '<strong>Câu 2. (Các đại lượng đặc trưng của điện áp xoay chiều)</strong><br>Điện áp xoay chiều cấp cho một thiết bị điện trong gia đình có biểu thức $u = 220\\sqrt{2}\\cos(100\\pi t - \\pi/3)$ (V) (với $t$ tính bằng giây).',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Điện áp hiệu dụng của mạng điện này là 220 V.',
-                    isTrue: true,
-                    exp: 'Đúng. Biên độ điện áp $U_0 = 220\\sqrt{2}$ V. Điện áp hiệu dụng $U = \\frac{U_0}{\\sqrt{2}} = 220$ V.'
-                },
-                {
-                    id: 'b',
-                    text: 'Tần số của dòng điện này là 100 Hz.',
-                    isTrue: false,
-                    exp: 'Sai. Tần số góc $\\omega = 100\\pi$ rad/s. Tần số $f = \\frac{\\omega}{2\\pi} = 50$ Hz.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tại thời điểm ban đầu ($t = 0$), điện áp tức thời ở hai đầu thiết bị có độ lớn là $110\\sqrt{2}$ V.',
-                    isTrue: true,
-                    exp: 'Đúng. Thay $t = 0$ vào phương trình: $u = 220\\sqrt{2}\\cos(-\\pi/3) = 220\\sqrt{2} \\cdot (0,5) = 110\\sqrt{2}$ V.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu cắm trực tiếp một tụ điện có ghi điện áp giới hạn (điện áp đánh thủng) là 250 V vào mạng điện này, tụ điện sẽ hoạt động bình thường mà không bị hỏng.',
-                    isTrue: false,
-                    exp: 'Sai. Điện áp giới hạn của linh kiện phải chịu được mức điện áp cực đại (đỉnh) của mạng điện. Mạng điện có $U_0 \\approx 311$ V, lớn hơn mức chịu đựng 250 V của tụ. Tụ điện sẽ bị đánh thủng (nổ) ngay lập tức.'
-                }
+                { id: 'a', text: 'Điện áp hiệu dụng của mạng điện này là 220 V.', isTrue: true, exp: 'Đúng. Biên độ điện áp $U_0 = 220\\sqrt{2}$ V. Điện áp hiệu dụng $U = \\frac{U_0}{\\sqrt{2}} = 220$ V.' },
+                { id: 'b', text: 'Tần số của dòng điện này là 100 Hz.', isTrue: false, exp: 'Sai. Tần số góc $\\omega = 100\\pi$ rad/s. Tần số $f = \\frac{\\omega}{2\\pi} = 50$ Hz.' },
+                { id: 'c', text: 'Tại thời điểm ban đầu ($t = 0$), điện áp tức thời ở hai đầu thiết bị có độ lớn là $110\\sqrt{2}$ V.', isTrue: true, exp: 'Đúng. Thay $t = 0$ vào phương trình: $u = 220\\sqrt{2}\\cos(-\\pi/3) = 220\\sqrt{2} \\cdot (0,5) = 110\\sqrt{2}$ V.' },
+                { id: 'd', text: 'Nếu cắm trực tiếp một tụ điện có ghi điện áp giới hạn (điện áp đánh thủng) là 250 V vào mạng điện này, tụ điện sẽ hoạt động bình thường mà không bị hỏng.', isTrue: false, exp: 'Sai. Điện áp giới hạn của linh kiện phải chịu được mức điện áp cực đại (đỉnh) của mạng điện. Mạng điện có $U_0 \\approx 311$ V, lớn hơn mức chịu đựng 250 V của tụ. Tụ điện sẽ bị đánh thủng (nổ) ngay lập tức.' }
             ]
         },
         {
-            id: 'q38',
+            id: 'tu_38',
             context: '<strong>Câu 3. (Bản chất của Giá trị hiệu dụng và Đo lường)</strong>',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Khái niệm cường độ dòng điện hiệu dụng của dòng điện xoay chiều được xây dựng dựa trên tác dụng nhiệt của dòng điện.',
-                    isTrue: true,
-                    exp: 'Đúng. Định nghĩa: Dòng điện xoay chiều có giá trị hiệu dụng $I$ tỏa ra một nhiệt lượng bằng đúng nhiệt lượng do dòng điện không đổi cường độ $I$ sinh ra trong cùng một thời gian.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cho dòng điện xoay chiều $i = I_0\\cos(\\omega t)$ chạy qua một điện trở $R$. Nhiệt lượng tỏa ra trên $R$ sau thời gian $t$ đủ lớn được tính bằng $Q = I_0^2 R t$.',
-                    isTrue: false,
-                    exp: 'Sai. Công thức tính nhiệt lượng theo giá trị hiệu dụng là $Q = I^2 R t$. Nếu viết theo giá trị cực đại, phải là $Q = \\frac{I_0^2}{2} R t$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Ampe kế và Vôn kế dùng trong mạng điện xoay chiều luôn hiển thị giá trị hiệu dụng của dòng điện và điện áp.',
-                    isTrue: true,
-                    exp: 'Đúng. Các dụng cụ đo lường xoay chiều được thiết kế để hiển thị giá trị hiệu dụng nhằm thuận tiện cho tính toán công suất.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu dùng một Ampe kế khung quay một chiều (DC) để đo cường độ dòng điện xoay chiều 50 Hz, kim đồng hồ sẽ chỉ giá trị 0.',
-                    isTrue: true,
-                    exp: 'Đúng. Ampe kế khung quay (từ điện) chỉ đo được giá trị trung bình. Dòng xoay chiều đổi chiều 100 lần mỗi giây, quán tính của kim không theo kịp nên nó đứng yên ở vạch số 0.'
-                }
+                { id: 'a', text: 'Khái niệm cường độ dòng điện hiệu dụng của dòng điện xoay chiều được xây dựng dựa trên tác dụng nhiệt của dòng điện.', isTrue: true, exp: 'Đúng. Định nghĩa: Dòng điện xoay chiều có giá trị hiệu dụng $I$ tỏa ra một nhiệt lượng bằng đúng nhiệt lượng do dòng điện không đổi cường độ $I$ sinh ra trong cùng một thời gian.' },
+                { id: 'b', text: 'Cho dòng điện xoay chiều $i = I_0\\cos(\\omega t)$ chạy qua một điện trở $R$. Nhiệt lượng tỏa ra trên $R$ sau thời gian $t$ đủ lớn được tính bằng $Q = I_0^2 R t$.', isTrue: false, exp: 'Sai. Công thức tính nhiệt lượng theo giá trị hiệu dụng là $Q = I^2 R t$. Nếu viết theo giá trị cực đại, phải là $Q = \\frac{I_0^2}{2} R t$.' },
+                { id: 'c', text: 'Ampe kế và Vôn kế dùng trong mạng điện xoay chiều luôn hiển thị giá trị hiệu dụng của dòng điện và điện áp.', isTrue: true, exp: 'Đúng. Các dụng cụ đo lường xoay chiều được thiết kế để hiển thị giá trị hiệu dụng nhằm thuận tiện cho tính toán công suất.' },
+                { id: 'd', text: 'Nếu dùng một Ampe kế khung quay một chiều (DC) để đo cường độ dòng điện xoay chiều 50 Hz, kim đồng hồ sẽ chỉ giá trị 0.', isTrue: true, exp: 'Đúng. Ampe kế khung quay (từ điện) chỉ đo được giá trị trung bình. Dòng xoay chiều đổi chiều 100 lần mỗi giây, quán tính của kim không theo kịp nên nó đứng yên ở vạch số 0.' }
             ]
         },
         {
-            id: 'q39',
+            id: 'tu_39',
             context: '<strong>Câu 4. (Tác dụng và ứng dụng của dòng điện xoay chiều)</strong><br>Dòng điện xoay chiều có nhiều ưu điểm vượt trội so với dòng điện một chiều trong sản xuất và đời sống.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Bóng đèn sợi đốt có thể phát sáng khi sử dụng cả dòng điện xoay chiều lẫn dòng điện một chiều.',
-                    isTrue: true,
-                    exp: 'Đúng. Bóng đèn sợi đốt hoạt động dựa trên tác dụng nhiệt ($I^2R$), không phụ thuộc vào chiều dòng điện.'
-                },
-                {
-                    id: 'b',
-                    text: 'Có thể sử dụng trực tiếp dòng điện xoay chiều từ điện lưới để nạp điện cho bình ắc quy xe máy.',
-                    isTrue: false,
-                    exp: 'Sai. Tác dụng hóa học (mạ điện, nạp ắc quy) đòi hỏi dòng điện phải dịch chuyển theo một chiều cố định (dòng DC). Để nạp ắc quy, phải dùng bộ chỉnh lưu chuyển xoay chiều thành một chiều.'
-                },
-                {
-                    id: 'c',
-                    text: 'Dòng điện xoay chiều ba pha có khả năng tạo ra từ trường quay, đây là nguyên lí cốt lõi để vận hành các động cơ không đồng bộ trong công nghiệp.',
-                    isTrue: true,
-                    exp: 'Đúng. Ba cuộn dây lệch nhau $120^\\circ$ mang ba dòng xoay chiều lệch pha nhau $120^\\circ$ sẽ tạo ra véc-tơ cảm ứng từ tổng hợp quay đều.'
-                },
-                {
-                    id: 'd',
-                    text: 'Ưu điểm lớn nhất khiến dòng điện xoay chiều thay thế hoàn toàn dòng điện một chiều trong lưới điện quốc gia là do nó dễ dàng tăng/giảm điện áp bằng máy biến áp.',
-                    isTrue: true,
-                    exp: 'Đúng. Việc dùng máy biến áp để nâng điện áp lên siêu cao áp (500 kV) giúp giảm hao phí $I^2R$ đi hàng vạn lần, điều mà thời điểm đó hệ thống điện một chiều của Thomas Edison không làm được.'
-                }
+                { id: 'a', text: 'Bóng đèn sợi đốt có thể phát sáng khi sử dụng cả dòng điện xoay chiều lẫn dòng điện một chiều.', isTrue: true, exp: 'Đúng. Bóng đèn sợi đốt hoạt động dựa trên tác dụng nhiệt ($I^2R$), không phụ thuộc vào chiều dòng điện.' },
+                { id: 'b', text: 'Có thể sử dụng trực tiếp dòng điện xoay chiều từ điện lưới để nạp điện cho bình ắc quy xe máy.', isTrue: false, exp: 'Sai. Tác dụng hóa học (mạ điện, nạp ắc quy) đòi hỏi dòng điện phải dịch chuyển theo một chiều cố định (dòng DC). Để nạp ắc quy, phải dùng bộ chỉnh lưu chuyển xoay chiều thành một chiều.' },
+                { id: 'c', text: 'Dòng điện xoay chiều ba pha có khả năng tạo ra từ trường quay, đây là nguyên lí cốt lõi để vận hành các động cơ không đồng bộ trong công nghiệp.', isTrue: true, exp: 'Đúng. Ba cuộn dây lệch nhau $120^\\circ$ mang ba dòng xoay chiều lệch pha nhau $120^\\circ$ sẽ tạo ra véc-tơ cảm ứng từ tổng hợp quay đều.' },
+                { id: 'd', text: 'Ưu điểm lớn nhất khiến dòng điện xoay chiều thay thế hoàn toàn dòng điện một chiều trong lưới điện quốc gia là do nó dễ dàng tăng/giảm điện áp bằng máy biến áp.', isTrue: true, exp: 'Đúng. Việc dùng máy biến áp để nâng điện áp lên siêu cao áp (500 kV) giúp giảm hao phí $I^2R$ đi hàng vạn lần, điều mà thời điểm đó hệ thống điện một chiều của Thomas Edison không làm được.' }
             ]
         },
         {
-            id: 'q40',
+            id: 'tu_40',
             context: '<strong>Câu 5. (Phân tích đồ thị dao động xoay chiều)</strong><br>Màn hình của một dao động kí điện tử (Oscilloscope) hiển thị đồ thị cường độ dòng điện $i$ (A) theo thời gian $t$ (ms). Đồ thị là một đường hình sin, tại thời điểm $t = 0$ dòng điện bằng 0 và đang tăng. Dòng điện đạt giá trị cực đại +4 A lần đầu tiên tại mốc thời gian $t = 5$ ms.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Chu kì của dòng điện xoay chiều này là 10 ms.',
-                    isTrue: false,
-                    exp: 'Sai. Từ vị trí cân bằng (0) đến vị trí biên dương (cực đại) mất thời gian là $1/4$ chu kì ($T/4 = 5$ ms). Do đó, chu kì $T = 20$ ms $= 0,02$ s.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cường độ dòng điện hiệu dụng chạy trong mạch là $2\\sqrt{2}$ A.',
-                    isTrue: true,
-                    exp: 'Đúng. Biên độ $I_0 = 4$ A $\\Rightarrow$ Giá trị hiệu dụng $I = \\frac{I_0}{\\sqrt{2}} = \\frac{4}{\\sqrt{2}} = 2\\sqrt{2}$ A.'
-                },
-                {
-                    id: 'c',
-                    text: 'Tần số của dòng điện xoay chiều này là 50 Hz.',
-                    isTrue: true,
-                    exp: 'Đúng. $T = 0,02$ s $\\Rightarrow f = \\frac{1}{T} = 50$ Hz.'
-                },
-                {
-                    id: 'd',
-                    text: 'Biểu thức cường độ dòng điện tức thời là $i = 4\\cos(100\\pi t - \\pi/2)$ (A) (với $t$ tính bằng giây).',
-                    isTrue: true,
-                    exp: 'Đúng. $\\omega = 2\\pi f = 100\\pi$ rad/s. Tại $t=0$, $i=0$ và đang tăng (đi theo chiều dương) $\\Rightarrow$ Pha ban đầu $\\varphi = -\\pi/2$. Biểu thức đúng là $i = 4\\cos(100\\pi t - \\pi/2)$.'
-                }
+                { id: 'a', text: 'Chu kì của dòng điện xoay chiều này là 10 ms.', isTrue: false, exp: 'Sai. Từ vị trí cân bằng (0) đến vị trí biên dương (cực đại) mất thời gian là $1/4$ chu kì ($T/4 = 5$ ms). Do đó, chu kì $T = 20$ ms $= 0,02$ s.' },
+                { id: 'b', text: 'Cường độ dòng điện hiệu dụng chạy trong mạch là $2\\sqrt{2}$ A.', isTrue: true, exp: 'Đúng. Biên độ $I_0 = 4$ A $\\Rightarrow$ Giá trị hiệu dụng $I = \\frac{I_0}{\\sqrt{2}} = \\frac{4}{\\sqrt{2}} = 2\\sqrt{2}$ A.' },
+                { id: 'c', text: 'Tần số của dòng điện xoay chiều này là 50 Hz.', isTrue: true, exp: 'Đúng. $T = 0,02$ s $\\Rightarrow f = \\frac{1}{T} = 50$ Hz.' },
+                { id: 'd', text: 'Biểu thức cường độ dòng điện tức thời là $i = 4\\cos(100\\pi t - \\pi/2)$ (A) (với $t$ tính bằng giây).', isTrue: true, exp: 'Đúng. $\\omega = 2\\pi f = 100\\pi$ rad/s. Tại $t=0$, $i=0$ và đang tăng (đi theo chiều dương) $\\Rightarrow$ Pha ban đầu $\\varphi = -\\pi/2$. Biểu thức đúng là $i = 4\\cos(100\\pi t - \\pi/2)$.' }
             ]
         },
         {
-            id: 'q41',
+            id: 'tu_41',
             context: '<strong>Câu 6. (Truyền tải điện năng đi xa)</strong><br>Một nhà máy thủy điện truyền tải công suất điện $P$ lên đường dây tải điện một pha có điện trở $R$. Hệ số công suất của đường dây luôn bằng 1. Điện áp hiệu dụng tại trạm phát là $U$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Độ sụt áp (độ giảm điện thế) dọc đường dây tải điện được tính bằng biểu thức $\\Delta U = \\frac{PR}{U}$.',
-                    isTrue: true,
-                    exp: 'Đúng. Dòng điện truyền tải $I = \\frac{P}{U}$. Độ sụt áp $\\Delta U = I \\cdot R = \\frac{P}{U} \\cdot R$.'
-                },
-                {
-                    id: 'b',
-                    text: 'Công suất hao phí tỏa nhiệt trên đường dây truyền tải tỉ lệ thuận với bình phương điện áp phát $U$.',
-                    isTrue: false,
-                    exp: 'Sai. Công suất hao phí $\\Delta P = I^2R = \\frac{P^2R}{U^2}$. Do đó $\\Delta P$ tỉ lệ nghịch với bình phương điện áp $U$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu nhà máy dùng máy biến áp để nâng điện áp $U$ lên gấp 10 lần trước khi truyền đi, công suất hao phí do tỏa nhiệt sẽ giảm đi 100 lần.',
-                    isTrue: true,
-                    exp: 'Đúng. Vì $\\Delta P \\sim \\frac{1}{U^2}$, nên khi $U$ tăng 10 lần thì mẫu số tăng 100 lần $\\Rightarrow \\Delta P$ giảm 100 lần.'
-                },
-                {
-                    id: 'd',
-                    text: 'Biện pháp làm giảm điện trở $R$ của đường dây (bằng cách dùng dây dẫn đồng to hơn) ít được áp dụng thực tế hơn so với biện pháp tăng điện áp $U$.',
-                    isTrue: true,
-                    exp: 'Đúng. $R = \\rho \\frac{l}{S}$. Để giảm $R$ 100 lần thì tiết diện $S$ (và khối lượng dây, chi phí vật liệu, độ cứng của cột trụ) phải tăng 100 lần, điều này bất khả thi về mặt kinh tế và kĩ thuật. Tăng áp là phương án tối ưu nhất.'
-                }
+                { id: 'a', text: 'Độ sụt áp (độ giảm điện thế) dọc đường dây tải điện được tính bằng biểu thức $\\Delta U = \\frac{PR}{U}$.', isTrue: true, exp: 'Đúng. Dòng điện truyền tải $I = \\frac{P}{U}$. Độ sụt áp $\\Delta U = I \\cdot R = \\frac{P}{U} \\cdot R$.' },
+                { id: 'b', text: 'Công suất hao phí tỏa nhiệt trên đường dây truyền tải tỉ lệ thuận với bình phương điện áp phát $U$.', isTrue: false, exp: 'Sai. Công suất hao phí $\\Delta P = I^2R = \\frac{P^2R}{U^2}$. Do đó $\\Delta P$ tỉ lệ nghịch với bình phương điện áp $U$.' },
+                { id: 'c', text: 'Nếu nhà máy dùng máy biến áp để nâng điện áp $U$ lên gấp 10 lần trước khi truyền đi, công suất hao phí do tỏa nhiệt sẽ giảm đi 100 lần.', isTrue: true, exp: 'Đúng. Vì $\\Delta P \\sim \\frac{1}{U^2}$, nên khi $U$ tăng 10 lần thì mẫu số tăng 100 lần $\\Rightarrow \\Delta P$ giảm 100 lần.' },
+                { id: 'd', text: 'Biện pháp làm giảm điện trở $R$ của đường dây (bằng cách dùng dây dẫn đồng to hơn) ít được áp dụng thực tế hơn so với biện pháp tăng điện áp $U$.', isTrue: true, exp: 'Đúng. $R = \\rho \\frac{l}{S}$. Để giảm $R$ 100 lần thì tiết diện $S$ (và khối lượng dây, chi phí vật liệu, độ cứng của cột trụ) phải tăng 100 lần, điều này bất khả thi về mặt kinh tế và kĩ thuật. Tăng áp là phương án tối ưu nhất.' }
             ]
         },
         {
-            id: 'q42',
+            id: 'tu_42',
             context: '<strong>Câu 7. (An toàn điện: Nguyên lí của Aptomat chống dòng rò - RCCB)</strong><br>Aptomat chống dòng rò (RCCB hay ELCB) là thiết bị an toàn bắt buộc trong các gia đình hiện đại để phòng chống điện giật.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'RCCB hoạt động dựa trên nguyên tắc so sánh cường độ dòng điện chạy trên dây pha (dây nóng) và dòng điện chạy trên dây trung tính.',
-                    isTrue: true,
-                    exp: 'Đúng. Nó có một lõi biến dòng cảm biến sự chênh lệch dòng điện đi và dòng điện về.'
-                },
-                {
-                    id: 'b',
-                    text: 'Trong trạng thái hoạt động bình thường (không có sự cố), cường độ dòng điện trong dây pha luôn lớn hơn cường độ dòng điện trong dây trung tính để cung cấp năng lượng cho thiết bị.',
-                    isTrue: false,
-                    exp: 'Sai. Theo định luật bảo toàn điện tích, trong mạch kín bình thường, dòng điện đi từ dây pha vào thiết bị phải bằng đúng dòng điện từ thiết bị trở về dây trung tính ($I_{\\text{pha}} = I_{\\text{trung tính}}$).'
-                },
-                {
-                    id: 'c',
-                    text: 'Khi một người vô tình chạm tay vào vỏ tủ lạnh bị rò điện, một dòng điện sẽ truyền qua cơ thể người xuống đất. Sự cố này làm mạch điện của RCCB bị mất cân bằng và lập tức ngắt cầu dao.',
-                    isTrue: true,
-                    exp: 'Đúng. Dòng rò qua người xuống đất khiến dòng điện trở về dây trung tính bị hụt ($I_{\\text{pha}} > I_{\\text{trung tính}}$). Sự chênh lệch này kích hoạt cuộn dây ngắt mạch bảo vệ.'
-                },
-                {
-                    id: 'd',
-                    text: 'Việc lắp đặt RCCB có thể thay thế hoàn toàn đường dây tiếp địa (dây nối đất) của các ổ cắm 3 chấu trong gia đình.',
-                    isTrue: false,
-                    exp: 'Sai. RCCB chỉ ngắt mạch sau khi đã có dòng điện rò chạy qua người (người đã bị giật một khoảnh khắc). Dây tiếp địa ngăn ngừa bằng cách truyền dòng rò trực tiếp xuống đất ngay khi vỏ máy chạm điện, làm Aptomat ngắt mạch ngay cả khi người chưa chạm vào. Hai hệ thống này phải bổ trợ cho nhau.'
-                }
+                { id: 'a', text: 'RCCB hoạt động dựa trên nguyên tắc so sánh cường độ dòng điện chạy trên dây pha (dây nóng) và dòng điện chạy trên dây trung tính.', isTrue: true, exp: 'Đúng. Nó có một lõi biến dòng cảm biến sự chênh lệch dòng điện đi và dòng điện về.' },
+                { id: 'b', text: 'Trong trạng thái hoạt động bình thường (không có sự cố), cường độ dòng điện trong dây pha luôn lớn hơn cường độ dòng điện trong dây trung tính để cung cấp năng lượng cho thiết bị.', isTrue: false, exp: 'Sai. Theo định luật bảo toàn điện tích, trong mạch kín bình thường, dòng điện đi từ dây pha vào thiết bị phải bằng đúng dòng điện từ thiết bị trở về dây trung tính ($I_{\\text{pha}} = I_{\\text{trung tính}}$).' },
+                { id: 'c', text: 'Khi một người vô tình chạm tay vào vỏ tủ lạnh bị rò điện, một dòng điện sẽ truyền qua cơ thể người xuống đất. Sự cố này làm mạch điện của RCCB bị mất cân bằng và lập tức ngắt cầu dao.', isTrue: true, exp: 'Đúng. Dòng rò qua người xuống đất khiến dòng điện trở về dây trung tính bị hụt ($I_{\\text{pha}} > I_{\\text{trung tính}}$). Sự chênh lệch này kích hoạt cuộn dây ngắt mạch bảo vệ.' },
+                { id: 'd', text: 'Việc lắp đặt RCCB có thể thay thế hoàn toàn đường dây tiếp địa (dây nối đất) của các ổ cắm 3 chấu trong gia đình.', isTrue: false, exp: 'Sai. RCCB chỉ ngắt mạch sau khi đã có dòng điện rò chạy qua người (người đã bị giật một khoảnh khắc). Dây tiếp địa ngăn ngừa bằng cách truyền dòng rò trực tiếp xuống đất ngay khi vỏ máy chạm điện, làm Aptomat ngắt mạch ngay cả khi người chưa chạm vào. Hai hệ thống này phải bổ trợ cho nhau.' }
             ]
         },
         {
-            id: 'q43',
+            id: 'tu_43',
             context: '<strong>Câu 8. (Quy tắc an toàn mạng điện dân dụng sinh hoạt)</strong><br>Điện lưới sinh hoạt ở Việt Nam là mạng điện xoay chiều một pha có điện áp hiệu dụng 220 V, tần số 50 Hz.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Dây pha (dây nóng) mang điện áp xoay chiều 220 V so với mặt đất, còn dây trung tính (dây nguội) có điện thế bằng 0 V so với mặt đất.',
-                    isTrue: true,
-                    exp: 'Đúng. Tại trạm biến áp, dây trung tính được nối đất trực tiếp nên điện thế của nó xấp xỉ 0 so với mặt đất.'
-                },
-                {
-                    id: 'b',
-                    text: 'Để thay bóng đèn trần bị cháy một cách an toàn tuyệt đối, người dùng chỉ cần tắt công tắc gắn trên tường điều khiển bóng đèn đó là đủ.',
-                    isTrue: false,
-                    exp: 'Sai. Rất nhiều hệ thống điện thợ đấu nhầm công tắc vào dây trung tính. Khi tắt công tắc, đèn tắt nhưng dây pha (có điện 220 V) vẫn chờ sẵn ở đui đèn. Chạm vào vẫn bị giật. An toàn tuyệt đối là phải sập cầu dao/Aptomat tổng của nhánh đó.'
-                },
-                {
-                    id: 'c',
-                    text: 'Mức độ nguy hiểm của điện giật đối với cơ thể người chủ yếu do cường độ dòng điện (A) quyết định chứ không chỉ riêng điện áp (V).',
-                    isTrue: true,
-                    exp: 'Đúng. Cường độ dòng điện trực tiếp tác động lên hệ thần kinh gây co cơ và rung tim. Tuy nhiên dòng điện này lớn hay nhỏ lại phụ thuộc vào điện áp và điện trở cơ thể ($I = U/R_{\\text{người}}$).'
-                },
-                {
-                    id: 'd',
-                    text: 'Cầu chì và các thiết bị ngắt mạch (Aptomat) luôn phải được lắp trên dây pha, tuyệt đối không được lắp chỉ trên dây trung tính.',
-                    isTrue: true,
-                    exp: 'Đúng. Nếu cầu chì đứt ở dây trung tính, thiết bị ngừng hoạt động nhưng toàn bộ thiết bị vẫn đang kết nối trực tiếp với dây pha, cực kì nguy hiểm nếu người dùng tháo thiết bị ra sửa. Phải lắp ở dây pha để cắt triệt để nguồn điện.'
-                }
+                { id: 'a', text: 'Dây pha (dây nóng) mang điện áp xoay chiều 220 V so với mặt đất, còn dây trung tính (dây nguội) có điện thế bằng 0 V so với mặt đất.', isTrue: true, exp: 'Đúng. Tại trạm biến áp, dây trung tính được nối đất trực tiếp nên điện thế của nó xấp xỉ 0 so với mặt đất.' },
+                { id: 'b', text: 'Để thay bóng đèn trần bị cháy một cách an toàn tuyệt đối, người dùng chỉ cần tắt công tắc gắn trên tường điều khiển bóng đèn đó là đủ.', isTrue: false, exp: 'Sai. Rất nhiều hệ thống điện thợ đấu nhầm công tắc vào dây trung tính. Khi tắt công tắc, đèn tắt nhưng dây pha (có điện 220 V) vẫn chờ sẵn ở đui đèn. Chạm vào vẫn bị giật. An toàn tuyệt đối là phải sập cầu dao/Aptomat tổng của nhánh đó.' },
+                { id: 'c', text: 'Mức độ nguy hiểm của điện giật đối với cơ thể người chủ yếu do cường độ dòng điện (A) quyết định chứ không chỉ riêng điện áp (V).', isTrue: true, exp: 'Đúng. Cường độ dòng điện trực tiếp tác động lên hệ thần kinh gây co cơ và rung tim. Tuy nhiên dòng điện này lớn hay nhỏ lại phụ thuộc vào điện áp và điện trở cơ thể ($I = U/R_{\\text{người}}$).' },
+                { id: 'd', text: 'Cầu chì và các thiết bị ngắt mạch (Aptomat) luôn phải được lắp trên dây pha, tuyệt đối không được lắp chỉ trên dây trung tính.', isTrue: true, exp: 'Đúng. Nếu cầu chì đứt ở dây trung tính, thiết bị ngừng hoạt động nhưng toàn bộ thiết bị vẫn đang kết nối trực tiếp với dây pha, cực kì nguy hiểm nếu người dùng tháo thiết bị ra sửa. Phải lắp ở dây pha để cắt triệt để nguồn điện.' }
             ]
         },
         {
-            id: 'q44',
+            id: 'tu_44',
             context: '<strong>Câu 9. (Hiểu lầm về Cảm ứng từ và Dòng điện xoay chiều)</strong><br>Một học sinh quan sát máy phát điện xoay chiều một pha và đưa ra các nhận định sau:',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Nếu quay rôto bằng tay với tốc độ rất chậm, từ thông qua khung dây không thay đổi, máy sẽ không phát ra điện.',
-                    isTrue: false,
-                    exp: 'Sai. Dù quay chậm, từ thông qua khung dây vẫn có biến thiên (dù tốc độ biến thiên nhỏ). Do đó, suất điện động vẫn sinh ra nhưng có giá trị rất nhỏ và tần số rất thấp, chứ không phải là "không phát ra điện".'
-                },
-                {
-                    id: 'b',
-                    text: 'Giá trị tức thời của cường độ dòng điện có thể lớn hơn giá trị hiệu dụng của nó trong một khoảng thời gian nhất định của chu kì.',
-                    isTrue: true,
-                    exp: 'Đúng. Biểu thức $i = I_0 \\cos(\\omega t)$. Giá trị cực đại $I_0$ lớn hơn giá trị hiệu dụng $I = I_0/\\sqrt{2}$ khoảng 1,414 lần. Khi pha dao động gần bằng 0 hoặc $\\pi$, $|i|$ sẽ vọt lên lớn hơn $I$.'
-                },
-                {
-                    id: 'c',
-                    text: 'Động năng của dòng nước hoặc tuabin gió chính là nguồn năng lượng gốc được chuyển hóa thành điện năng trong các máy phát điện.',
-                    isTrue: true,
-                    exp: 'Đúng. Tuabin cung cấp cơ năng (từ động năng của nước/gió) làm quay rôto. Theo định luật bảo toàn năng lượng, cơ năng này biến thành điện năng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Suất điện động của máy phát điện xoay chiều đạt độ lớn cực đại tại cùng thời điểm từ thông qua khung dây cũng đạt độ lớn cực đại.',
-                    isTrue: false,
-                    exp: 'Sai. $e = -\\Phi\'$. Hàm sin và hàm cos lệch pha nhau $90^\\circ$. Khi từ thông $\\Phi$ cực đại thì suất điện động $e$ bằng 0. Khi $\\Phi$ bằng 0 thì $e$ đạt cực đại.'
-                }
+                { id: 'a', text: 'Nếu quay rôto bằng tay với tốc độ rất chậm, từ thông qua khung dây không thay đổi, máy sẽ không phát ra điện.', isTrue: false, exp: 'Sai. Dù quay chậm, từ thông qua khung dây vẫn có biến thiên (dù tốc độ biến thiên nhỏ). Do đó, suất điện động vẫn sinh ra nhưng có giá trị rất nhỏ và tần số rất thấp, chứ không phải là "không phát ra điện".' },
+                { id: 'b', text: 'Giá trị tức thời của cường độ dòng điện có thể lớn hơn giá trị hiệu dụng của nó trong một khoảng thời gian nhất định của chu kì.', isTrue: true, exp: 'Đúng. Biểu thức $i = I_0 \\cos(\\omega t)$. Giá trị cực đại $I_0$ lớn hơn giá trị hiệu dụng $I = I_0/\\sqrt{2}$ khoảng 1,414 lần. Khi pha dao động gần bằng 0 hoặc $\\pi$, $|i|$ sẽ vọt lên lớn hơn $I$.' },
+                { id: 'c', text: 'Động năng của dòng nước hoặc tuabin gió chính là nguồn năng lượng gốc được chuyển hóa thành điện năng trong các máy phát điện.', isTrue: true, exp: 'Đúng. Tuabin cung cấp cơ năng (từ động năng của nước/gió) làm quay rôto. Theo định luật bảo toàn năng lượng, cơ năng này biến thành điện năng.' },
+                { id: 'd', text: 'Suất điện động của máy phát điện xoay chiều đạt độ lớn cực đại tại cùng thời điểm từ thông qua khung dây cũng đạt độ lớn cực đại.', isTrue: false, exp: 'Sai. $e = -\\Phi\'$. Hàm sin và hàm cos lệch pha nhau $90^\\circ$. Khi từ thông $\\Phi$ cực đại thì suất điện động $e$ bằng 0. Khi $\\Phi$ bằng 0 thì $e$ đạt cực đại.' }
             ]
         },
         {
-            id: 'q45',
+            id: 'tu_45',
             context: '<strong>Câu 10. (Tính toán Năng lượng và Tác dụng nhiệt)</strong><br>Một ấm đun nước điện có điện trở $R = 40\\text{ }\\Omega$ (coi không đổi theo nhiệt độ). Đem cắm ấm này vào mạng điện xoay chiều gia đình $u = 220\\sqrt{2}\\cos(100\\pi t)$ (V).',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Cường độ dòng điện cực đại chạy qua dây điện trở của ấm là 5,5 A.',
-                    isTrue: false,
-                    exp: 'Sai. Điện áp hiệu dụng $U = 220$ V $\\Rightarrow$ Dòng điện hiệu dụng $I = \\frac{U}{R} = \\frac{220}{40} = 5,5$ A. Cường độ dòng điện cực đại phải là $I_0 = 5,5\\sqrt{2}$ A.'
-                },
-                {
-                    id: 'b',
-                    text: 'Công suất tỏa nhiệt định mức của chiếc ấm điện này là 1210 W.',
-                    isTrue: true,
-                    exp: 'Đúng. Công suất tỏa nhiệt (công suất trung bình) tính theo giá trị hiệu dụng: $P = \\frac{U^2}{R} = \\frac{220^2}{40} = 1210$ W.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu thay nguồn điện xoay chiều trên bằng một nguồn điện một chiều (DC) có điện áp đúng bằng 220 V, thời gian đun sôi một ấm nước sẽ không thay đổi.',
-                    isTrue: true,
-                    exp: 'Đúng. Điện áp xoay chiều hiệu dụng 220 V có tác dụng tỏa nhiệt tương đương hoàn toàn với điện áp một chiều 220 V. Do đó công suất $P$ như nhau $\\Rightarrow$ thời gian đun sôi như nhau.'
-                },
-                {
-                    id: 'd',
-                    text: 'Trong quá trình ấm đun hoạt động với điện xoay chiều, công suất tỏa nhiệt tức thời trên dây điện trở luôn là một hằng số 1210 W tại mọi thời điểm $t$.',
-                    isTrue: false,
-                    exp: 'Sai. Công suất tức thời $p(t) = i^2 R = I_0^2 R \\cos^2(\\omega t) = \\frac{I_0^2 R}{2} [1 + \\cos(2\\omega t)]$. Nó là một hàm dao động tuần hoàn từ 0 đến cực đại 2420 W, chứ không phải hằng số. Giá trị 1210 W chỉ là công suất trung bình trong một chu kì.'
-                }
+                { id: 'a', text: 'Cường độ dòng điện cực đại chạy qua dây điện trở của ấm là 5,5 A.', isTrue: false, exp: 'Sai. Điện áp hiệu dụng $U = 220$ V $\\Rightarrow$ Dòng điện hiệu dụng $I = \\frac{U}{R} = \\frac{220}{40} = 5,5$ A. Cường độ dòng điện cực đại phải là $I_0 = 5,5\\sqrt{2}$ A.' },
+                { id: 'b', text: 'Công suất tỏa nhiệt định mức của chiếc ấm điện này là 1210 W.', isTrue: true, exp: 'Đúng. Công suất tỏa nhiệt (công suất trung bình) tính theo giá trị hiệu dụng: $P = \\frac{U^2}{R} = \\frac{220^2}{40} = 1210$ W.' },
+                { id: 'c', text: 'Nếu thay nguồn điện xoay chiều trên bằng một nguồn điện một chiều (DC) có điện áp đúng bằng 220 V, thời gian đun sôi một ấm nước sẽ không thay đổi.', isTrue: true, exp: 'Đúng. Điện áp xoay chiều hiệu dụng 220 V có tác dụng tỏa nhiệt tương đương hoàn toàn với điện áp một chiều 220 V. Do đó công suất $P$ như nhau $\\Rightarrow$ thời gian đun sôi như nhau.' },
+                { id: 'd', text: 'Trong quá trình ấm đun hoạt động với điện xoay chiều, công suất tỏa nhiệt tức thời trên dây điện trở luôn là một hằng số 1210 W tại mọi thời điểm $t$.', isTrue: false, exp: 'Sai. Công suất tức thời $p(t) = i^2 R = I_0^2 R \\cos^2(\\omega t) = \\frac{I_0^2 R}{2} [1 + \\cos(2\\omega t)]$. Nó là một hàm dao động tuần hoàn từ 0 đến cực đại 2420 W, chứ không phải hằng số. Giá trị 1210 W chỉ là công suất trung bình trong một chu kì.' }
             ]
         },
         {
-            id: 'q46',
+            id: 'tu_46',
             context: '<strong>Câu 1. (Nguyên tắc an toàn mạng điện dân dụng sinh hoạt)</strong><br>Mạng điện sinh hoạt gia đình ở Việt Nam là mạng xoay chiều một pha (220V - 50Hz) gồm dây pha (dây nóng) và dây trung tính (dây nguội). Để đảm bảo an toàn, các gia đình phải tuân thủ nghiêm ngặt các quy tắc thiết kế và sử dụng.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Dây trung tính được nối đất tại trạm biến áp nên điện thế của nó so với mặt đất bằng 0V, chạm vào dây trung tính sẽ không bao giờ bị điện giật.',
-                    isTrue: false,
-                    exp: 'Sai. Mặc dù dây trung tính được nối đất tại trạm, nhưng do đường dây truyền tải có điện trở, khi có các tải tiêu thụ lớn hoạt động không cân bằng, dây trung tính tại nhà vẫn có thể xuất hiện một điện áp (điện thế trôi) gây giật nhẹ hoặc nguy hiểm nếu đứt dây trung tính (đứt "mát").'
-                },
-                {
-                    id: 'b',
-                    text: 'Các thiết bị bảo vệ đóng ngắt (Cầu chì, Aptomat) và công tắc điều khiển thiết bị luôn phải được lắp đặt trên dây pha.',
-                    isTrue: true,
-                    exp: 'Đúng. Lắp ở dây pha để khi ngắt mạch, thiết bị hoàn toàn bị cách li khỏi nguồn điện áp cao (220V), an toàn cho việc sửa chữa.'
-                },
-                {
-                    id: 'c',
-                    text: 'Khi tay bị ướt, điện trở của lớp da người sẽ giảm xuống rất mạnh, làm dòng điện chạy qua cơ thể tăng cao, gây nguy hiểm hơn nhiều so với khi tay khô.',
-                    isTrue: true,
-                    exp: 'Đúng. Điện trở người khô khoảng $10.000\\text{ }\\Omega - 100.000\\text{ }\\Omega$, nhưng khi ướt chỉ còn khoảng $1.000\\text{ }\\Omega$. Theo định luật Ohm $I = U/R$, điện trở giảm làm dòng điện tăng vọt đến mức chết người.'
-                },
-                {
-                    id: 'd',
-                    text: 'Việc một con chim đậu trên một đường dây pha cao thế trần không bị điện giật là do chân chim có cấu tạo bằng lớp sừng cách điện hoàn toàn.',
-                    isTrue: false,
-                    exp: 'Sai. Chim không bị giật vì hai chân chim đậu trên cùng một sợi dây. Khoảng cách hai chân rất gần nên độ chênh lệch điện thế (hiệu điện thế) giữa hai chân chim xấp xỉ bằng 0 V. Không có hiệu điện thế thì không có dòng điện chạy qua cơ thể con chim.'
-                }
+                { id: 'a', text: 'Dây trung tính được nối đất tại trạm biến áp nên điện thế của nó so với mặt đất bằng 0V, chạm vào dây trung tính sẽ không bao giờ bị điện giật.', isTrue: false, exp: 'Sai. Mặc dù dây trung tính được nối đất tại trạm, nhưng do đường dây truyền tải có điện trở, khi có các tải tiêu thụ lớn hoạt động không cân bằng, dây trung tính tại nhà vẫn có thể xuất hiện một điện áp (điện thế trôi) gây giật nhẹ hoặc nguy hiểm nếu đứt dây trung tính (đứt "mát").' },
+                { id: 'b', text: 'Các thiết bị bảo vệ đóng ngắt (Cầu chì, Aptomat) và công tắc điều khiển thiết bị luôn phải được lắp đặt trên dây pha.', isTrue: true, exp: 'Đúng. Lắp ở dây pha để khi ngắt mạch, thiết bị hoàn toàn bị cách li khỏi nguồn điện áp cao (220V), an toàn cho việc sửa chữa.' },
+                { id: 'c', text: 'Khi tay bị ướt, điện trở của lớp da người sẽ giảm xuống rất mạnh, làm dòng điện chạy qua cơ thể tăng cao, gây nguy hiểm hơn nhiều so với khi tay khô.', isTrue: true, exp: 'Đúng. Điện trở người khô khoảng $10.000\\text{ }\\Omega - 100.000\\text{ }\\Omega$, nhưng khi ướt chỉ còn khoảng $1.000\\text{ }\\Omega$. Theo định luật Ohm $I = U/R$, điện trở giảm làm dòng điện tăng vọt đến mức chết người.' },
+                { id: 'd', text: 'Việc một con chim đậu trên một đường dây pha cao thế trần không bị điện giật là do chân chim có cấu tạo bằng lớp sừng cách điện hoàn toàn.', isTrue: false, exp: 'Sai. Chim không bị giật vì hai chân chim đậu trên cùng một sợi dây. Khoảng cách hai chân rất gần nên độ chênh lệch điện thế (hiệu điện thế) giữa hai chân chim xấp xỉ bằng 0 V. Không có hiệu điện thế thì không có dòng điện chạy qua cơ thể con chim.' }
             ]
         },
         {
-            id: 'q47',
+            id: 'tu_47',
             context: '<strong>Câu 2. (Cơ chế hoạt động của Aptomat chống dòng rò - RCCB/ELCB)</strong><br>Aptomat chống rò (cầu dao chống giật) là thiết bị bảo vệ sinh mạng con người. Lõi của thiết bị là một biến dòng cảm ứng đo sự chênh lệch dòng điện giữa dây pha và dây trung tính.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trong điều kiện các thiết bị điện hoạt động bình thường và không bị rò rỉ, tổng cường độ dòng điện đi ra ở dây pha luôn lớn hơn dòng điện trở về ở dây trung tính do điện năng đã bị tiêu thụ.',
-                    isTrue: false,
-                    exp: 'Sai. Điện năng biến thành công/nhiệt, nhưng điện tích không bị mất đi. Theo định luật bảo toàn điện tích, dòng điện đi từ dây pha luôn bằng đúng dòng điện trở về dây trung tính ($I_{\\text{pha}} = I_{\\text{trung tính}}$).'
-                },
-                {
-                    id: 'b',
-                    text: 'Khi một người chạm tay vào vỏ máy giặt bị rò điện, một phần dòng điện từ dây pha đi qua cơ thể người truyền xuống đất, làm dòng điện trở về dây trung tính bị hụt đi.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây chính là sự "rò rỉ" điện. Dòng điện chia làm hai nhánh (một về dây trung tính, một qua người xuống đất) nên $I_{\\text{pha}} > I_{\\text{trung tính}}$. RCCB phát hiện độ lệch này và ngắt điện.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu có sự cố đoản mạch (chập hai dây pha và trung tính vào nhau), dòng điện tăng vọt lên hàng trăm Ampe, Aptomat chống dòng rò sẽ lập tức ngắt mạch nhờ chức năng phát hiện dòng rò.',
-                    isTrue: false,
-                    exp: 'Sai. Ngắn mạch làm dòng tăng vọt ở cả hai dây pha và trung tính, do đó độ chênh lệch dòng điện vẫn bằng 0 ($I_{\\text{pha}} = I_{\\text{trung tính}}$). RCCB (loại thuần túy) không ngắt khi bị ngắn mạch. Chức năng ngắt ngắn mạch là của MCB (Aptomat thường).'
-                },
-                {
-                    id: 'd',
-                    text: 'Aptomat chống giật có thể đo được dòng rò rất nhỏ (ví dụ 30 mA) và cắt điện cực nhanh (khoảng 0,03 giây) để cứu sống nạn nhân.',
-                    isTrue: true,
-                    exp: 'Đúng. Dòng điện 30 mA đi qua tim trong thời gian rất ngắn đã đủ gây nguy hiểm, RCCB được thiết kế với ngưỡng nhạy cảm 30 mA để ngắt tức thời.'
-                }
+                { id: 'a', text: 'Trong điều kiện các thiết bị điện hoạt động bình thường và không bị rò rỉ, tổng cường độ dòng điện đi ra ở dây pha luôn lớn hơn dòng điện trở về ở dây trung tính do điện năng đã bị tiêu thụ.', isTrue: false, exp: 'Sai. Điện năng biến thành công/nhiệt, nhưng điện tích không bị mất đi. Theo định luật bảo toàn điện tích, dòng điện đi từ dây pha luôn bằng đúng dòng điện trở về dây trung tính ($I_{\\text{pha}} = I_{\\text{trung tính}}$).' },
+                { id: 'b', text: 'Khi một người chạm tay vào vỏ máy giặt bị rò điện, một phần dòng điện từ dây pha đi qua cơ thể người truyền xuống đất, làm dòng điện trở về dây trung tính bị hụt đi.', isTrue: true, exp: 'Đúng. Đây chính là sự "rò rỉ" điện. Dòng điện chia làm hai nhánh (một về dây trung tính, một qua người xuống đất) nên $I_{\\text{pha}} > I_{\\text{trung tính}}$. RCCB phát hiện độ lệch này và ngắt điện.' },
+                { id: 'c', text: 'Nếu có sự cố đoản mạch (chập hai dây pha và trung tính vào nhau), dòng điện tăng vọt lên hàng trăm Ampe, Aptomat chống dòng rò sẽ lập tức ngắt mạch nhờ chức năng phát hiện dòng rò.', isTrue: false, exp: 'Sai. Ngắn mạch làm dòng tăng vọt ở cả hai dây pha và trung tính, do đó độ chênh lệch dòng điện vẫn bằng 0 ($I_{\\text{pha}} = I_{\\text{trung tính}}$). RCCB (loại thuần túy) không ngắt khi bị ngắn mạch. Chức năng ngắt ngắn mạch là của MCB (Aptomat thường).' },
+                { id: 'd', text: 'Aptomat chống giật có thể đo được dòng rò rất nhỏ (ví dụ 30 mA) và cắt điện cực nhanh (khoảng 0,03 giây) để cứu sống nạn nhân.', isTrue: true, exp: 'Đúng. Dòng điện 30 mA đi qua tim trong thời gian rất ngắn đã đủ gây nguy hiểm, RCCB được thiết kế với ngưỡng nhạy cảm 30 mA để ngắt tức thời.' }
             ]
         },
         {
-            id: 'q48',
+            id: 'tu_48',
             context: '<strong>Câu 3. (Hệ thống tiếp địa bảo vệ - Dây nối đất)</strong><br>Các thiết bị gia dụng có vỏ kim loại (tủ lạnh, lò nướng) luôn được trang bị phích cắm 3 chấu để kết nối với hệ thống dây tiếp địa của tòa nhà.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Chấu thứ 3 (chấu tiếp địa) trên phích cắm luôn được thiết kế dài hơn hai chấu còn lại để tiếp xúc với điện cực nối đất trước khi hai chấu mang điện chạm vào ổ cắm.',
-                    isTrue: true,
-                    exp: 'Đúng. Chấu nối đất dài hơn nhằm đảm bảo thiết bị được nối đất bảo vệ trước khi được cấp điện, và khi rút phích cắm thì ngắt điện trước rồi mới ngắt nối đất.'
-                },
-                {
-                    id: 'b',
-                    text: 'Nếu vỏ máy bị rò điện, dây nối đất tạo ra một đường dẫn có điện trở rất nhỏ truyền dòng điện xuống lòng đất, giữ cho điện thế của vỏ máy luôn xấp xỉ bằng 0 V.',
-                    isTrue: true,
-                    exp: 'Đúng. Dây nối đất có điện trở $R < 4\\text{ }\\Omega$, rất nhỏ so với điện trở người ($1000\\text{ }\\Omega$). Theo định luật phân nhánh dòng điện, phần lớn dòng điện sẽ ưu tiên đi qua dây nối đất, dòng qua người rất nhỏ.'
-                },
-                {
-                    id: 'c',
-                    text: 'Do dòng rò chạy qua dây nối đất rất lớn, nó sẽ làm đứt cầu chì hoặc kích hoạt Aptomat ngắt toàn bộ mạch điện, loại bỏ triệt để nguồn nguy hiểm.',
-                    isTrue: true,
-                    exp: 'Đúng. Dòng rò lớn qua dây nối đất giống như một hiện tượng chạm chập (ngắn mạch một phần), dòng điện vượt quá tải sẽ làm nhảy cầu dao tự động (MCB).'
-                },
-                {
-                    id: 'd',
-                    text: 'Trong trường hợp nhà không có đường dây nối đất chuẩn, người dùng có thể dùng một sợi dây điện nối từ vỏ máy xả thẳng vào ống dẫn nước bằng nhựa của gia đình để thay thế.',
-                    isTrue: false,
-                    exp: 'Sai. Nhựa là chất cách điện hoàn toàn. Nối vỏ máy vào ống nhựa không thể tản dòng điện xuống đất, thiết bị vẫn gây giật chết người. Phải nối vào cọc đồng đóng sâu dưới đất sét ẩm.'
-                }
+                { id: 'a', text: 'Chấu thứ 3 (chấu tiếp địa) trên phích cắm luôn được thiết kế dài hơn hai chấu còn lại để tiếp xúc với điện cực nối đất trước khi hai chấu mang điện chạm vào ổ cắm.', isTrue: true, exp: 'Đúng. Chấu nối đất dài hơn nhằm đảm bảo thiết bị được nối đất bảo vệ trước khi được cấp điện, và khi rút phích cắm thì ngắt điện trước rồi mới ngắt nối đất.' },
+                { id: 'b', text: 'Nếu vỏ máy bị rò điện, dây nối đất tạo ra một đường dẫn có điện trở rất nhỏ truyền dòng điện xuống lòng đất, giữ cho điện thế của vỏ máy luôn xấp xỉ bằng 0 V.', isTrue: true, exp: 'Đúng. Dây nối đất có điện trở $R < 4\\text{ }\\Omega$, rất nhỏ so với điện trở người ($1000\\text{ }\\Omega$). Theo định luật phân nhánh dòng điện, phần lớn dòng điện sẽ ưu tiên đi qua dây nối đất, dòng qua người rất nhỏ.' },
+                { id: 'c', text: 'Do dòng rò chạy qua dây nối đất rất lớn, nó sẽ làm đứt cầu chì hoặc kích hoạt Aptomat ngắt toàn bộ mạch điện, loại bỏ triệt để nguồn nguy hiểm.', isTrue: true, exp: 'Đúng. Dòng rò lớn qua dây nối đất giống như một hiện tượng chạm chập (ngắn mạch một phần), dòng điện vượt quá tải sẽ làm nhảy cầu dao tự động (MCB).' },
+                { id: 'd', text: 'Trong trường hợp nhà không có đường dây nối đất chuẩn, người dùng có thể dùng một sợi dây điện nối từ vỏ máy xả thẳng vào ống dẫn nước bằng nhựa của gia đình để thay thế.', isTrue: false, exp: 'Sai. Nhựa là chất cách điện hoàn toàn. Nối vỏ máy vào ống nhựa không thể tản dòng điện xuống đất, thiết bị vẫn gây giật chết người. Phải nối vào cọc đồng đóng sâu dưới đất sét ẩm.' }
             ]
         },
         {
-            id: 'q49',
+            id: 'tu_49',
             context: '<strong>Câu 4. (Điện áp bước và Hành động thoát hiểm)</strong><br>Khi dây dẫn điện siêu cao áp bị đứt và rơi xuống nền đất, dòng điện cực lớn sẽ truyền từ điểm chạm đất lan tỏa ra xung quanh, tạo ra các vành đai điện thế giảm dần theo khoảng cách.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Điện áp bước là sự chênh lệch điện thế (hiệu điện thế) giữa hai bàn chân của con người khi đứng hoặc bước đi trong khu vực có dòng điện lan truyền dưới đất.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là định nghĩa vật lí chuẩn xác của "Điện áp bước" (Step Voltage).'
-                },
-                {
-                    id: 'b',
-                    text: 'Khoảng cách giữa hai bước chân càng lớn thì điện áp bước càng nhỏ, do đó để thoát ra khỏi vùng nguy hiểm cần phải sải bước chạy thật nhanh và dài.',
-                    isTrue: false,
-                    exp: 'Sai. Khoảng cách hai chân càng lớn thì nó cắt ngang qua các vòng đẳng thế càng nhiều $\\rightarrow$ chênh lệch điện thế (Điện áp bước $U$) càng lớn, dòng điện chạy qua cơ thể càng mạnh.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu một đàn bò đi vào vùng có điện áp bước, chúng thường dễ bị điện giật chết hơn con người vì khoảng cách giữa hai chân trước và hai chân sau của chúng rất dài.',
-                    isTrue: true,
-                    exp: 'Đúng. Chân trước và chân sau của bò cách nhau rất xa (khoảng 1,5 m), tạo ra điện áp bước rất lớn. Dòng điện chạy từ chân trước qua tim đến chân sau gây tử vong ngay lập tức.'
-                },
-                {
-                    id: 'd',
-                    text: 'Cách thoát hiểm an toàn nhất khi phát hiện mình nằm trong vùng điện áp bước là chụm hai chân sát vào nhau rồi nhảy lò cò hoặc nhảy chụm chân ra khỏi khu vực đó.',
-                    isTrue: true,
-                    exp: 'Đúng. Chụm hai chân lại thì khoảng cách giữa hai chân xấp xỉ 0, điện áp bước $\\approx 0$ V, không có dòng điện đi qua nửa dưới cơ thể. Nhảy lò cò hoặc lê bước chụm chân là kĩ năng sinh tồn tiêu chuẩn.'
-                }
+                { id: 'a', text: 'Điện áp bước là sự chênh lệch điện thế (hiệu điện thế) giữa hai bàn chân của con người khi đứng hoặc bước đi trong khu vực có dòng điện lan truyền dưới đất.', isTrue: true, exp: 'Đúng. Đây là định nghĩa vật lí chuẩn xác của "Điện áp bước" (Step Voltage).' },
+                { id: 'b', text: 'Khoảng cách giữa hai bước chân càng lớn thì điện áp bước càng nhỏ, do đó để thoát ra khỏi vùng nguy hiểm cần phải sải bước chạy thật nhanh và dài.', isTrue: false, exp: 'Sai. Khoảng cách hai chân càng lớn thì nó cắt ngang qua các vòng đẳng thế càng nhiều $\\rightarrow$ chênh lệch điện thế (Điện áp bước $U$) càng lớn, dòng điện chạy qua cơ thể càng mạnh.' },
+                { id: 'c', text: 'Nếu một đàn bò đi vào vùng có điện áp bước, chúng thường dễ bị điện giật chết hơn con người vì khoảng cách giữa hai chân trước và hai chân sau của chúng rất dài.', isTrue: true, exp: 'Đúng. Chân trước và chân sau của bò cách nhau rất xa (khoảng 1,5 m), tạo ra điện áp bước rất lớn. Dòng điện chạy từ chân trước qua tim đến chân sau gây tử vong ngay lập tức.' },
+                { id: 'd', text: 'Cách thoát hiểm an toàn nhất khi phát hiện mình nằm trong vùng điện áp bước là chụm hai chân sát vào nhau rồi nhảy lò cò hoặc nhảy chụm chân ra khỏi khu vực đó.', isTrue: true, exp: 'Đúng. Chụm hai chân lại thì khoảng cách giữa hai chân xấp xỉ 0, điện áp bước $\\approx 0$ V, không có dòng điện đi qua nửa dưới cơ thể. Nhảy lò cò hoặc lê bước chụm chân là kĩ năng sinh tồn tiêu chuẩn.' }
             ]
         },
         {
-            id: 'q50',
+            id: 'tu_50',
             context: '<strong>Câu 5. (Tổng hợp: Máy biến áp cách ly)</strong><br>Trong y tế, viễn thông và các bàn sửa chữa điện tử, người ta bắt buộc phải sử dụng Máy biến áp cách ly (Isolation Transformer) có tỉ số vòng dây $N_1 / N_2 = 1$. Cuộn sơ cấp nối với lưới điện 220V, cuộn thứ cấp cấp điện 220V cho thiết bị.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Máy biến áp cách ly không thay đổi giá trị điện áp hiệu dụng nhưng lại tiêu tốn nhiều vật liệu đồng và sắt từ hơn so với việc nối thẳng vào mạng điện.',
-                    isTrue: true,
-                    exp: 'Đúng. Tỉ số $1:1$ không đổi áp, nhưng máy biến áp vẫn cồng kềnh, nặng và gây suy hao. Nó được dùng riêng cho mục đích an toàn, không phải truyền tải.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cuộn sơ cấp và cuộn thứ cấp của biến áp cách ly hoàn toàn cách điện với nhau, năng lượng được truyền sang hoàn toàn thông qua từ trường biến thiên.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là bản chất "cách ly" về mặt điện học (Galvanic isolation).'
-                },
-                {
-                    id: 'c',
-                    text: 'Do cuộn thứ cấp không có điểm nào nối đất, nếu thợ điện (đang đứng dưới đất) vô tình chạm một tay vào một trong hai đầu dây của cuộn thứ cấp thì vẫn không bị điện giật.',
-                    isTrue: true,
-                    exp: 'Đúng. Bị giật khi có mạch điện kín chạy qua người. Vì cuộn thứ cấp lơ lửng (không nối đất), chạm 1 cực không tạo thành mạch kín xuyên qua người xuống đất, do đó an toàn.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu thợ điện đồng thời cầm mỗi tay một đầu dây của cuộn thứ cấp thì người này vẫn an toàn nhờ đặc tính cách ly của máy biến áp.',
-                    isTrue: false,
-                    exp: 'Sai. Nếu chạm cả hai cực, cơ thể người sẽ đóng vai trò như một điện trở ($R$) nối tắt hai đầu cuộn thứ cấp. Mạch bị khép kín, dòng điện $I = 220/R$ chạy qua cơ thể gây giật điện tử vong.'
-                }
+                { id: 'a', text: 'Máy biến áp cách ly không thay đổi giá trị điện áp hiệu dụng nhưng lại tiêu tốn nhiều vật liệu đồng và sắt từ hơn so với việc nối thẳng vào mạng điện.', isTrue: true, exp: 'Đúng. Tỉ số $1:1$ không đổi áp, nhưng máy biến áp vẫn cồng kềnh, nặng và gây suy hao. Nó được dùng riêng cho mục đích an toàn, không phải truyền tải.' },
+                { id: 'b', text: 'Cuộn sơ cấp và cuộn thứ cấp của biến áp cách ly hoàn toàn cách điện với nhau, năng lượng được truyền sang hoàn toàn thông qua từ trường biến thiên.', isTrue: true, exp: 'Đúng. Đây là bản chất "cách ly" về mặt điện học (Galvanic isolation).' },
+                { id: 'c', text: 'Do cuộn thứ cấp không có điểm nào nối đất, nếu thợ điện (đang đứng dưới đất) vô tình chạm một tay vào một trong hai đầu dây của cuộn thứ cấp thì vẫn không bị điện giật.', isTrue: true, exp: 'Đúng. Bị giật khi có mạch điện kín chạy qua người. Vì cuộn thứ cấp lơ lửng (không nối đất), chạm 1 cực không tạo thành mạch kín xuyên qua người xuống đất, do đó an toàn.' },
+                { id: 'd', text: 'Nếu thợ điện đồng thời cầm mỗi tay một đầu dây của cuộn thứ cấp thì người này vẫn an toàn nhờ đặc tính cách ly của máy biến áp.', isTrue: false, exp: 'Sai. Nếu chạm cả hai cực, cơ thể người sẽ đóng vai trò như một điện trở ($R$) nối tắt hai đầu cuộn thứ cấp. Mạch bị khép kín, dòng điện $I = 220/R$ chạy qua cơ thể gây giật điện tử vong.' }
             ]
         },
         {
-            id: 'q51',
+            id: 'tu_51',
             context: '<strong>Câu 6. (Tổng hợp: An toàn truyền tải điện siêu cao áp - 500kV)</strong><br>Đường dây 500kV mang năng lượng khổng lồ. Từ trường và điện trường quanh đường dây này có tác động mạnh mẽ đến môi trường xung quanh.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Đứng ngay dưới đường dây 500kV, ta thường nghe tiếng lách tách nhỏ. Đó là hiện tượng phóng điện vầng quang do điện trường cực mạnh làm ion hóa không khí xung quanh đường dây.',
-                    isTrue: true,
-                    exp: 'Đúng. Điện áp quá cao làm thủng khả năng cách điện cục bộ của không khí, tạo ra âm thanh lách tách và ánh sáng mờ (về đêm), gọi là Corona discharge.'
-                },
-                {
-                    id: 'b',
-                    text: 'Điện trường biến thiên từ đường dây siêu cao áp có thể cảm ứng ra một dòng điện gây giật nhẹ trên mái tôn kim loại của các ngôi nhà xây gần đó nếu mái tôn không được nối đất.',
-                    isTrue: true,
-                    exp: 'Đúng. Mái tôn đóng vai trò như một bản tụ điện khổng lồ trong điện trường biến thiên (hoặc vòng dây trong từ trường biến thiên), tích tụ tĩnh điện hoặc dòng cảm ứng.'
-                },
-                {
-                    id: 'c',
-                    text: 'Việc tăng điện áp lên mức 500kV nhằm mục đích làm tăng cường độ dòng điện truyền tải, từ đó cung cấp được nhiều công suất điện hơn cho vùng sâu vùng xa.',
-                    isTrue: false,
-                    exp: 'Sai. Tăng điện áp để giảm cường độ dòng điện ($I = P/U$), từ đó làm giảm mạnh hao phí do tỏa nhiệt ($I^2R$). Dòng điện truyền tải $I$ trên đường dây 500kV thực chất rất nhỏ so với điện áp thấp.'
-                },
-                {
-                    id: 'd',
-                    text: 'Người công nhân khi leo lên sửa chữa đường dây cao thế đang có điện ("sửa điện sống") phải mặc bộ quần áo đan bằng sợi kim loại bọc kín toàn thân.',
-                    isTrue: true,
-                    exp: 'Đúng. Bộ quần áo Faraday (đan bằng thép/bạc) tạo ra một lồng Faraday. Dòng điện rò sẽ chạy qua bộ quần áo (điện trở cực thấp) thay vì chạy qua cơ thể người, giữ điện thế toàn thân bằng điện thế đường dây.'
-                }
+                { id: 'a', text: 'Đứng ngay dưới đường dây 500kV, ta thường nghe tiếng lách tách nhỏ. Đó là hiện tượng phóng điện vầng quang do điện trường cực mạnh làm ion hóa không khí xung quanh đường dây.', isTrue: true, exp: 'Đúng. Điện áp quá cao làm thủng khả năng cách điện cục bộ của không khí, tạo ra âm thanh lách tách và ánh sáng mờ (về đêm), gọi là Corona discharge.' },
+                { id: 'b', text: 'Điện trường biến thiên từ đường dây siêu cao áp có thể cảm ứng ra một dòng điện gây giật nhẹ trên mái tôn kim loại của các ngôi nhà xây gần đó nếu mái tôn không được nối đất.', isTrue: true, exp: 'Đúng. Mái tôn đóng vai trò như một bản tụ điện khổng lồ trong điện trường biến thiên (hoặc vòng dây trong từ trường biến thiên), tích tụ tĩnh điện hoặc dòng cảm ứng.' },
+                { id: 'c', text: 'Việc tăng điện áp lên mức 500kV nhằm mục đích làm tăng cường độ dòng điện truyền tải, từ đó cung cấp được nhiều công suất điện hơn cho vùng sâu vùng xa.', isTrue: false, exp: 'Sai. Tăng điện áp để giảm cường độ dòng điện ($I = P/U$), từ đó làm giảm mạnh hao phí do tỏa nhiệt ($I^2R$). Dòng điện truyền tải $I$ trên đường dây 500kV thực chất rất nhỏ so với điện áp thấp.' },
+                { id: 'd', text: 'Người công nhân khi leo lên sửa chữa đường dây cao thế đang có điện ("sửa điện sống") phải mặc bộ quần áo đan bằng sợi kim loại bọc kín toàn thân.', isTrue: true, exp: 'Đúng. Bộ quần áo Faraday (đan bằng thép/bạc) tạo ra một lồng Faraday. Dòng điện rò sẽ chạy qua bộ quần áo (điện trở cực thấp) thay vì chạy qua cơ thể người, giữ điện thế toàn thân bằng điện thế đường dây.' }
             ]
         },
         {
-            id: 'q52',
+            id: 'tu_52',
             context: '<strong>Câu 7. (Tổng hợp: Cảm ứng điện từ & Sạc không dây)</strong><br>Đế sạc không dây cho điện thoại thông minh hoạt động dựa trên định luật cảm ứng điện từ Faraday, khoảng cách truyền khoảng vài mm.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Bên trong đế sạc có một cuộn dây phát được cấp dòng điện một chiều (DC) để tạo ra từ trường mạnh xuyên qua mặt lưng điện thoại.',
-                    isTrue: false,
-                    exp: 'Sai. Cảm ứng điện từ bắt buộc phải dùng từ trường biến thiên. Đế sạc phải sử dụng dòng điện xoay chiều (AC) có tần số cao.'
-                },
-                {
-                    id: 'b',
-                    text: 'Bên trong điện thoại có một cuộn dây thu. Từ trường biến thiên từ đế sạc xuyên qua cuộn dây thu, tạo ra dòng điện cảm ứng xoay chiều để nạp cho pin.',
-                    isTrue: true,
-                    exp: 'Đúng. Đây là ứng dụng nguyên lí của máy biến áp lõi không khí.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu vô tình để một chiếc kẹp giấy bằng sắt kẹt giữa đế sạc và mặt lưng điện thoại đang sạc, chiếc kẹp giấy có thể bị nung nóng đỏ gây hỏa hoạn.',
-                    isTrue: true,
-                    exp: 'Đúng. Từ trường biến thiên tần số cao đi qua miếng kim loại sẽ sinh ra các dòng điện Foucault ngay bên trong nó. Hiệu ứng tỏa nhiệt Joule-Lenz làm miếng kim loại cực kì nóng (giống nguyên lí bếp từ).'
-                },
-                {
-                    id: 'd',
-                    text: 'Sạc không dây hiện nay luôn có hiệu suất truyền tải điện năng 100% vì không có sự hao phí trên dây dẫn cắm trực tiếp.',
-                    isTrue: false,
-                    exp: 'Sai. Sạc không dây có hiệu suất khá thấp (khoảng 70-80%). Phần lớn năng lượng bị hao phí do từ thông bị rò rỉ ra không gian (không đi hết vào cuộn thu) và do tỏa nhiệt trên cuộn dây.'
-                }
+                { id: 'a', text: 'Bên trong đế sạc có một cuộn dây phát được cấp dòng điện một chiều (DC) để tạo ra từ trường mạnh xuyên qua mặt lưng điện thoại.', isTrue: false, exp: 'Sai. Cảm ứng điện từ bắt buộc phải dùng từ trường biến thiên. Đế sạc phải sử dụng dòng điện xoay chiều (AC) có tần số cao.' },
+                { id: 'b', text: 'Bên trong điện thoại có một cuộn dây thu. Từ trường biến thiên từ đế sạc xuyên qua cuộn dây thu, tạo ra dòng điện cảm ứng xoay chiều để nạp cho pin.', isTrue: true, exp: 'Đúng. Đây là ứng dụng nguyên lí của máy biến áp lõi không khí.' },
+                { id: 'c', text: 'Nếu vô tình để một chiếc kẹp giấy bằng sắt kẹt giữa đế sạc và mặt lưng điện thoại đang sạc, chiếc kẹp giấy có thể bị nung nóng đỏ gây hỏa hoạn.', isTrue: true, exp: 'Đúng. Từ trường biến thiên tần số cao đi qua miếng kim loại sẽ sinh ra các dòng điện Foucault ngay bên trong nó. Hiệu ứng tỏa nhiệt Joule-Lenz làm miếng kim loại cực kì nóng (giống nguyên lí bếp từ).' },
+                { id: 'd', text: 'Sạc không dây hiện nay luôn có hiệu suất truyền tải điện năng 100% vì không có sự hao phí trên dây dẫn cắm trực tiếp.', isTrue: false, exp: 'Sai. Sạc không dây có hiệu suất khá thấp (khoảng 70-80%). Phần lớn năng lượng bị hao phí do từ thông bị rò rỉ ra không gian (không đi hết vào cuộn thu) và do tỏa nhiệt trên cuộn dây.' }
             ]
         },
         {
-            id: 'q53',
+            id: 'tu_53',
             context: '<strong>Câu 8. (Tổng hợp: Lực Lorentz & Màn hình CRT / Dao động kí)</strong><br>Màn hình tivi ống phóng tia âm cực (CRT) cũ hoặc máy Oscilloscope dùng trong phòng thí nghiệm phát ra một chùm electron tốc độ cực cao bắn vào màn hình phủ huỳnh quang.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Chùm electron có năng lượng rất lớn, nếu tia này va chạm mạnh vào lớp thủy tinh của màn hình có thể bức xạ ra tia X (Tia Rơnghen) gây hại cho người xem.',
-                    isTrue: true,
-                    exp: 'Đúng. Electron tốc độ cao đập vào kim loại/thủy tinh dày sinh ra bức xạ hãm (Tia X). Tivi CRT luôn phải có lớp thủy tinh pha chì cực dày ở mặt trước để chặn tia X này.'
-                },
-                {
-                    id: 'b',
-                    text: 'Để điều khiển chùm electron quét từ trái sang phải, lên và xuống, người ta sử dụng các cuộn dây nam châm điện tạo ra từ trường biến thiên để bẻ cong quỹ đạo hạt theo lực Lorentz.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực Lorentz $f = evB$ có hướng vuông góc với vận tốc electron, điều khiển chùm tia quét khắp màn hình.'
-                },
-                {
-                    id: 'c',
-                    text: 'Nếu đưa một thanh nam châm vĩnh cửu lại gần màn hình tivi CRT đang bật, hình ảnh trên tivi sẽ không bị ảnh hưởng vì sóng truyền hình là sóng điện từ không chịu tác dụng của từ trường.',
-                    isTrue: false,
-                    exp: 'Sai. Sóng truyền hình không bị ảnh hưởng, nhưng chùm electron (tạo ra hình ảnh) bên trong ống thì bị từ trường của nam châm bẻ cong quỹ đạo theo lực Lorentz. Kết quả là hình ảnh sẽ bị méo mó, lệch màu nghiêm trọng.'
-                },
-                {
-                    id: 'd',
-                    text: 'Công của lực từ (lực Lorentz) tác dụng lên chùm electron bằng 0, nên nó không làm thay đổi động năng của chùm hạt trước khi đập vào màn hình.',
-                    isTrue: true,
-                    exp: 'Đúng. Lực Lorentz luôn vuông góc với véc-tơ vận tốc nên không sinh công, động năng hạt được bảo toàn.'
-                }
+                { id: 'a', text: 'Chùm electron có năng lượng rất lớn, nếu tia này va chạm mạnh vào lớp thủy tinh của màn hình có thể bức xạ ra tia X (Tia Rơnghen) gây hại cho người xem.', isTrue: true, exp: 'Đúng. Electron tốc độ cao đập vào kim loại/thủy tinh dày sinh ra bức xạ hãm (Tia X). Tivi CRT luôn phải có lớp thủy tinh pha chì cực dày ở mặt trước để chặn tia X này.' },
+                { id: 'b', text: 'Để điều khiển chùm electron quét từ trái sang phải, lên và xuống, người ta sử dụng các cuộn dây nam châm điện tạo ra từ trường biến thiên để bẻ cong quỹ đạo hạt theo lực Lorentz.', isTrue: true, exp: 'Đúng. Lực Lorentz $f = evB$ có hướng vuông góc với vận tốc electron, điều khiển chùm tia quét khắp màn hình.' },
+                { id: 'c', text: 'Nếu đưa một thanh nam châm vĩnh cửu lại gần màn hình tivi CRT đang bật, hình ảnh trên tivi sẽ không bị ảnh hưởng vì sóng truyền hình là sóng điện từ không chịu tác dụng của từ trường.', isTrue: false, exp: 'Sai. Sóng truyền hình không bị ảnh hưởng, nhưng chùm electron (tạo ra hình ảnh) bên trong ống thì bị từ trường của nam châm bẻ cong quỹ đạo theo lực Lorentz. Kết quả là hình ảnh sẽ bị méo mó, lệch màu nghiêm trọng.' },
+                { id: 'd', text: 'Công của lực từ (lực Lorentz) tác dụng lên chùm electron bằng 0, nên nó không làm thay đổi động năng của chùm hạt trước khi đập vào màn hình.', isTrue: true, exp: 'Đúng. Lực Lorentz luôn vuông góc với véc-tơ vận tốc nên không sinh công, động năng hạt được bảo toàn.' }
             ]
         },
         {
-            id: 'q54',
+            id: 'tu_54',
             context: '<strong>Câu 9. (Tổng hợp: Từ trường và Chụp cộng hưởng từ MRI)</strong><br>Máy chụp MRI trong y tế sử dụng một ống dây siêu dẫn tạo ra từ trường đều khổng lồ (thường từ 1,5 T đến 3,0 T). Bệnh nhân nằm trên cáng và được đẩy vào trong lồng máy.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Vì sử dụng từ trường tĩnh chứ không dùng tia X (tia bức xạ ion hóa), kĩ thuật chụp MRI an toàn cho tế bào cơ thể hơn so với chụp CT hay X-quang.',
-                    isTrue: true,
-                    exp: 'Đúng. MRI chỉ dùng từ trường và sóng vô tuyến (RF) năng lượng thấp, không gây ion hóa phá hủy DNA như tia X.'
-                },
-                {
-                    id: 'b',
-                    text: 'Từ trường 3.0T rất mạnh, có thể tác dụng lực từ hút cực mạnh đối với các vật thể có tính sắt từ (như kéo, bình oxy bằng thép, chìa khóa).',
-                    isTrue: true,
-                    exp: 'Đúng. Lực từ ở mức 1.5T - 3T có thể hút bình oxy bằng thép bay với vận tốc như viên đạn, cực kì nguy hiểm (Hiệu ứng Missile).'
-                },
-                {
-                    id: 'c',
-                    text: 'Bệnh nhân có cấy ghép máy tạo nhịp tim nhân tạo hoặc các mảnh đạn, nẹp vít xương bằng thép hoàn toàn có thể chụp MRI an toàn nếu tắt máy tính toán của phòng chụp.',
-                    isTrue: false,
-                    exp: 'Sai. Tắt máy tính không vô hiệu hóa được từ trường (nam châm siêu dẫn luôn bật 24/7). Từ trường sẽ hút các đinh vít thép xé rách mô cơ thể, hoặc làm hỏng bộ điện tử của máy tạo nhịp tim. Đây là chống chỉ định tuyệt đối.'
-                },
-                {
-                    id: 'd',
-                    text: 'Quá trình chụp MRI tạo ra tiếng ồn (tiếng gõ) cực kì lớn là do lực Ampere làm rung động mạnh các cuộn dây Gradient mang dòng điện đặt trong từ trường chính.',
-                    isTrue: true,
-                    exp: 'Đúng. Các cuộn dây chênh từ (Gradient coils) liên tục được cấp dòng xung bật/tắt (hàng nghìn ampe). Lực Ampere ($F = BIL$) liên tục giật các cuộn dây này, đập vào bệ đỡ sinh ra tiếng kêu chát chúa (trên 100 dB).'
-                }
+                { id: 'a', text: 'Vì sử dụng từ trường tĩnh chứ không dùng tia X (tia bức xạ ion hóa), kĩ thuật chụp MRI an toàn cho tế bào cơ thể hơn so với chụp CT hay X-quang.', isTrue: true, exp: 'Đúng. MRI chỉ dùng từ trường và sóng vô tuyến (RF) năng lượng thấp, không gây ion hóa phá hủy DNA như tia X.' },
+                { id: 'b', text: 'Từ trường 3.0T rất mạnh, có thể tác dụng lực từ hút cực mạnh đối với các vật thể có tính sắt từ (như kéo, bình oxy bằng thép, chìa khóa).', isTrue: true, exp: 'Đúng. Lực từ ở mức 1.5T - 3T có thể hút bình oxy bằng thép bay với vận tốc như viên đạn, cực kì nguy hiểm (Hiệu ứng Missile).' },
+                { id: 'c', text: 'Bệnh nhân có cấy ghép máy tạo nhịp tim nhân tạo hoặc các mảnh đạn, nẹp vít xương bằng thép hoàn toàn có thể chụp MRI an toàn nếu tắt máy tính toán của phòng chụp.', isTrue: false, exp: 'Sai. Tắt máy tính không vô hiệu hóa được từ trường (nam châm siêu dẫn luôn bật 24/7). Từ trường sẽ hút các đinh vít thép xé rách mô cơ thể, hoặc làm hỏng bộ điện tử của máy tạo nhịp tim. Đây là chống chỉ định tuyệt đối.' },
+                { id: 'd', text: 'Quá trình chụp MRI tạo ra tiếng ồn (tiếng gõ) cực kì lớn là do lực Ampere làm rung động mạnh các cuộn dây Gradient mang dòng điện đặt trong từ trường chính.', isTrue: true, exp: 'Đúng. Các cuộn dây chênh từ (Gradient coils) liên tục được cấp dòng xung bật/tắt (hàng nghìn ampe). Lực Ampere ($F = BIL$) liên tục giật các cuộn dây này, đập vào bệ đỡ sinh ra tiếng kêu chát chúa (trên 100 dB).' }
             ]
         },
         {
-            id: 'q55',
+            id: 'tu_55',
             context: '<strong>Câu 10. (Nguyên lí hoạt động và Cấu tạo máy phát điện)</strong><br>Một máy phát điện xoay chiều một pha loại nhỏ được thiết kế trong phòng thí nghiệm. Lớp vỏ cố định (stato) được gắn một nam châm chữ U vĩnh cửu tạo ra từ trường đều. Cốt trục quay ở tâm (rôto) được quấn một khung dây dẫn hình chữ nhật nối với một hệ thống vành khuyên và chổi quét. Người ta dùng tay quay để làm khung dây quay đều trong từ trường.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trong mô hình này, stato đóng vai trò là phần ứng (tạo ra dòng điện), còn rôto đóng vai trò là phần cảm (tạo ra từ trường).',
-                    isTrue: false,
-                    exp: 'Sai. Phần cảm là bộ phận tạo ra từ trường (ở đây là nam châm cố định - stato). Phần ứng là bộ phận sinh ra dòng điện cảm ứng (ở đây là khung dây quay - rôto). Chức năng của mô hình này ngược lại với các máy phát điện công nghiệp cỡ lớn hiện nay.'
-                },
-                {
-                    id: 'b',
-                    text: 'Hệ thống gồm hai vành khuyên trượt và chổi quét có nhiệm vụ đưa dòng điện xoay chiều từ khung dây đang quay ra mạch ngoài mà không làm xoắn đứt dây dẫn.',
-                    isTrue: true,
-                    exp: 'Đúng. Khung dây quay liên tục nên không thể nối dây dẫn trực tiếp ra ngoài. Hai vành khuyên (gắn cứng với hai đầu khung dây) trượt liên tục trên hai chổi quét (cố định) giúp duy trì tiếp điểm điện, dẫn dòng điện xoay chiều ra tiêu thụ.'
-                },
-                {
-                    id: 'c',
-                    text: 'Suất điện động cảm ứng trong khung dây đạt độ lớn cực đại tại thời điểm mặt phẳng khung dây vuông góc với các đường sức từ của nam châm.',
-                    isTrue: false,
-                    exp: 'Sai. Khi mặt phẳng khung dây vuông góc với đường sức từ, từ thông qua khung dây đạt cực đại ($\\Phi_{\\text{max}}$), nhưng tốc độ biến thiên từ thông lại bằng 0. Theo định luật Faraday ($e = -\\Phi\'$), suất điện động lúc này bằng 0. Suất điện động đạt cực đại khi khung dây nằm song song với đường sức từ.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu người vận hành quay tay quay với tốc độ nhanh gấp đôi, tần số của dòng điện tạo ra sẽ tăng gấp đôi nhưng biên độ điện áp không thay đổi.',
-                    isTrue: false,
-                    exp: 'Sai. Tốc độ quay (tần số góc $\\omega$) tăng gấp đôi làm tần số góc và tần số dòng điện $f$ tăng gấp đôi. Đồng thời, biên độ suất điện động $E_0 = \\omega NBS$ tỉ lệ thuận với $\\omega$, nên biên độ cũng sẽ tăng lên gấp đôi.'
-                }
+                { id: 'a', text: 'Trong mô hình này, stato đóng vai trò là phần ứng (tạo ra dòng điện), còn rôto đóng vai trò là phần cảm (tạo ra từ trường).', isTrue: false, exp: 'Sai. Phần cảm là bộ phận tạo ra từ trường (ở đây là nam châm cố định - stato). Phần ứng là bộ phận sinh ra dòng điện cảm ứng (ở đây là khung dây quay - rôto). Chức năng của mô hình này ngược lại với các máy phát điện công nghiệp cỡ lớn hiện nay.' },
+                { id: 'b', text: 'Hệ thống gồm hai vành khuyên trượt và chổi quét có nhiệm vụ đưa dòng điện xoay chiều từ khung dây đang quay ra mạch ngoài mà không làm xoắn đứt dây dẫn.', isTrue: true, exp: 'Đúng. Khung dây quay liên tục nên không thể nối dây dẫn trực tiếp ra ngoài. Hai vành khuyên (gắn cứng với hai đầu khung dây) trượt liên tục trên hai chổi quét (cố định) giúp duy trì tiếp điểm điện, dẫn dòng điện xoay chiều ra tiêu thụ.' },
+                { id: 'c', text: 'Suất điện động cảm ứng trong khung dây đạt độ lớn cực đại tại thời điểm mặt phẳng khung dây vuông góc với các đường sức từ của nam châm.', isTrue: false, exp: 'Sai. Khi mặt phẳng khung dây vuông góc với đường sức từ, từ thông qua khung dây đạt cực đại ($\\Phi_{\\text{max}}$), nhưng tốc độ biến thiên từ thông lại bằng 0. Theo định luật Faraday ($e = -\\Phi\'$), suất điện động lúc này bằng 0. Suất điện động đạt cực đại khi khung dây nằm song song với đường sức từ.' },
+                { id: 'd', text: 'Nếu người vận hành quay tay quay với tốc độ nhanh gấp đôi, tần số của dòng điện tạo ra sẽ tăng gấp đôi nhưng biên độ điện áp không thay đổi.', isTrue: false, exp: 'Sai. Tốc độ quay (tần số góc $\\omega$) tăng gấp đôi làm tần số góc và tần số dòng điện $f$ tăng gấp đôi. Đồng thời, biên độ suất điện động $E_0 = \\omega NBS$ tỉ lệ thuận với $\\omega$, nên biên độ cũng sẽ tăng lên gấp đôi.' }
             ]
         },
         {
-            id: 'q56',
+            id: 'tu_56',
             context: '<strong>Câu 11. (Tính toán thông số máy phát điện)</strong><br>Một máy phát điện mini có stato là một nam châm vĩnh cửu tạo ra từ trường đều có cảm ứng từ $B = 0,2$ T. Rôto là một khung dây dẹt hình chữ nhật gồm $N = 500$ vòng dây, diện tích mỗi vòng là $S = 40$ cm$^2$. Khung dây được động cơ kéo quay đều với tốc độ 3000 vòng/phút quanh một trục cố định nằm trong mặt phẳng khung và vuông góc với các đường sức từ. Lấy $\\pi \\approx 3,14$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Tần số của suất điện động xoay chiều do máy phát điện này tạo ra là 50 Hz.',
-                    isTrue: true,
-                    exp: 'Đúng. Tốc độ quay của rôto là $n = 3000$ vòng/phút $= 50$ vòng/giây. Tần số suất điện động bằng tần số quay của khung dây (do rôto khung dây tương đương máy phát 1 cặp cực): $f = n = 50$ Hz.'
-                },
-                {
-                    id: 'b',
-                    text: 'Từ thông cực đại gửi qua toàn bộ khung dây quay trong từ trường là 0,4 Wb.',
-                    isTrue: true,
-                    exp: 'Đúng. Diện tích $S = 40$ cm$^2 = 0,004$ m$^2$. Từ thông cực đại qua toàn bộ $N$ vòng dây là: $\\Phi_0 = NBS = 500 \\cdot 0,2 \\cdot 0,004 = 0,4$ Wb.'
-                },
-                {
-                    id: 'c',
-                    text: 'Giá trị hiệu dụng của suất điện động sinh ra ở hai đầu khung dây là khoảng 125,6 V.',
-                    isTrue: false,
-                    exp: 'Sai. Tần số góc $\\omega = 2\\pi f = 100\\pi$ rad/s. Suất điện động cực đại là $E_0 = \\omega \\Phi_0 = 100\\pi \\cdot 0,4 = 40\\pi \\approx 125,6$ V. Giá trị hiệu dụng phải là $E = \\frac{E_0}{\\sqrt{2}} \\approx \\frac{125,6}{1,414} \\approx 88,8$ V.'
-                },
-                {
-                    id: 'd',
-                    text: 'Tại thời điểm từ thông qua khung dây bằng không, độ lớn suất điện động trong khung dây sẽ đạt giá trị 125,6 V.',
-                    isTrue: true,
-                    exp: 'Đúng. Biểu thức từ thông và suất điện động vuông pha nhau. Khi từ thông $\\Phi = 0$ (mặt phẳng khung dây song song với đường sức từ) thì suất điện động đạt độ lớn cực đại $E_0 \\approx 125,6$ V.'
-                }
+                { id: 'a', text: 'Tần số của suất điện động xoay chiều do máy phát điện này tạo ra là 50 Hz.', isTrue: true, exp: 'Đúng. Tốc độ quay của rôto là $n = 3000$ vòng/phút $= 50$ vòng/giây. Tần số suất điện động bằng tần số quay của khung dây (do rôto khung dây tương đương máy phát 1 cặp cực): $f = n = 50$ Hz.' },
+                { id: 'b', text: 'Từ thông cực đại gửi qua toàn bộ khung dây quay trong từ trường là 0,4 Wb.', isTrue: true, exp: 'Đúng. Diện tích $S = 40$ cm$^2 = 0,004$ m$^2$. Từ thông cực đại qua toàn bộ $N$ vòng dây là: $\\Phi_0 = NBS = 500 \\cdot 0,2 \\cdot 0,004 = 0,4$ Wb.' },
+                { id: 'c', text: 'Giá trị hiệu dụng của suất điện động sinh ra ở hai đầu khung dây là khoảng 125,6 V.', isTrue: false, exp: 'Sai. Tần số góc $\\omega = 2\\pi f = 100\\pi$ rad/s. Suất điện động cực đại là $E_0 = \\omega \\Phi_0 = 100\\pi \\cdot 0,4 = 40\\pi \\approx 125,6$ V. Giá trị hiệu dụng phải là $E = \\frac{E_0}{\\sqrt{2}} \\approx \\frac{125,6}{1,414} \\approx 88,8$ V.' },
+                { id: 'd', text: 'Tại thời điểm từ thông qua khung dây bằng không, độ lớn suất điện động trong khung dây sẽ đạt giá trị 125,6 V.', isTrue: true, exp: 'Đúng. Biểu thức từ thông và suất điện động vuông pha nhau. Khi từ thông $\\Phi = 0$ (mặt phẳng khung dây song song với đường sức từ) thì suất điện động đạt độ lớn cực đại $E_0 \\approx 125,6$ V.' }
             ]
         },
         {
-            id: 'q57',
+            id: 'tu_57',
             context: '<strong>Câu 12. (Khảo sát đồ thị dao động kí của máy phát điện mini)</strong><br>Một học sinh chế tạo một máy phát điện xoay chiều loại nhỏ. Phần stato là một nam châm chữ U tạo ra từ trường đều có độ lớn cảm ứng từ $B = 0,1$ T. Phần rôto là một khung dây hình chữ nhật gồm $N = 100$ vòng, diện tích mỗi vòng là $S = 50$ cm$^2$. Học sinh dùng một động cơ điện nhỏ để kéo khung dây quay đều với tốc độ 1200 vòng/phút. Hai đầu khung dây được nối với một dao động kí điện tử (Oscilloscope) để quan sát dạng sóng của suất điện động sinh ra. Lấy $\\pi \\approx 3,14$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Trên màn hình dao động kí, tín hiệu điện áp thu được là một đường hình sin có tần số 20 Hz.',
-                    isTrue: true,
-                    exp: 'Đúng. Tốc độ quay của khung dây là $n = \\frac{1200}{60} = 20$ vòng/giây. Với máy phát điện có 1 cặp cực (nam châm chữ U), tần số dòng điện $f = n = 20$ Hz.'
-                },
-                {
-                    id: 'b',
-                    text: 'Từ thông cực đại gửi qua toàn bộ khung dây trong quá trình quay có giá trị là 0,5 Wb.',
-                    isTrue: false,
-                    exp: 'Sai. Đổi diện tích $S = 50$ cm$^2 = 0,005$ m$^2$. Từ thông cực đại qua toàn bộ khung dây là: $\\Phi_0 = NBS = 100 \\cdot 0,1 \\cdot 0,005 = 0,05$ Wb. (Phương án cho 0,5 Wb là sai số thập phân).'
-                },
-                {
-                    id: 'c',
-                    text: 'Trên màn hình dao động kí, điện áp đạt giá trị biên độ cực đại (khoảng 6,28 V) tại những thời điểm mặt phẳng khung dây vuông góc với các đường sức từ.',
-                    isTrue: false,
-                    exp: 'Sai. Tần số góc $\\omega = 2\\pi f = 40\\pi$ rad/s. Biên độ suất điện động là $E_0 = \\omega \\Phi_0 = 40\\pi \\cdot 0,05 = 2\\pi \\approx 6,28$ V. Tuy nhiên, suất điện động đạt cực đại khi tốc độ biến thiên từ thông lớn nhất, điều này xảy ra khi mặt phẳng khung dây nằm song song với các đường sức từ (từ thông lúc này bằng 0). Khi khung dây vuông góc đường sức từ thì suất điện động bằng 0.'
-                },
-                {
-                    id: 'd',
-                    text: 'Từ thông $\\Phi$ qua khung dây và suất điện động cảm ứng $e$ sinh ra trong khung dây luôn biến thiên vuông pha với nhau.',
-                    isTrue: true,
-                    exp: 'Đúng. Theo định luật Faraday, $e = -\\Phi\'$. Vì $e$ là đạo hàm bậc nhất của $\\Phi$ theo thời gian nên đồ thị của hai đại lượng này luôn lệch pha nhau một góc $\\frac{\\pi}{2}$ (vuông pha).'
-                }
+                { id: 'a', text: 'Trên màn hình dao động kí, tín hiệu điện áp thu được là một đường hình sin có tần số 20 Hz.', isTrue: true, exp: 'Đúng. Tốc độ quay của khung dây là $n = \\frac{1200}{60} = 20$ vòng/giây. Với máy phát điện có 1 cặp cực (nam châm chữ U), tần số dòng điện $f = n = 20$ Hz.' },
+                { id: 'b', text: 'Từ thông cực đại gửi qua toàn bộ khung dây trong quá trình quay có giá trị là 0,5 Wb.', isTrue: false, exp: 'Sai. Đổi diện tích $S = 50$ cm$^2 = 0,005$ m$^2$. Từ thông cực đại qua toàn bộ khung dây là: $\\Phi_0 = NBS = 100 \\cdot 0,1 \\cdot 0,005 = 0,05$ Wb. (Phương án cho 0,5 Wb là sai số thập phân).' },
+                { id: 'c', text: 'Trên màn hình dao động kí, điện áp đạt giá trị biên độ cực đại (khoảng 6,28 V) tại những thời điểm mặt phẳng khung dây vuông góc với các đường sức từ.', isTrue: false, exp: 'Sai. Tần số góc $\\omega = 2\\pi f = 40\\pi$ rad/s. Biên độ suất điện động là $E_0 = \\omega \\Phi_0 = 40\\pi \\cdot 0,05 = 2\\pi \\approx 6,28$ V. Tuy nhiên, suất điện động đạt cực đại khi tốc độ biến thiên từ thông lớn nhất, điều này xảy ra khi mặt phẳng khung dây nằm song song với các đường sức từ (từ thông lúc này bằng 0). Khi khung dây vuông góc đường sức từ thì suất điện động bằng 0.' },
+                { id: 'd', text: 'Từ thông $\\Phi$ qua khung dây và suất điện động cảm ứng $e$ sinh ra trong khung dây luôn biến thiên vuông pha với nhau.', isTrue: true, exp: 'Đúng. Theo định luật Faraday, $e = -\\Phi\'$. Vì $e$ là đạo hàm bậc nhất của $\\Phi$ theo thời gian nên đồ thị của hai đại lượng này luôn lệch pha nhau một góc $\\frac{\\pi}{2}$ (vuông pha).' }
             ]
         },
         {
-            id: 'q58',
+            id: 'tu_58',
             context: '<strong>Câu 13. (Kết nối mạch ngoài và Định luật Ohm toàn mạch)</strong><br>Một máy phát điện xoay chiều một pha có phần cảm là nam châm vĩnh cửu tạo ra từ trường đều $B = 0,0225$ T. Phần ứng là rôto gồm một khung dây có $N = 500$ vòng, diện tích mỗi vòng $S = 200$ cm$^2$, điện trở trong của khung dây là $r = 2\\text{ }\\Omega$. Khung dây được kéo quay đều với tốc độ 3000 vòng/phút. Nối hai đầu máy phát điện với một điện trở thuần $R = 23\\text{ }\\Omega$ để tạo thành mạch kín. Lấy $\\pi^2 \\approx 10$.',
             statements: [
-                {
-                    id: 'a',
-                    text: 'Suất điện động hiệu dụng do khung dây của máy phát sinh ra xấp xỉ bằng 50 V.',
-                    isTrue: true,
-                    exp: 'Đúng. $S = 200$ cm$^2 = 0,02$ m$^2$. Tần số góc $\\omega = \\frac{3000}{60} \\cdot 2\\pi = 100\\pi$ rad/s.<br>Suất điện động cực đại: $E_0 = \\omega NBS = 100\\pi \\cdot 500 \\cdot 0,0225 \\cdot 0,02 = 22,5\\pi \\approx 70,68$ V.<br>Suất điện động hiệu dụng: $E = \\frac{E_0}{\\sqrt{2}} = \\frac{22,5\\pi}{\\sqrt{2}} \\approx \\frac{70,68}{1,414} \\approx 50$ V.'
-                },
-                {
-                    id: 'b',
-                    text: 'Cường độ dòng điện hiệu dụng chạy qua điện trở mạch ngoài $R$ là 2,5 A.',
-                    isTrue: false,
-                    exp: 'Sai. Áp dụng định luật Ohm cho toàn mạch: $I = \\frac{E}{R + r} = \\frac{50}{23 + 2} = \\frac{50}{25} = 2,0$ A.'
-                },
-                {
-                    id: 'c',
-                    text: 'Công suất tỏa nhiệt (công suất tiêu thụ) trên điện trở mạch ngoài $R$ là 92 W.',
-                    isTrue: true,
-                    exp: 'Đúng. Công suất tỏa nhiệt trên điện trở ngoài: $P_R = I^2 \\cdot R = 2,0^2 \\cdot 23 = 4 \\cdot 23 = 92$ W.'
-                },
-                {
-                    id: 'd',
-                    text: 'Nếu giữ nguyên cấu tạo máy, để điện áp hiệu dụng ở hai đầu điện trở mạch ngoài $R$ tăng lên gấp đôi, người vận hành chỉ cần tăng tốc độ quay của rôto lên mức 6000 vòng/phút.',
-                    isTrue: true,
-                    exp: 'Đúng. Tốc độ quay tăng gấp đôi ($3000 \\rightarrow 6000$) làm tần số góc $\\omega$ tăng gấp đôi. Suất điện động $E$ tỉ lệ thuận với $\\omega$ nên $E$ tăng gấp đôi. Do điện trở mạch ($R, r$) không đổi vì là thông số cấu tạo, dòng điện $I$ sẽ tăng gấp đôi. Điện áp mạch ngoài $U_R = I \\cdot R$ do đó cũng sẽ tăng chính xác lên gấp đôi.'
-                }
+                { id: 'a', text: 'Suất điện động hiệu dụng do khung dây của máy phát sinh ra xấp xỉ bằng 50 V.', isTrue: true, exp: 'Đúng. $S = 200$ cm$^2 = 0,02$ m$^2$. Tần số góc $\\omega = \\frac{3000}{60} \\cdot 2\\pi = 100\\pi$ rad/s.<br>Suất điện động cực đại: $E_0 = \\omega NBS = 100\\pi \\cdot 500 \\cdot 0,0225 \\cdot 0,02 = 22,5\\pi \\approx 70,68$ V.<br>Suất điện động hiệu dụng: $E = \\frac{E_0}{\\sqrt{2}} = \\frac{22,5\\pi}{\\sqrt{2}} \\approx \\frac{70,68}{1,414} \\approx 50$ V.' },
+                { id: 'b', text: 'Cường độ dòng điện hiệu dụng chạy qua điện trở mạch ngoài $R$ là 2,5 A.', isTrue: false, exp: 'Sai. Áp dụng định luật Ohm cho toàn mạch: $I = \\frac{E}{R + r} = \\frac{50}{23 + 2} = \\frac{50}{25} = 2,0$ A.' },
+                { id: 'c', text: 'Công suất tỏa nhiệt (công suất tiêu thụ) trên điện trở mạch ngoài $R$ là 92 W.', isTrue: true, exp: 'Đúng. Công suất tỏa nhiệt trên điện trở ngoài: $P_R = I^2 \\cdot R = 2,0^2 \\cdot 23 = 4 \\cdot 23 = 92$ W.' },
+                { id: 'd', text: 'Nếu giữ nguyên cấu tạo máy, để điện áp hiệu dụng ở hai đầu điện trở mạch ngoài $R$ tăng lên gấp đôi, người vận hành chỉ cần tăng tốc độ quay của rôto lên mức 6000 vòng/phút.', isTrue: true, exp: 'Đúng. Tốc độ quay tăng gấp đôi ($3000 \\rightarrow 6000$) làm tần số góc $\\omega$ tăng gấp đôi. Suất điện động $E$ tỉ lệ thuận với $\\omega$ nên $E$ tăng gấp đôi. Do điện trở mạch ($R, r$) không đổi vì là thông số cấu tạo, dòng điện $I$ sẽ tăng gấp đôi. Điện áp mạch ngoài $U_R = I \\cdot R$ do đó cũng sẽ tăng chính xác lên gấp đôi.' }
             ]
         }
     ],
@@ -2472,3 +1306,38 @@ const practiceData = {
         }
     ]
 };
+// Hàm tự động quét và sửa lỗi không khớp giữa isTrue và lời giải thích (exp)
+function fixMismatchedExplanations(data) {
+    let fixCount = 0;
+    
+    // Duyệt qua từng chủ đề (ví dụ: 'nhiet', 'khili-tuong', 'tu-truong',...)
+    for (const category in data) {
+        data[category].forEach((question) => {
+            if (question.statements) {
+                // Duyệt qua các ý (statements) trong mỗi câu hỏi
+                question.statements.forEach((statement) => {
+                    const expText = statement.exp.trim();
+                    
+                    // Trường hợp 1: Lời giải thích là "Đúng" nhưng isTrue đang bị cấu hình là false
+                    if (expText.startsWith('Đúng') && statement.isTrue === false) {
+                        statement.isTrue = true;
+                        console.log(`[Đã sửa] Câu ${question.id} - Ý ${statement.id}: Cập nhật isTrue = true`);
+                        fixCount++;
+                    } 
+                    // Trường hợp 2: Lời giải thích là "Sai" nhưng isTrue đang bị cấu hình là true
+                    else if (expText.startsWith('Sai') && statement.isTrue === true) {
+                        statement.isTrue = false;
+                        console.log(`[Đã sửa] Câu ${question.id} - Ý ${statement.id}: Cập nhật isTrue = false`);
+                        fixCount++;
+                    }
+                });
+            }
+        });
+    }
+    
+    console.log(`\n✅ Hoàn tất! Đã sửa tổng cộng ${fixCount} lỗi không khớp.`);
+    // Không cần return data cũng được vì data bị sửa trực tiếp
+}
+
+// Chạy hàm để chuẩn hóa lại dữ liệu (BỎ GÁN LẠI, CHỈ CẦN GỌI HÀM NHƯ SAU:)
+fixMismatchedExplanations(practiceData);
