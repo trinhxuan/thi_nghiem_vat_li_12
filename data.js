@@ -1306,38 +1306,3 @@ const practiceData = {
         }
     ]
 };
-// Hàm tự động quét và sửa lỗi không khớp giữa isTrue và lời giải thích (exp)
-function fixMismatchedExplanations(data) {
-    let fixCount = 0;
-    
-    // Duyệt qua từng chủ đề (ví dụ: 'nhiet', 'khili-tuong', 'tu-truong',...)
-    for (const category in data) {
-        data[category].forEach((question) => {
-            if (question.statements) {
-                // Duyệt qua các ý (statements) trong mỗi câu hỏi
-                question.statements.forEach((statement) => {
-                    const expText = statement.exp.trim();
-                    
-                    // Trường hợp 1: Lời giải thích là "Đúng" nhưng isTrue đang bị cấu hình là false
-                    if (expText.startsWith('Đúng') && statement.isTrue === false) {
-                        statement.isTrue = true;
-                        console.log(`[Đã sửa] Câu ${question.id} - Ý ${statement.id}: Cập nhật isTrue = true`);
-                        fixCount++;
-                    } 
-                    // Trường hợp 2: Lời giải thích là "Sai" nhưng isTrue đang bị cấu hình là true
-                    else if (expText.startsWith('Sai') && statement.isTrue === true) {
-                        statement.isTrue = false;
-                        console.log(`[Đã sửa] Câu ${question.id} - Ý ${statement.id}: Cập nhật isTrue = false`);
-                        fixCount++;
-                    }
-                });
-            }
-        });
-    }
-    
-    console.log(`\n✅ Hoàn tất! Đã sửa tổng cộng ${fixCount} lỗi không khớp.`);
-    // Không cần return data cũng được vì data bị sửa trực tiếp
-}
-
-// Chạy hàm để chuẩn hóa lại dữ liệu (BỎ GÁN LẠI, CHỈ CẦN GỌI HÀM NHƯ SAU:)
-fixMismatchedExplanations(practiceData);
