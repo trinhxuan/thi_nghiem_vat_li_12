@@ -79,18 +79,20 @@ window.renderQuizzes = function() {
         let imageHtml = quiz.image ? `<img src="${quiz.image}" class="question-img" alt="Sơ đồ minh họa">` : '';
 
         // CẤU HÌNH MÀU SẮC DỰA TRÊN CHUYÊN ĐỀ
-        let borderTopColor = 'var(--primary)'; 
-        if (isMistakeTab) {
-            borderTopColor = '#ff003c'; 
-        } else if (currentTopic === 'nhiet') {
-            borderTopColor = 'var(--color-nhiet)'; 
-        } else if (currentTopic === 'khili-tuong') {
-            borderTopColor = 'var(--color-khi)'; 
-        } else if (currentTopic === 'tu-truong') {
-            borderTopColor = 'var(--color-tu)'; 
-        } else if (currentTopic === 'hat-nhan') {
-            borderTopColor = 'var(--color-hatnhan)'; 
-        }
+let borderTopColor = 'var(--primary)'; 
+if (isMistakeTab) {
+    borderTopColor = '#ff003c'; 
+} else if (currentTopic === 'nhiet') {
+    borderTopColor = 'var(--color-nhiet)'; 
+} else if (currentTopic === 'khili-tuong') {
+    borderTopColor = 'var(--color-khi)'; 
+} else if (currentTopic === 'tu-truong') {
+    borderTopColor = 'var(--color-tu)'; 
+} else if (currentTopic === 'hat-nhan') {
+    borderTopColor = 'var(--color-hatnhan)'; 
+} else if (currentTopic === 'thighniem-dungsai') {
+    borderTopColor = '#f59e0b'; // Màu Vàng Cam Neon đặc trưng cho Vật lý thực nghiệm
+}
 
         return `
             <div class="question-card" id="card_${quiz.id}" style="border-top-color: ${borderTopColor}">
@@ -292,9 +294,10 @@ window.submitAndScore = function() {
     let finalScore = (perfectQuestionsCount / totalQuestions) * 10;
 if (typeof TPhysicsPro !== 'undefined') {
         let topicName = "Chuyên đề Nhiệt Học";
-        if (currentTopic === 'khili-tuong') topicName = "Chuyên đề Khí Lý Tưởng";
-        if (currentTopic === 'tu-truong') topicName = "Chuyên đề Từ Trường";
-        if (currentTopic === 'hat-nhan') topicName = "Chuyên đề Vật Lý Hạt Nhân";
+if (currentTopic === 'khili-tuong') topicName = "Chuyên đề Khí Lý Tưởng";
+if (currentTopic === 'tu-truong') topicName = "Chuyên đề Từ Trường";
+if (currentTopic === 'hat-nhan') topicName = "Chuyên đề Vật Lý Hạt Nhân";
+if (currentTopic === 'thighniem-dungsai') topicName = "Câu hỏi đúng sai thí nghiệm"; // THÊM DÒNG NÀY
         
         TPhysicsPro.HistoryLog.saveRecord(topicName, perfectQuestionsCount, totalQuestions);
         TPhysicsPro.Progress.clearProgress();

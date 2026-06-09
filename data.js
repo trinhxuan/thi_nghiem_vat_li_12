@@ -1574,5 +1574,599 @@ const practiceData = {
                 }
             ]
         }
+    ],
+// =========================================================================
+    // THÊM MỚI CHUYÊN ĐỀ: CÂU HỎI ĐÚNG SAI THÍ NGHIỆM VẬT LÝ THỰC NGHIỆM
+    // =========================================================================
+    'thighniem-dungsai': [
+        {
+            id: 'tnds_q1',
+            image: 'bai1_thuchanh.png',
+            context: '<strong>Câu 1: Thí nghiệm về sự truyền nhiệt lượng và điều kiện cân bằng nhiệt giữa hai chất lỏng tiếp xúc</strong><br><br><strong>Chuẩn bị:</strong><br>+ Cốc nhôm đựng khoảng 200 mL nước ở nhiệt độ khoảng $30^{\\circ}C$ (1).<br>+ Bình cách nhiệt đựng khoảng 500 mL nước ở nhiệt độ khoảng $60^{\\circ}C$ (2).<br>+ Hai nhiệt kế (3).<br><br><strong>Tiến hành:</strong><br>+ Đặt cốc nhôm vào trong lòng bình cách nhiệt sao cho nước trong bình cách nhiệt ngập một phần cốc nhôm.<br>+ Quan sát sự thay đổi nhiệt độ của nước trong bình và trong cốc từ khi bắt đầu thí nghiệm tới khi hai nhiệt độ này bằng nhau.<br>* Coi chỉ có nước trao đổi nhiệt với nhau.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Nhiệt độ của nước trong bình cách nhiệt giảm chứng tỏ năng lượng của nước trong bình này giảm.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Theo định nghĩa về nhiệt độ và nội năng, nhiệt độ tỉ lệ thuận với động năng trung bình của các phân tử chất lưu. Nhiệt độ của khối nước trong bình cách nhiệt giảm đồng nghĩa với động năng trung bình của các phân tử nước giảm, kéo theo nhiệt năng (năng lượng) của khối nước này giảm.'
+                },
+                {
+                    id: 'b',
+                    text: 'Nhiệt độ của nước trong cốc tăng chứng tỏ năng lượng của nước trong cốc tăng.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nhiệt độ nước trong cốc nhôm tăng chứng tỏ các phân tử nước nhận được năng lượng, chuyển động nhiệt hỗn loạn mạnh lên làm động năng trung bình tăng, dẫn đến nội năng (nhiệt năng) của nước tăng.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nước trong bình truyền năng lượng nhiệt cho nước trong cốc.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Theo định luật truyền nhiệt (Nguyên lý II Nhiệt động lực học), năng lượng nhiệt luôn tự truyền từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn khi tiếp xúc trực tiếp. Do nước trong bình có nhiệt độ cao hơn ($60^{\\circ}C$) so với nước trong cốc ($30^{\\circ}C$) nên chiều truyền nhiệt năng là từ bình sang cốc.'
+                },
+                {
+                    id: 'd',
+                    text: 'Khi thấy nhiệt độ của nước trong bình và nước trong cốc bằng nhau và không thay đổi thì có thể kết luận quá trình truyền nhiệt đã kết thúc.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Khi hai hệ tiếp xúc đạt đến cùng một nhiệt độ và không đổi theo thời gian, hệ đã thiết lập trạng thái cân bằng nhiệt. Ở trạng thái này, không còn sự truyền nhiệt lượng vĩ mô thuần túy giữa hai vật, do đó quá trình truyền nhiệt được coi là kết thúc.'
+                },
+                {
+                    id: 'e',
+                    text: 'Nhiệt độ khi cân bằng là $45^{\\circ}C$.',
+                    isTrue: false,
+                    exp: 'SAI. Phương trình cân bằng nhiệt lý tưởng là: $m_1 \\cdot c \\cdot (t_{cb} - t_1) = m_2 \\cdot c \\cdot (t_2 - t_{cb})$. Ở đây, thể tích nước nóng trong bình là 500 mL ($m_2 \\approx 0,5\\text{ kg}$) lớn hơn thể tích nước lạnh trong cốc nhôm là 200 mL ($m_1 \\approx 0,2\\text{ kg}$). Do $m_2 > m_1$, nhiệt độ cân bằng $t_{cb}$ phải lệch nhiều hơn về phía nguồn nhiệt độ cao: $0,2 \\cdot (t_{cb} - 30) = 0,5 \\cdot (60 - t_{cb}) \\Rightarrow t_{cb} \\approx 51,4^{\\circ}C$. Giá trị $45^{\\circ}C$ chỉ xảy ra khi khối lượng của hai lượng nước bằng nhau.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q2',
+            image: 'bai2_thuchanh.png',
+            context: '<strong>Câu 2: Thí nghiệm khảo sát sự truyền nhiệt bằng nhiệt kế y tế và ảnh hưởng của vật liệu dẫn nhiệt</strong><br><br>Một nhóm học sinh tìm hiểu về sự truyền nhiệt. Các bạn có các dụng cụ và cách tiến hành như sau:<br><strong>Dụng cụ:</strong><br>• Cốc nhôm đựng 200 ml nước ở nhiệt độ $36^{\\circ}C$ (1).<br>• Bình cách nhiệt đựng 500 ml nước ở nhiệt độ $41^{\\circ}C$ (2).<br>• Hai nhiệt kế thủy ngân (3).<br><br><strong>Tiến hành:</strong><br>Đặt cốc nhôm vào trong lòng bình cách nhiệt như hình bên và quan sát số chỉ nhiệt kế để tìm hiểu về sự truyền nhiệt của chúng.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Dụng cụ (3) là nhiệt kế thủy ngân (nhiệt kế y tế) hoạt động dựa trên tính chất giãn nở vì nhiệt của thủy ngân.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nhiệt kế y tế loại cơ học chứa thủy ngân hoạt động hoàn toàn dựa trên nguyên lý giãn nở vì nhiệt của chất lỏng. Khi nhiệt độ tăng, thể tích thủy ngân tăng làm cột thủy ngân dâng cao trong ống mao dẫn.'
+                },
+                {
+                    id: 'b',
+                    text: 'Thang chia nhiệt độ của nhiệt kế thủy ngân ghi nhiệt độ từ $35^{\\circ}C$ đến $42^{\\circ}C$ nên việc lựa chọn nhiệt độ trong thí nghiệm của nhóm là một trong những cách chọn hợp lý.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nhiệt độ ban đầu của hai cốc nước là $36^{\\circ}C$ và $41^{\\circ}C$, đều nằm trong khoảng giới hạn đo ($35^{\\circ}C - 42^{\\circ}C$) của nhiệt kế y tế. Hơn nữa, nhiệt độ cân bằng của hệ chắc chắn nằm giữa $36^{\\circ}C$ và $41^{\\circ}C$, giúp học sinh theo dõi liên tục tiến trình mà không sợ vượt quá thang đo, tận dụng được độ chia nhỏ và chính xác của dụng cụ.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu thay cốc nhôm bằng cốc nhựa có cùng khối lượng và kích thước, tốc độ truyền nhiệt giữa hai lượng nước sẽ tăng lên.',
+                    isTrue: false,
+                    exp: 'SAI. Nhôm là kim loại có hệ số dẫn nhiệt rất lớn ($\\approx 200\\text{ W/m}\\cdot\\text{K}$), trong khi nhựa là chất cách nhiệt tốt với hệ số dẫn nhiệt rất nhỏ ($\\approx 0,1 - 0,4\\text{ W/m}\\cdot\\text{K}$). Nếu thay thế cốc nhôm bằng cốc nhựa, dòng nhiệt truyền qua thành cốc sẽ gặp điện trở nhiệt lớn hơn, làm cho tốc độ truyền nhiệt giữa hai lượng nước giảm đi đáng kể chứ không thể tăng lên.'
+                },
+                {
+                    id: 'd',
+                    text: 'Việc sử dụng hai nhiệt kế đồng thời là cần thiết để xác định chính xác thời điểm hệ đạt cân bằng nhiệt.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Để khẳng định hệ đạt cân bằng nhiệt, ta cần kiểm chứng nhiệt độ ở hai phần của hệ (trong cốc và ngoài bình) có tiến về cùng một giá trị và dừng thay đổi hay không. Do đó, việc đo đồng thời bằng hai nhiệt kế độc lập là bắt buộc.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q3',
+            image: 'bai3_thuchanh.png',
+            context: '<strong>Câu 3: Thí nghiệm đun nóng không khí trong ống nghiệm chứng minh mối liên hệ giữa nhiệt độ, áp suất và nội năng khí</strong><br><br><strong>Chuẩn bị:</strong><br>+ Ống nghiệm (1).<br>+ Nút bấc có kích thước vừa khít miệng ống nghiệm (2).<br>+ Đèn cồn (3).<br>+ Giá đỡ thí nghiệm (4).<br><br><strong>Tiến hành:</strong><br>+ Bố trí thí nghiệm như Hình.<br>+ Dùng đèn cồn đun nóng ống nghiệm.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi đun nóng thì động năng trung bình của các phân tử khí trong ống nghiệm tăng.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Đun năng bằng ngọn lửa đèn cồn cung cấp nhiệt lượng cho không khí trong ống nghiệm, làm nhiệt độ của khối khí tăng lên. Theo lý thuyết động học phân tử, nhiệt độ tuyệt đối là đại lượng đo lường trực tiếp động năng tịnh tiến trung bình của các phân tử khí, do đó động năng trung bình tăng.'
+                },
+                {
+                    id: 'b',
+                    text: 'Nội năng của không khí trong ống nghiệm tăng do thế năng phân tử khí tăng.',
+                    isTrue: false,
+                    exp: 'SAI. Đối với chất khí, đặc biệt là không khí ở điều kiện thường (áp suất thấp, nhiệt độ cao gần với khí lý tưởng), lực tương tác giữa các phân tử khí là rất nhỏ nên thế năng tương tác phân tử không đáng kể. Thêm vào đó, trước khi nút bật ra, thể tích khí gần như không đổi. Do đó, nội năng của khối khí tăng chủ yếu là do động năng chuyển động nhiệt hỗn loạn của các phân tử tăng khi nhiệt độ tăng, không phải do thế năng tăng.'
+                },
+                {
+                    id: 'c',
+                    text: 'Khi đun nóng ống nghiệm tới một lúc nào đó thì thấy nút bấc bật ra. Nút bị bật ra chứng tỏ lực do các phân tử chuyển động tác dụng lên nút đã tăng lên.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Khi đun nóng đẳng tích, nhiệt độ tăng làm vận tốc của các phân tử khí tăng mạnh, dẫn đến tần suất va chạm và độ lớn xung lực do các phân tử khí đập vào thành bình và bề mặt nút tăng lên. Khi lực áp suất này vượt qua lực ma sát nghỉ cực đại giữa nút bấc và miệng ống nghiệm, nó sẽ đẩy nút bấc văng ra ngoài.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu thay nút bấc bằng một nút cao su được ấn quá chặt vào miệng ống nghiệm, tiến trình thí nghiệm có thể gặp rủi ro mất an toàn do áp suất khí tăng quá cao làm vỡ ống thủy tinh trước khi nút bị bật ra.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nút cao su có hệ số ma sát và độ đàn hồi lớn hơn nút bấc rất nhiều. Nếu ấn quá chặt, lực ma sát giới hạn tại miệng ống sẽ cực kỳ lớn. Khi đun nóng, áp suất khí tăng theo hàm tuyến tính của nhiệt độ và có thể vượt quá giới hạn chịu lực (áp suất phá hủy) của thành ống thủy tinh trước khi đủ lớn để thắng lực ma sát của nút cao su, gây nổ vỡ mảnh thủy tinh nguy hiểm.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q4',
+            image: 'bai4_thuchanh.png',
+            context: '<strong>Câu 4: Thí nghiệm nén khí nhanh trong xilanh cảm biến để khảo sát quá trình thực hiện công thay đổi nội năng</strong><br><br><strong>Dụng cụ:</strong><br>+ Xilanh (1).<br>+ Pit-tông (2).<br>+ Cảm biến nhiệt độ (3).<br>+ Giá đỡ (4).<br><br><strong>Tiến hành:</strong><br>+ Lắp đặt các dụng cụ như Hình.<br>+ Chuyển pit-tông về đầu phía trên của xilanh.<br>+ Đọc số chỉ của cảm biến nhiệt độ.<br>+ Đẩy mạnh và nhanh pit-tông để nén khí trong xilanh.<br>+ Đọc số chỉ của cảm biến nhiệt độ sau khi nén khí.<br><br><strong>Kết quả:</strong><br>• Nhiệt độ trước khi nén: $22,2^{\\circ}C$<br>• Nhiệt độ sau khi nén: $22,8^{\\circ}C$',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Quá trình làm thay đổi nội năng như trên gọi là quá trình thực hiện công.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Lực từ tay học sinh tác dụng làm pit-tông dịch chuyển một quãng đường cùng hướng với lực, tức là hệ đã nhận công cơ học từ ngoại lực để thay đổi trạng thái nhiệt động của khối khí bên trong.'
+                },
+                {
+                    id: 'b',
+                    text: 'Mục đích chính của việc yêu cầu "đẩy mạnh và nhanh pít-tông" nhằm hạn chế tối đa sự truyền nhiệt giữa khối khí trong xilanh với môi trường bên ngoài trong suốt thời gian thực hiện công.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Việc nén thật nhanh làm giảm tối đa thời gian diễn ra quá trình. Do thành xilanh bằng nhựa hoặc thủy tinh có tốc độ truyền nhiệt hữu hạn, thời gian quá ngắn khiến nhiệt lượng sinh ra trong khối khí chưa kịp truyền ra môi trường xung quanh (quá trình tiến gần đến đoạn nhiệt: $Q \\approx 0$). Nhờ đó, toàn bộ công cung cấp chuyển hóa hoàn toàn làm tăng nội năng, giúp hiện tượng nhiệt độ tăng rõ ràng nhất trên màn hình hiển thị.'
+                },
+                {
+                    id: 'c',
+                    text: 'Trong quá trình thực hiện công có sự chuyển hóa từ một dạng năng lượng khác (ở ví dụ trên là cơ năng) sang nội năng.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Bản chất của quá trình thực hiện công là sự chuyển hóa năng lượng mang tính định hướng (cơ năng của pit-tông chuyển động) thành năng lượng chuyển động nhiệt hỗn loạn vô hướng của các phân tử khí (nội năng).'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu học sinh thực hiện đẩy pit-tông thật chậm thì độ tăng nhiệt độ $(\\Delta T)$ hiển thị trên màn hình sau khi kết thúc nén sẽ lớn hơn $0,6^{\\circ}C$.',
+                    isTrue: false,
+                    exp: 'SAI. Nếu đẩy thật chậm, thời gian nén kéo dài, tạo điều kiện cho khối khí liên tục truyền nhiệt năng vừa sinh ra qua thành xilanh ra môi trường bên ngoài (tiến gần đến quá trình đẳng nhiệt). Do có sự thất thoát năng lượng dưới dạng nhiệt ($Q < 0$), nội năng của khối khí tăng ít hơn, dẫn đến độ tăng nhiệt độ hiển thị thực tế $\\Delta T$ sẽ phải nhỏ hơn $0,6^{\\circ}C$ ($22,8^{\\circ}C - 22,2^{\\circ}C = 0,6^{\\circ}C$).'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q5',
+            image: 'bai5_thuchanh.png',
+            context: '<strong>Câu 5: Thí nghiệm đẳng tích truyền nhiệt lượng cho khối khí trong xilanh để khảo sát sự truyền nhiệt</strong><br><br><strong>Dụng cụ:</strong><br>+ Xilanh có pít-tông (1).<br>+ Cốc để đựng nước (2).<br>+ Cảm biến nhiệt độ (3).<br>+ Giá đỡ (4).<br><br><strong>Tiến hành:</strong><br>+ Lắp đặt các dụng cụ như Hình 2.3.<br>+ Giữ một lượng khí trong xilanh.<br>+ Đọc số chỉ của cảm biến nhiệt độ.<br>+ Đổ nước nóng vào cốc sao cho nước nóng tiếp xúc với phần xilanh có chứa khí. Giữ pit-tông cố định trong suốt quá trình thí nghiệm.<br>+ Khi nhiệt độ ổn định và không tăng nữa, đọc số chỉ của cảm biến nhiệt độ.<br><br><strong>Kết quả:</strong><br>• Nhiệt độ trước truyền nhiệt: $22,5^{\\circ}C$<br>• Nhiệt độ sau truyền nhiệt: $24,6^{\\circ}C$',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Quá trình làm thay đổi nội năng như trên không có sự thực hiện công, chỉ có sự truyền năng lượng nhiệt và thường được gọi tắt là sự truyền nhiệt.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Correcly, vì pit-tông được giữ cố định, thể tích khí không đổi ($V = \\text{const}$). Do không có sự dịch chuyển vi mô hay vĩ mô mang tính cơ học của ranh giới hệ, công cơ học $A = 0$. Nội năng thay đổi thuần túy do dòng nhiệt truyền qua thành bình.'
+                },
+                {
+                    id: 'b',
+                    text: 'Yêu cầu "giữ pit-tông cố định trong suốt quá trình thí nghiệm" nhằm mục đích cô lập và loại bỏ yếu tố biến thiên nội năng do thực hiện công.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Đây là nguyên tắc kiểm soát biến số trong thực nghiệm vật lý. Muốn khảo sát riêng lẻ tác động của nhiệt lượng đến nội năng, ta phải triệt tiêu biến số công bằng cách cố định pit-tông, ép công $A = 0$.'
+                },
+                {
+                    id: 'c',
+                    text: 'Gọi Q là nhiệt lượng mà khối khí nhận được từ nước nóng, theo nguyên lí nhiệt động lực học, độ biến thiên nội năng của khối khí được tính bằng công thức $\\Delta U=Q$.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Theo biểu thức toán học của Nguyên lý I Nhiệt động lực học: $\\Delta U = A + Q$. Do quá trình là đẳng tích nên $A = 0$, hệ thức thu gọn chính xác thành $\\Delta U = Q$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Để đảm bảo tính chính xác khi đo nhiệt độ của khối khí, học sinh cần đọc số chỉ của cảm biến ngay lập tức ngay sau khi vừa đổ nước nóng vào cốc.',
+                    isTrue: false,
+                    exp: 'SAI. Khi vừa đổ nước nóng vào, nhiệt lượng cần thời gian để dẫn xuyên qua lớp vỏ xilanh vào khối khí, sau đó khối khí cần thời gian trao đổi nhiệt để đạt trạng thái cân biến nhiệt với đầu dò của cảm biến điện tử (hiện tượng trễ nhiệt của dụng cụ đo). Nếu đọc ngay lập tức, cảm biến sẽ chỉ ghi nhận nhiệt độ ban đầu của khí chứ chưa phản ánh đúng trạng thái thay đổi. Phải đợi số chỉ trên màn hình ổn định hoàn toàn mới ghi số liệu.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q6',
+            image: 'bai6_thuchanh.png',
+            context: '<strong>Câu 6: Thí nghiệm định lượng về sự truyền nhiệt và hiệu suất cách nhiệt bằng cặp cốc đồng trục</strong><br><br>Để tìm hiểu sự truyền năng lượng nhiệt giữa các vật, một nhóm học sinh đã chuẩn bị một số dụng cụ thí nghiệm gồm: 01 cốc nhôm; 01 cốc thủy tinh (loại lớn chứa được cốc nhôm); 02 nhiệt kế điện tử; 01 bình đựng nước nóng và 01 bình đựng nước lạnh cùng nhiệt độ với môi trường nơi làm thí nghiệm. Nhóm đã tiến hành hai thí nghiệm như sau:<br><br><strong>Thí nghiệm 1:</strong> Đổ nước từ bình nước lạnh vào cốc nhôm và cốc thủy tinh rồi dùng hai nhiệt kế đồng thời đo nhiệt độ nước trong hai cốc (lúc $t=0$). Sau đó, đặt cốc nhôm vào trong cốc thủy tinh sao cho nước của cốc thủy tinh không tràn vào cốc nhôm, đồng thời đo nhiệt độ nước trong hai cốc và ghi số liệu từ hai nhiệt kế vào các thời điểm cách nhau 2 phút.<br><br><strong>Thí nghiệm 2:</strong> Đưa cốc nhôm ra khỏi cốc thủy tinh và thay nước trong cốc thủy tinh bằng nước nóng còn nước trong cốc nhôm vẫn giữ nguyên. Đo đồng thời nhiệt độ nước trong hai cốc (lúc $t=0$). Sau đó lại đặt cốc nhôm chứa nước lạnh vào cốc thủy tinh chứa nước nóng sao cho nước từ cốc thủy tinh không tràn vào cốc nhôm, đồng thời đo nhiệt độ nước trong hai cốc và ghi số liệu từ hai nhiệt kế vào các thời điểm cách nhau 2 phút.<br><br><strong>Kết quả hai lần thí nghiệm:</strong><br>• Thí nghiệm 1: Nhiệt độ duy trì ổn định ở $20,0^{\\circ}C$ cho cả hai cốc từ phút 0 đến phút 8.<br>• Thí nghiệm 2: Từ phút 0 đến phút 8, cốc thủy tinh (nước nóng) giảm từ $82,0^{\\circ}C \\to 33,5^{\\circ}C$, cốc nhôm (nước lạnh) tăng từ $20,0^{\\circ}C \\to 33,5^{\\circ}C$ (hai cốc bằng nhau từ phút thứ 6).',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Ở thí nghiệm 1, sở dĩ nhiệt độ của nước trong cả hai cốc không thay đổi theo thời gian $(20,0^{\\circ}C)$ là vì hai hệ này đã ở trạng thái cân bằng nhiệt với nhau và cân bằng nhiệt với môi trường xung quanh.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Do nhiệt độ ban đầu của cả hai cốc nước đều bằng nhiệt độ môi trường ($20,0^{\\circ}C$) nên không có sự chênh lệch nhiệt độ giữa các thành phần bên trong hệ và môi trường ngoài. Hệ ở trạng thái cân bằng nhiệt ngay từ đầu, dẫn đến không có dòng chuyển dời nhiệt năng vĩ mô nào diễn ra.'
+                },
+                {
+                    id: 'b',
+                    text: 'Trong thí nghiệm 2, từ phút thứ 0 đến phút thứ 6, năng lượng nhiệt được truyền từ nước trong cốc nhôm sang nước trong cốc thủy tinh.',
+                    isTrue: false,
+                    exp: 'SAI. Từ phút thứ 0 đến phút thứ 6, nhiệt độ nước cốc thủy tinh giảm liên tục từ $82,0^{\\circ}C \\to 36,5^{\\circ}C$ (tỏa nhiệt), còn nhiệt độ nước cốc nhôm tăng liên tục từ $20,0^{\\circ}C \\to 36,5^{\\circ}C$ (thu nhiệt). Bản chất vật lý của sự truyền nhiệt luôn đi từ nơi có nhiệt độ cao sang nơi có nhiệt độ thấp, nghĩa là năng lượng nhiệt phải truyền từ nước trong cốc thủy tinh sang nước trong cốc nhôm. Phát biểu trên đã mô tả ngược chiều truyền nhiệt.'
+                },
+                {
+                    id: 'c',
+                    text: 'Việc nhóm học sinh thiết kế đặt cốc nhôm (nhỏ hơn) nằm trọn trong cốc thủy tinh (lớn hơn) nhằm mục đích tối đa hóa diện tích tiếp xúc truyền nhiệt và hạn chế tối đa sự hao phí nhiệt năng ra môi trường bên ngoài.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Cấu trúc đồng trục lồng ghép giúp toàn bộ diện tích xung quanh thành cốc nhôm được bao bọc trực tiếp bởi khối nước của cốc thủy tinh, giúp tối đa hóa bề mặt tiếp xúc truyền nhiệt. Lớp nước nóng bên ngoài đồng thời đóng vai trò như một màng ngăn cách, hạn chế việc cốc nhôm tiếp xúc trực tiếp với không khí lạnh của môi trường, giảm thiểu thất thoát nhiệt.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q7',
+            image: 'bai7_thuchanh.png',
+            context: '<strong>Câu 7: Phương án thực nghiệm xác định nhiệt hóa hơi riêng của nước bằng oát kế tích hợp đồng hồ thời gian</strong><br><br>Một nhóm học sinh thảo luận phương án thí nghiệm xác định nhiệt hóa hơi riêng của nước. Họ dùng các dụng cụ: Biến thế nguồn (1); oát kế có tích hợp chức năng đo thời gian (2); nhiệt kế điện tử (3); nhiệt lượng kế kèm dây điện trở (4); cân điện tử (5) và các dây nối như hình bên. Phương án thí nghiệm của họ gồm hai giai đoạn và được tóm tắt như sau:<br><br><strong>Giai đoạn 1.</strong> Đặt nhiệt lượng kế (đã tháo nắp ra khỏi bình) lên cân điện tử, đổ một lượng nước ấm có nhiệt độ $50^{\\circ}C$ vào bình sao cho toàn bộ dây điện trở chìm trong nước. Xác định khối lượng nước $m_{0}$ có trong bình lúc này.<br><br><strong>Giai đoạn 2.</strong> Cấp điện cho dây điện trở. Khi nước trong bình bắt đầu sôi ổn định $(100^{\\circ}C)$ tiến hành đo thời gian hoá hơi (đồng hồ thời gian bắt đầu chạy từ số 0) và xác định khối lượng của nước còn lại trong bình ở một số thời điểm.<br>• Khi đồng hồ chỉ giá trị $t_{1}$, khối lượng của nước còn lại trong bình là $m_{1}$.<br>• Khi đồng hồ chỉ giá trị $t_{2}$, khối lượng của nước còn lại trong bình là $m_{2} (m_{2}<m_{1})$.<br><br>* Coi số đo công suất trên oát kế không đổi là P, trong quá trình làm thí nghiệm toàn bộ dây điện trở chìm trong nước. Bỏ qua sự trao đổi nhiệt với vỏ bình nhiệt lượng kế và môi trường.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Việc giữ cho dây điện trở luôn chìm trong nước trong suốt quá trình là để đảm bảo toàn bộ nhiệt lượng do dây tỏa ra đều được truyền cho nước.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nếu dây điện trở bị nhô lên khỏi mặt nước, phần nhiệt lượng tỏa ra trên các vòng dây lộ thiên sẽ truyền trực tiếp ra không khí và thành bình phía trên, oát kế vẫn đo lượng điện năng tiêu thụ tổng nhưng thực tế nước không nhận được lượng nhiệt đó, gây sai số hệ thống nghiêm trọng cho phép đo nhiệt hóa hơi riêng.'
+                },
+                {
+                    id: 'b',
+                    text: 'Nếu bỏ qua sự thay đổi khối lượng của dây điện trở, thì sự giảm khối lượng của hệ thống (nước + nhiệt lượng kế) khi đặt trên cân chính là khối lượng nước đã hóa hơi.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Vì nhiệt lượng kế được tháo nắp để hơi nước tự do bay ra ngoài và toàn bộ hệ đặt cố định trên cân điện tử, mọi sự hao hụt khối lượng ghi nhận trên màn hình cân chỉ có thể do khối lượng của lượng hơi nước đã thoát ly khỏi hệ.'
+                },
+                {
+                    id: 'c',
+                    text: 'Công thức xác định nhiệt hóa hơi riêng L của nước là $L=\\frac{P(t_{2}-t_{1})}{m_{1}-m_{2}}$.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Trong khoảng thời gian từ $t_1 \\to t_2$, điện năng cung cấp bởi dòng điện là $A = P \\cdot \\Delta t = P \\cdot (t_2 - t_1)$. Do nước đã sôi ổn định ở $100^{\\circ}C$, toàn bộ năng lượng này dùng để bẻ gãy các liên kết phân tử nhằm hóa hơi khối lượng nước $\\Delta m = m_1 - m_2$. Theo định nghĩa: $Q = L \\cdot \\Delta m \\Rightarrow P(t_2 - t_1) = L \\cdot (m_1 - m_2) \\Rightarrow L = \\frac{P(t_2 - t_1)}{m_{1} - m_{2}}.$'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu trong quá trình thí nghiệm, một phần nhiệt lượng bị thất thoát ra môi trường bên ngoài thì giá trị L tính toán được theo công thức ở câu (c) sẽ nhỏ hơn giá trị thực tế của nhiệt hóa hơi riêng của nước.',
+                    isTrue: false,
+                    exp: 'SAI. Khi có nhiệt thất thoát ra ngoài môi trường ($Q_{hao}$), phần năng lượng thực tế dùng để hóa hơi nước sẽ nhỏ hơn năng lượng dòng điện sinh ra: $Q_{thực} = P(t_2 - t_1) - Q_{hao}$. Vì năng lượng thực nhận nhỏ đi, lượng nước hóa hơi thực tế thu được ($m_1 - m_2$) sẽ ít hơn so với lý tưởng. Khi học sinh áp dụng công thức lý tưởng ở câu (c), mẫu số ($m_1 - m_2$) nhỏ đi trong khi tử số giữ nguyên (theo số chỉ oát kế), kết quả tính toán L sẽ bị lớn hơn giá trị thực tế chứ không phải nhỏ hơn.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q8',
+            image: 'bai8_thuchanh.png',
+            context: '<strong>Câu 8: Thí nghiệm kiểm chứng định luật Boyle-Mariotte về quá trình đẳng nhiệt của khối khí lý tưởng</strong><br><br><strong>Chuẩn bị: Bộ thí nghiệm về chất khí</strong><br>+ Xi lanh trong suốt có độ chia nhỏ nhất $0,5\\text{ cm}^{3}$ (1).<br>+ Pit-tông có ống nối khí trong xi lanh với áp kế (2).<br>+ Áp kế (3).<br>+ Giá đỡ thí nghiệm (4).<br>+ Thước đo (5).<br><br><strong>Tiến hành:</strong><br>+ Bố trí thí nghiệm như Hình.<br>+ Dịch chuyển từ từ pit-tông để làm thay đổi thể tích khí.<br>+ Đọc và ghi kết quả thí nghiệm vào bảng.<br><br><strong>Bảng số liệu thực nghiệm:</strong><br>• Lần 1: $V = 3,0\\text{ cm}^3$; $p = 1,0 \\times 10^5\\text{ Pa}$<br>• Lần 2: $V = 2,5\\text{ cm}^3$; $p = 1,2 \\times 10^5\\text{ Pa}$<br>• Lần 3: $V = 2,0\\text{ cm}^3$; $p = 1,5 \\times 10^5\\text{ Pa}$<br>• Lần 4: $V = 1,5\\text{ cm}^3$; $p = 2,0 \\times 10^5\\text{ Pa}$',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Việc dịch chuyển pit-tông từ từ nhằm để không làm thay đổi nhiệt độ của lượng khí trong xilanh ở phương án thí nghiệm này.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Khi nén khí, ta thực hiện công làm tăng nội năng và nhiệt độ khối khí; ngược lại khi giãn khí, khí sinh công và nhiệt độ giảm. Việc dịch chuyển pit-tông thật chậm giúp khối khí luôn có đủ thời gian trao đổi nhiệt liên tục với môi trường phòng, giữ cho nhiệt độ khối khí luôn bằng nhiệt độ phòng không đổi ($T = \\text{const}$), thỏa mãn điều kiện đẳng nhiệt.'
+                },
+                {
+                    id: 'b',
+                    text: 'Tích $pV=3,0$ (đơn vị $10^{5}Pa.cm^{3}$).',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Tiến hành nhân hai giá trị tương ứng ở mỗi lần đo trong bảng số liệu: Lần 1 ($1,0 \\cdot 3,0 = 3,0$); Lần 2 ($1,2 \\cdot 2,5 = 3,0$); Lần 3 ($1,5 \\cdot 2,0 = 3,0$); Lần 4 ($2,0 \\cdot 1,5 = 3,0$). Tích số $p \\cdot V$ duy trì giá trị hằng số bằng $3,0 \\times 10^5\\text{ Pa}\cdot\\text{cm}^3$, hoàn toàn nghiệm đúng định luật Boyle.'
+                },
+                {
+                    id: 'c',
+                    text: 'In hệ tọa độ $p-V,$ đồ thị biểu diễn mối liên hệ giữa p và V của một lượng khí khi nhiệt độ không đổi có dạng đường hypebol.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Từ định luật Boyle: $p \\cdot V = \\text{const} \\Rightarrow p = \\frac{\\text{const}}{V}$. Biểu thức toán học này có dạng hàm số nghịch đảo $y = \\frac{a}{x}$ ($a > 0$), đồ thị của nó trong hệ trục tọa độ vuông góc đề-các $p-V$ là một nhánh của đường hyperbol nằm ở góc phần tư thứ nhất, gọi là đường đẳng nhiệt.'
+                },
+                {
+                    id: 'd',
+                    text: 'Trong thí nghiệm trên, khi nhóm học sinh đẩy pit-tông để giảm thể tích, nội năng của khối khí tăng lên một lượng đúng bằng công mà nó nhận được.',
+                    isTrue: false,
+                    exp: 'SAI. Đây là thí nghiệm đẳng nhiệt được tiến hành từ từ (như đã khẳng định ở câu a), nghĩa là nhiệt độ khối khí không đổi ($T = \\text{const}$). Đối với khí lý tưởng, nội năng chỉ phụ thuộc vào nhiệt độ, do T không đổi nên độ biến thiên nội năng $\\Delta U = 0$. Theo Nguyên lý I Nhiệt động lực học: $\\Delta U = A + Q = 0 \\Rightarrow Q = -A$. Điều này có nghĩa là toàn bộ công A do học sinh nén khí đã chuyển hóa hoàn toàn thành nhiệt lượng Q truyền ra môi trường ngoài chứ nội năng khối khí không tăng.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q9',
+            image: 'bai9_thuchanh.png',
+            context: '<strong>Câu 9: Thí nghiệm minh họa định luật Charles về quá trình đẳng áp của khối khí xác định</strong><br><br><strong>Chuẩn bị:</strong><br>+ Xi lanh thuỷ tinh dung tích 50 mL, có độ chia nhỏ nhất 1 mL (1).<br>+ Nhiệt kế điện tử (2).<br>+ Ba cốc thuỷ tinh (3), (4), (5).<br>+ Nút cao su để bịt đầu ra của xi lanh.<br>+ Giá đỡ thí nghiệm (6).<br>+ Nước đá, nước ấm, nước nóng.<br>+ Dầu bôi trơn.<br><br><strong>Tiến hành:</strong><br><strong>Bước 1:</strong> Cho một chút dầu bôi trơn vào pit-tông để pit-tông dễ dàng di chuyển trong xi lanh. Điều chỉnh pít-tông ở mức 30 mL, bịt đầu ra của xi lanh bằng nút cao su.<br><strong>Bước 2:</strong> Ghi giá trị nhiệt độ phòng và thể tích không khí trong xi lanh vào bảng.<br><strong>Bước 3:</strong> Đổ nước đá vào cốc (3).<br><strong>Bước 4:</strong> Nhúng xi lanh và nhiệt kế vào cốc. Sau khoảng thời gian 3 phút, ghi giá trị thể tích V của không khí trong xi lanh và nhiệt độ t vào bảng số liệu.<br><strong>Bước 5:</strong> Lần lượt đổ nước ấm vào cốc (4) và nước nóng vào cốc (5). Thực hiện tương tự bước 4 ở mỗi trường hợp.<br><br><strong>Bảng số liệu kết quả:</strong><br>• Lần 1: $t = 24,5^{\\circ}C$; $V = 30\\text{ mL}$<br>• Lần 2: $t = 0,50^{\\circ}C$; $V = 27\\text{ mL}$<br>• Lần 3: $t = 41,5^{\\circ}C$; $V = 33\\text{ mL}$<br>• Lần 4: $t = 59,3^{\\circ}C$; $V = 35\\text{ mL}$',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Luôn để xilanh thẳng đứng để áp suất lượng khí trong ống không đổi.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Khi đặt xilanh thẳng đứng, áp suất khí bên trong ống được giữ cân bằng với tổng áp suất tác dụng từ bên ngoài, bao gồm áp suất khí quyển $p_0$ và áp suất do trọng lượng của thanh pit-tông gây ra trên tiết diện thành: $p_{khí} = p_0 + \\frac{m \\cdot g}{S}$. Do $p_0, m, g, S$ đều là hằng số nên áp suất khối khí luôn được giữ cố định, đáp ứng điều kiện quá trình đẳng áp.'
+                },
+                {
+                    id: 'b',
+                    text: 'Thao tác "cho một chút dầu bôi trơn vào pit-tông" chỉ có mục đích duy nhất là làm giảm lực ma sát.',
+                    isTrue: false,
+                    exp: 'SAI. Giảm lực ma sát để pit-tông trượt êm ái và nhạy bén với sự thay đổi thể tích là đúng, nhưng chưa phải là mục đích duy nhất. Lớp dầu bôi trơn mỏng còn đóng vai trò bít kín các khe hở cơ học siêu nhỏ giữa thành ngoài của pit-tông và thành trong của xilanh thủy tinh. Việc này ngăn chặn tuyệt đối hiện tượng rò rỉ khí ra ngoài hoặc lọt khí từ ngoài vào trong, đảm bảo khối lượng chất khí m luôn không đổi trong suốt quá trình đo đạc.'
+                },
+                {
+                    id: 'c',
+                    text: 'Với kết quả thu được ở bảng, công thức liên hệ $\\frac{V}{T}=1,4 (mL/K)$.',
+                    isTrue: false,
+                    exp: 'SAI. Để tính tỉ số $\\frac{V}{T}$ của định luật Charles, ta bắt buộc phải chuyển đổi nhiệt độ celsius $t (^{\\circ}C)$ sang nhiệt độ tuyệt đối $T (K)$ theo hệ thức $T = t + 273,15$. Lần 1: $T_1 = 24,5 + 273,15 = 297,65\\text{ K} \\Rightarrow \\frac{V_1}{T_1} = \\frac{30}{297,65} \\approx 0,101\\text{ mL/K}$. Giá trị hằng số thực tế của tỉ số $\\frac{V}{T}$ là khoảng $0,1\\text{ mL/K}$. Giá trị số 1,4 đưa ra trong phát biểu là do lấy nhầm thể tích V chia cho nhiệt độ celsius t ở một số điểm ($\\frac{33}{41,5} \\approx 0,8$), hoàn toàn sai bản chất khoa học.'
+                },
+                {
+                    id: 'd',
+                    text: 'Đồ thị thể tích V theo nhiệt độ t $(^{\\circ}C)$ có dạng đường thẳng kéo dài đi qua gốc tọa độ.',
+                    isTrue: false,
+                    exp: 'SAI. Đồ thị thể tích V theo nhiệt độ tuyệt đối T (K) mới là một đường thẳng có đồ thị kéo dài đi qua gốc tọa độ $O (0\\text{ K}; 0\\text{ mL})$. Còn đối với trục nhiệt độ celsius $t (^{\\circ}C)$, đồ thị là một đường thẳng cắt trục tung tại giá trị thể tích $V_0$ (thể tích khí ở 0°C) và chỉ cắt trục hoành khi kéo dài về điểm giới hạn tuyệt đối $-273,15^{\circ}C$, do đó nó không đi qua gốc tọa độ (0;0) của thang đo Celsius.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q10',
+            image: 'bai10_thuchanh.png',
+            context: '<strong>Câu 10: Phương án thiết kế mô hình thực nghiệm đo nhiệt nóng chảy riêng của nước đá</strong><br><br>Để xác định nhiệt nóng chảy riêng của nước đá, có thể tiến hành thí nghiệm theo sơ đồ nguyên lí như hình dưới đây. Dòng điện làm nóng dây điện trở trong một nhiệt lượng kế và làm nước đá nóng chảy. Bỏ qua sự trao đổi nhiệt với môi trường xung quanh.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi nóng chảy hoàn toàn, thể tích nước tạo thành bằng thể tích nước đá ban đầu.',
+                    isTrue: false,
+                    exp: 'SAI. Khối lượng riêng của nước đá ở 0°C ($D_{đá} \\approx 0,917\\text{ g/cm}^3$) nhỏ hơn khối lượng riêng của nước lỏng ở 0°C ($D_{nước} \\approx 1,000\\text{ g/cm}^3$). Theo định luật bảo toàn khối lượng ($m = D \\cdot V = \\text{const}$), khi nước đá nóng chảy hoàn toàn thành nước lỏng, khối lượng riêng tăng lên dẫn đến thể tích của hệ phải giảm đi (khoảng 8.3%), do đó thể tích không bằng nhau.'
+                },
+                {
+                    id: 'b',
+                    text: 'Công thức tính nhiệt nóng chảy riêng của nước đá là $\\lambda=\\frac{m}{Q}$.',
+                    isTrue: false,
+                    exp: 'SAI. Nhiệt nóng chảy riêng $\\lambda$ được định nghĩa là nhiệt lượng cần thiết để làm nóng chảy hoàn toàn một đơn vị khối lượng của chất đó ở nhiệt độ nóng chảy: $Q = \\lambda \\cdot m$. Do đó công thức đúng phải là $\\lambda = \\frac{Q}{m}$ (đơn vị J/kg), phát biểu đưa ra công thức đảo ngược $\\frac{m}{Q}$ là sai hoàn toàn về mặt bản chất và thứ nguyên.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu trong quá trình đun có sự trao đổi nhiệt với môi trường (mất nhiệt), giá trị $\\lambda$ tính được sẽ lớn hơn giá trị thực tế.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nếu có hao phí nhiệt ra môi trường, oát kế sẽ ghi nhận lượng điện năng tiêu thụ tổng thể $Q_{đo} = Q_{nóng\\ chảy} + Q_{hao}$. Khi dùng giá trị $Q_{đo}$ lớn này thế vào công thức tính toán ($\\lambda_{tính} = \\frac{Q_{đo}}{m}$), tử số lớn hơn năng lượng cần thiết thực tế làm cho giá trị kết quả $\\lambda$ thu được bị đẩy lên cao hơn giá trị thực tế.'
+                },
+                {
+                    id: 'd',
+                    text: 'Để giảm sai số, ta nên thực hiện đun trong thời gian càng ngắn càng tốt để hạn chế sự trao đổi nhiệt với môi trường.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Theo định luật truyền nhiệt, nhiệt lượng thất thoát tỉ lệ thuận với thời gian tiếp xúc nhiệt. Việc chọn dòng điện có công suất lớn thích hợp để quá trình nóng chảy diễn ra nhanh (rút ngắn thời gian đun) sẽ giảm thiểu lượng nhiệt trao đổi vô ích với môi trường, từ đó giảm sai số thực nghiệm.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q11',
+            image: 'bai11_thuchanh.png',
+            context: '<strong>Câu 11: Thí nghiệm khảo sát định luật đẳng nhiệt (Định luật Boyle) bằng hệ thống pittông - tay quay và áp kế số</strong><br><br>Một nhóm học sinh tìm hiểu về mối liên hệ giữa áp suất của một khối khí xác định theo nhiệt độ và thể tích của nó. Họ đã chuẩn bị các dụng cụ: Xilanh khí nối với áp kế; cảm biến nhiệt độ đo nhiệt độ khí; tay quay để làm di chuyển pít-tông (hình vẽ). Khi quay tay quay để pít-tông nén khí thì thấy số chỉ của áp kế và cảm biến nhiệt độ đều tăng.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Mục đích của thí nghiệm là khảo sát định luật Boyle cho khối khí trong xilanh.',
+                    isTrue: false,
+                    exp: 'SAI. Mục đích ban đầu được nêu là khảo sát mối liên hệ giữa cả ba đại lượng: áp suất, nhiệt độ và thể tích của khối khí. Hơn nữa, kết quả thực nghiệm cho thấy khi nén khí, cả áp suất và nhiệt độ đều tăng. Để khảo sát định luật Boyle, điều kiện bắt buộc là nhiệt độ phải được giữ không đổi ($T = \\text{const}$). Do nhiệt độ biến thiên trong quá trình nén nhanh này, thí nghiệm trên thực tế là một quá trình đa biến (hoặc tiến gần đến đoạn nhiệt), không phải khảo sát định luật Boyle.'
+                },
+                {
+                    id: 'b',
+                    text: 'Áp kế được sử dụng trong thí nghiệm có đơn vị đo là bar, đây là một đơn vị đo áp suất.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Bar là một đơn vị đo áp suất phổ biến trong kỹ thuật và thực nghiệm ($1\\text{ bar} = 10^5\\text{ Pa}$).'
+                },
+                {
+                    id: 'c',
+                    text: 'Khi quay tay quay để nén khí, thể tích của khối khí trong xilanh giảm xuống.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Thao tác "nén khí" bằng cách quay tay quay sẽ dịch chuyển pit-tông vào sâu trong lòng xilanh, làm thu hẹp không gian chiếm chỗ của các phân tử khí, dẫn đến thể tích khối khí giảm.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu giữ nguyên nhiệt độ và nén pittông, áp suất khí trong xilanh sẽ tăng lên tuân theo định luật Charles.',
+                    isTrue: false,
+                    exp: 'SAI. Khi giữ nguyên nhiệt độ ($T = \\text{const}$) và thay đổi thể tích để áp suất biến thiên, quá trình đó gọi là quá trình đẳng nhiệt và nó tuân theo định luật Boyle-Mariotte ($p \\sim \\frac{1}{V}$). Định luật Charles chỉ áp dụng cho quá trình đẳng áp ($V \\sim T$ khi $p = \\text{const}$).'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q12',
+            image: 'bai12_thuchanh.png',
+            context: '<strong>Câu 12: Thí nghiệm khảo sát định luật đẳng áp (Định luật Charles) sử dụng xilanh ngâm trong hộp chứa nước nóng</strong><br><br>Một nhóm học sinh bố trí thí nghiệm như hình vẽ bên, nhằm khảo sát mối liên hệ giữa thể tích và nhiệt độ của một lượng khí xác định khi giữ áp suất khí không đổi. Trong quá trình thí nghiệm, nhóm học sinh đổ nước nóng vào hộp chứa cho ngập hoàn toàn cylinder, khi nhiệt độ ổn định, dùng tay quay điều chỉnh thể tích khí sao cho số chỉ áp kế không đổi, sau đó ghi lại giá trị thể tích khí và số chỉ của cảm biến nhiệt độ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Mô hình thí nghiệm này dựa trên giả thiết động học phân tử: khi nhiệt độ tăng, tốc độ chuyển động nhiệt của phân tử khí tăng làm tăng tần số và lực va chạm lên thành mạch; do đó phải tăng thể tích để giữ áp suất không đổi.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Theo thuyết động học phân tử, khi nhiệt độ tăng, tốc độ của các phân tử khí tăng, làm tăng số lần va chạm (tần số) và độ mạnh của lực va chạm lên thành bình, có xu hướng làm áp suất tăng. Để giữ cho áp suất không đổi, ta bắt buộc phải tăng thể tích xilanh để giảm mật độ phân tử, làm giảm tần số va chạm bù trừ lại.'
+                },
+                {
+                    id: 'b',
+                    text: 'Khi nhiệt độ của nước trong hộp chứa (5) tăng lên, để giữ cho số chỉ của áp kế không đổi thì thể tích của khối khí trong xi lanh phải giảm xuống.',
+                    isTrue: false,
+                    exp: 'SAI. Theo định luật Charles cho quá trình đẳng áp, thể tích khối khí tỉ lệ thuận với nhiệt độ tuyệt đối ($\\frac{V}{T} = \\text{const}$). Do đó, khi nhiệt độ tăng lên, để giữ áp suất không đổi thì thể tích của khối khí trong xi lanh phải tăng lên chứ không thể giảm xuống.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu xi lanh không được ngập hoàn toàn trong nước nóng, sai số của phép đo nhiệt độ khối khí sẽ tăng lên do có một phần khí không đạt đúng nhiệt độ của nước.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Để cảm biến nhiệt độ phản ánh chính xác nhiệt độ của toàn bộ khối khí bên trong, toàn bộ xilanh phải được ngập hoàn toàn trong môi trường điều nhiệt (nước nóng) nhằm đạt sự cân bằng nhiệt đồng đều. Nếu một phần xilanh bị lộ ra ngoài không khí, phần khí ở vùng đó sẽ có nhiệt độ thấp hơn nhiệt độ nước, gây ra sai số hệ thống của phép đo.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu trong quá trình làm thí nghiệm, hệ thống bị hở khiến một lượng khí rò rỉ ra ngoài thì hằng số $V/T$ tính được từ các lần đo sau sẽ lớn hơn các lần đo trước.',
+                    isTrue: false,
+                    exp: 'SAI. Từ phương trình trạng thái khí lý tưởng: $p \\cdot V = n \\cdot R \\cdot T \\Rightarrow \\frac{V}{T} = \\frac{n \\cdot R}{p}$. Trong thí nghiệm này, áp suất p được giữ cố định. Nếu hệ thống bị hở khiến khí rò rỉ ra ngoài, số mol khí n trong xilanh sẽ giảm xuống. Vì hằng số tỉ lệ $\\frac{V}{T}$ tỉ lệ thuận với số mol n, nên ở các lần đo sau, giá trị tỉ số $\\frac{V}{T}$ thu được sẽ nhỏ hơn chứ không thể lớn hơn các lần đo trước.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q13',
+            image: 'bai13_thuchanh.png',
+            context: '<strong>Câu 13: Thí nghiệm tạo từ phổ bằng mạt sắt xung quanh thanh nam châm thẳng</strong><br><br>Để có được hình ảnh trực quan về sự có mặt của từ trường trong không gian, có thể làm thí nghiệm sau đây.<br><br><strong>Dụng cụ:</strong> Thanh nam châm, mạt sắt, hộp mica có thành và đáy bằng nhựa trong.<br><br><strong>Tiến hành:</strong> Rải đều mạt sắt lên mặt trên của đáy hộp. Đặt hộp lên một thanh nam châm rồi gõ nhẹ vào thành hộp. Quan sát sự sắp xếp mạt sắt ở đáy hộp.<br><br><strong>Kết quả:</strong> Sự sắp xếp mạt sắt trong một lần thí nghiệm được cho ở Hình bên.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Mạt sắt trong thí nghiệm được sắp xếp thành hình dạng nhất định vì mỗi mặt sắt trở thành một nam châm nhỏ nên sẽ định hướng theo hướng của từ trường ở mỗi điểm.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Mạt sắt là vật liệu từ mềm. Khi đặt trong từ trường của thanh nam châm, chúng bị nhiễm từ tạm thời do hưởng ứng và trở thành các nam châm thử (kim nam châm cực nhỏ). Dưới tác dụng của lực từ, các nam châm nhỏ này quay và tự sắp xếp nối đuôi nhau dọc theo hướng của đường sức từ tại vị trí đó.'
+                },
+                {
+                    id: 'b',
+                    text: 'Trong từ trường của thanh nam châm, mạt sắt được sắp xếp theo các đường thẳng song song với thanh nam châm, dày nhất ở các cực từ của nam châm.',
+                    isTrue: false,
+                    exp: 'SAI. Từ trường của thanh nam châm thẳng là từ trường không đều. Các mạt sắt sắp xếp theo các đường cong (đường sức từ) đi ra từ cực Bắc (N) và đi vào cực Nam (S), chứ không phải là các đường thẳng song song.'
+                },
+                {
+                    id: 'c',
+                    text: 'Hình ảnh các đường mạt sắt xung quanh nam châm như hình được gọi là điện phổ.',
+                    isTrue: false,
+                    exp: 'SAI. Hình ảnh hình học trực quan do các đường mạt sắt tạo nên xung quanh nam châm phản ánh sự phân bố của từ trường, và trong vật lý thực nghiệm nó được gọi là từ phổ, không phải là điện phổ.'
+                },
+                {
+                    id: 'd',
+                    text: 'Càng ra xa nam châm, các đường sức từ càng thưa dần.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Độ mạnh yếu của từ trường tỉ lệ nghịch với khoảng cách tới nguồn từ. Ở càng xa thanh nam châm, từ trường càng yếu. Quy ước biểu diễn đường sức từ cho biết nơi nào từ trường yếu thì các đường sức từ sẽ thưa dần.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q14',
+            image: 'bai14_thuchanh.png',
+            context: '<strong>Câu 14: Thí nghiệm nghiên cứu hiện tượng cảm ứng điện từ bằng nam châm điện và cuộn dây dẫn kín</strong><br><br>Trong tiết thực hành Vật lí, một nhóm học sinh tiến hành thí nghiệm nghiên cứu hiện tượng cảm ứng điện từ. Bộ thiết bị gồm: nam châm điện (copy lõi sắt non), cuộn dây dẫn kín, điện kế nhạy, biến trở, khóa K, nguồn điện một chiều và các dây nối. Sơ đồ lắp đặt được mô tả như hình vẽ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Trong sơ đồ thí nghiệm, các thiết bị (1), (2), (3), (4), (5) và (6) lần lượt tương ứng với: nam châm điện, cuộn dây dẫn, điện kế, khóa K, nguồn điện một chiều và biến trở.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Quan sát hình ảnh kết nối thực tế: (1) là nam châm điện có lõi sắt; (2) là cuộn dây dẫn hứng từ thông; (3) là điện kế phát hiện dòng điện; (4) là khóa K; (5) là nguồn điện một chiều; (6) là biến trở để thay đổi điện trở mạch sơ cấp. Thứ tự định danh hoàn toàn chính xác.'
+                },
+                {
+                    id: 'b',
+                    text: 'Điện kế (3) dùng để phát hiện và đo cường độ dòng điện cảm ứng.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Điện kế G (Galvanometer) là một dụng cụ đo lường điện cực kỳ nhạy, có vị trí số 0 nằm chính giữa vạch chia, chuyên dụng trong thực nghiệm vật lý để phát hiện sự tồn tại, đo cường độ nhỏ và xác định chiều của dòng điện cảm ứng sinh ra trong mạch.'
+                },
+                {
+                    id: 'c',
+                    text: 'Khi đóng khóa K, dòng điện tạo ra từ trường không đổi, nên trong cuộn dây (2) sẽ xuất hiện dòng điện cảm ứng duy trì liên tục.',
+                    isTrue: false,
+                    exp: 'SAI. Dòng điện cảm ứng chỉ xuất hiện trong thời gian từ thông qua mạch kín biến thiên. Khi đóng khóa K, dòng điện trong nam châm điện tăng nhanh từ 0 đến ổn định, làm từ thông biến thiên và xuất hiện dòng cảm ứng tức thời. Khi dòng điện đã ổn định, từ trường tạo ra là hằng số không đổi, từ thông không còn biến thiên, do đó dòng điện cảm ứng biến mất ngay lập tức.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu rút lõi sắt non ra khỏi nam châm điện (1) trong khi dòng điện trong mạch vẫn đang ổn định, sẽ không có hiện tượng cảm ứng điện từ xảy ra trong cuộn dây (2).',
+                    isTrue: false,
+                    exp: 'SAI. Lõi sắt non có vai trò làm tăng đáng kể độ lớn cảm ứng từ B của nam châm điện. Khi ta rút lõi sắt non ra, độ từ thẩm giảm mạnh làm từ trường do nam châm điện phát ra suy giảm đột ngột, từ thông xuyên qua cuộn dây (2) bị giảm mạnh. Sự biến thiên từ thông này chắc chắn kích khởi hiện tượng cảm ứng điện từ và làm kim điện kế lệch.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q15',
+            image: 'bai15_thuchanh.png',
+            context: '<strong>Câu 15: Thí nghiệm định tính hiện tượng cảm ứng điện từ bằng thanh nam châm thẳng dịch chuyển đồng trục</strong><br><br>Một nhóm học sinh tìm hiểu về hiện tượng cảm ứng điện từ. Họ đã thực hiện các nội dung sau:<br>(I) Chuẩn bị các dụng cụ: Một cuộn dây, một thanh nam châm, một điện kế nhạy và dây nối (hình bên);<br>(II) Họ cho rằng nếu dòng điện tạo ra được từ trường thì ngược lại, từ trường cũng có thể tạo ra được dòng điện;<br>(III) Nhóm học sinh thực hiện thí nghiệm dịch chuyển thanh nam châm lại gần hoặc ra xa cuộn dây thì kim điện kế lệch khỏi số 0. Sau đó, họ thay đổi tốc độ dịch chuyển của nam châm, đưa cuộn dây lại gần hoặc ra xa nam châm thì kim điện kế đều lệch khỏi số 0.<br>(IV) Họ kết luận rằng khi từ trường qua mạch kín biến thiên thì trong mạch xuất hiện dòng điện.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi thay đổi tốc độ dịch chuyển của nam châm (nhanh hơn hoặc chậm hơn), cường độ dòng điện cảm ứng qua cuộn dây sẽ không thay đổi.',
+                    isTrue: false,
+                    exp: 'SAI. Theo định luật cảm ứng điện từ Faraday, suất điện động cảm ứng tỉ lệ thuận với tốc độ biến thiên của từ thông qua mạch ($e_{cu} = -N \\cdot \\frac{\\Delta \\Phi}{\\Delta t}$). Khi dịch chuyển nam châm nhanh hơn, thời gian biến thiên ngắn lại làm tốc độ biến thiên từ thông tăng lên, dẫn đến cường độ dòng điện cảm ứng tăng lên.'
+                },
+                {
+                    id: 'b',
+                    text: 'Nếu giữ nguyên nam châm và di chuyển cuộn dây lại gần hoặc ra xa nam châm, kim điện kế sẽ không lệch vì từ trường không biến thiên.',
+                    isTrue: false,
+                    exp: 'SAI. Từ trường của thanh nam châm thẳng không đều. Khi di chuyển cuộn dây lại gần hoặc ra xa nam châm đứng yên, vị trí không gian của cuộn dây thay đổi làm số lượng đường sức từ xuyên qua lòng cuộn dây thay đổi. Từ thông qua cuộn dây vẫn biến thiên đều đặn, do đó xuất hiện dòng điện cảm ứng và kim điện kế vẫn lệch.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu thay thanh nam châm bằng một thanh thép không nhiễm từ, kim điện kế vẫn sẽ lệch khi thực hiện các thao tác di chuyển tương tự.',
+                    isTrue: false,
+                    exp: 'SAI. Một thanh thép không nhiễm từ thì không có từ trường xung quanh nó ($B = 0$). Khi dịch chuyển thanh thép này lại gần hoặc ra xa cuộn dây, từ thông qua cuộn dây luôn bằng 0 và không có sự biến thiên từ thông nào xảy ra. Vì vậy, không thể xuất hiện dòng điện cảm ứng.'
+                },
+                {
+                    id: 'd',
+                    text: 'Kết luận (IV) của nhóm học sinh hoàn toàn phù hợp với định luật cảm ứng điện từ Faraday.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Bản chất định luật Faraday khẳng định sự xuất hiện của dòng điện cảm ứng trong một mạch kín sinh ra từ sự biến thiên từ thông (từ trường qua mạch biến thiên) theo thời gian, kết luận thực nghiệm của nhóm hoàn toàn chính xác.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q16',
+            image: 'bai16_thuchanh.png',
+            context: '<strong>Câu 16: Thí nghiệm định luật Lenz xác định chiều dòng điện cảm ứng và định luật bảo toàn năng lượng</strong><br><br>Một nhóm học sinh thực hiện thí nghiệm tìm hiểu về hiện tượng cảm ứng điện từ như sau: dùng một cuộn dây có hai đầu dây nối vào điện kế G, đặt một nam châm thẳng dọc theo trục của cuộn dây như hình vẽ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi nam châm đứng yên so với cuộn dây, kim điện kế G lệch khỏi vị trí số 0.',
+                    isTrue: false,
+                    exp: 'SAI. Khi nam châm và cuộn dây hoàn toàn đứng yên tương đối với nhau, từ trường xuyên qua cuộn dây ổn định, từ thông không biến thiên theo thời gian ($\\frac{\\Delta \\Phi}{\\Delta t} = 0$). Không có dòng điện cảm ứng sinh ra trong mạch, do đó kim điện kế bắt buộc phải chỉ đúng vị trí số 0.'
+                },
+                {
+                    id: 'b',
+                    text: 'Khi nam châm được đẩy nhanh vào trong cuộn dây, năng lượng điện thu được trong cuộn dây là do tự sinh ra.',
+                    isTrue: false,
+                    exp: 'SAI. Theo định luật bảo toàn và chuyển hóa năng lượng, năng lượng không tự nhiên sinh ra. Năng lượng điện (điện năng) xuất hiện trong cuộn dây là do sự chuyển hóa từ cơ năng của ngoại lực đẩy thanh nam châm dịch chuyển chống lại lực từ cản trở chuyển động (lực Lenz).'
+                },
+                {
+                    id: 'c',
+                    text: 'Cho nam châm dịch chuyển ra xa cuộn dây. Khi này dòng điện cảm ứng trong đoạn dây MN có chiều từ M đến N.',
+                    isTrue: false,
+                    exp: 'SAI. Từ trường ngoài $\\vec{B}$ của cực Bắc nam châm hướng từ phải sang trái xuyên vào lòng ống dây. Khi dịch chuyển nam châm ra xa, từ thông $\\Phi$ giảm, nên từ trường cảm ứng $\\vec{B}_{cu}$ sẽ cùng chiều với từ trường ngoài $\\vec{B}$ (hướng từ phải sang trái). Áp dụng quy tắc nắm tay phải, dòng điện cảm ứng đi vòng từ dưới lên ở mặt trước của ống dây. Theo sơ đồ đấu nối dây, dòng điện chạy qua đoạn dây dẫn MN bên ngoài từ điểm N sang điểm M. Chiều đúng phải là từ N đến M.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu nối hai đầu cuộn dây với một điện trở R thay vì điện kế G, sẽ không có dòng điện chạy qua R khi nam châm chuyển động.',
+                    isTrue: false,
+                    exp: 'SAI. Cuộn dây đóng vai trò là một nguồn điện. Khi nối hai đầu cuộn dây với một điện trở R tạo thành một mạch kín, suất điện động cảm ứng sinh ra khi nam châm chuyển động vẫn sẽ tạo ra dòng điện cảm ứng chạy qua điện trở R theo định luật Ohm mạch kín ($I = \\frac{e_{cu}}{R + r}$).'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q17',
+            image: 'bai17_thuchanh.png',
+            context: '<strong>Câu 17: Thí nghiệm khảo sát lực từ tác dụng lên đoạn dây dẫn PQ bằng phương pháp góc lệch (Phương pháp dây treo)</strong><br><br>Một nhóm học sinh thực hiện thí nghiệm khảo sát lực từ tác dụng lên một đoạn dây dẫn thẳng mang dòng điện. Sơ đồ thí nghiệm được bố trí như hình vẽ, đoạn dây dẫn PQ có trọng lượng P, được treo nằm ngang bởi hai sợi dây dẫn mảnh, nhẹ tại hai điểm M và N. Ban đầu khoá k ngắt, các dây treo có phương thẳng đứng. Đóng khóa k, dòng điện đi qua PQ, khi cân bằng một phần đoạn PQ nằm trong từ trường đều giữa hai cực của nam châm, vuông góc với các đường sức từ. Khi đó các dây treo hợp với phương ngang một góc $\\theta$. Thay đổi cường độ dòng điện I qua đoạn PQ ghi lại giá trị của góc tương ứng.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Cực dương của nguồn điện nối với M và cực âm nối với N.',
+                    isTrue: false,
+                    exp: 'SAI. Các đường sức từ $\\vec{B}$ hướng thẳng đứng từ dưới lên trên. Lực từ $\\vec{F}$ hướng sang bên phải. Áp dụng quy tắc bàn tay trái (lòng bàn tay ngửa xuống dưới để hứng $\\vec{B}$ hướng lên, ngón cái choãi ra chỉ hướng lực từ sang phải), chiều từ cổ tay đến các ngón tay chỉ chiều dòng điện chạy trong dây là từ Q đến P. Do đó, dòng điện phải đi vào từ điểm treo N, qua Q, đến P rồi đi lên điểm treo M để về nguồn, nghĩa là điểm N nối cực dương, M nối cực âm.'
+                },
+                {
+                    id: 'b',
+                    text: 'Việc thay đổi biến trở R trong sơ đồ thí nghiệm nhằm mục đích thay đổi cảm ứng từ B của nam châm hình chữ U.',
+                    isTrue: false,
+                    exp: 'SAI. Nam châm hình chữ U trong thí nghiệm này là nam châm vĩnh cửu, có độ lớn cảm ứng từ B là hằng số cố định không đổi. Việc điều chỉnh biến trở R mắc nối tiếp trong mạch là nhằm thay đổi cường độ dòng điện I chạy qua đoạn dây PQ ($I = \\frac{U}{R_{mạch}}$) để khảo sát sự phụ thuộc của lực từ vào cường độ dòng điện.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu nhóm học sinh quan sát thấy góc $\\theta$ càng nhỏ thì chứng tỏ độ lớn lực từ tác dụng lên đoạn dây PQ càng lớn.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Từ điều kiện cân bằng ta có mối liên hệ hình học: $\\tan(\\alpha) = \\frac{F}{P}$, trong đó $\\alpha$ là góc lệch của dây treo so với phương thẳng đứng. Góc $\\theta$ trong đề bài được định nghĩa là góc hợp bởi dây treo với phương ngang, do đó $\\alpha = 90^{\\circ} - \\theta$. Khi lực từ F càng lớn thì góc lệch $\\alpha$ so với phương đứng càng lớn, dẫn đến góc $\\theta$ hợp với phương ngang phải càng nhỏ. Do đó góc $\\theta$ càng nhỏ chứng tỏ lực từ càng lớn.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu giữ nguyên cường độ dòng điện nhưng thay nam châm bằng một nam châm khác có từ trường mạnh gấp đôi, thì tang của góc lệch so với phương thẳng đứng $(90^{\\circ}-\\theta)$ cũng sẽ tăng gấp đôi.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Tang của góc lệch so với phương thẳng đứng là $\\tan(\\alpha) = \\tan(90^{\\circ}-\\theta) = \\frac{F}{P} = \\frac{B \\cdot I \\cdot L}{P}$. Khi giữ nguyên I, L, P và tăng cảm ứng từ B lên gấp đôi (2B), thì giá trị lực từ F tăng gấp đôi, kéo theo giá trị $\\tan(90^{\\circ}-\\theta)$ tăng gấp đôi một cách tỉ lệ thuận chính xác.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q18',
+            image: 'bai18_thuchanh.png',
+            context: '<strong>Câu 18: Thí nghiệm khảo sát nguyên lý hoạt động của máy biến áp bằng dao động ký điện tử</strong><br><br>Một nhóm học sinh tìm hiểu về mối liên hệ giữa điện áp lối ra trên cuộn thứ cấp với điện áp lối vào trên cuộn sơ cấp của máy biến áp. Họ đã thực hiện các nội dung sau:<br><br>(I) Chuẩn bị dụng cụ: Một nguồn điện có thể phát cả điện áp không đổi và điện áp xoay chiều. Một dao động kí điện tử (DĐKĐT) để quan sát tín hiệu lối ra. Một máy biến áp (MBA) loại nhỏ gồm một lõi từ khép kín cùng hai cuộn dây, một cuộn sơ cấp và một cuộn thứ cấp.<br>(II) Sau khi thảo luận giữa các thành viên trong nhóm, họ đồng ý với nhau rằng MBA chỉ hoạt động với điện áp xoay chiều mà không hoạt động với các loại điện áp khác.<br>(III) Họ đặt điện áp xoay chiều có tần số xác định vào hai đầu dây của cuộn sơ cấp, sau đó nối đầu ra của cuộn thứ cấp vào DĐKĐT và quan sát tín hiệu trên màn hình thì thấy tín hiệu lối ra có cùng tần số nhưng khác biên độ với điện áp lối vào.<br>(IV) Tiếp theo, họ đặt điện áp không đổi vào hai đầu dây của cuộn sơ cấp và quan sát tín hiệu trên màn hình DĐKĐT thì thấy tín hiệu lối ra là một vạch sáng nằm ngang ở mức điện áp bằng 0.<br>(V) Họ kết luận rằng thí nghiệm này đã chứng minh được nội dung ở (II).',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Nội dung (I) không nằm trong kế hoạch nghiên cứu.',
+                    isTrue: false,
+                    exp: 'SAI. Bước (I) là bước tối quan trọng và luôn đứng đầu trong mọi kế hoạch nghiên cứu thực nghiệm: "Chuẩn bị dụng cụ thí nghiệm". Không có bước chuẩn bị dụng cụ đầy đủ thì không thể triển khai tiến hành đo đạc thực tế ở các bước tiếp theo.'
+                },
+                {
+                    id: 'b',
+                    text: 'Nội dung (II) là giả thuyết khoa học của nhóm nghiên cứu.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Nội dung (II) phản ánh nhận định, dự đoán mang tính lý thuyết của nhóm trước khi tiến hành thực chứng. Đây chính là định nghĩa của một giả thuyết khoa học trong phương pháp nghiên cứu vật lý thực nghiệm.'
+                },
+                {
+                    id: 'c',
+                    text: 'Nội dung (III) và (IV) là đủ để đưa ra kết luận (V).',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Để kiểm chứng giả thuyết máy biến áp chỉ hoạt động với điện áp xoay chiều, nhóm đã tiến hành phương pháp kiểm chứng đối chứng: Thí nghiệm (III) chứng minh khi cấp điện áp xoay chiều thì lối ra có hoạt động; Thí nghiệm (IV) chứng minh khi cấp điện áp không đổi (một chiều) thì điện áp lối ra bằng 0. Hai kết quả thực nghiệm đối lập này là vừa đủ cơ sở logic để đưa ra kết luận khẳng định (V).'
+                },
+                {
+                    id: 'd',
+                    text: 'Trong thí nghiệm ở nội dung (IV), tín hiệu quan sát được trên DĐKĐT bằng 0 là do không có từ thông qua cuộn thứ cấp của MBA.',
+                    isTrue: false,
+                    exp: 'SAI. Khi đặt điện áp không đổi vào cuộn sơ cấp, dòng điện một chiều không đổi vẫn sinh ra một từ trường $\\vec{B}$ khép kín trong lõi từ và xuyên qua lòng cuộn thứ cấp, nghĩa là vẫn tồn tại từ thông $\\Phi$ khác 0 gửi qua cuộn thứ cấp. Tuy nhiên, vì dòng điện một chiều là hằng số nên từ thông $\\Phi$ gửi qua cuộn thứ cấp là một hằng số không đổi theo thời gian. Suất điện động cảm ứng $e_{cu} = - \\frac{\\Delta \\Phi}{\\Delta t} = 0$. Bản chất là do từ thông không biến thiên, chứ không phải do không có từ thông.'
+                }
+            ]
+        },
+        {
+            id: 'tnds_q19',
+            image: 'bai19_thuchanh.png',
+            context: '<strong>Câu 19: Thí nghiệm đo độ lớn cảm ứng từ B bằng phương pháp cân điện tử áp dụng định luật vạn vật hấp dẫn và lực từ</strong><br><br>Một đoạn dây dẫn nằm ngang được giữ cố định ở vùng từ trường đều trong khoảng không gian giữa hai cực của nam châm. Nam châm này được đặt trên một cái cân. Phần nằm trong từ trường của đoạn dây dẫn có chiều dài là 10 cm. Khi không có dòng điện chạy trong đoạn dây, số chỉ của cân là 500,68 g. Khi có dòng điện cường độ 0,34 A chạy trong đoạn dây, số chỉ của cân là 500,12 g. Lấy $g=9,8\\text{ m/s}^{2}$.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Số chỉ của cân giảm đi chứng tỏ có thêm một lực tác dụng vào nam châm theo chiều thẳng đứng lên trên.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Mặt cân đo áp lực tác dụng vuông góc lên bề mặt của nó. Khi có dòng điện, số chỉ của cân giảm từ 500,68 g -> 500,12 g. Sự sụt giảm này chứng tỏ hợp lực tác dụng xuống mặt cân giảm đi, đồng nghĩa với việc xuất hiện một lực từ do dây dẫn tác dụng ngược lại lên nam châm có chiều thẳng đứng hướng lên trên, nâng bớt một phần áp lực cho cân.'
+                },
+                {
+                    id: 'b',
+                    text: 'Lực tác dụng làm cho số chỉ của cân giảm là lực từ tác dụng lên đoạn dây và có chiều hướng lên.',
+                    isTrue: false,
+                    exp: 'SAI. Cân điện tử chỉ đo lực tác dụng lên vật đặt trên mặt cân (tức là đo lực tác dụng lên nam châm). Lực làm cho số chỉ của cân giảm trực tiếp là lực từ do đoạn dây mang dòng điện tác dụng lên nam châm (chiều hướng lên). Theo Định luật III Newton, lực này là phản lực của lực từ do nam châm tác dụng lên đoạn dây dẫn (hướng xuống dưới).'
+                },
+                {
+                    id: 'c',
+                    text: 'Dòng điện trong dây có chiều từ trái sang phải.',
+                    isTrue: false,
+                    exp: 'SAI. Để xác định chính xác chiều dòng điện bằng quy tắc bàn tay trái, ta cần biết hướng của các cực từ nam châm (đâu là cực Bắc N, đâu là cực Nam S để biết chiều đường sức từ $\\vec{B}$ nằm ngang hướng từ cực nào sang cực nào). Do dữ kiện bài toán không cung cấp ký hiệu hay màu sắc cụ thể của hai cực từ thanh nam châm chữ U này, ta không thể khẳng định một cách duy nhất chiều dòng điện.'
+                },
+                {
+                    id: 'd',
+                    text: 'Độ lớn cảm ứng từ giữa các cực của nam châm là 0,16 T.',
+                    isTrue: true,
+                    exp: 'ĐÚNG. Độ hụt khối lượng: $\\Delta m = 500,68 - 500,12 = 0,56\\text{ g} = 0,56 \\times 10^{-3}\\text{ kg}$. Lực tương tác từ: $F = \\Delta m \\cdot g = 0,56 \\times 10^{-3} \\cdot 9,8 = 5,488 \\times 10^{-3}\\text{ N}$. Áp dụng công thức Ampere $F = B \\cdot I \\cdot L \\Rightarrow B = \\frac{F}{I \\cdot L} = \\frac{5,488 \\times 10^{-3}}{0,34 \\cdot 0,1} \\approx 0,1614\\text{ T}$. Làm tròn đến hai chữ số thập phân thu được kết quả chính xác bằng 0,16 T.'
+                }
+            ]
+        }
     ]
 };
