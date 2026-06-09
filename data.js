@@ -1590,26 +1590,21 @@ const practiceData = {
                     isTrue: true,
                     exp: 'ĐÚNG. Theo định nghĩa về nhiệt độ và nội năng, nhiệt độ tỉ lệ thuận với động năng trung bình của các phân tử chất lưu. Nhiệt độ của khối nước trong bình cách nhiệt giảm đồng nghĩa với động năng trung bình của các phân tử nước giảm, kéo theo nhiệt năng (năng lượng) của khối nước này giảm.'
                 },
+                
                 {
                     id: 'b',
-                    text: 'Nhiệt độ của nước trong cốc tăng chứng tỏ năng lượng của nước trong cốc tăng.',
-                    isTrue: true,
-                    exp: 'ĐÚNG. Nhiệt độ nước trong cốc nhôm tăng chứng tỏ các phân tử nước nhận được năng lượng, chuyển động nhiệt hỗn loạn mạnh lên làm động năng trung bình tăng, dẫn đến nội năng (nhiệt năng) của nước tăng.'
-                },
-                {
-                    id: 'c',
                     text: 'Nước trong bình truyền năng lượng nhiệt cho nước trong cốc.',
                     isTrue: true,
                     exp: 'ĐÚNG. Theo định luật truyền nhiệt (Nguyên lý II Nhiệt động lực học), năng lượng nhiệt luôn tự truyền từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn khi tiếp xúc trực tiếp. Do nước trong bình có nhiệt độ cao hơn ($60^{\\circ}C$) so với nước trong cốc ($30^{\\circ}C$) nên chiều truyền nhiệt năng là từ bình sang cốc.'
                 },
                 {
-                    id: 'd',
+                    id: 'c',
                     text: 'Khi thấy nhiệt độ của nước trong bình và nước trong cốc bằng nhau và không thay đổi thì có thể kết luận quá trình truyền nhiệt đã kết thúc.',
                     isTrue: true,
                     exp: 'ĐÚNG. Khi hai hệ tiếp xúc đạt đến cùng một nhiệt độ và không đổi theo thời gian, hệ đã thiết lập trạng thái cân bằng nhiệt. Ở trạng thái này, không còn sự truyền nhiệt lượng vĩ mô thuần túy giữa hai vật, do đó quá trình truyền nhiệt được coi là kết thúc.'
                 },
                 {
-                    id: 'e',
+                    id: 'd',
                     text: 'Nhiệt độ khi cân bằng là $45^{\\circ}C$.',
                     isTrue: false,
                     exp: 'SAI. Phương trình cân bằng nhiệt lý tưởng là: $m_1 \\cdot c \\cdot (t_{cb} - t_1) = m_2 \\cdot c \\cdot (t_2 - t_{cb})$. Ở đây, thể tích nước nóng trong bình là 500 mL ($m_2 \\approx 0,5\\text{ kg}$) lớn hơn thể tích nước lạnh trong cốc nhôm là 200 mL ($m_1 \\approx 0,2\\text{ kg}$). Do $m_2 > m_1$, nhiệt độ cân bằng $t_{cb}$ phải lệch nhiều hơn về phía nguồn nhiệt độ cao: $0,2 \\cdot (t_{cb} - 30) = 0,5 \\cdot (60 - t_{cb}) \\Rightarrow t_{cb} \\approx 51,4^{\\circ}C$. Giá trị $45^{\\circ}C$ chỉ xảy ra khi khối lượng của hai lượng nước bằng nhau.'
