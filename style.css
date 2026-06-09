@@ -339,9 +339,87 @@ body {
 }
 .login-btn:hover { background: #2563eb; transform: translateY(-1px); }
 
+/* =========================================================
+   HỆ THỐNG PHÂN LOẠI BỐ CỤC ẢNH THÍ NGHIỆM ĐỒNG BỘ CORE
+   ========================================================= */
+/* 1. Giữ nguyên cấu trúc mặc định của hệ thống cũ */
 .question-img {
-    max-width: 100%; height: auto; border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3); display: block; margin: 16px auto; max-height: 320px;
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3); 
+    display: block; 
+    margin: 16px auto; /* Giữ nguyên căn giữa mặc định cho các câu hỏi cũ */
+    max-height: 320px;
+}
+
+/* 2. Cấu hình khung bao bọc Flexbox để điều hướng ảnh */
+.img-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 16px 0;
+}
+
+/* 3. KIỂU 1: Ảnh thiết bị nhỏ dồn hẳn sang lề phải */
+.img-wrapper.layout-small {
+    justify-content: flex-end; /* Ép luồng flex dồn về bên phải */
+    padding-right: 12px;
+}
+/* Sử dụng bộ chọn có độ ưu tiên cao hơn để bẻ gãy lệnh margin: auto cũ */
+.img-wrapper.layout-small .question-img {
+    max-width: 40% !important; /* Thu nhỏ vừa vặn với văn bản bên trái */
+    margin: 0 !important;       /* Triệt tiêu hoàn toàn thuộc tính đẩy ra giữa mặc định */
+}
+
+/* 4. KIỂU 2: Biểu đồ, sơ đồ mạch lớn căn giữa bề thế */
+.img-wrapper.layout-large {
+    justify-content: center; /* Ép luồng flex ra giữa */
+}
+.img-wrapper.layout-large .question-img {
+    max-width: 85% !important;
+    margin: 0 auto !important; /* Đảm bảo căn giữa chuẩn hóa */
+}
+
+/* 5. Responsive di động: Tự động chuyển toàn bộ về căn giữa khi màn hình hẹp */
+@media (max-width: 600px) {
+    .img-wrapper.layout-small {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .img-wrapper.layout-small .question-img {
+        max-width: 85% !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Kiểu 1: Với các ảnh nhỏ, thiết bị cầm tay, áp kế (Thầy thêm class 'img-small' hoặc hệ thống tự nhận diện) */
+.img-wrapper.layout-small {
+    justify-content: flex-end; /* Đẩy toàn bộ khối ảnh nhỏ dồn sang bên phải */
+    padding-right: 8px;
+}
+
+.img-wrapper.layout-small .question-img {
+    max-width: 45%; /* Giới hạn kích thước vừa phải để hòa hợp với văn bản */
+}
+
+/* Kiểu 2: Với sơ đồ lớn, đồ thị dạng sóng máy hiện sóng, bảng số liệu phức tạp */
+.img-wrapper.layout-large {
+    justify-content: center; /* Căn giữa tuyệt đối tạo sự trang nghiêm, rõ ràng */
+}
+
+.img-wrapper.layout-large .question-img {
+    max-width: 85%; /* Mở rộng không gian hiển thị cho các chi tiết đồ họa */
+}
+
+/* Điện thoại responsive: Chuyển toàn bộ về căn giữa để tối ưu không gian màn hình nhỏ */
+@media (max-width: 600px) {
+    .img-wrapper.layout-small {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .img-wrapper.layout-small .question-img {
+        max-width: 80%;
+    }
 }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -560,4 +638,54 @@ body {
     color: #94a3b8;
     line-height: 1.6;
     text-align: center;
+}
+/* =========================================================
+   CẤU HÌNH FLOAT ẢNH NHỎ NẰM CÙNG ĐOẠN VỚI VĂN BẢN ĐỀ BÀI
+   ========================================================= */
+/* Ép ảnh nhỏ dồn sang phải cùng đoạn với lời dẫn đề bài */
+.question-img-float {
+    float: right;                 /* Đẩy khối ảnh dồn về lề phải */
+    max-width: 35% !important;     /* Giới hạn kích thước ảnh vừa vặn để chừa chỗ cho chữ */
+    height: auto !important;
+    margin-left: 18px !important;  /* Tạo vùng đệm bên trái để chữ không dính sát vào ảnh */
+    margin-bottom: 8px !important; /* Khoảng cách đệm phía dưới */
+    margin-top: 2px !important;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    max-height: 220px;            /* Giới hạn chiều cao vừa phải */
+    display: inline !important;   /* Khử display: block cũ để cho phép chữ chạy bao quanh */
+}
+
+/* Clearfix bảo vệ khối bao bọc không bị lệch dòng, vỡ layout */
+.question-context {
+    overflow: hidden; 
+    line-height: 1.6;
+}
+
+.question-context::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Giữ nguyên định dạng chuẩn hóa đối với các sơ đồ lớn */
+.img-wrapper.layout-large {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 16px 0;
+}
+.img-wrapper.layout-large .question-img {
+    max-width: 85% !important;
+    margin: 0 auto !important;
+}
+
+/* Giao diện di động responsive dưới 600px: Hủy float dồn ngang để ảnh không chèn ép chữ */
+@media (max-width: 600px) {
+    .question-img-float {
+        float: none !important;
+        display: block !important;
+        max-width: 85% !important;
+        margin: 16px auto !important;
+    }
 }

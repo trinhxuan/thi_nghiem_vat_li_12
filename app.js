@@ -76,31 +76,53 @@ window.renderQuizzes = function() {
         contextText = contextText.replace(/^Câu\s*\d+\s*[:\-\.]*\s*/i, '');
         contextText = autoFormatMathJax(contextText);
 
-        let imageHtml = quiz.image ? `<img src="${quiz.image}" class="question-img" alt="Sơ đồ minh họa">` : '';
-
         // CẤU HÌNH MÀU SẮC DỰA TRÊN CHUYÊN ĐỀ
-let borderTopColor = 'var(--primary)'; 
-if (isMistakeTab) {
-    borderTopColor = '#ff003c'; 
-} else if (currentTopic === 'nhiet') {
-    borderTopColor = 'var(--color-nhiet)'; 
-} else if (currentTopic === 'khili-tuong') {
-    borderTopColor = 'var(--color-khi)'; 
-} else if (currentTopic === 'tu-truong') {
-    borderTopColor = 'var(--color-tu)'; 
-} else if (currentTopic === 'hat-nhan') {
-    borderTopColor = 'var(--color-hatnhan)'; 
-} else if (currentTopic === 'thighniem-dungsai') {
-    borderTopColor = '#f59e0b'; // Màu Vàng Cam Neon đặc trưng cho Vật lý thực nghiệm
-}
+        let borderTopColor = 'var(--primary)'; 
+        if (isMistakeTab) {
+            borderTopColor = '#ff003c'; 
+        } else if (currentTopic === 'nhiet') {
+            borderTopColor = 'var(--color-nhiet)'; 
+        } else if (currentTopic === 'khili-tuong') {
+            borderTopColor = 'var(--color-khi)'; 
+        } else if (currentTopic === 'tu-truong') {
+            borderTopColor = 'var(--color-tu)'; 
+        } else if (currentTopic === 'hat-nhan') {
+            borderTopColor = 'var(--color-hatnhan)'; 
+        } else if (currentTopic === 'thighniem-dungsai') {
+            borderTopColor = '#f59e0b'; // Màu Vàng Cam cho Vật lý thực nghiệm
+        }
+
+        // BỐ CỤC HÌNH ẢNH DUY NHẤT: XỬ LÝ AN TOÀN TRÁNH TRÙNG KHAI BÁO BIẾN (SYNTAX ERROR)
+        let embeddedImgHtml = '';
+        let standaloneImgHtml = '';
+        
+        if (quiz.image) {
+            // Mảng gom tất cả các câu hỏi dùng ảnh thiết bị nhỏ cần float bên phải cùng hàng với text
+            const floatRightImageIds = [
+                'tnds_q1', 'tnds_q2', 'tnds_q3', 'tnds_q4', 'tnds_q5', 
+                'tnds_q8', 'tnds_q9', 'tnds_q11', 'tnds_q12', 'tnds_q13', 
+                'tnds_q14', 'tnds_q15', 'tnds_q17', 'tnds_q19'
+            ];
+            
+            if (floatRightImageIds.includes(quiz.id)) {
+                // Nếu là ảnh nhỏ, ta gán vào biến nhúng kèm class float
+                embeddedImgHtml = `<img src="${quiz.image}" class="question-img-float" alt="Hình ảnh thí nghiệm">`;
+            } else {
+                // Nếu là sơ đồ hoặc đồ thị lớn, giữ nguyên cấu trúc khối độc lập căn giữa ở dưới
+                standaloneImgHtml = `
+                    <div class="img-wrapper layout-large">
+                        <img src="${quiz.image}" class="question-img" alt="Sơ đồ lớn">
+                    </div>
+                `;
+            }
+        }
 
         return `
             <div class="question-card" id="card_${quiz.id}" style="border-top-color: ${borderTopColor}">
                 <div class="question-context">
-                    <strong>Câu ${index + 1}: </strong>${contextText}
+                    ${embeddedImgHtml} <strong>Câu ${index + 1}: </strong>${contextText}
                 </div>
-                ${imageHtml}
-                <div class="statements-container">
+                ${standaloneImgHtml}
                     ${quiz.statements.map(s => {
                         let cleanText = s.text.replace(/^[a-d]\s*[)\.]\s*/i, '');
                         cleanText = autoFormatMathJax(cleanText);
