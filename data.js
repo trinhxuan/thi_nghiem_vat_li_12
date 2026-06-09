@@ -998,6 +998,276 @@ const practiceData = {
                 { id: 'c', text: 'Công suất tỏa nhiệt (công suất tiêu thụ) trên điện trở mạch ngoài $R$ là 92 W.', isTrue: true, exp: 'Đúng. Công suất tỏa nhiệt trên điện trở ngoài: $P_R = I^2 \\cdot R = 2,0^2 \\cdot 23 = 4 \\cdot 23 = 92$ W.' },
                 { id: 'd', text: 'Nếu giữ nguyên cấu tạo máy, để điện áp hiệu dụng ở hai đầu điện trở mạch ngoài $R$ tăng lên gấp đôi, người vận hành chỉ cần tăng tốc độ quay của rôto lên mức 6000 vòng/phút.', isTrue: true, exp: 'Đúng. Tốc độ quay tăng gấp đôi ($3000 \\rightarrow 6000$) làm tần số góc $\\omega$ tăng gấp đôi. Suất điện động $E$ tỉ lệ thuận với $\\omega$ nên $E$ tăng gấp đôi. Do điện trở mạch ($R, r$) không đổi vì là thông số cấu tạo, dòng điện $I$ sẽ tăng gấp đôi. Điện áp mạch ngoài $U_R = I \\cdot R$ do đó cũng sẽ tăng chính xác lên gấp đôi.' }
             ]
+        },
+		{
+            id: 'tu_59',image: 'bai59_tu.png',
+            context: '<strong>Câu 1.</strong> Mô hình nguyên lý cấu tạo của máy phát điện xoay chiều đơn giản gồm một khung dây dẫn phẳng hình chữ nhật ABCD có thể quay đều trong từ trường đều có phương ngang. Đồ thị biểu diễn sự phụ thuộc của điện áp xoay chiều u ở hai đầu khung dây theo thời gian t được cho như hình vẽ bên dưới. Biết khung dây quay đều theo chiều mũi tên quanh trục đối xứng nằm trong mặt phẳng khung dây và vuông góc với các đường sức từ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Trong thời gian điểm B quay từ vị trí số (2) đến vị trí số (3), dòng điện qua cạnh AB có chiều từ A đến B.',
+                    isTrue: true,
+                    exp: 'Đúng. Khi cạnh AB (gắn với điểm B) đi từ vị trí (2) đến (3), mặt phẳng khung dây đang hướng dịch chuyển về vị trí vuông góc với cảm ứng từ $\\vec{B}$. Áp dụng quy tắc bàn tay phải (hoặc định luật Lenz cho khung dây quay), dòng điện trong thanh AB hướng từ A đến B.'
+                },
+                {
+                    id: 'b',
+                    text: 'Tần số của suất điện động xoay chiều do máy phát ra bằng 50Hz.',
+                    isTrue: true,
+                    exp: 'Đúng. Từ đồ thị, thời gian hoàn thành 1 chu kỳ dao động toàn phần (từ vị trí bằng 0, đi lên cực đại, xuống cực tiểu rồi trở về vị trí cũ) là $T = 20\\text{ ms} = 0,02\\text{ s}$. Tần số dao động được tính bằng: $f = \\frac{1}{T} = \\frac{1}{0,02} = 50\\text{ Hz}$.'
+                },
+                {
+                    id: 'c',
+                    text: 'Trong mô hình hoạt động này, rôto đóng vai trò là phần ứng, stato là phần cảm.',
+                    isTrue: true,
+                    exp: 'Đúng. Rôto là phần quay (ở đây là khung dây dẫn phẳng sinh ra suất điện động cảm ứng) nên đóng vai trò là phần ứng. Stato là phần đứng yên (nam châm tạo ra từ trường) nên đóng vai trò là phần cảm.'
+                },
+                {
+                    id: 'd',
+                    text: 'Chọn pháp tuyến của khung như trên hình vẽ, mốc thời gian $t=0$ được chọn vào thời điểm điểm B của khung dây ở vị trí số 4.',
+                    isTrue: false,
+                    exp: 'Sai. Tại $t=0$, đồ thị bắt đầu từ giá trị điện áp bằng 0 và đang tăng lên. Ở vị trí số (4), mặt phẳng khung dây đang nằm song song với đường sức từ $\\vec{B}$, tốc độ biến thiên từ thông đạt giá trị cực đại, do đó điện áp cảm ứng u phải ở đỉnh cực đại ($U_0$), không thể bằng 0. Vị trí lúc $t=0$ chính xác phải là vị trí vuông góc với đường sức từ (vị trí số 1 hoặc số 3).'
+                }
+            ]
+        },
+        {
+            id: 'tu_60',image: 'bai60_tu.png',
+            context: '<strong>Câu 2.</strong> Quan sát mô hình máy phát điện xoay chiều một pha đơn giản. Biết khung dây dẫn phẳng ABCD được truyền động quay đều theo chiều MPNQ trong từ trường đều được tạo ra bởi một cặp cực nam châm.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Vị trí hình học của khung dây ABCD hiện tại như trên hình vẽ có dòng điện cảm ứng chạy theo chiều từ A đến B.',
+                    isTrue: true,
+                    exp: 'Đúng. Theo chiều quay MPNQ, cạnh BC đang đi xuống và cắt các đường cảm ứng từ hướng từ cực Bắc (N) sang cực Nam (S). Áp dụng quy tắc bàn tay phải, dòng điện cảm ứng chạy qua đoạn dây AB hướng từ A đến B.'
+                },
+                {
+                    id: 'b',
+                    text: 'Khi cạnh BC tiếp tục quay đến vị trí trùng với đoạn PQ thì chiều dòng điện chạy theo cạnh BC có hướng từ P đến Q.',
+                    isTrue: false,
+                    exp: 'Sai. Khi cạnh BC đến vị trí PQ (mặt phẳng khung dây vuông góc với đường sức từ), từ thông qua khung đạt cực đại nên tốc độ biến thiên từ thông bằng 0. Do đó, suất điện động và dòng điện cảm ứng tại vị trí này bằng 0.'
+                },
+                {
+                    id: 'c',
+                    text: 'Trong quá trình điểm B di chuyển từ vị trí M đến vị trí P thì cường độ dòng điện tức thời trong mạch giảm dần.',
+                    isTrue: true,
+                    exp: 'Đúng. Khi đi từ M đến P, khung dây chuyển dịch từ vị trí song song về vị trí vuông góc với các đường sức từ. Vận tốc cắt các đường sức từ giảm dần, dẫn tới tốc độ biến thiên từ thông giảm, do đó cường độ dòng điện tức thời giảm dần về 0.'
+                },
+                {
+                    id: 'd',
+                    text: 'Dòng điện cảm ứng trong khung dây sẽ đổi chiều khi cạnh BC có vị trí trùng với đường thẳng PQ.',
+                    isTrue: true,
+                    exp: 'Đúng. Vị trí vuông góc với các đường sức từ (PQ) là vị trí mà dòng điện cảm ứng bằng 0, đi qua điểm nút này dòng điện sẽ đổi chiều để bắt đầu một nửa chu kỳ tiếp theo.'
+                }
+            ]
+        },
+        {
+            id: 'tu_61',image: 'bai61_tu.png',
+            context: '<strong>Câu 3.</strong> Mô hình nguyên lý cấu tạo và hoạt động của máy phát điện xoay chiều gồm khung dây hình chữ nhật ABCD nối với mạch ngoài qua một điện trở thuần R. Khung dây có thể quay đều quanh trục đối xứng nằm ngang trong một từ trường đều có phương ngang như hình vẽ bên. Chọn gốc thời gian ($t=0$) khi điểm B của khung dây đi qua vị trí hình học (1).',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Tại thời điểm ban đầu $t=0$, từ thông xuyên qua mặt phẳng khung dây đạt giá trị bằng không.',
+                    isTrue: false,
+                    exp: 'Sai. Tại thời điểm ban đầu $t=0$, điểm B ở vị trí (1), nghĩa là mặt phẳng khung dây đang nằm vuông góc với các đường sức từ $\\vec{B}$. Do đó, từ thông xuyên qua mặt phẳng khung dây phải đạt giá trị cực đại ($\\Phi=\\Phi_0$).'
+                },
+                {
+                    id: 'b',
+                    text: 'Trong thiết bị máy phát điện này, rôto đóng vai trò là phần cảm, còn stato đóng vai trò là phần ứng.',
+                    isTrue: false,
+                    exp: 'Sai. Khung dây chuyển động quay tạo ra dòng điện nên rôto là phần ứng. Nam châm đứng yên tạo ra từ trường nên stato là phần cảm. Phát biểu của mệnh đề bị ngược.'
+                },
+                {
+                    id: 'c',
+                    text: 'Tại thời điểm ban đầu $t=0$, dòng điện cảm ứng xuất hiện qua cạnh BC có chiều hướng từ C đến B.',
+                    isTrue: true,
+                    exp: 'Đúng. Khi bắt đầu quay từ vị trí (1) sang vị trí (2), áp dụng quy tắc bàn tay phải cho đoạn dây khi chuyển động cắt các đường sức từ, ta xác định được chiều dòng điện cảm ứng đi từ C đến B.'
+                },
+                {
+                    id: 'd',
+                    text: 'Trong giai đoạn điểm B di chuyển liên tục từ vị trí (1) đến vị trí (3) thì dòng điện chạy qua điện trở R đổi chiều một lần.',
+                    isTrue: false,
+                    exp: 'Sai. Giai đoạn dịch chuyển từ vị trí (1) đến vị trí (3) tương ứng với nửa chu kỳ quay ($T/2$). Trong suốt nửa chu kỳ này, dòng điện tăng dần từ 0 lên cực đại (tại vị trí số 2) rồi giảm dần về 0 chứ không đổi chiều. Dòng điện chỉ bắt đầu đổi chiều khi đi qua vị trí số (3).'
+                }
+            ]
+        },
+        {
+            id: 'tu_62',image: 'bai62_tu.png',
+            context: '<strong>Câu 4.</strong> Một máy phát điện xoay chiều một pha đơn giản hoạt động bằng cơ chế quay cuộn dây trong từ trường như hình vẽ bên dưới. Khung dây dẫn phẳng gồm có tất cả $N=2000$ vòng dây, tiết diện phẳng của mỗi vòng dây đạt $S=200\\text{ cm}^2$. Khung dây nằm hoàn toàn trong từ trường đều của nam châm có cảm ứng từ $\\vec{B}$. Khi khung dây quay đều với tốc độ 1800 vòng/phút quanh trục đối xứng của nó thì trong khung xuất hiện một suất điện động cảm ứng có giá trị cực đại là $110\\sqrt{2}\\text{ V}$.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Máy phát điện xoay chiều có cấu tạo cơ học như hình bên có phần rôto quay đóng vai trò là phần cảm.',
+                    isTrue: false,
+                    exp: 'Sai. Phần quay (rôto) là khung dây tạo ra dòng điện cảm ứng nên đóng vai trò là phần ứng, không phải phần cảm.'
+                },
+                {
+                    id: 'b',
+                    text: 'Suất điện động hiệu dụng do máy phát ra đạt giá trị bằng 110V.',
+                    isTrue: true,
+                    exp: 'Đúng. Đề bài cho suất điện động cực đại là $E_0=110\\sqrt{2}\\text{ V}$. Giá trị hiệu dụng tương ứng được tính bằng: $E=\\frac{E_0}{\\sqrt{2}}=\\frac{110\\sqrt{2}}{\\sqrt{2}}=110\\text{ V}$.'
+                },
+                {
+                    id: 'c',
+                    text: 'Cảm ứng từ $\\vec{B}$ của từ trường đều do nam châm sinh ra có độ lớn xấp xỉ là 0,02T.',
+                    isTrue: true,
+                    exp: 'Đúng. Đổi đơn vị: $S=200\\text{ cm}^2=0,02\\text{ m}^2$. Tốc độ góc: $\\omega=1800\\text{ vòng/phút}=\\frac{1800 \\times 2\\pi}{60}=60\\pi\\text{ rad/s}$. Từ công thức $E_0=N \\cdot B \\cdot S \\cdot \\omega \\Rightarrow B=\\frac{E_0}{N \\cdot S \\cdot \\omega}=\\frac{110\\sqrt{2}}{2000 \\times 0,02 \\times 60\\pi}\\approx0,0206\\text{ T}\\approx0,02\\text{ T}$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Nếu dùng máy phát điện này để cung cấp điện cho một động cơ quạt công nghiệp hoạt động bình thường có cường độ dòng điện hiệu dụng chạy qua là 2A và điện trở cuộn dây cuốn bằng $20\\text{ }\\Omega$, thì hiệu suất của quạt lúc này đạt xấp xỉ bằng 63,6%.',
+                    isTrue: true,
+                    exp: 'Đúng. Công suất toàn phần máy cung cấp: $P_{tp}=E \\cdot I=110 \\times 2=220\\text{ W}$. Công suất hao phí tỏa nhiệt trên cuộn dây động cơ: $P_{hp}=I^2 \\cdot R=2^2 \\times 20=80\\text{ W}$. Công suất có ích của quạt: $P_{ci}=P_{tp}-P_{hp}=220-80=140\\text{ W}$. Hiệu suất: $H=\\frac{P_{ci}}{P_{tp}}=\\frac{140}{220}\\approx63,63\\%$.'
+                }
+            ]
+        },
+        {
+            id: 'tu_63',image: 'bai63_tu.png',
+            context: '<strong>Câu 5.</strong> Một máy phát điện xoay chiều đơn giản có mô hình cuộn dây dẫn phẳng gồm 250 vòng dây quay quanh trục vuông góc với các đường sức từ của một từ trường đều với tốc độ góc không đổi $\\omega=40\\pi\\text{ rad/s}$. Diện tích của mỗi vòng dây đạt $120\\text{ cm}^2$. Từ trường đều do một cặp cực của nam châm chữ U tạo ra và có độ lớn cảm ứng từ bằng 0,02T. Lúc $t=0$, vectơ pháp tuyến $\\vec{n}$ của khung dây đang cùng hướng với vectơ cảm ứng từ $\\vec{B}$ như hình vẽ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Nguyên lý hoạt động của máy phát điện trên dựa trên hiện tượng cảm ứng điện từ do nhà bác học Michael Faraday phát minh.',
+                    isTrue: true,
+                    exp: 'Đúng. Hiện tượng cảm ứng điện từ (khi từ thông biến thiên sinh ra suất điện động cảm ứng) chính là nguyên lý cốt lõi để vận hành mọi loại máy phát điện cơ năng.'
+                },
+                {
+                    id: 'b',
+                    text: 'Từ thông cực đại gửi qua mỗi một vòng dây đơn lẻ của khung dây có giá trị bằng 2,4Wb.',
+                    isTrue: false,
+                    exp: 'Sai. Đổi diện tích: $S=120\\text{ cm}^2=0,012\\text{ m}^2$. Từ thông cực đại qua một vòng dây là :$\\Phi_1=B \\cdot S=0,02 \\times 0,012=2,4 \\cdot 10^{-4}\\text{ Wb}$. Phát biểu của mệnh đề bị sai lệch độ lớn đơn vị (thiếu số mũ $10^{-4}$).'
+                },
+                {
+                    id: 'c',
+                    text: 'Suất điện động cực đại xuất hiện trong toàn bộ khung dây đạt giá trị bằng $2,4\\pi\\text{ V}$.',
+                    isTrue: true,
+                    exp: 'Đúng. Từ thông cực đại gửi qua toàn bộ 250 vòng dây: $\\Phi_0=N \\cdot B \\cdot S=250 \\times 2,4 \\cdot 10^{-4}=0,06\\text{ Wb}$. Suất điện động cực đại là: $E_0=\\Phi_0 \\cdot \\omega=0,06 \\times 40\\pi=2,4\\pi\\text{ V}$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Biểu thức suất điện động tức thời của máy phát theo thời gian biến thiên là $e=2,4\\pi\\cos(40\\pi t-\\frac{\\pi}{2})$ (V).',
+                    isTrue: true,
+                    exp: 'Đúng. Tại $t=0$, do $\\vec{n}$ cùng hướng với $\\vec{B}$ nên từ thông đạt cực đại, biểu thức từ thông là $\\Phi=\\Phi_0\\cos(40\\pi t)$. Suất điện động cảm ứng e biến thiên trễ pha $\\frac{\\pi}{2}$ so với từ thông, do đó phương trình chính xác là: $e=E_0\\cos(\\omega t-\\frac{\\pi}{2})=2,4\\pi\\cos(40\\pi t-\\frac{\\pi}{2})$ (V).'
+                }
+            ]
+        },
+        {
+            id: 'tu_64',image: 'bai64_tu.png',
+            context: '<strong>Câu 6.</strong> Sơ đồ hình a là cấu tạo của máy phát điện xoay chiều một pha đơn giản gồm một khung dây dẫn phẳng quay đều trong từ trường đều quanh trục đối xứng nằm trong mặt phẳng của khung. Hình b là đồ thị biểu diễn sự phụ thuộc của suất điện động cảm ứng e xuất hiện trong khung dây vào biến thời gian t.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi chưa nối hai đầu ra của máy phát với mạch ngoài tạo thành mạch kín thì trong khung dây vẫn có dòng điện xoay chiều liên tục chạy qua.',
+                    isTrue: false,
+                    exp: 'Sai. Khi mạch ngoài hở (chưa nối kín), trong khung dây chỉ xuất hiện suất điện động cảm ứng xoay chiều chứ chưa thể hình thành dòng điện chạy qua mạch ($I=0$).'
+                },
+                {
+                    id: 'b',
+                    text: 'Suất điện động cảm ứng xuất hiện trong khung dây có giá trị hiệu dụng bằng $80\\sqrt{2}\\text{ V}$.',
+                    isTrue: true,
+                    exp: 'Đúng. Quan sát đồ thị ở hình b, giá trị đỉnh (cực đại) của suất điện động là $E_0=160\\text{ V}$. Giá trị hiệu dụng tương ứng là: $E=\\frac{E_0}{\\sqrt{2}}=\\frac{160}{\\sqrt{2}}=80\\sqrt{2}\\text{ V}$.'
+                },
+                {
+                    id: 'c',
+                    text: 'Từ thông cực đại xuyên qua toàn bộ hệ thống khung dây đạt giá trị bằng $\\frac{1,6}{\\pi}\\text{ Wb}$.',
+                    isTrue: true,
+                    exp: 'Đúng. Chu kỳ dao động đọc từ đồ thị là $T=20\\text{ ms}=0,02\\text{ s}\\Rightarrow\\omega=\\frac{2\\pi}{T}=100\\pi\\text{ rad/s}$. Từ thông cực đại qua khung dây là: $\\Phi_0=\\frac{E_0}{\\omega}=\\frac{160}{100\\pi}=\\frac{1,6}{\\pi}\\text{ Wb}$ (tức $\\frac{8}{5\\pi}\\text{ Wb}$).'
+                },
+                {
+                    id: 'd',
+                    text: 'Chu kỳ biến thiên của suất điện động cảm ứng đọc được trên đồ thị dao động bằng 20ms.',
+                    isTrue: true,
+                    exp: 'Đúng. Đồ thị biểu diễn hình sin thực hiện đúng một chu kỳ lặp lại trạng thái cũ từ mốc thời gian 0 đến mốc 20ms.'
+                }
+            ]
+        },
+        {
+            id: 'tu_65',image: 'bai65_tu.png',
+            context: '<strong>Câu 7.</strong> Thiết bị phanh tái sinh của ô tô điện hoạt động dựa trên cơ chế điều khiển động cơ điện chuyển sang chế độ máy phát điện trong quá trình hãm tốc nhằm thu hồi năng lượng. Máy phát điện này được đơn giản hóa gồm một khung dây hình vuông 1 vòng dây ABCD cạnh L, điện trở không đáng kể, đặt trong từ trường đều có độ lớn cảm ứng từ B. Trục quay OO\' của khung dây vuông góc với từ trường và cách đều các cạnh AB, CD như hình vẽ.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Khi khung dây quay theo chiều mô tả, tại vị trí được minh họa, dòng điện cảm ứng trong đoạn dây thẳng AB có chiều hướng từ A đến B.',
+                    isTrue: true,
+                    exp: 'Đúng. Khi khung quay theo chiều mũi tên, cạnh AB chuyển động dịch hướng lên phía trên cắt qua các đường cảm ứng từ vuông góc. Áp dụng quy tắc bàn tay phải, ta xác định được chiều dòng điện cảm ứng chạy từ điểm A đến điểm B.'
+                },
+                {
+                    id: 'b',
+                    text: 'Suất điện động cảm ứng sinh ra trên đoạn thẳng AB đạt độ lớn cực đại khi mặt phẳng khung dây vuông góc với các đường sức từ.',
+                    isTrue: false,
+                    exp: 'Sai. Khi mặt phẳng khung dây vuông góc với đường sức từ, từ thông qua khung đạt cực đại nhưng tốc độ biến thiên từ thông bằng 0, suất điện động cảm ứng bằng 0. Suất điện động trên thanh AB chỉ đạt cực đại khi khung dây ở vị trí song song với các đường sức từ (khi đó thanh AB chuyển động cắt vuông góc hoàn toàn với các đường sức).'
+                },
+                {
+                    id: 'c',
+                    text: 'Nếu khung dây có cạnh $L=0,2\\text{ m}$, quay với vận tốc góc $\\omega=100\\pi\\text{ rad/s}$ trong từ trường $B=0,5\\text{ T}$, thì suất điện động hiệu dụng sinh ra trên riêng đoạn dây AB xấp xỉ bằng 2,2V.',
+                    isTrue: true,
+                    exp: 'Đúng. Diện tích khung dây vuông gồm 1 vòng ($N=1$): $S=L^2=0,2^2=0,04\\text{ m}^2$. Suất điện động cực đại của toàn bộ khung dây: $E_0=B \\cdot S \\cdot \\omega=0,5 \\times 0,04 \\times 100\\pi=2\\pi\\approx6,283\\text{ V}$. Suất điện động hiệu dụng của cả khung dây: $E=\\frac{E_0}{\\sqrt{2}}=\\frac{2\\pi}{\\sqrt{2}}=\\pi\\sqrt{2}\\approx4,443\\text{ V}$. Vì suất điện động sinh ra đối xứng trên hai thanh AB và CD, nên suất điện động hiệu dụng xuất hiện riêng trên thanh AB là: $E_{AB}=\\frac{E}{2}=\\frac{4,443}{2}\\approx2,22\\text{ V}\\approx2,2\\text{ V}$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Suất điện động cảm ứng xuất hiện trong khung dây biến thiên tuần hoàn theo thời gian với tần số góc bằng tốc độ quay của khung dây.',
+                    isTrue: true,
+                    exp: 'Đúng. Khung quay đều với tốc độ góc thì suất điện động cảm ứng sinh ra cũng biến thiên điều hòa với tần số góc bằng chính tốc độ góc quay của khung dây.'
+                }
+            ]
+        },
+        {
+            id: 'tu_66',image: 'bai66_tu.png',
+            context: '<strong>Câu 8.</strong> Một khung dây dẫn phẳng quay đều quanh một trục đối xứng cố định nằm trong mặt phẳng khung dây, đặt trong một từ trường đều có vectơ cảm ứng từ vuông góc với trục quay (hình a). Đồ thị hình b biểu diễn sự phụ thuộc của từ thông qua khung vào thời gian t. Ba vị trí thời điểm A, B, C được đánh dấu cụ thể trên đường cong.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Tại thời điểm biểu diễn bởi điểm A trên đồ thị, độ lớn suất điện động cảm ứng trong khung dây đạt giá trị cực đại.',
+                    isTrue: false,
+                    exp: 'Sai. Công thức độ lớn suất điện động cảm ứng tương ứng với $|e|=\\left|\\frac{d\\Phi}{dt}\\right|$; tức là độ dốc của đường tiếp tuyến trên đồ thị từ thông. Tại điểm A (đỉnh đồ thị), tiếp tuyến nằm ngang hoàn toàn nên độ dốc bằng $0\\Rightarrow|e_A|=0$.'
+                },
+                {
+                    id: 'b',
+                    text: 'Tại thời điểm biểu diễn bởi điểm C trên đồ thị, độ lớn suất điện động cảm ứng trong khung dây bằng không.',
+                    isTrue: false,
+                    exp: 'Sai. Tại điểm C, từ thông bằng 0 (đồ thị cắt trục hoành) nhưng đây là lúc đồ thị dốc nhất (đường thẳng đứng nhất), tốc độ biến thiên từ thông nhanh nhất, do đó độ lớn suất điện động $|e_C|$ phải đạt giá trị cực đại ($E_0$).'
+                },
+                {
+                    id: 'c',
+                    text: 'Độ lớn suất điện động cảm ứng trong khung tại thời điểm B lớn hơn tại thời điểm A.',
+                    isTrue: true,
+                    exp: 'Đúng. Như đã giải thích, tại A độ dốc bằng 0 nên $|e_A|=0$. Tại B đồ thị đang ở sườn dốc nên có độ dốc lớn hơn tại A, do đó $|e_B|>|e_A|$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Thứ tự độ lớn suất điện động cảm ứng trong khung tại các điểm trên đồ thị được sắp xếp theo chiều giảm dần là: điểm C, điểm B, điểm A.',
+                    isTrue: true,
+                    exp: 'Đúng. Tại C đồ thị dốc nhất $\\rightarrow |e|\\text{ max}$. Tại A đồ thị nằm ngang $\\rightarrow|e|=0\\text{ min}$. Điểm B nằm ở sườn dốc nên có giá trị trung gian. Thứ tự giảm dần chuẩn xác là: C $\\rightarrow$ B $\\rightarrow$ A.'
+                }
+            ]
+        },
+        {
+            id: 'tu_67',image: 'bai67_tu.png',
+            context: '<strong>Câu 9.</strong> Trong một buổi thực hành tại phòng thí nghiệm, một nhóm học sinh lắp đặt mô hình máy phát điện xoay chiều một pha đơn giản gồm một khung dây dẫn phẳng hình chữ nhật ABCD có tất cả $N=100$ vòng dây. Kích thước các cạnh được xác định là $AB=16,0\\text{ cm}$ và $BC=4,50\\text{ cm}$. Khung dây quay đều với tốc độ ổn định 15 vòng/giây quanh trục cố định vuông góc với các đường sức từ của một từ trường đều có cảm ứng từ $B=1,45\\text{ T}$. Hai đầu ra của khung dây nối với điện trở nhiệt mạch ngoài $R=2,50\\text{ }\\Omega$ (bỏ qua điện trở khung dây). Lấy hằng số $\\pi=3,14$.',
+            statements: [
+                {
+                    id: 'a',
+                    text: 'Diện tích bề mặt toàn phần của mỗi một vòng dây trong khung bằng $72\\text{ cm}^2$ (hay $7,2\\cdot10^{-3}\\text{ m}^2$).',
+                    isTrue: true,
+                    exp: 'Đúng. Diện tích một vòng dây hình chữ nhật được tính bằng: $S=16\\text{ cm} \\times 4,5\\text{ cm}=72\\text{ cm}^2=7,2\\cdot10^{-3}\\text{ m}^2$.'
+                },
+                {
+                    id: 'b',
+                    text: 'Từ thông cực đại xuyên qua toàn bộ hệ thống khung dây (N vòng) của mô hình thí nghiệm này đạt giá trị bằng 1,04Wb.',
+                    isTrue: true,
+                    exp: 'Đúng. Từ thông cực đại qua hệ thống gồm 100 vòng dây là: $\\Phi_0=N \\cdot B \\cdot S=100 \\times 1,45 \\times 7,2\\cdot10^{-3}=1,044\\text{ Wb}$. Làm tròn đến hai chữ số hàng phần trăm thu được kết quả 1,04Wb.'
+                },
+                {
+                    id: 'c',
+                    text: 'Tốc độ góc quay của khung dây dẫn trong từ trường đạt giá trị bằng $30\\pi\\text{ rad/s}$ (xấp xỉ $94,2\\text{ rad/s}$).',
+                    isTrue: true,
+                    exp: 'Đúng. Khung dây quay với tốc độ $15\\text{ vòng/s}\\Rightarrow\\omega=15 \\times 2\\pi=30\\pi\\text{ rad/s}$. Thay giá trị $\\pi=3,14\\Rightarrow\\omega=30 \\times 3,14=94,2\\text{ rad/s}$.'
+                },
+                {
+                    id: 'd',
+                    text: 'Cường độ dòng điện hiệu dụng chạy qua mạch điện chứa điện trở R có giá trị xấp xỉ bằng 27,8A.',
+                    isTrue: true,
+                    exp: 'Đúng. Suất điện động cảm ứng cực đại của máy phát: $E_0=\\Phi_0 \\cdot \\omega=1,044 \\times 94,2=98,3448\\text{ V}$. Suất điện động hiệu dụng: $E=\\frac{E_0}{\\sqrt{2}}=\\frac{98,3448}{1,414}\\approx69,551\\text{ V}$. Cường độ dòng điện hiệu dụng qua điện trở R: $I=\\frac{E}{R}=\\frac{69,551}{2,50}\\approx27,82\\text{ A}$. Làm tròn đến chữ số hàng phần mười cho ra kết quả xấp xỉ 27,8A (bản text gốc hiển thị nhầm kí hiệu đơn vị là 27,84, nhưng giá trị tính toán và làm tròn chuẩn xác là 27,8A).'
+                }
+            ]
         }
     ],
     'hat-nhan': [
