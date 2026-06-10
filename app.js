@@ -90,6 +90,8 @@ window.renderQuizzes = function() {
             borderTopColor = 'var(--color-hatnhan)'; 
         } else if (currentTopic === 'thighniem-dungsai') {
             borderTopColor = '#f59e0b'; // Màu Vàng Cam cho Vật lý thực nghiệm
+        } else if (currentTopic === 'bai-toan-thuc-te') {
+            borderTopColor = 'var(--color-thucte)'; // Màu Cam cho Bài toán thực tế
         }
 
         // BỐ CỤC HÌNH ẢNH DUY NHẤT: XỬ LÝ AN TOÀN TRÁNH TRÙNG KHAI BÁO BIẾN (SYNTAX ERROR)
@@ -320,6 +322,7 @@ if (currentTopic === 'khili-tuong') topicName = "Chuyên đề Khí Lý Tưởng
 if (currentTopic === 'tu-truong') topicName = "Chuyên đề Từ Trường";
 if (currentTopic === 'hat-nhan') topicName = "Chuyên đề Vật Lý Hạt Nhân";
 if (currentTopic === 'thighniem-dungsai') topicName = "Câu hỏi đúng sai thí nghiệm"; // THÊM DÒNG NÀY
+if (currentTopic === 'bai-toan-thuc-te') topicName = "Bài toán thực tế";
         
         TPhysicsPro.HistoryLog.saveRecord(topicName, perfectQuestionsCount, totalQuestions);
         TPhysicsPro.Progress.clearProgress();
@@ -464,7 +467,7 @@ const StorageManager = {
             // Tự động nhận diện tên chuyên đề thân thiện nếu thiếu dữ liệu truyền vào
             let displaySubject = data.subjectName;
             if (!displaySubject && data.subjectKey) {
-                const topicNames = { 'nhiet': 'Nhiệt học', 'khili-tuong': 'Khí lý tưởng', 'tu-truong': 'Từ trường', 'hat-nhan': 'Vật lý hạt nhân' };
+                const topicNames = { 'nhiet': 'Nhiệt học', 'khili-tuong': 'Khí lý tưởng', 'tu-truong': 'Từ trường', 'hat-nhan': 'Vật lý hạt nhân', 'thighniem-dungsai': 'Câu hỏi đúng sai thí nghiệm', 'bai-toan-thuc-te': 'Bài toán thực tế' };
                 displaySubject = topicNames[data.subjectKey] || data.subjectKey;
             }
             const displayIndex = data.currentIndex !== undefined ? data.currentIndex + 1 : 1;

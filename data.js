@@ -2194,5 +2194,317 @@ const practiceData = {
         }
     ]
 }
-    ]
+    ],
+    'bai-toan-thuc-te': [
+        {
+                "id": "mohinh_q1",
+                "image": "bai1_dong_co_nhiet.png",
+                "context": "<strong>Câu 1: Cấu tạo và nguyên tắc hoạt động của động cơ nhiệt</strong>",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Động cơ nhiệt là động cơ hoạt động dựa trên nguyên tắc biến đổi cơ năng thành nội năng của nhiên liệu.",
+                                "isTrue": false,
+                                "exp": "SAI. Động cơ nhiệt hoạt động dựa trên nguyên tắc biến đổi một phần nội năng của nhiên liệu thành cơ năng. Nhiên liệu cháy tạo ra nhiệt lượng, làm khí giãn nở và sinh công. Vì vậy chiều biến đổi năng lượng đúng là từ nội năng sang cơ năng, không phải từ cơ năng sang nội năng."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Một động cơ nhiệt tiêu chuẩn được cấu tạo bởi ba bộ phận chính: nguồn nóng, bộ phận phát động và nguồn lạnh.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Một động cơ nhiệt tiêu chuẩn gồm ba bộ phận chính: nguồn nóng cung cấp nhiệt lượng, bộ phận phát động nhận nhiệt và thực hiện công cơ học, nguồn lạnh nhận phần nhiệt lượng còn lại không biến đổi được thành công."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Nguồn lạnh của động cơ nhiệt luôn phải duy trì ở một mức nhiệt độ $T_{2}$ lớn hơn nhiệt độ $T_{1}$ của nguồn nóng để có thể nhận nhiệt.",
+                                "isTrue": false,
+                                "exp": "SAI. Nguồn lạnh phải có nhiệt độ thấp hơn nguồn nóng thì nhiệt lượng mới có thể truyền từ nguồn nóng qua bộ phận phát động rồi đến nguồn lạnh. Do đó điều kiện đúng là $T_{2}<T_{1}$, trong đó $T_{1}$ là nhiệt độ nguồn nóng và $T_{2}$ là nhiệt độ nguồn lạnh."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Một kĩ sư tuyên bố rằng: Toàn bộ nhiệt lượng do nguồn nóng cung cấp trong động cơ tôi thiết kế đều được tác nhân chuyển hóa 100% thành công cơ học. Tuyên bố này là hợp lí dựa trên nguyên tắc cấu tạo động cơ nhiệt.",
+                                "isTrue": false,
+                                "exp": "SAI. Động cơ nhiệt không thể chuyển hóa toàn bộ nhiệt lượng nhận từ nguồn nóng thành công cơ học. Luôn có một phần nhiệt lượng truyền cho nguồn lạnh. Hiệu suất của động cơ nhiệt luôn nhỏ hơn 100%, nên tuyên bố chuyển hóa 100% nhiệt lượng thành công cơ học là không phù hợp."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q2",
+                "image": "bai2_noi_ap_suat.png",
+                "context": "<strong>Câu 2: Nồi áp suất</strong><br><br>Nồi áp suất là một thiết bị gia dụng trong gia đình, được sử dụng để ninh, hầm thực phẩm.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Khi đun nóng, áp suất bên trong nồi luôn không đổi.",
+                                "isTrue": false,
+                                "exp": "SAI. Khi đun nóng, nhiệt độ của hơi và không khí trong nồi tăng lên. Do thể tích nồi gần như không đổi nên áp suất bên trong nồi tăng theo. Áp suất chỉ được khống chế khi van xả hoạt động để hơi thoát bớt ra ngoài, chứ không phải luôn không đổi trong suốt quá trình đun."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Trong quá trình đun nóng, khối khí trong nồi có thể tích gần như không đổi.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Nồi áp suất có vỏ cứng và nắp kín nên thể tích phần không gian chứa hơi, không khí bên trong gần như không đổi. Vì vậy có thể xem quá trình làm nóng khí trong nồi là quá trình đẳng tích tương đối."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Trong quá trình đun nóng, áp suất khí trong nồi lớn hơn áp suất khí quyển nên nước trong nồi sôi ở nhiệt độ cao hơn $100^{\\circ}C$.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Khi áp suất bên trong nồi lớn hơn áp suất khí quyển, nhiệt độ sôi của nước tăng lên. Vì vậy nước trong nồi áp suất có thể sôi ở nhiệt độ cao hơn $100^{\\circ}C$, giúp thức ăn nhanh chín mềm hơn."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Các nồi áp suất đều có van xả, để tránh trường hợp áp suất trong nồi lên cao quá mức có thể gây nguy hiểm.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Van xả có tác dụng cho hơi thoát ra ngoài khi áp suất trong nồi vượt quá mức cho phép. Khi hơi thoát ra, lượng khí trong nồi giảm, giúp áp suất không tiếp tục tăng quá cao. Điều này bảo đảm an toàn trong quá trình sử dụng nồi áp suất."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q3",
+                "image": "bai3_loa_dien_dong.png",
+                "context": "<strong>Câu 3: Loa điện động</strong><br><br>Loa điện động gồm một cuộn dây gắn với màng loa đặt trong từ trường của nam châm. Khi có dòng điện xoay chiều đi qua, cuộn dây sẽ dao động theo tần số dòng điện khiến màng loa dao động và phát ra âm thanh. Cho một dòng điện xoay chiều $i=5\\cos(250\\pi t)\\text{ mA}$ đi qua một chiếc loa điện động.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Dao động của màng loa là một dao động điều hòa.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dòng điện qua cuộn dây có dạng hàm cos theo thời gian nên lực từ tác dụng lên cuộn dây cũng biến thiên tuần hoàn theo dạng điều hòa. Vì cuộn dây gắn với màng loa nên màng loa dao động theo quy luật điều hòa với cùng tần số với dòng điện."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Nguyên tắc hoạt động cốt lõi của loa điện động dựa trên hiện tượng cảm ứng điện từ.",
+                                "isTrue": false,
+                                "exp": "SAI. Loa điện động hoạt động chủ yếu dựa trên tác dụng của lực từ lên dây dẫn có dòng điện đặt trong từ trường. Khi dòng điện xoay chiều chạy qua cuộn dây, lực từ đổi chiều liên tục làm cuộn dây và màng loa dao động. Đây không phải là ứng dụng trực tiếp của hiện tượng cảm ứng điện từ."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Nếu tăng biên độ dòng điện thì loa phát ra âm thanh lớn hơn.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Biên độ dòng điện càng lớn thì lực từ tác dụng lên cuộn dây càng lớn. Khi đó màng loa dao động với biên độ lớn hơn, làm âm phát ra có cường độ lớn hơn, tức là nghe to hơn."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Nếu tăng tần số góc của dòng điện lớn hơn $40000\\pi\\text{ rad/s}$ thì loa phát ra hạ âm.",
+                                "isTrue": false,
+                                "exp": "SAI. Tần số âm được tính bởi $f=\\dfrac{\\omega}{2\\pi}$. Nếu $\\omega>40000\\pi\\text{ rad/s}$ thì $f>20000\\text{ Hz}$. Đây là vùng siêu âm, không phải hạ âm. Hạ âm là âm có tần số nhỏ hơn $20\\text{ Hz}$."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q4",
+                "image": "bai4_tau_dem_tu.png",
+                "context": "<strong>Câu 4: Tàu đệm từ</strong><br><br>Hiện nay, tàu đệm từ là một trong những phương tiện di chuyển với tốc độ cao ở các quốc gia phát triển. Ở loại tàu này, thân tàu được nâng lơ lửng phía trên đường ray bằng hệ thống các nam châm điện. Ngoài ra, trên thân tàu và dọc theo đường ray còn được gắn các nam châm điện khác đóng vai trò tăng tốc và giảm tốc cho tàu trong quá trình chuyển động.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Tàu có thể chuyển động mà không tiếp xúc với đường ray nhờ lực điện giữa các nam châm điện.",
+                                "isTrue": false,
+                                "exp": "SAI. Tàu đệm từ chuyển động không tiếp xúc trực tiếp với đường ray là nhờ lực từ giữa các nam châm điện, không phải nhờ lực điện. Lực từ có thể tạo ra tác dụng nâng tàu lên và tạo lực kéo hoặc lực hãm trong quá trình chuyển động."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Khi tàu đang chuyển động, nếu dòng điện qua các nam châm điện đột ngột mất đi thì tàu vẫn tiếp tục chuyển động thẳng đều nếu bỏ qua lực cản của không khí.",
+                                "isTrue": false,
+                                "exp": "SAI. Nếu dòng điện qua các nam châm điện bị ngắt, từ trường do các nam châm điện tạo ra sẽ mất hoặc giảm mạnh. Khi đó lực từ nâng tàu và lực từ điều khiển chuyển động không còn duy trì như trước, tàu có thể bị hạ xuống và tiếp xúc với đường ray. Vì vậy không thể kết luận tàu vẫn tiếp tục chuyển động thẳng đều chỉ bằng cách bỏ qua lực cản không khí."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Giả sử tại một thời điểm nào đó, cực từ của các nam châm được mô tả như hình vẽ trên, khi đó lực từ tổng hợp tác dụng lên tàu đóng vai trò là lực đẩy.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dựa vào cách bố trí cực từ trong hình, các nam châm điện trên tàu và trên đường ray tạo ra các lực hút và đẩy sao cho hợp lực theo phương chuyển động hướng về phía trước. Vì vậy tại thời điểm được mô tả, lực từ tổng hợp tác dụng lên tàu đóng vai trò lực đẩy, giúp tàu tăng tốc hoặc duy trì chuyển động."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Khi tàu đi vào ga và cần giảm tốc, chiều dòng điện qua cuộn dây của một số nam châm điện phải đổi ngược lại để tạo lực từ ngược chiều chuyển động của tàu.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Muốn giảm tốc tàu, cần tạo ra lực từ có chiều ngược với chiều chuyển động. Việc đảo chiều dòng điện trong một số cuộn dây sẽ làm đổi chiều cực từ của nam châm điện, từ đó đổi chiều lực từ tác dụng lên tàu để tạo tác dụng hãm."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q5",
+                "image": "bai5_phanh_dien_tu.png",
+                "context": "<strong>Câu 5: Phanh điện từ</strong><br><br>Phanh điện từ có cấu tạo đơn giản gồm cuộn dây dẫn được quấn quanh lõi thép. Lõi thép được xẻ một rãnh nhỏ để đặt vào đĩa kim loại. Đĩa kim loại gắn đồng trục với trục quay của bánh xe cần hãm phanh. Khi cần hãm phanh đĩa kim loại, chỉ cần cho dòng điện chạy qua cuộn dây. Khi đó, lõi thép sẽ trở thành nam châm điện. Trên vùng đĩa kim loại đi vào và đi ra khỏi nam châm sẽ có từ thông biến thiên. Dòng điện cảm ứng xuất hiện ở hai vùng đĩa này được mô tả như hình. Dòng điện này là dòng điện Foucault có tác dụng chống lại nguyên nhân đã sinh ra nó, nghĩa là làm giảm tốc độ quay của đĩa. Đĩa quay càng nhanh thì lực cản xuất hiện ở hai phần đĩa này càng lớn, giúp giảm nhanh tốc độ quay của đĩa.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Phanh điện từ hoạt động dựa trên tương tác không tiếp xúc giữa nam châm và dòng điện cảm ứng. Lực tác dụng lên đĩa kim loại trong phanh điện từ lớn hơn khi đĩa quay nhanh hơn.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Khi đĩa kim loại quay trong vùng từ trường, từ thông qua các phần của đĩa biến thiên và làm xuất hiện dòng điện cảm ứng Foucault. Dòng điện cảm ứng này tương tác với từ trường của nam châm điện tạo ra lực cản chuyển động quay. Đĩa quay càng nhanh thì tốc độ biến thiên từ thông càng lớn, dòng điện cảm ứng càng mạnh và lực hãm càng lớn."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Phanh điện từ chỉ hoạt động khi từ trường của nam châm thay đổi.",
+                                "isTrue": false,
+                                "exp": "SAI. Phanh điện từ vẫn có thể hoạt động khi từ trường của nam châm điện không đổi theo thời gian. Nguyên nhân tạo ra dòng điện cảm ứng là do đĩa kim loại chuyển động qua vùng có từ trường, làm từ thông qua các phần của đĩa thay đổi. Vì vậy không nhất thiết bản thân từ trường của nam châm phải biến thiên theo thời gian."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Khi có dòng điện không đổi trong cuộn dây, có xuất hiện dòng điện cảm ứng trên đĩa kim loại vì có sự biến thiên từ thông khi đĩa quay. Trong hình nếu đổi chiều quay của đĩa, chiều của dòng điện cảm ứng trên đĩa cũng đổi chiều.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dòng điện không đổi trong cuộn dây tạo ra từ trường gần như không đổi, nhưng đĩa kim loại lại quay qua vùng từ trường nên từ thông qua từng phần đĩa vẫn thay đổi. Do đó trên đĩa xuất hiện dòng điện cảm ứng. Nếu đổi chiều quay của đĩa thì nguyên nhân gây biến thiên từ thông đổi chiều, nên theo định luật Lenz, chiều dòng điện cảm ứng cũng đổi chiều."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Trong hình khi đĩa quay, dòng điện cảm ứng trong đĩa chạy thành vòng tròn quanh trục.",
+                                "isTrue": false,
+                                "exp": "SAI. Dòng điện Foucault không chạy thành một vòng tròn lớn quanh trục quay của đĩa. Chúng xuất hiện dưới dạng các vòng xoáy khép kín cục bộ quanh những vùng có từ thông biến thiên, đặc biệt ở vùng đĩa đi vào và đi ra khỏi vùng từ trường."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q6",
+                "image": "bai6_dan_ghi_ta_dien.png",
+                "context": "<strong>Câu 6: Đàn ghi ta điện</strong><br><br>Đàn ghi ta điện có cấu tạo đặc, không có hộp cộng hưởng. Sở dĩ ta nghe được âm phát ra từ dây cảm ứng gần cần đàn ở bên dưới sáu dây đàn này. Vì dây đàn bằng thép nên đoạn dây đàn nằm sát ngay bên trên nam châm của cuộn dây cảm ứng được từ hóa, nghĩa là nó trở thành một nam châm có cực từ được mô tả như hình vẽ. Khi từ thông qua cuộn dây thay đổi thì trong cuộn dây xuất hiện dòng điện cảm ứng, biến đổi cả về chiều và cường độ phù hợp với dao động của dây đàn, nghĩa là cùng tần số với dao động của âm. Dòng điện cảm ứng được đưa đến máy tăng âm rồi đến loa làm ta nghe được âm do dây đàn phát ra.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Dây đàn (3) đặt gần nam châm (1) nên nó bị nhiễm từ, khi gảy nó sẽ dao động lại gần hoặc ra xa cuộn dây (2). Do đó, từ thông qua cuộn dây (2) sẽ thay đổi, sinh ra dòng điện cảm ứng chạy đến loa.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dây đàn bằng thép đặt gần nam châm nên bị nhiễm từ. Khi dây đàn dao động, vị trí của phần dây đã bị nhiễm từ thay đổi so với cuộn dây cảm ứng. Điều này làm từ thông qua cuộn dây biến thiên, từ đó sinh ra suất điện động cảm ứng và dòng điện cảm ứng đưa đến mạch khuếch đại, rồi phát ra loa."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Dây đàn làm bằng thép để nó nhiễm từ thì mới tạo ra từ thông biến thiên qua cuộn dây khi nó dao động. Do sự rung động của dây đàn để làm biến thiên từ thông qua cuộn dây nên nó phát âm trực tiếp từ đàn mà phát âm ở loa nên không cần hộp cộng hưởng ở cạnh dây đàn.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dây đàn cần làm bằng vật liệu có khả năng nhiễm từ như thép để khi đặt gần nam châm, nó trở thành một nam châm nhỏ. Khi dây đàn dao động, từ thông qua cuộn dây biến thiên và tạo tín hiệu điện. Tín hiệu này được khuếch đại rồi đưa ra loa, vì vậy đàn ghi ta điện không cần hộp cộng hưởng lớn như đàn ghi ta thùng."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Khi gảy mạnh thì tốc độ dây đàn sẽ lớn, làm tốc độ biến thiên từ thông lớn, sinh ra độ lớn dòng điện cảm ứng lớn dẫn ra loa phát được âm to hơn.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Gảy dây đàn mạnh làm biên độ và tốc độ dao động của dây lớn hơn. Khi đó tốc độ biến thiên từ thông qua cuộn dây lớn hơn, suất điện động cảm ứng và dòng điện cảm ứng có biên độ lớn hơn. Sau khi khuếch đại, loa phát ra âm có cường độ lớn hơn, tức là nghe to hơn."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Biết dây đàn dài $60\\text{ cm}$, tốc độ truyền sóng trên dây là $300\\text{ m/s}$. Tần số của âm cơ bản mà dây này phát ra là $500\\text{ Hz}$.",
+                                "isTrue": false,
+                                "exp": "SAI. Với dây đàn hai đầu cố định, tần số âm cơ bản được tính bởi $f=\\dfrac{v}{2l}$. Thay $v=300\\text{ m/s}$ và $l=60\\text{ cm}=0,60\\text{ m}$, ta có $f=\\dfrac{300}{2\\cdot0,60}=250\\text{ Hz}$. Vì vậy tần số âm cơ bản không phải $500\\text{ Hz}$."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q7",
+                "image": "bai7_dynamo_xe_dap.png",
+                "context": "<strong>Câu 7: Dynamo xe đạp</strong><br><br>Cấu tạo của dynamo xe đạp được mô tả như hình. Một chiếc Dynamo không có bộ phận tích trữ điện gắn trên một xe đạp đang chuyển động thẳng đều với tốc độ không đổi so với mặt đường nhựa. Khi bánh xe quay đều, núm dẫn động tì vào lốp xe nên nó và nam châm quay theo. Giả thiết là không có sự trượt của núm dẫn động trên vành bánh xe và đường kính núm dẫn động là $20\\text{ mm}$. Cuộn dây dẫn có số vòng dây là 2500 vòng, mỗi vòng có tiết diện $2\\text{ cm}^{2}$ và từ trường xuất hiện trong lõi sắt non khi nam châm quay có giá trị trung bình là $B=0,01\\text{ T}$.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Dòng điện được dẫn ra mạch ngoài là dòng điện một chiều.",
+                                "isTrue": false,
+                                "exp": "SAI. Khi nam châm trong dynamo quay, từ thông qua cuộn dây biến thiên tuần hoàn và đổi chiều. Do đó suất điện động cảm ứng và dòng điện đưa ra mạch ngoài là dòng điện xoay chiều, không phải dòng điện một chiều."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Dynamo là máy phát điện biến đổi quang năng thành điện năng.",
+                                "isTrue": false,
+                                "exp": "SAI. Dynamo xe đạp là máy phát điện biến đổi cơ năng thành điện năng. Cơ năng do bánh xe quay truyền sang núm dẫn động và làm nam châm quay, từ đó tạo ra dòng điện cảm ứng để làm sáng đèn."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Chiều quay của roto như trên hình chứng tỏ vành xe đạp đang quay ngược chiều kim đồng hồ.",
+                                "isTrue": false,
+                                "exp": "SAI. Dựa vào chiều quay của roto và cách núm dẫn động tì vào vành xe trong hình, vành xe đạp phải quay theo chiều kim đồng hồ. Vì vậy phát biểu cho rằng vành xe đang quay ngược chiều kim đồng hồ là không đúng."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Khi suất điện động cảm ứng cực đại giữa hai đầu cuộn dây dẫn của Dynamo là $2,0\\text{ V}$ thì tốc độ chuyển động của xe đạp là $v=8\\text{ m/s}$.",
+                                "isTrue": false,
+                                "exp": "SAI. Suất điện động cảm ứng cực đại có thể tính gần đúng bởi $E_{0}=NBS\\omega$. Với $E_{0}=2,0\\text{ V}$, $N=2500$, $B=0,01\\text{ T}$, $S=2\\text{ cm}^{2}=2\\times10^{-4}\\text{ m}^{2}$, suy ra $\\omega=\\dfrac{2}{2500\\cdot0,01\\cdot2\\times10^{-4}}=400\\text{ rad/s}$. Đường kính núm dẫn động là $20\\text{ mm}$ nên bán kính $r=10\\text{ mm}=0,01\\text{ m}$. Do không trượt, tốc độ xe bằng tốc độ dài của núm: $v=r\\omega=0,01\\cdot400=4\\text{ m/s}$. Vì vậy kết quả $8\\text{ m/s}$ là sai."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q8",
+                "image": "bai8_sac_khong_day.png",
+                "context": "<strong>Câu 8: Sạc không dây</strong><br><br>Sạc không dây ngày càng được sử dụng rộng rãi để sạc điện thoại, đồng hồ, máy hút bụi,... Sạc không dây truyền điện đến điện thoại như hình bên. Một người dùng bộ sạc không dây Samsung Wireless Charger Duo lấy điện từ mạng điện sinh hoạt để sạc điện cho Samsung S23 Ultra. Thông số kĩ thuật của bộ sạc và pin của điện thoại được mô tả như bảng bên dưới:<br><br><table border=\"1\" cellspacing=\"0\" cellpadding=\"4\"><tr><td><strong>Samsung Wireless Charger Duo</strong></td><td><strong>Pin của Samsung S23 Ultra</strong></td></tr><tr><td>+ Input: $100\\text{ V} - 240\\text{ V}; 50/60\\text{ Hz}; 0,5\\text{ A}$<br>+ Output: $5\\text{ V}; 3\\text{ A}$</td><td>+ Dung lượng pin: $5000\\text{ mAh}$<br>+ Loại pin: Pin chuẩn Li-Ion</td></tr></table><br>Khi sạc pin cho điện thoại từ 0% đến 100% thì tổng dung lượng hao phí và dung lượng mất mát do máy đang chạy các chương trình là 20%. Biết dung lượng được sạc đều và bỏ qua thời gian nhồi pin.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Sạc điện không dây hoạt động dựa trên hiện tượng cảm ứng điện từ. Nhược điểm của sạc điện không dây là hiệu suất chuyển đổi năng lượng từ mặt sạc sang thiết bị không cao và tốc độ sạc chậm hơn so với công nghệ sạc có dây.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Trong đế sạc có cuộn dây sơ cấp tạo ra từ trường biến thiên. Từ trường biến thiên này gây ra suất điện động cảm ứng trong cuộn dây ở điện thoại, từ đó tạo dòng điện để sạc pin sau khi được xử lí bởi mạch điện. Do có khoảng cách truyền năng lượng, tỏa nhiệt và tổn hao trong mạch, sạc không dây thường có hiệu suất thấp hơn và tốc độ sạc chậm hơn sạc có dây cùng công suất."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Cuộn dây dẫn được nối với pin điện thoại là cuộn sơ cấp.",
+                                "isTrue": false,
+                                "exp": "SAI. Cuộn dây trong đế sạc, nối với nguồn điện, là cuộn sơ cấp vì nó tạo ra từ trường biến thiên ban đầu. Cuộn dây trong điện thoại, nối với mạch sạc và pin, là cuộn thứ cấp vì nó nhận năng lượng thông qua cảm ứng điện từ."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Dòng điện nạp cho pin điện thoại di động là dòng điện xoay chiều.",
+                                "isTrue": false,
+                                "exp": "SAI. Dòng điện cảm ứng xuất hiện trong cuộn dây của điện thoại ban đầu là dòng điện xoay chiều. Tuy nhiên pin Li-Ion cần được nạp bằng dòng điện một chiều có điều khiển, nên mạch trong điện thoại phải chỉnh lưu và ổn định dòng điện trước khi đưa vào pin."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Thời gian sạc pin từ 0% đến 100% khoảng 125 phút.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Dung lượng pin cần nạp là $5000\\text{ mAh}$. Do hao phí và mất mát chiếm khoảng 20%, dung lượng mà bộ sạc cần cung cấp xấp xỉ $Q=\\dfrac{5000}{0,8}=6250\\text{ mAh}=6,25\\text{ Ah}$. Với dòng sạc $I=3\\text{ A}$, thời gian sạc là $t=\\dfrac{Q}{I}=\\dfrac{6,25}{3}\\text{ h}=\\dfrac{25}{12}\\text{ h}\\approx125\\text{ phút}$."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q9",
+                "image": "bai9_may_phat_dien_xoay_chieu.png",
+                "context": "<strong>Câu 9: Máy phát điện xoay chiều</strong><br><br>Mô hình nguyên lý cấu tạo của máy phát điện xoay chiều gồm khung dây hình chữ nhật ABCD có thể quay trong từ trường đều có phương ngang và đồ thị biểu diễn điện áp xoay chiều do máy tạo ra như hình dưới đây. Khung dây quay đều theo chiều mũi tên quanh trục đối xứng nằm trong mặt phẳng khung dây và vuông góc với các đường sức từ.",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Trong thời gian điểm B quay từ vị trí số (2) đến vị trí số (3), dòng điện qua cạnh AB có chiều từ A đến B.",
+                                "isTrue": false,
+                                "exp": "SAI. Khi khung dây quay từ vị trí (2) đến vị trí (3), dùng quy tắc bàn tay phải cho đoạn dây chuyển động trong từ trường sẽ xác định được chiều dòng điện cảm ứng trên cạnh AB là từ B đến A. Vì vậy phát biểu cho rằng dòng điện qua cạnh AB có chiều từ A đến B là không đúng."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Hai vành khuyên và hai chổi quét trong mô hình có tác dụng liên tục đảo chiều dòng điện đưa ra mạch ngoài để tạo ra dòng điện xoay chiều.",
+                                "isTrue": false,
+                                "exp": "SAI. Hai vành khuyên và hai chổi quét trong máy phát điện xoay chiều có nhiệm vụ lấy điện từ khung dây quay đưa ra mạch ngoài một cách liên tục. Chúng không có tác dụng đảo chiều dòng điện. Sự đổi chiều của dòng điện xoay chiều là do suất điện động cảm ứng trong khung dây tự đổi chiều sau mỗi nửa vòng quay."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Rotor là phần cảm, stato là phần ứng.",
+                                "isTrue": false,
+                                "exp": "SAI. Trong mô hình này, khung dây ABCD quay trong từ trường nên khung dây là rotor và cũng là phần ứng, nơi xuất hiện suất điện động cảm ứng. Hai nam châm đứng yên tạo ra từ trường nên thuộc stato và đóng vai trò phần cảm. Vì vậy nói rotor là phần cảm, stato là phần ứng là ngược với mô hình đã cho."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Chọn pháp tuyến của khung như trên hình vẽ, mốc thời gian $t=0$ được chọn vào thời điểm điểm B của khung dây ở vị trí số 4.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Trên đồ thị, tại $t=0$, điện áp tức thời bằng 0 và ngay sau đó tăng theo chiều dương. Điều này phù hợp với thời điểm khung dây ở vị trí số 4 theo chiều quay và theo chiều pháp tuyến đã chọn trong hình. Ở vị trí này, từ thông qua khung có giá trị cực trị nên suất điện động cảm ứng tức thời bằng 0; sau đó từ thông biến thiên theo chiều làm điện áp tăng dương."
+                        }
+                ]
+        },
+        {
+                "id": "mohinh_q10",
+                "image": "bai10_may_bien_ap.png",
+                "context": "<strong>Câu 10: Máy biến áp</strong><br><br>Một nhóm học sinh tìm hiểu về mối liên hệ giữa điện áp lối ra trên cuộn thứ cấp với điện áp lối vào trên cuộn sơ cấp của máy biến áp. Họ đã thực hiện các nội dung sau:<br><br>(I) Chuẩn bị dụng cụ: Một nguồn điện có thể phát cả điện áp không đổi và điện áp xoay chiều. Một dao động kí điện tử để quan sát tín hiệu lối ra. Một máy biến áp loại nhỏ gồm một lõi từ khép kín cùng hai cuộn dây, một cuộn sơ cấp và một cuộn thứ cấp.<br><br>(II) Sau khi thảo luận giữa các thành viên trong nhóm, họ đồng ý với nhau rằng MBA chỉ hoạt động với điện áp xoay chiều mà không hoạt động với các loại điện áp khác.<br><br>(III) Họ đặt điện áp xoay chiều có tần số xác định vào hai đầu dây của cuộn sơ cấp, sau đó nối đầu ra của cuộn thứ cấp vào ĐDKĐT và quan sát tín hiệu trên màn hình thì thấy tín hiệu lối ra có cùng tần số nhưng khác biên độ với điện áp lối vào.<br><br>(IV) Tiếp theo, họ đặt điện áp không đổi vào hai đầu dây của cuộn sơ cấp và quan sát tín hiệu trên màn hình ĐDKĐT thì thấy tín hiệu lối ra là một vạch sáng nằm ngang ở mức điện áp bằng 0.<br><br>(V) Họ kết luận rằng thí nghiệm này đã chứng minh được nội dung ở (II).",
+                "statements": [
+                        {
+                                "id": "a",
+                                "text": "Nội dung (I) không nằm trong kế hoạch nghiên cứu.",
+                                "isTrue": false,
+                                "exp": "SAI. Nội dung (I) là bước chuẩn bị dụng cụ thí nghiệm, bao gồm nguồn điện, dao động kí điện tử và máy biến áp. Đây là một phần quan trọng trong kế hoạch nghiên cứu thực nghiệm, vì không có dụng cụ phù hợp thì không thể kiểm chứng giả thuyết."
+                        },
+                        {
+                                "id": "b",
+                                "text": "Nội dung (II) là giả thuyết khoa học của nhóm nghiên cứu.",
+                                "isTrue": true,
+                                "exp": "ĐÚNG. Nội dung (II) nêu ra nhận định cần được kiểm chứng bằng thí nghiệm: máy biến áp chỉ hoạt động với điện áp xoay chiều mà không hoạt động với điện áp không đổi. Đây là một giả thuyết khoa học vì nó có thể kiểm tra được thông qua thực nghiệm."
+                        },
+                        {
+                                "id": "c",
+                                "text": "Nội dung (III) và (IV) là đủ để đưa ra kết luận (V).",
+                                "isTrue": false,
+                                "exp": "SAI. Nội dung (III) cho thấy máy biến áp hoạt động với điện áp xoay chiều, còn nội dung (IV) cho thấy khi đặt điện áp không đổi thì điện áp ra bằng 0 trong điều kiện thí nghiệm. Tuy nhiên, để kết luận đầy đủ rằng máy biến áp không hoạt động với mọi loại điện áp khác, cần xem xét thêm các trường hợp khác hoặc diễn đạt kết luận chặt chẽ hơn. Hai thí nghiệm này chủ yếu chứng minh được máy biến áp hoạt động dựa trên từ thông biến thiên và không cho điện áp ra ổn định khi dùng điện áp không đổi."
+                        },
+                        {
+                                "id": "d",
+                                "text": "Trong thí nghiệm ở nội dung (IV), tín hiệu quan sát được trên ĐDKĐT bằng 0 là do không có từ thông qua cuộn thứ cấp của MBA.",
+                                "isTrue": false,
+                                "exp": "SAI. Khi đặt điện áp không đổi vào cuộn sơ cấp, trong lõi từ vẫn có thể tồn tại từ thông. Tuy nhiên từ thông này không biến thiên theo thời gian sau giai đoạn quá độ nên không tạo ra suất điện động cảm ứng ở cuộn thứ cấp. Vì vậy tín hiệu ra bằng 0 là do từ thông qua cuộn thứ cấp không biến thiên, chứ không phải do không có từ thông."
+                        }
+                ]
+        }
+]
 };
