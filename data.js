@@ -1007,7 +1007,7 @@ const practiceData = {
                     id: 'a',
                     text: 'Trong thời gian điểm B quay từ vị trí số (2) đến vị trí số (3), dòng điện qua cạnh AB có chiều từ A đến B.',
                     isTrue: false,
-                    exp: 'Sai. Khi điểm B dịch chuyển từ vị trí số (2) (vị trí cao nhất, mặt phẳng khung dây vuông góc với đường sức từ) sang vị trí số (3), cạnh AB đang di chuyển xuống dưới và sang trái.Áp dụng quy tắc bàn tay phải cho đoạn dây dẫn AB chuyển động cắt các đường sức từ:Lòng bàn tay phải ngửa đón các đường sức từ $\vec{B}$ (hướng từ trái sang phải $\rightarrow$ lòng bàn tay hướng về phía bên trái).Ngón tay cái choắt ra $90^\circ$ chỉ chiều chuyển động của cạnh AB (hướng xuống dưới).Khi đó, bốn ngón tay còn lại khum lại sẽ chỉ chiều của dòng điện cảm ứng trong cạnh AB $\rightarrow$ hướng từ B đến A.
+                    exp: 'Sai. Khi điểm B dịch chuyển từ vị trí số (2) (vị trí cao nhất, mặt phẳng khung dây vuông góc với đường sức từ) sang vị trí số (3), cạnh AB đang di chuyển xuống dưới và sang trái.Áp dụng quy tắc bàn tay phải cho đoạn dây dẫn AB chuyển động cắt các đường sức từ:Lòng bàn tay phải ngửa đón các đường sức từ $\\vec{B}$ (hướng từ trái sang phải $\\rightarrow$ lòng bàn tay hướng về phía bên trái).Ngón tay cái choắt ra $90^\\circ$ chỉ chiều chuyển động của cạnh AB (hướng xuống dưới).Khi đó, bốn ngón tay còn lại khum lại sẽ chỉ chiều của dòng điện cảm ứng trong cạnh AB $\\rightarrow$ hướng từ B đến A.'
                 },
                 {
                     id: 'b',
