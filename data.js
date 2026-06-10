@@ -1186,8 +1186,8 @@ const practiceData = {
                 {
                     id: 'a',
                     text: 'Khi khung dây quay theo chiều mô tả, tại vị trí được minh họa, dòng điện cảm ứng trong đoạn dây thẳng AB có chiều hướng từ A đến B.',
-                    isTrue: true,
-                    exp: 'Đúng. Khi khung quay theo chiều mũi tên, cạnh AB chuyển động dịch hướng lên phía trên cắt qua các đường cảm ứng từ vuông góc. Áp dụng quy tắc bàn tay phải, ta xác định được chiều dòng điện cảm ứng chạy từ điểm A đến điểm B.'
+                    isTrue: false,
+                    exp: 'Sai. Khi khung quay theo chiều mũi tên, cạnh AB chuyển động dịch hướng xuống phía dưới cắt qua các đường cảm ứng từ vuông góc. Áp dụng quy tắc bàn tay phải, ta xác định được chiều dòng điện cảm ứng chạy từ điểm B đến điểm A.'
                 },
                 {
                     id: 'b',
