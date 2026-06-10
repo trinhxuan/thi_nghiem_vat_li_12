@@ -1007,7 +1007,7 @@ const practiceData = {
                     id: 'a',
                     text: 'Trong thời gian điểm B quay từ vị trí số (2) đến vị trí số (3), dòng điện qua cạnh AB có chiều từ A đến B.',
                     isTrue: false,
-                    exp: 'Sai. Khi điểm B dịch chuyển từ vị trí số (2) (vị trí cao nhất, mặt phẳng khung dây vuông góc với đường sức từ) sang vị trí số (3), cạnh AB đang di chuyển xuống dưới và sang trái.Áp dụng quy tắc bàn tay phải cho đoạn dây dẫn AB chuyển động cắt các đường sức từ:Lòng bàn tay phải ngửa đón các đường sức từ $\\vec{B}$ (hướng từ trái sang phải $\\rightarrow$ lòng bàn tay hướng về phía bên trái).Ngón tay cái choắt ra $90^\\circ$ chỉ chiều chuyển động của cạnh AB (hướng xuống dưới).Khi đó, bốn ngón tay còn lại khum lại sẽ chỉ chiều của dòng điện cảm ứng trong cạnh AB $\\rightarrow$ hướng từ B đến A.'
+                    exp: 'Sai. Khi điểm B dịch chuyển từ vị trí số (2) (vị trí cao nhất, mặt phẳng khung dây vuông góc với đường sức từ) sang vị trí số (3), cạnh AB đang di chuyển xuống dưới và sang trái.Áp dụng quy tắc bàn tay phải cho đoạn dây dẫn AB chuyển động cắt các đường sức từ:Lòng bàn tay phải ngửa đón các đường sức từ $\\vec{B}$ (hướng từ trái sang phải $\\rightarrow$ lòng bàn tay hướng về phía bên trái).Ngón tay cái choãi ra $90^\\circ$ chỉ chiều chuyển động của cạnh AB (hướng xuống dưới).Khi đó, bốn ngón tay còn lại khum lại sẽ chỉ chiều của dòng điện cảm ứng trong cạnh AB $\\rightarrow$ hướng từ B đến A.'
                 },
                 {
                     id: 'b',
@@ -2162,6 +2162,37 @@ const practiceData = {
                     exp: 'ĐÚNG. Độ hụt khối lượng: $\\Delta m = 500,68 - 500,12 = 0,56\\text{ g} = 0,56 \\times 10^{-3}\\text{ kg}$. Lực tương tác từ: $F = \\Delta m \\cdot g = 0,56 \\times 10^{-3} \\cdot 9,8 = 5,488 \\times 10^{-3}\\text{ N}$. Áp dụng công thức Ampere $F = B \\cdot I \\cdot L \\Rightarrow B = \\frac{F}{I \\cdot L} = \\frac{5,488 \\times 10^{-3}}{0,34 \\cdot 0,1} \\approx 0,1614\\text{ T}$. Làm tròn đến hai chữ số thập phân thu được kết quả chính xác bằng 0,16 T.'
                 }
             ]
+        },
+		{
+    id: 'tnds_q20',
+    image: 'bai20_thuchanh.png',
+    context: '<strong>Câu 4: Một nhóm học sinh tìm hiểu về hiện tượng cảm ứng điện từ</strong><br><br>Một nhóm học sinh tìm hiểu về hiện tượng cảm ứng điện từ và đã thực hiện các nội dung sau:<br><br>(1) Chuẩn bị bộ dụng cụ thí nghiệm như hình bên.<br><br>(2) Nhóm học sinh cho rằng: Dòng điện tạo ra từ trường ở không gian xung quanh nó thì từ trường cũng có thể gây ra dòng điện.<br><br>(3) Nhóm học sinh đã tiến hành thí nghiệm nhiều lần để rút ra kết luận về hiện tượng cảm ứng điện từ.<br><br>Trong nội dung (3), ban đầu nhóm học sinh đặt thanh nam châm nằm yên ở gần ống dây, điện kế cho biết không có dòng điện chạy qua ống dây.',
+    statements: [
+        {
+            id: 'a',
+            text: 'Sau đó, nhóm học sinh dịch chuyển thanh nam châm lại gần và ra xa ống dây, điện kế cho biết có dòng điện chạy qua ống dây.',
+            isTrue: true,
+            exp: 'ĐÚNG. Khi dịch chuyển thanh nam châm lại gần hoặc ra xa ống dây, từ trường qua ống dây biến thiên. Sự biến thiên từ trường này làm xuất hiện dòng điện cảm ứng trong ống dây, nên điện kế cho biết có dòng điện chạy qua ống dây.'
+        },
+        {
+            id: 'b',
+            text: 'Họ cho rằng từ trường không thể gây ra dòng điện.',
+            isTrue: false,
+            exp: 'SAI. Không phải mọi từ trường đều gây ra dòng điện, nhưng từ trường biến thiên có thể gây ra dòng điện cảm ứng. Khi nam châm đứng yên gần ống dây thì từ trường qua ống dây không đổi nên không có dòng điện cảm ứng; còn khi nam châm chuyển động lại gần hoặc ra xa ống dây thì có dòng điện cảm ứng.'
+        },
+        {
+            id: 'c',
+            text: 'Nội dung (2) là bước xác định vấn đề cần nghiên cứu trong phương pháp thực nghiệm.',
+            isTrue: true,
+            exp: 'ĐÚNG. Nội dung (2) nêu ra vấn đề cần tìm hiểu và kiểm chứng: dòng điện tạo ra từ trường thì liệu từ trường có thể gây ra dòng điện hay không. Đây chính là bước xác định vấn đề cần nghiên cứu trong phương pháp thực nghiệm.'
+        },
+        {
+            id: 'd',
+            text: 'Làm thêm các thí nghiệm, nhóm học sinh rút ra kết luận: từ trường biến thiên có thể gây ra dòng điện.',
+            isTrue: true,
+            exp: 'ĐÚNG. Kết quả thí nghiệm cho thấy khi thanh nam châm chuyển động lại gần hoặc ra xa ống dây thì điện kế lệch, chứng tỏ trong ống dây có dòng điện cảm ứng. Vì vậy có thể kết luận rằng từ trường biến thiên có thể gây ra dòng điện.'
         }
+    ]
+}
     ]
 };
